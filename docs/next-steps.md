@@ -13,7 +13,8 @@
    Saving a choice marks that row cold. No existing row is claimed to be cold.
 4. After those 20, either label the rest manually or request AI pre-labeling. If
    pre-labeled, read and correct every row and retain that disclosure in note.
-   Record at least three hard cases. Export labels.csv and your review checkpoint.
+   Record at least three hard cases. Export labels.csv, dataset evidence and your review checkpoint.
+   Keep 200 as the target; a 150–199-row stop-rule dataset needs an honest README reason.
 5. Commit the reading, then taxonomy, then student-authored criteria, then reviewed
    labels as actual milestone commits. Keep criteria and labels committed before
    running section 4. At least four new commits are required; do not manufacture
@@ -26,6 +27,8 @@
    notebook defaults remain 3 epochs, 2e-5, batch 16, 128 tokens, seed 42.
 7. Finish the five README sections with your actual counts, hard-case choices,
    training device, settings, split counts and two specific AI interactions.
-   No stretch feature is currently claimed. Save any actual errors honestly.
+   The second-run stretch feature was declared before implementation; run it only after
+   student criteria and reviewed labels are committed. No bonus is claimed until
+   both actual runs and their comparison are documented.
 
 The project is prepared but not ready for submission until these steps are complete.
