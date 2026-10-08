@@ -1,0 +1,18 @@
+Complete the student steps before training:
+260 rows have no label. Collection is not annotation.
+analysis has only 0 labeled posts; collect or label more.
+unsupported has only 0 labeled posts; collect or label more.
+question has only 0 labeled posts; collect or label more.
+Need 20 actually labeled cold rows; found 0.
+260 rows still have a pending workflow marker.
+Record at least three actual hard-case decisions.
+Criterion 1 has no numeric target.
+Criterion 1 has no reason.
+Criterion 2 has no numeric target.
+Criterion 2 has no reason.
+Criterion 3 has no numeric target.
+Criterion 3 has no reason.
+Criterion 4 has no numeric target.
+Criterion 4 has no reason.
+Criterion 5 has no numeric target.
+Criterion 5 has no reason.

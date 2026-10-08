@@ -1,0 +1,29 @@
+
+AI201 environment check
+------------------------------------------------------------
+[PASS] Python version
+         3.12.14 on Linux
+[PASS] Virtual environment
+         /workspace/scratch/efe9061ab15d/takemeter/.venv
+[PASS] Pinned packages
+         all 6 import cleanly
+[PASS] Free disk space
+         25.0 GB
+[PASS] Memory
+         9.7 GB
+[PASS] PyTorch
+         2.14.1+cpu, CPU only — fine, a three-seed run is minutes not hours
+[PASS] Training packages
+         datasets and accelerate both import
+[PASS] Transformers
+         imports cleanly
+[WARN] Baseline model
+         Not downloaded yet (~1.6 GB). It downloads on your first run of
+         baseline.py. Do that BEFORE the unit 6 session, not during it.
+[PASS] Project files
+         notebook, scripts and practice data all present
+------------------------------------------------------------
+9 passed, 0 failed, 1 to look at, 0 skipped
+
+You're set. See you in class.
+

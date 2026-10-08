@@ -1,0 +1,6 @@
+260 complete comments match their collected source text and SHA-256 hashes.
+260 unique normalized texts.
+20 rows reserved as cold_pending, zero assigned labels.
+All notebook code cells compile.
+Section 3 refuses unfinished student criteria and labels before splitting or training.
+Offline review JavaScript passes node --check.

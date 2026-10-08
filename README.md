@@ -1,396 +1,109 @@
-# TakeMeter
+# TakeMeter — Hacker News AI discussions
 
-> ### 👋 Start here
->
-> **New to this repo? Read [RUNNING.md](RUNNING.md) first** — setup, the
-> notebook, the baseline, and what to do when something breaks.
->
-> Once `python test.py` passes:
->
-> ```bash
-> head -5 data/practice_labels.csv     # the shape your labels.csv needs
-> ```
->
-> Then open `takemeter.ipynb` **in this folder** — in VS Code, or with
-> `jupyter notebook` if you prefer. Pick the kernel: the `.venv` inside this
-> project. Run section 1, which reports the hardware you'll be training on.
-> Everything else waits until you have data.
->
-> Nothing to upload, nothing to connect, no accounts and no keys. The notebook
-> runs on your machine and writes next to your code.
->
-> **The rest of this file is your submission.** Fill it in as you go.
-
----
-
-<!-- ─────────────────────────────────────────────────────────────────────────
-     HOW TO USE THIS FILE
-
-     Unit 5 asks for the first five sections. Unit 6 adds the five below them.
-
-     Everything is pasted as TEXT. No screenshots, no images.
-
-     ⚠️ The confusion matrix especially. The notebook prints one as a markdown
-     table, ready to copy. A screenshot of a matrix earns nothing. Paste the
-     table.
-     ───────────────────────────────────────────────────────────────────────── -->
-
-<!-- ═══════════════════════ UNIT 5 — THE BUILD ═══════════════════════ -->
+**Build status:** Preparation complete; student annotation, acceptance criteria,
+GitHub fork, and training remain pending. This is not a completed Unit 5 submission.
+No metric, cold label, human review, or milestone completion is invented.
 
 ## What This Does
 
-<!-- Your community, and what your classifier sorts posts into. Three or four
-     sentences. -->
-
-
-
----
+TakeMeter will classify whole comments from Hacker News AI discussions.
+The proposed labels distinguish supported analysis, unsupported statements or
+reactions, and direct requests for information. The student selected this community;
+the taxonomy is an AI-assisted draft awaiting review. It classifies the support
+present in a comment rather than judging whether an opinion is good or a claim true.
 
 ## Label Taxonomy
 
-<!-- Each label: a one-sentence definition and two real examples from your
-     reading. Then your decision rule for the hardest boundary.
+The complete definitions, two real examples per label, source links, and boundary
+rules are in [docs/taxonomy-draft.md](docs/taxonomy-draft.md). The student should
+confirm or revise them after reading [the 40-post pack](collection/reading-pack.md).
 
-     The decision rule is worth a point on its own and it's the thing most
-     people leave out. Every taxonomy has a hardest boundary. Name yours. -->
+| Proposed label | One-sentence definition |
+|---|---|
+| analysis | A statement supports its main claim with a specific, checkable detail, a concrete first-hand observation, or a cited source. |
+| unsupported | A comment primarily makes a statement, judgment, joke, agreement, or reaction without specific support for its main point. |
+| question | A comment primarily asks another person for information or clarification without advancing its own answer or advocating a conclusion. |
 
-### `label_one`
+**Hardest boundary:** analysis versus unsupported. A detail must support the main
+claim. A number expressing agreement does not count; a concrete measured experience
+or relevant citation does. Sarcasm does not remove evidence actually present.
+An information request is question only when it does not advance its own answer.
+The exact benchmark-specificity boundary needs student review before labeling.
 
-**Definition:**
-
-**Example 1:**
->
-
-**Example 2:**
->
-
-### `label_two`
-
-**Definition:**
-
-**Example 1:**
->
-
-**Example 2:**
->
-
-### The hardest boundary
-
-**Which two labels:**
-
-**The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
-
-
-
----
+The eight generated boundary posts in docs/boundary-stress-test.md are synthetic
+and excluded from all data and results. No stretch feature is currently claimed.
 
 ## The Dataset
 
-<!-- Where you collected from, how you labelled, your counts, and three hard
-     cases. -->
+**Source:** 260 distinct complete comments from eight public Hacker News AI threads,
+collected using the public Algolia HN API. Each comment is one collection unit.
+Sources, original HTML, collection time, IDs and exact-text hashes are retained in
+collection/sources.json. Rendering HTML as readable plain text preserves the whole
+comment's visible wording. No included comment is shortened.
 
-**Where the posts came from:**
+**Sampling:** Round-robin through eight comment trees. Whole comments of 5–180 words
+are eligible. Blank/deleted and normalized duplicate text are excluded. This short
+comment sample is not representative of every HN post. Related replies may be placed
+in different random splits by the unchanged notebook, so the held-out score measures
+within-community performance and can overstate transfer to entirely new threads.
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**Annotation:** No posts are labeled yet. The first 20 are reserved as cold_pending,
+not marked cold. The offline annotation form supplies no suggested labels. After
+these 20 are labeled by the student without AI assistance, the remaining posts may
+be manually labeled or AI pre-labeled and individually reviewed by the student.
+Workflow notes must reflect what actually happened.
 
-**Counts per label:**
+| Label or status | Count | Share of all collected posts |
+|---|---:|---:|
+| analysis | 0 | 0% |
+| unsupported | 0 | 0% |
+| question | 0 | 0% |
+| Unlabeled | 260 | 100% |
+| **Total collected** | **260** | **100%** |
 
-| Label | Count | Share |
-|---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
-
-**Three hard cases**
-
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
-
-**1.**
-> *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
-
-**2.**
-> *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
-
-**3.**
-> *The post:*
->
-> *Could have been:*
->
-> *I chose, because:*
-
----
+Label balance cannot be assessed yet. No final label may exceed 70%.
+Three real candidate hard cases are documented in docs/hard-case-candidates.md.
+The student's actual decisions and explanations must replace candidates before
+submission; they are not claimed as completed annotations.
 
 ## The Training Run
 
-<!-- Your starting model, your settings, and anything you changed and why. -->
+**Status:** No training, practice training, or evaluation has run. results.json and
+test_split.csv do not yet exist. No test split has been created or examined.
 
-**Base model:**
+**Planned base model:** distilbert-base-uncased.
+**Defaults:** 3 epochs, learning rate 2e-5, batch size 16, maximum 128 tokens, seed 42.
+**Planned split:** The starter notebook creates stratified 70/15/15 partitions from
+one unsplit labels.csv. Actual split sizes and per-label counts are not available yet.
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Verified environment:** Python 3.12.14, CPU, 9 passed and 0 failed in test.py.
+The expected Unit 6 baseline-cache warning remains. See evidence/environment-check.txt,
+evidence/notebook-setup.txt and evidence/package-versions.json. This is the assistant's
+Linux runtime, not proof of the student's own device or notebook setup.
 
-**Anything I changed from the defaults, and why:**
-
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
-
-
-
----
+**Changes from the starter:** A pre-training guard stops unfinished annotation and
+criteria from producing results. Notebook instructions that incorrectly referred to
+a hosted connection or automatic pushes were corrected. The name is Win Aung and
+email remains blank because it was not provided. The proposed label map is configured
+in section 2. Section 5 saves the actual model and tokenizer under models/takemeter
+in addition to the starter's metrics and test split. Hyperparameters and splitting
+logic are unchanged. Models and caches remain excluded from Git.
 
 ## How I Used AI
 
-<!-- Two specific moments — what you asked, what came back, what you changed.
-
-     ⚠️ Plus disclosure of any pre-labelling. If you had a model pre-label a
-     batch and then read and corrected every one, say that. It's an allowed
-     workflow and disclosing it costs you nothing. Not disclosing it is the
-     problem. -->
-
-**Moment 1**
-
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
-
-**Moment 2**
-
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
-
-**Pre-labelling disclosure:**
-
-<!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
-
-     Don't fill these in during unit 5.
-     ═══════════════════════════════════════════════════════════════════ -->
-
----
-
-## Baseline vs. Trained
-
-<!-- Both models on the same posts. `python baseline.py --trained results.json`
-     prints this table for you. -->
-
-| Measure | Baseline | Trained | Difference |
-|---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
-
-**What I predicted before I looked:**
-<!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
-     prediction made afterwards isn't one. -->
-
-**What the gap actually means:**
-<!-- If the baseline matched your trained model, your fine-tuning added
-     nothing — and that is a real finding, not a failure. Say it plainly. -->
-
-
-
----
-
-## Run Log — Before
-
-<!-- Five criteria across three seeds. The notebook's section 6 prints the
-     spread table; the Target and Verdict columns are yours. -->
-
-| Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
-|---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
-
-### Confusion matrix
-
-<!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
-     An image of a matrix earns nothing. -->
-
-| true \ predicted |  |  |  |
-|---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
-
-**My biggest off-diagonal number, and what it means:**
-<!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
-     direction. "7 real analysis posts were called hot_take and only 3 went the
-     other way" is a direction, not just an error rate. -->
-
-
-
----
-
-## Verdicts and Diagnoses
-
-<!-- MET or MISSED against LAST UNIT's target. The target has to hold across
-     all three seeds, not turn up sometimes. -->
-
-| # | Criterion | Target | Verdict | How I decided |
-|---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
-
-**Diagnoses**
-
-<!-- For each miss: the cause, and how you know. The four common causes are:
-     too few examples for a label, a boundary you applied inconsistently, a
-     genuinely hard label pair, and a task the model can't reach from this
-     much data.
-
-     ⚠️ Use your agreement report as evidence. It is the only instrument you
-     have that can tell a LABELLING problem from a MODEL problem, and this
-     section is graded on whether you used it that way. -->
-
-
-
----
-
-## Agreement Report
-
-<!-- Your rate against the staff set, and every disagreement adjudicated.
-
-     Remember you labelled these 30 under the STAFF taxonomy in
-     data/staff_taxonomy.md, not your own — so every argument below is made
-     from those definitions and those decision rules. -->
-
-**Agreement rate:** ___ / 30 = ___%
-
-<!-- Nobody grades this number. A 60% who argues every disagreement from the
-     stated rules beats a 95% who wrote "staff was right" nine times. Several
-     of the 30 were chosen because they're genuinely ambiguous — you should be
-     winning some of these. -->
-
-**Disagreements**
-
-<!-- Three lines each: the post, both labels, and who you think is right and
-     why — grounded in the staff definitions you were both applying.
-
-     Then sort each into one of three piles:
-       (a) the rule covered it and I applied it loosely → a consistency problem
-       (b) the rule genuinely doesn't say               → a gap in the definitions
-       (c) the rule is ambiguous here and my reading is defensible → argue it.
-           This is a legitimate win.
-
-     Pile (a) is the one that matters most for your diagnosis: if you applied a
-     written rule two different ways on 30 posts, that is direct evidence about
-     what you did across your own 200. -->
-
-**1.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
-
-**2.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
-
-**What the pattern in my disagreements tells me:**
-
-
-
----
-
-## The Improvement
-
-**What I changed:**
-
-**Which diagnosis pointed at it:**
-
-### Run Log — After
-
-| Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
-|---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
-
-**Did it help, and how do I know:**
-
-<!-- If it didn't, say so. Relabelling that didn't help is a genuinely
-     interesting result and earns full credit. -->
-
-
-
----
-
-## What's Still Broken
-
-<!-- For each criterion still missed: what you'd do, and why you stopped. -->
-
-
-
-**The gap between what I meant my labels to capture and what the model
-learned:**
-<!-- Two sentences. Your confusion matrix is the evidence. -->
-
-
-
-<!-- ═════════════════════════════════════════════════════════════════════
-
-     SUBMISSION CHECKLIST — unit 5
-
-       [ ] criteria.md has five numbered criteria, each naming a NUMBER
-       [ ] Each has a reason underneath tied to your data or taxonomy
-       [ ] labels.csv: at least 150 rows, text/label/note, ONE file not split
-       [ ] No label above 70%
-       [ ] All five unit 5 sections have real content
-       [ ] Label Taxonomy includes the decision rule for your hardest boundary
-       [ ] The Dataset includes three hard cases
-       [ ] results.json and test_split.csv committed (the notebook does this)
-       [ ] At least four new commits
-       [ ] Repository URL submitted — WRITE IT DOWN
-
-     SUBMISSION CHECKLIST — unit 6
-
-       [ ] Baseline vs. Trained table, with your prediction written beforehand
-       [ ] Run Log — Before, five criteria across three seeds
-       [ ] Confusion matrix TYPED AS A MARKDOWN TABLE
-       [ ] A verdict on every criterion
-       [ ] A diagnosis for every miss, using the agreement report as evidence
-       [ ] Agreement Report with every disagreement adjudicated
-       [ ] One improvement, with Run Log — After
-       [ ] What's Still Broken
-       [ ] results_three_seeds_before.json, results_three_seeds_after.json,
-           baseline_results.json and
-           agreement_results.json committed
-       [ ] At least four new commits
-       [ ] The SAME repository URL as last unit
-
-     Do not delete and recreate this repository.
-     ═════════════════════════════════════════════════════════════════════ -->
-
----
-
-📖 **How to run this project: [RUNNING.md](RUNNING.md)**
+**Moment 1 — assistance already provided:** The student asked ChatGPT to work on the
+project under the PPT and assignment rules. ChatGPT read the 29 slides and official
+starter, collected 260 public comments, and read a separate 40-post sample. It proposed
+three labels and a decision rule. The student's review and revisions are pending.
+
+**Moment 2 — assistance already provided:** ChatGPT generated eight synthetic boundary
+cases and an offline review form with blank criterion fields and no label suggestions.
+It configured and verified the environment and added a training check. The student's
+responses to the boundary cases and changes to definitions are pending.
+
+**Pre-labeling disclosure:** None has occurred. No row is falsely described as cold,
+human-reviewed, or AI-pre-labeled. Update this disclosure after the actual workflow.
+
+See [docs/next-steps.md](docs/next-steps.md) for the student steps needed to finish.
+The original README, including the Unit 6 templates, is retained at
+docs/starter-README.md. RUNNING.md is the official command reference.

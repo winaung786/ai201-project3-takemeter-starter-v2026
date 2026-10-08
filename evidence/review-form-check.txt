@@ -1,0 +1,3 @@
+JavaScript syntax passes node --check.
+Browser rendering and click testing could not be completed because Chromium is not installed and its download failed.
+No synthetic UI state or labels were saved to the project.

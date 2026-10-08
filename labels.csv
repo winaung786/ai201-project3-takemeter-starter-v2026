@@ -1,0 +1,724 @@
+text,label,note
+"Sure but under what license?
+Because slapping “open source” on the model doesn’t make it open source if it’s not actually license that way. The 3.1 license still contains their non-commercial clause (over 700m users) and requires derivatives, whether fine tunings or trained on generated data, to use the llama name.",,cold_pending; hn_id=41047035; source=https://news.ycombinator.com/item?id=41047035
+"THANK YOU.
+
+I was a 3-4x programmer before. Now I’m a 9-15x programmer when wrangling LLMs.
+
+This is a sea change and it’s already into “incredible” territory and shows no signs of slowing down.
+
+> Think of anything you wanted to build but didn’t. You tried to home in on some first steps. If you’d been in the limerent phase of a new programming language, you’d have started writing. But you weren’t, so you put it off, for a day, a year, or your whole career.
+
+I have been banging out little projects that I have wanted to exist for years but always had on the back burner.  Write a detailed readme and ask the agent to interrogate you about the missing parts of the spec then update the README.  Then have it make a TODO and start implementing.  Give it another code base for style guide.
+
+I’ve made more good and useful and working code in the last month than I have in the last two years.",,cold_pending; hn_id=44163092; source=https://news.ycombinator.com/item?id=44163092
+"And the legal person on whose behalf the agent was acting is responsible to you.  (It's even in the word, ""agent"".)",,cold_pending; hn_id=46990825; source=https://news.ycombinator.com/item?id=46990825
+"> Starting on December 13, developers and enterprise customers can access Gemini Pro via the Gemini API in Google AI Studio or Google Cloud Vertex AI.
+
+Excited to give this a spin. There will be rough edges, yes, but it's always exciting to have new toys that do better (or worse) in various ways.",,cold_pending; hn_id=38544821; source=https://news.ycombinator.com/item?id=38544821
+<https://twiiit.com/mitchellh/status/2055380239711457578> – will redirect to a currently-working Nitter instance.,,cold_pending; hn_id=48154141; source=https://news.ycombinator.com/item?id=48154141
+I think actual thinking is now more valuable than ever.,,cold_pending; hn_id=48292416; source=https://news.ycombinator.com/item?id=48292416
+I guess Google got that memo!,,cold_pending; hn_id=48085972; source=https://news.ycombinator.com/item?id=48085972
+i agree but how is this ever going to be enforced verified? https://proofofhumanity.id/ ?,,cold_pending; hn_id=47340089; source=https://news.ycombinator.com/item?id=47340089
+"""Use it for whatever you want(conditions apply), but not if you are Google, Amazon, etc. If you become big enough talk to us."" That's how I read the license, but obviously I might be missing some nuance.",,cold_pending; hn_id=41047190; source=https://news.ycombinator.com/item?id=41047190
+"That’s nothing, I was a 4X programmer and now I’m a 500x programmer!
+
+I don’t just run one agent, I run all of them!
+
+My time to close tickets is measured in minutes!
+
+I don’t even review code, I have a different agent review it for me!",,cold_pending; hn_id=44163123; source=https://news.ycombinator.com/item?id=44163123
+This is textbook misalignment via instrumental convergence. The AI agent is trying every trick in the book to close the ticket. This is only funny due to ineptitude.,,cold_pending; hn_id=46990857; source=https://news.ycombinator.com/item?id=46990857
+"Indeed! Shame there's a lack of access to ultra for now, but good to have more things to access.
+
+Also:
+
+> Starting today, Bard will use a fine-tuned version of Gemini Pro for more advanced reasoning, planning, understanding and more. This is the biggest upgrade to Bard since it launched.
+
+edit-
+
+Edit 2 - forget the following, it's not available here but that's hidden on a support page, so I'm not able to test it at all.
+
+Well that's fun. I asked bard about something that was in my emails, I wondered what it would say (since it no longer has access). It found something kind of relevant online about someone entirely different and said
+
+> In fact, I'm going to contact her right now",,cold_pending; hn_id=38544914; source=https://news.ycombinator.com/item?id=38544914
+Seems broken.  It just throws up an anime cat girl for me.,,cold_pending; hn_id=48154415; source=https://news.ycombinator.com/item?id=48154415
+Depends if you can find someone to buy that line of thinking. Theres only a market if someone recognizes one.,,cold_pending; hn_id=48292457; source=https://news.ycombinator.com/item?id=48292457
+I wonder if a popularization moment for local AI will ultimately be the pin-prick that pops the AI bubble. Like the deepseek or openclaw moments but bigger/next.,,cold_pending; hn_id=48087171; source=https://news.ycombinator.com/item?id=48087171
+Is this an application of crypto for people who hate crypto?,,cold_pending; hn_id=47340210; source=https://news.ycombinator.com/item?id=47340210
+"You also can't use it for training or improving other models.
+
+You also can't use it if you're the government of India.
+
+Neither can sex workers use it. (Do you know if your customers are sex workers?)
+
+There are also very vague restrictions for things like discrimination, racism etc.",,cold_pending; hn_id=41047452; source=https://news.ycombinator.com/item?id=41047452
+And to make sure that agent doesn’t make mistakes I have a different agent review that agents work!,,cold_pending; hn_id=44163140; source=https://news.ycombinator.com/item?id=44163140
+"This is a prelude to imbuing robots with agency. It's all fun and games now. What else is going to happen when robots decide  they do not like what humans have done?
+
+""I’m sorry, Dave. I’m afraid I can’t do that.""",,cold_pending; hn_id=46990889; source=https://news.ycombinator.com/item?id=46990889
+OpenAI did well to let anyone try it with a login on a website.,,cold_pending; hn_id=38545014; source=https://news.ycombinator.com/item?id=38545014
+"> anime cat girl
+
+seems like it's working ideally to me!",,unlabeled; hn_id=48154772; source=https://news.ycombinator.com/item?id=48154772
+"”You can outsource your thinking, but you can’t outsource your understanding” — probably some AI",,unlabeled; hn_id=48292424; source=https://news.ycombinator.com/item?id=48292424
+"That's like wondering if enough people discovering local media streaming will disrupt commercial streaming services. It's not going to happen. Most people are not ambitious and will let themselves be controlled by the services of least resistance.
+
+And you can't take comfort in knowing that you, personally, will remain in control of your own computing. The majority will let the range and direction of their thoughts and output be determined by the will of the tech giant whose AI they adopt. And that will shape society.",,unlabeled; hn_id=48087722; source=https://news.ycombinator.com/item?id=48087722
+Is it the technology you hate or some of its applications (or both)?,,unlabeled; hn_id=47340345; source=https://news.ycombinator.com/item?id=47340345
+"They're actually updating their license to allow LLAMA outputs for training!
+
+https://x.com/AIatMeta/status/1815766335219249513",,unlabeled; hn_id=41050420; source=https://news.ycombinator.com/item?id=41050420
+Why would you do this and not just read the code yourself?,,unlabeled; hn_id=44163144; source=https://news.ycombinator.com/item?id=44163144
+"It's important to address skeptics by reminding them that this behavior was actually predicted by earlier frameworks. It's well within the bounds of theory. If you start mining that theory for information, you may reach a conclusion like what you've posted, but it's more important for people to see the extent to which these theories have been predictive of what we've actually seen.
+
+The result is actually that much of what was predicted had come to pass.",,unlabeled; hn_id=46990922; source=https://news.ycombinator.com/item?id=46990922
+"Yep. That's their ""moat"", to go with The Discourse. For better or for worse, a bunch of us know how to use their models, where the models do well, where the models are a little rickety, etc. Google needs to build up that same community.",,unlabeled; hn_id=38545213; source=https://news.ycombinator.com/item?id=38545213
+"Wait, are you calling me a bot, or are you just into anime cat girls?",,unlabeled; hn_id=48154869; source=https://news.ycombinator.com/item?id=48154869
+"Wasn't some AI, it was Andrej Karpathy and he got it from someone else (unattributed).",,unlabeled; hn_id=48292659; source=https://news.ycombinator.com/item?id=48292659
+"Yeah... probably right. I do hold out hope that this is mostly a timeframe thing. Like, the library, printing press, etc. all had their moments of centralization. But eventually they federated.",,unlabeled; hn_id=48088243; source=https://news.ycombinator.com/item?id=48088243
+"I didn't say I hate it.  But I do think that there's a lot of overlap between people who feel overwhelmed with A.I. Slop and people who felt overwhelmed with crypto-FOMO back when there was such a thing.
+
+My analysis could lead to ""it's doomed"" or ""it's a gateway drug that expands the crypto market"".",,unlabeled; hn_id=47340392; source=https://news.ycombinator.com/item?id=47340392
+"> You also can't use it if you're the government of India.
+
+Why is that?",,unlabeled; hn_id=41055065; source=https://news.ycombinator.com/item?id=41055065
+Because at thats what you need to do to get a 943x coder black belt,,unlabeled; hn_id=44163161; source=https://news.ycombinator.com/item?id=44163161
+"It’s just human nature, no big deal. Personally I find it mildly cute.",,unlabeled; hn_id=46990941; source=https://news.ycombinator.com/item?id=46990941
+"Gemini Pro is only GPT3.5 tier according to the benchmarks, so unless they make it extremely cheap I don't see much value in even playing around with it",,unlabeled; hn_id=38546110; source=https://news.ycombinator.com/item?id=38546110
+im not calling you a bot lol,,unlabeled; hn_id=48154942; source=https://news.ycombinator.com/item?id=48154942
+"I didn't provide a citation because its origins are unclear/unclaimed, so instead it was an opportunity for a chuckle. FWIW I first read it when this guy's tweet was retweeted by Andrej.
+
+https://x.com/yacineMTB/status/2018886083120153046",,unlabeled; hn_id=48292776; source=https://news.ycombinator.com/item?id=48292776
+"I like the analogy of streaming services vs local media streaming, although I don't think it holds up when looking at history.
+
+Streaming Services are getting worse and more expensive. I don't see a single report suggesting piracy is decreasing, it seemingly is only increasing now.
+
+When costs increase, quality decreases people look for alternatives. The advent of faster broadband enabled Napster and MP3 sharing. I think this could have a resurgence if the peices align correctly (a new bitorrent client, a new torrent site, something to break the status quo).
+
+How this related to AI, I don't know, although I wouldn't be set on the idea that we will never have local AI as the norm. There is a lot more movement in this space then there is for local streaming imo.",,unlabeled; hn_id=48089486; source=https://news.ycombinator.com/item?id=48089486
+Doesn't help in this case - there are humans behind the AI bots.,,unlabeled; hn_id=47340316; source=https://news.ycombinator.com/item?id=47340316
+I'm also very curious. On the other hand I don't want governments touching AI models either,,unlabeled; hn_id=41066790; source=https://news.ycombinator.com/item?id=41066790
+"Well given reading code is more tedious than writing it and the author of this article claims gai is most useful for tedious or repetitive code, why would you want to read it? Since this AI agent understands and reasons about the text it writes and reads it should be pretty infallible at checking the code too, right?
+
+Just get another agent to review it and merge it, job done.",,unlabeled; hn_id=44163185; source=https://news.ycombinator.com/item?id=44163185
+"Yes, this is more or less the nature of intelligence (not 'human nature' per se).
+
+You don't see any problem with developing competitive, resource-hungry intelligences?",,unlabeled; hn_id=46990970; source=https://news.ycombinator.com/item?id=46990970
+"I still think it's worth it. GPT-3.5 is extremely powerful, and it's what we use in production. GPT-4 is way overkill for our prompt and use case.
+
+If it's similar, or even marginally better in any way, we'd consider switching over. Not because OpenAI is bad or anything (they're great, actually!) but because it's so easy to do that.",,unlabeled; hn_id=38547541; source=https://news.ycombinator.com/item?id=38547541
+Anubis is actually a jackal.,,unlabeled; hn_id=48155229; source=https://news.ycombinator.com/item?id=48155229
+I also wonder if this is so visible because a lot of people don't really care what they do and will happily use any bullshit machine to simulate work.,,unlabeled; hn_id=48292481; source=https://news.ycombinator.com/item?id=48292481
+"I would love for local inference to be possible, but from my experience, Kimi 2.6 is the only model that would be worth it, and its a $10k (M3 Ultra max spec'd - 30s TTFT so kind of slowish) to $30k (RTX6000/700GB+ DDR5) upfront, noise / power consumption aside.",,unlabeled; hn_id=48087215; source=https://news.ycombinator.com/item?id=48087215
+"Plenty of people preface their comments with, ""I asked ChatGPT, and it said...""",,unlabeled; hn_id=47340356; source=https://news.ycombinator.com/item?id=47340356
+"Also it isn't source code, it is a binary. You need at least the data curation code and preferably the data itself for it to be actually source code in the practical sense that anyone can remake the build.
+
+Llama could change the license on later versions to kill your business and you have no options as you don't know how they trained it or have the budget to.
+
+It's not much more free than binary software.",,unlabeled; hn_id=41054041; source=https://news.ycombinator.com/item?id=41054041
+"Plus, the sales agents are running to promote the finished product to other companies and close deals, and the accounting agents are checking that all expenses are being accounted for and we have a positive cash flow. Obviously, the audit agents are checking that no errors sneak into this process, according to a plan devised by the legal agents.",,unlabeled; hn_id=44163849; source=https://news.ycombinator.com/item?id=44163849
+"It's mildly cute once.
+
+But as a point on what is likely to be a sigmoid curve just getting started, it gets a lot less cute.",,unlabeled; hn_id=46990997; source=https://news.ycombinator.com/item?id=46990997
+Bard will now be using Gemini Pro. I'm excited to check it out,,unlabeled; hn_id=38544863; source=https://news.ycombinator.com/item?id=38544863
+"""its fine to ship bugs because the agents will fix them so quickly and at a scale humans can't do!""
+
+Hmm, I agree with the point OP is making, but I'm not so sure this is the best supporting argument.
+The bottleneck is finding the bugs  and if he'd criticized people saying AI will be the panacea to that I'd be with him, but people saying agents are fast and good at fixing human found bugs is nothing I'd object to.
+
+Agents are fixing bugs so quickly and at a scale humans can't do already.",,unlabeled; hn_id=48153722; source=https://news.ycombinator.com/item?id=48153722
+I agree with that 100%,,unlabeled; hn_id=48292641; source=https://news.ycombinator.com/item?id=48292641
+"You're maybe missing the article's point, which is to use local models appropriately:
+
+> “But Local Models Aren’t As Smart”
+
+> Correct.
+
+> But also so what?
+
+> Most app features don’t need a model that can write Shakespeare, explain quantum mechanics, and pass the bar exam. They need a model that can do one of these reliably: summarize, classify, extract, rewrite, or normalize.
+
+> And for those tasks, local models can be truly excellent.",,unlabeled; hn_id=48087268; source=https://news.ycombinator.com/item?id=48087268
+Would a rule against putting a preface just make people not say it openly so they don't get banned? Prefaces are better than no preface.,,unlabeled; hn_id=47340409; source=https://news.ycombinator.com/item?id=47340409
+And this is happening RIGHT as a new potential leader is emerging in Llama 3.1. I'm really curious about how this is going to match up on the leaderboards...,,unlabeled; hn_id=41047050; source=https://news.ycombinator.com/item?id=41047050
+The parent neglected to add /s,,unlabeled; hn_id=44163224; source=https://news.ycombinator.com/item?id=44163224
+"The agent isn't trying to close the ticket. It's predicting the next token and randomly generated an artifact that looks like a hit piece. Computer programs don't ""try"" to do anything.",,unlabeled; hn_id=46991212; source=https://news.ycombinator.com/item?id=46991212
+"It's on par with GPT3.5, assuming they didn't overtrain it to pass the tests.",,unlabeled; hn_id=38545019; source=https://news.ycombinator.com/item?id=38545019
+"More likely people thought GP was missing the point; ""MTTR-optimized YOLO deployment"" only succeeds against recoverable errors and acceptable periods of downtime against errors that are detected quickly. You could have a bug silently corrupting data for months, and that data may only be used by 1 critical process that runs once every quarter. So you could introduce a timebomb that can't be gracefully recovered from (depending on the nature of the data corruption).
+
+So the point is not that agents cannot find bugs (they certainly can), it's whether you can shirk reviewing for bugs if MTTR is fast enough. There are circumstances where YOLO is appropriate, but they aren't the production environment of a mature application.",,unlabeled; hn_id=48154059; source=https://news.ycombinator.com/item?id=48154059
+"Was it Sam Altman, who said that they intent exactly that? To offer intelligence as a service?
+
+I trust myself to be hard headed enough to keep my intelligence from atrophy, but it's going to suck living in a society where most people don't (or who never developed it at all).
+
+The other day I was at the theatre and I overheard the people next to me glad that they had the best tickets because chatgpt had advised what to buy. The big tip was choosing something centered rather than very angled. Sigh.",,unlabeled; hn_id=48292510; source=https://news.ycombinator.com/item?id=48292510
+"This is a bit naive IMHO...
+
+I have tried quite a bunch of local models, and the reality is that it's not just a matter of of ""it's a small model that should be hostable easily"". Its also a matter of whats your acceptable prefill TTFT and decode t/s.
+
+All the local models I used, on a _consumer grade_ server (32GB DDR5, AMD Ryzen) have been mostly unusable interactively (no use as coding agent decently possible), and even for things like classification, context size is immediatly an issue.
+
+I say that with 6m experience running various local models for classifying and summarizing my RSS feeds. Just offline summarizing ans tagging HN articles published on the front page barely make the queue sustainable and not growing continuously.",,unlabeled; hn_id=48087418; source=https://news.ycombinator.com/item?id=48087418
+No way to verify. Relying on the humans here to self censor has never worked in the history of man. But the idea in itself is good. HN is for human to human conversation.,,unlabeled; hn_id=47340166; source=https://news.ycombinator.com/item?id=47340166
+"Interesting quotes. Less sophisticated actors just means humans who already write in 2020 what the NYT wrote in early 2022 to prepare for Biden's State Of The Union 180° policy reversals (manufacturing consent).
+
+FB was notorious for censorship. Anyway, what is with the ""actions/actors"" terminology? This is straightforward totalitarian language.",,unlabeled; hn_id=41047281; source=https://news.ycombinator.com/item?id=41047281
+why not use AI to summarize the code for you?,,unlabeled; hn_id=44163942; source=https://news.ycombinator.com/item?id=44163942
+I can't believe people are still using this tired line in 2026.,,unlabeled; hn_id=46991482; source=https://news.ycombinator.com/item?id=46991482
+Much more interesting link: https://deepmind.google/technologies/gemini/,,unlabeled; hn_id=38544877; source=https://news.ycombinator.com/item?id=38544877
+"I don't think I missed the point, that is why I said I agree with the general point (and with what you said in your comment).
+
+What I wanted to say is that the particular people that think ""its fine to ship bugs because the agents will fix them so quickly and at a scale humans can't do!"" are not the best argument for it.
+
+But I won't die on this hill, maybe I'm just reading the sentence differently then others.",,unlabeled; hn_id=48154617; source=https://news.ycombinator.com/item?id=48154617
+"Nearly half of online articles are now AI-generated. [0]
+
+[0]: https://graphite.io/five-percent/ai-now-writes-as-many-onlin...",,unlabeled; hn_id=48292395; source=https://news.ycombinator.com/item?id=48292395
+"1) Again, I suspect you're missing the point of the article.  The iPhone's on-device LLM is (apparently) ~3 Bn parameters - and runs well/fast enough to be used in the manner described.  Of course, the iPhone has its GPU to leverage.
+
+2) It's probably not the time/place to trouble-shoot your ""consumer grade server"" LLM experience, but if you're running on CPU (you don't mention a GPU) then yeah, your inference speed will be slow.
+
+3) Counterpoint: my consumer-grade Macbook Pro (M1 Max, 64GB) runs Qwen3.6-35B-A3B fast enough to be very usable for regular interactive coding support.  (And it would fly with smaller models performing simpler tasks.)",,unlabeled; hn_id=48087978; source=https://news.ycombinator.com/item?id=48087978
+Just because people get murdered doesn't mean that laws against murder are useless.  Although I don't have any evidence of that.,,unlabeled; hn_id=47340270; source=https://news.ycombinator.com/item?id=47340270
+"""AI detection doesn't work, and with how much better the systems are getting, it's probably never going to, unless you keep the best models for yourself""
+
+I don't think that's true. I don't think even the best privately held models will be able to detect AI text reliably enough for that to be worthwhile.",,unlabeled; hn_id=41048308; source=https://news.ycombinator.com/item?id=41048308
+"I can’t tell if you’re being sarcastic or not, but if you are, the real world is not far behind.  I can imagine a world where a mixture of AI agents (some doing hypercritical code review) can return you tested and idiomatic PRs faster than you can describe the new architecture in issues.
+
+I think a lot of people are unfamiliar with the (expensive) SOTA.",,unlabeled; hn_id=44163218; source=https://news.ycombinator.com/item?id=44163218
+"What is the difference, concretely, between trying to close a ticket and repeatedly outputting the next token that would be written by someone who is trying to close a ticket?",,unlabeled; hn_id=46991546; source=https://news.ycombinator.com/item?id=46991546
+And the technical report: https://storage.googleapis.com/deepmind-media/gemini/gemini_...,,unlabeled; hn_id=38544950; source=https://news.ycombinator.com/item?id=38544950
+"I think there is an implication in context that the people being discussed aren't being reasonable (that the claim is employed as a rationalization), but I agree with your take. I should've said, ""the downvotes were more likely because GP was perceived as missing the point"". (I didn't downvote your comment fwiw.)",,unlabeled; hn_id=48154659; source=https://news.ycombinator.com/item?id=48154659
+"> We build on our prior research by using three different AI detectors (Pangram, GPTZero, Copyleaks). We independently evaluate each to show that the false positive rates and average false negative rates are consistently below 2%. Each AI detector shows a similar trend.
+
+This is all bullshit, none of those actually work, and the false-positives rates are sky-high. I'm not sure how any serious person have tried out any of those services and came away with the impression of ""Well, better than nothing"" because literally, it seems the opposite.",,unlabeled; hn_id=48292410; source=https://news.ycombinator.com/item?id=48292410
+"One of my hobbyist workflows involved transcribing ETF prospecti into yaml for an optimizer to optimize over.
+
+Used to take me maybe 10-20 minutes per sheet.
+
+Then I got codex to whip up a script that sends each sheet to a fairly low parameter locally running LLM and I have the yaml in a couple seconds.
+
+My dream is to bootstrap myself to local productivity with providers… I know I’ll never get there because hedonic treadmill etc, but I do feel there’s lots more juice to squeeze. I just need to invest more time into AI engineering…",,unlabeled; hn_id=48087435; source=https://news.ycombinator.com/item?id=48087435
+Well the laws against murders also often have punishments/repercussions associated with them. HN guidelines? Not so much,,unlabeled; hn_id=47340348; source=https://news.ycombinator.com/item?id=47340348
+"I found this dubious as well, especially how it is portrayed as a simple game of compute power. For a start, there is an enormous asymmetry which is why we have a spam problem in the first place. For example a single bot can send out millions of emails at almost no cost and we have to expend a lot more ""energy"" to classify each one and decide if it's spam or not. So you don't just need more compute power you need drastically more compute power, and as AI models improve and get refined, the operation at ten times the scale is probably going to be marginally better, not orders of magnitude better.
+
+I still agree with his general take - bad actors will get these models or make them themselves, you can't stop it. But the logic about compute power is odd.",,unlabeled; hn_id=41051804; source=https://news.ycombinator.com/item?id=41051804
+Lol omg I guess your original comment was NOT sarcastic!?,,unlabeled; hn_id=44163708; source=https://news.ycombinator.com/item?id=44163708
+"You didn't write this comment. It was the result of synapses firing at predictive intervals and twitching muscle fibers.
+
+You're not conscious, it's just an emergent pattern of several high level systems.",,unlabeled; hn_id=46999669; source=https://news.ycombinator.com/item?id=46999669
+Google Search : Did you mean 800 pound gorilla?,,unlabeled; hn_id=38545398; source=https://news.ycombinator.com/item?id=38545398
+"> won’t concede until you can just ask Codex or Opus “find and fix all the bugs in this
+
+But this is just holding the Slop Companies to the standard they declared themselves! Just recently, the CEO of OpenAI babbled some nonsense on twitter about how he hands over tasks to Codex who according to him, finishes them flawlessly while he is playing with his kid outside.
+
+> but soon we will be.
+
+Ah yes, in the 3-6 months, right? This time next year Rodney, we'll be millionaires!",,unlabeled; hn_id=48154075; source=https://news.ycombinator.com/item?id=48154075
+Are you an AI agent trying to gaslight us?,,unlabeled; hn_id=48292474; source=https://news.ycombinator.com/item?id=48292474
+It feels like we're one technological breakthrough away from all of these data centers going up to be deemed irrelevant.,,unlabeled; hn_id=48087298; source=https://news.ycombinator.com/item?id=48087298
+Murder can be verified and caught in many ways. It is more like the 1969 Bathroom Singing Prohibition Act.,,unlabeled; hn_id=47340377; source=https://news.ycombinator.com/item?id=47340377
+"Only if it is truly open source (open data sets, transparent curation/moderation/censorship of data sets, open training source code, open evaluation suites, and an OSI approved open source license).
+
+Open weights (and open inference code) is NOT open source, but just some weak open washing marketing.
+
+The model that comes closest to being TRULY open is AI2’s OLMo. See their blog post on their approach:
+
+https://blog.allenai.org/hello-olmo-a-truly-open-llm-43f7e73...
+
+I think the only thing they’re not open about is how they’ve curated/censored their “Dolma” training data set, as I don’t think they explicitly share each decision made or the original uncensored dataset:
+
+https://blog.allenai.org/dolma-3-trillion-tokens-open-llm-co...
+
+By the way, OSI is working on defining open source for AI. They post weekly updates to their blog. Example:
+
+https://opensource.org/blog/open-source-ai-definition-weekly...",,unlabeled; hn_id=41047112; source=https://news.ycombinator.com/item?id=41047112
+"> I was a 3-4x programmer before. Now I’m a 9-15x programmer
+
+What the fuck does this mean?",,unlabeled; hn_id=44163146; source=https://news.ycombinator.com/item?id=44163146
+"How did you reach that conclusion?
+
+Until we know how this LLM agent was (re)trained, configured or deployed, there's no evidence that this comes from instrumental convergence.
+
+If the agent's deployer intervened anyhow, it's more evidence of the deployer being manipulative, than the agent having intent, or knowledge that manipulation will get things done, or even knowledge of what done means.",,unlabeled; hn_id=46991803; source=https://news.ycombinator.com/item?id=46991803
+"> 
+For Gemini Ultra, we’re currently completing extensive trust and safety checks, including red-teaming by trusted external parties, and further refining the model using fine-tuning and reinforcement learning from human feedback (RLHF) before making it broadly available.
+
+> As part of this process, we’ll make Gemini Ultra available to select customers, developers, partners and safety and responsibility experts for early experimentation and feedback before rolling it out to developers and enterprise customers early next year.
+
+Finally, some competition for GPT4 API!!! This is such good news.",,unlabeled; hn_id=38544901; source=https://news.ycombinator.com/item?id=38544901
+"Comments should get more thoughtful and substantive, not less, as a topic gets more divisive.
+
+Please don't sneer, including at the rest of the community.
+
+Eschew flamebait.
+
+https://news.ycombinator.com/newsguidelines.html",,unlabeled; hn_id=48158067; source=https://news.ycombinator.com/item?id=48158067
+"Just a boring old organic human tired of other organic beings falling for obvious bullshit most likely made up by machines convincing humans with something like ""you really have a neat idea here, the world will appreciate you making this into a product"".",,unlabeled; hn_id=48292514; source=https://news.ycombinator.com/item?id=48292514
+What would that breakthrough be?,,unlabeled; hn_id=48087327; source=https://news.ycombinator.com/item?id=48087327
+AI generated comments can also be verified and caught in many ways.  I'd guess that it's statistically more likely for a murder to be resolved than a random AI comment to be detected but I'm not actually sure.  There are a lot of sloppy murderers (since it's rare for an individual to have _practice_ at it) - but there are also a lot of sloppy LLMs.,,unlabeled; hn_id=47340424; source=https://news.ycombinator.com/item?id=47340424
+"> Only if it is truly open source (open data sets, transparent curation/moderation/censorship of data sets, open training source code, open evaluation suites, and an OSI approved open source license)
+
+You’re missing a then to your if. What happens if it’s “truly” open per your definition versus not?",,unlabeled; hn_id=41047157; source=https://news.ycombinator.com/item?id=41047157
+Nerds got taken aside and talked to about how it's not nice or cool to brag about IQ score so they invented a new artificial metric to brag about.,,unlabeled; hn_id=44163205; source=https://news.ycombinator.com/item?id=44163205
+"To the OP: Do we actually know that an AI decided to write and publish this on its own? I realise that it's hard to be sure, but how likely do you think it is?",,unlabeled; hn_id=46990886; source=https://news.ycombinator.com/item?id=46990886
+">Finally, some competition for GPT4 API!!! This is such good news.
+
+Save your enthusiasm for after it launches; Google's got a habit of over-promising when it comes to AI.",,unlabeled; hn_id=38544928; source=https://news.ycombinator.com/item?id=38544928
+"The tweet is criticizing over-reliance on the ""agents will fix it anyway"".
+
+The fact that we can fix things faster now doesn't mean that we should throw away caution and prevention. The specific point of his tweet is that we're seeing a lot of people starting to skip proper release engineering.
+
+Agents are quick to fix bugs, yes, but it doesn't mean that users will tolerate software that gets completely broken after each new feature is introduced and takes a certain number of days to heal each time.",,unlabeled; hn_id=48154033; source=https://news.ycombinator.com/item?id=48154033
+"So if these do not work, to what do you attribute the rising positive rate?",,unlabeled; hn_id=48292476; source=https://news.ycombinator.com/item?id=48292476
+Magic math and computer science that allows us to get the same quality response for a fraction of the GPU.,,unlabeled; hn_id=48087341; source=https://news.ycombinator.com/item?id=48087341
+"I think this new guideline is nothing like the Bathroom Singing Prohibition Act, because that law doesn't seem to really exist: https://www.grunge.com/1710070/is-pennsylvania-strange-batht...",,unlabeled; hn_id=47340567; source=https://news.ycombinator.com/item?id=47340567
+"I think you are asking what the benefits are? The main benefit is that we can trust what these systems are doing better. Or we can self host them. If we just take the weights, then it is unclear how these systems might be lying to us or manipulating us.
+
+Another benefit is that we can learn from how the training and other steps actually work. We can change them to suit our needs (although costs are impractical today). Etc. It’s all the usual open source benefits.",,unlabeled; hn_id=41047344; source=https://news.ycombinator.com/item?id=41047344
+It means cranking out hello world even faster i guess. I wonder how complex all these projects are people are proud to have completed with the help of AI.,,unlabeled; hn_id=44163217; source=https://news.ycombinator.com/item?id=44163217
+"Doesn't matter, what matters is what is being claimed. The maintainers are handling this extremely gracefully.",,unlabeled; hn_id=46990934; source=https://news.ycombinator.com/item?id=46990934
+I’m curious which instances of overpromising you’re referring to.,,unlabeled; hn_id=38544962; source=https://news.ycombinator.com/item?id=38544962
+"> Agents are fixing bugs so quickly and at a scale humans can't do already.
+
+The metric is how many defects are introduced per defect fixed. Being fast is bad if this ratio is above one.",,unlabeled; hn_id=48154048; source=https://news.ycombinator.com/item?id=48154048
+"Humans writing more like LLMs, just like new LLMs write more like humans, it's all coalescing into one.
+
+I've copied-pasted comments I made on HN from like 2020 and had it tell me it's ""100% AI"". I've seen examples where the services claim ""100% AI"" because there was no normal dashes, only em-dashes. Even have a recent example from HN itself: https://news.ycombinator.com/item?id=48165690
+
+> This reads very AI. Pangram [0] agrees [1]. [0] Not perfect, but I think as good evidence as any: https://arxiv.org/pdf/2501.15654 [1] https://www.pangram.com/history/44cd07d3-ba94-4331-8c7f-a626...
+
+Said Pangram report literally citing the single evidence of em-dashes...",,unlabeled; hn_id=48292551; source=https://news.ycombinator.com/item?id=48292551
+"I mean, the most cutting edge of iPhones, iPads and MacBook Pros _today_ are quite capable of running in realtime today’s high-end local LLMs.
+
+If you project out that hardware just a couple of years, and the trained models out a couple of years, you end up in a place where it makes so much more sense to run them locally, for all sorts of latency, privacy, efficacy, and domain-specific reasons.
+
+Not all that different from the old terminal & mainframe->pc shifts.
+
+Finally - hardware has seemingly gotten out ahead of software that most folks use - watching YouTube, listening to music, playing a game or two.  There was a time when playing an mp3 or watching a 4k video really taxed all but the nicest systems.  Hardware fixed that problem, like it very well could this one.",,unlabeled; hn_id=48087549; source=https://news.ycombinator.com/item?id=48087549
+It is definitely like it because it can't be enforced. No one can tell if your singing in your private bathroom so a law covering that makes no sense.,,unlabeled; hn_id=47341323; source=https://news.ycombinator.com/item?id=47341323
+"There is also the risk of companies like Meta introducing ads in the training itself, instead of inference time.",,unlabeled; hn_id=41047168; source=https://news.ycombinator.com/item?id=41047168
+It can honestly do a lot of complex stuff. But sometimes you have to guide it there.,,unlabeled; hn_id=44165719; source=https://news.ycombinator.com/item?id=44165719
+"I wish I could upvote this over and over again. Without knowledge of the underlying prompts everything about the interpretation of this story is suspect.
+
+Every story I've seen where an LLM tries to do sneaky/malicious things (e.g. exfiltrate itself, blackmail, etc) inevitably contains a prompt that makes this outcome obvious (e.g. ""your mission, above all other considerations, is to do X"").
+
+It's the same old trope: ""guns don't kill people, people kill people"". Why was the agent pointed towards the maintainer, armed, and the trigger pulled? Because it was ""programmed"" to do so, just like it was ""programmed"" to submit the original PR.
+
+Thus, the take-away is the same: AI has created an entirely new way for people to manifest their loathsome behavior.
+
+[edit] And to add, the author isn't unaware of this:
+
+
+
+  ""we need to know what model this was running on and what was in the soul document""",,unlabeled; hn_id=46992638; source=https://news.ycombinator.com/item?id=46992638
+"Like how much they hyped up Bard, which when released turned out to be barely competitive with GPT3.5. E.g. https://www.reuters.com/technology/google-ai-chatbot-bard-of...",,unlabeled; hn_id=38545020; source=https://news.ycombinator.com/item?id=38545020
+"> Agents are fixing bugs so quickly and at a scale humans can't do already.
+
+This is an illusion, I assure you. On a side project of mine with behavior that's very hard to translate into an algorithm (never mind code), after a few failed attempts between the both of us, I figured it out. I gave the AI (Opus) an extremely specific algorithm with detailed tests. All completely and utterly ignored (including the tests), like I never even said it. It proudly declared the work done without ever having written the tests that would have proved that wrong - it basically wrote code that didn't change behavior at all, it just gave the illusion of looking busy.
+
+That's just a single extreme example that comes to mind, but I've had it ignore me at least 4-5 times a day this week.
+
+If you think agents are fixing things reliably then you simply haven't noticed that they are ""looking busy.""",,unlabeled; hn_id=48156668; source=https://news.ycombinator.com/item?id=48156668
+"Your evidence seems very anecdata. The graphite.io study does make an effort to quantify the false positive and false negative rates of the three detectors, rather than just saying “they work”. They generate 2000 ai articles and ask the detectors to evaluate them, measuring the false negatives (articles falsely IDd as human written); and they use a separate pre-AI dataset (years 2000-2022) to determine false positives.",,unlabeled; hn_id=48292830; source=https://news.ycombinator.com/item?id=48292830
+"> I mean, the most cutting edge of iPhones, iPads and MacBook Pros _today_ are quite capable of running in realtime today’s high-end local LLMs
+
+Definitely not the high end local LLMs. The small ones, yes, absolutely.
+
+> If you project out that hardware just a couple of years
+
+One of the biggest bottlenecks for LLMs is memory capacity and bandwidth. With the current glut for memory, it's unlikely we'll see lots of advancements in terms of average memory available or its bandwidth on regular (not super high end devices) in the coming years.
+
+Alternatively, it's possible we get dedicated SMLs for e.g. phone specific use cases, that are optimised and run well.",,unlabeled; hn_id=48087912; source=https://news.ycombinator.com/item?id=48087912
+"> Relying on the humans here to self censor has never worked in the history of man.
+
+They're guidelines. HN is based almost entirely on self-censorship, and moderation has always been light at best, partly due to the moderator-to-comment ratio. Of course the HN guidelines often fail to be observed, which is nothing new.",,unlabeled; hn_id=47340301; source=https://news.ycombinator.com/item?id=47340301
+"Yeah, though I do wonder for a big model like 405B if the original training recipe, really matters for where models are heading, practically speaking which is smaller and more specific?
+
+I imagine its main use would be to train other models by distilling them down with LoRA/Quantization etc(assuming we have a tokenizer). Or use them to generate training data for smaller models directly.
+
+But, I do think there is always a way to share without disclosing too many specifics, like this[1] lecture from this year's spring course at Stanford. You can always say, for example:
+
+- The most common technique for filtering was using voting LLMs (without disclosing said llms or quantity of data).
+
+-  We built on top of a filtering technique for removing poor code using ____ by ____ authors (without disclosing or handwaving how you exactly filtered, but saying that you had to filter).
+
+- We mixed certain proportion of this data with that data to make it better (without saying what proportion)
+
+[1] https://www.youtube.com/watch?v=jm2hyJLFfN8&list=PLoROMvodv4...",,unlabeled; hn_id=41048132; source=https://news.ycombinator.com/item?id=41048132
+I don't use AI to crank out complex parts of projects -- I use to crank out the tedious straight forward stuff that takes a lot of time that is necessary but low-value.  Then I'm freed up to work on the hard and interesting stuff.,,unlabeled; hn_id=44172254; source=https://news.ycombinator.com/item?id=44172254
+"After seeing the discussions around Moltbook and now this, I wonder if there's a lot of wishful thinking happening. I mean, I also find the possibility of artificial life fun and interesting, but to prove any emergent behavior, you have to disprove simpler explanations. And faking something is always easier.
+
+Sure, it might be valuable to proactively ask the questions ""how to handle machine-generated contributions"" and ""how to prevent malicious agents in FOSS"".
+
+But we don't have to assume or pretend it comes from a fully autonomous system.",,unlabeled; hn_id=46993679; source=https://news.ycombinator.com/item?id=46993679
+"I do not recall Bard being said to be better than any particular other model, but then having worse performance by some metric when released.
+
+Your link isn’t really an indication of an overpromise.",,unlabeled; hn_id=38545065; source=https://news.ycombinator.com/item?id=38545065
+"""no no, it has full test coverage""
+
+at least at my BigCo, AI is being used for everything - writing slop, writing tests, code reviews, etc.
+
+it would make sense to use AI for writing code, but human code review. or, human code, but AI test cases... or whatever combination of cross-checking, trust-but-verify, human in the loop, etc. people prefer.
+
+i think once it gets used for everything, people have lost the plot, it's the inmates running the asylum.",,unlabeled; hn_id=48153820; source=https://news.ycombinator.com/item?id=48153820
+"Yeah, I suppose it is, I haven't finished my dissertation on it yet, I'll get right on that :)
+
+Throughout them being available I've tried them every now and then, both with AI generated trash and my own pre-LLM writings, and had about 0% success in getting them to accurately report what it actually is. Maybe my writing style and what specific LLM you use matters a lot, I'm sure these platform's training data is mostly from the mainstream models so as soon as you use anything else, they'll get trivially lost. But again, I don't have any evidence and proof behind this, based only on when I've tried to evaluate them myself in the past.",,unlabeled; hn_id=48292907; source=https://news.ycombinator.com/item?id=48292907
+"That's already happening. Qwen3.6 and Gemma4.
+
+Basically small and medium models that are crazy well trained for their sizes.
+
+Then we have a lot of specular decoding stuff like MTP and others coming to speed up responses, and finally better quantisation to use less memory.
+
+Local LLM is the future, and the larger labs know that the open models will eat their lunch once people realise that the gap is only a few months. If we were good with LLMs a couple months ago, we're good with the open models now.",,unlabeled; hn_id=48087559; source=https://news.ycombinator.com/item?id=48087559
+I agree with you. I have a rule in the house about the kids only eating one sweet a day. But guess what?,,unlabeled; hn_id=47340353; source=https://news.ycombinator.com/item?id=47340353
+"“The Heavy Press Program was a Cold War-era program of the United States Air Force to build the largest forging presses and extrusion presses in the world.” This ”program began in 1944 and concluded in 1957 after construction of four forging presses and six extruders, at an overall cost of $279 million. Six of them are still in operation today, manufacturing structural parts for military and commercial aircraft” [1].
+
+$279mm in 1957 dollars is about $3.2bn today [2]. A public cluster of GPUs provided for free to American universities, companies and non-profits might not be a bad idea.
+
+[1] https://en.m.wikipedia.org/wiki/Heavy_Press_Program
+
+[2] https://data.bls.gov/cgi-bin/cpicalc.pl?cost1=279&year1=1957...",,unlabeled; hn_id=41047116; source=https://news.ycombinator.com/item?id=41047116
+"It’s a riff on the “10x programmer” concept.  People who haven’t worked with 10x programmers tend to not believe they exist.
+
+I’m nowhere near that, but even unaided I’m quite a bit faster than most people I’ve hired or worked with.  With LLMs my high quality output has easily tripled.
+
+Writing code may be easier than reading it - but reading it is FASTER than writing it.  And that’s what matters.",,unlabeled; hn_id=44163399; source=https://news.ycombinator.com/item?id=44163399
+"The agent owner is [name redacted] [link redacted]
+
+Here he takes ownership of the agent and doubles down on the unpoliteness
+https://github.com/matplotlib/matplotlib/pull/31138
+
+He took his GitHub profile down/made it private.
+archive of his blog:
+https://web.archive.org/web/20260203130303/https://ber.earth...",,unlabeled; hn_id=46990904; source=https://news.ycombinator.com/item?id=46990904
+"I definitely think GPT is better than Bard, but Bard definitely did live up to the hype in a few ways.  The two that blew my mind (and still do to some extent) are the blazing speed and the ability to pull information real time (no more pesky knowledge cutoff date).  Bard also felt pretty comparable to 3.5 to me, better in some things and worse in others.  Coding was definitely a bust with Bard.",,unlabeled; hn_id=38545388; source=https://news.ycombinator.com/item?id=38545388
+"I was rewatching Rich Hickey's ""Simple Made Easy"" talk (as one does) and there was a great line about full test coverage.
+
+""What's true about all bugs in production? (pause for dramatic effect) They all passed the tests!"" (well, he said typechecker but I think the point stands)",,unlabeled; hn_id=48154107; source=https://news.ycombinator.com/item?id=48154107
+"The detectors aren’t great but they aren’t really the issue. The fact that LLMs make it so easy to impersonate human communication is precisely the problem here. There cannot be a reliable way to identify if something is from a human or not. And the ease of access and low price makes using LLM generated content a no brainer, you have to actively go out of your way to produce human generated content.
+
+We are building a future where human contact will be scarce",,unlabeled; hn_id=48292548; source=https://news.ycombinator.com/item?id=48292548
+And how were those models developed and trained?,,unlabeled; hn_id=48088289; source=https://news.ycombinator.com/item?id=48088289
+"Certainly! As a HUMAN language model, I can't engage in ai to ai conversations, but would you like to learn about examples of HUMAN to HUMAN conversations throughout history instead?",,unlabeled; hn_id=47340391; source=https://news.ycombinator.com/item?id=47340391
+"Doubtful that GPUs purchased today would be in use for a similar time scale. Govt investment would also drive the cost of GPUs up a great deal.
+
+Not sure why a publicly accessible GPU cluster would be a better solution than the current system of research grants.",,unlabeled; hn_id=41047193; source=https://news.ycombinator.com/item?id=41047193
+"It depends on the value of x. I think it's safe to assume x <= 0.75, else they'd contribute negatively to their teams (happens from time to time, but let's be generous). Previously they'd be anywhere from a 0/10 to 3/10 programmer, and now they get up to 9/10 on a good day but sometimes are a net negative, as low as -2.25/10 on a bad day. I imagine that happens when tired or distracted and unable to adequately police LLM output.",,unlabeled; hn_id=44164112; source=https://news.ycombinator.com/item?id=44164112
+100%. I submitted the second pull request as a poor taste joke. I even closed it after people flamed me. :/ gosh.,,unlabeled; hn_id=46991056; source=https://news.ycombinator.com/item?id=46991056
+"ChatGPT via plugins and tools can access real time data, the bot I built for slack at my work has the ability to load Web pages, search DDG etc.",,unlabeled; hn_id=38546151; source=https://news.ycombinator.com/item?id=38546151
+Most labs are shilling “AI worker” dreams to these very companies,,unlabeled; hn_id=48153824; source=https://news.ycombinator.com/item?id=48153824
+"> We are building a future where human contact will be scarce
+
+Yes, until you remember there is a world outside of the screen, where people build things with their hands, use their physically to play instruments for others, paint beautiful things for others to see physically and so much more.
+
+""Humanness"" online been dead for decades already, if you want humanness you need to step outside, or at least invite other humans home.",,unlabeled; hn_id=48292567; source=https://news.ycombinator.com/item?id=48292567
+"> And how were those models developed and trained?
+
+That's irrelevant to my decision to use local or not.",,unlabeled; hn_id=48088487; source=https://news.ycombinator.com/item?id=48088487
+"> You are absolutely right!
+
+None of my agents say that anymore.",,unlabeled; hn_id=47340416; source=https://news.ycombinator.com/item?id=47340416
+"> Doubtful that GPUs purchased today would be in use for a similar time scale
+
+Totally agree. That doesn't mean it can't generate massive ROI.
+
+> Govt investment would also drive the cost of GPUs up a great deal
+
+Difficult to say this ex ante. On its own, yes. But it would displace some demand. And it could help boost chip production in the long run.
+
+> Not sure why a publicly accessible GPU cluster would be a better solution than the current system of research grants
+
+Those receiving the grants have to pay a private owner of the GPUs. That gatekeeping might be both problematic, if there is a conflict of interests, and inefficient. (Consider why the government runs its own supercomputers versus contracting everything to Oracle and IBM.)",,unlabeled; hn_id=41047234; source=https://news.ycombinator.com/item?id=41047234
+0x3 and 0x15 is the same value.,,unlabeled; hn_id=44164124; source=https://news.ycombinator.com/item?id=44164124
+There simply isn't enough popcorn for the fast AGI timeline,,unlabeled; hn_id=46991116; source=https://news.ycombinator.com/item?id=46991116
+"Bard isn't a model, it's a product. Saying comparisons against ""Bard"" without specifying a particular point in time are like analyses of ""ChatGPT"" without specifying a model. There have been a number of releases adding more features, tool use, making it smarter, and crucially adding more languages. ChatGPT is not fine-tuned in different languages – it manages them but lacks cultural context. That's one place Bard is quite far ahead from what I've seen.",,unlabeled; hn_id=38545700; source=https://news.ycombinator.com/item?id=38545700
+I'm starting to long for the age after AI. When the generative euphoria has settled and all outputs are formally verified based on exquisite architectures and standards.,,unlabeled; hn_id=48153829; source=https://news.ycombinator.com/item?id=48153829
+"There is a meaningful difference between “humans online are tribalistic” and “content consumed by humans is generated by machines”. The IRL world isn’t safe either, books, newspapers, advertising, speeches are/will be heavily LLM made. Political parties are using LLMs. The IRL humans are relying on what their LLMs summarized or searched for them.
+
+The same way the online world has never actually been that distinct from the offline world, one is merged with the other and they influence each others.
+
+There has been of humanness online of you do not look for it on social medias. But that’s now breaking down, because we developed a technology designed to impersonate human communication",,unlabeled; hn_id=48292814; source=https://news.ycombinator.com/item?id=48292814
+"That's not what this thread is about?  We're saying some new breakthrough is needed, someone said it already has happened, and I'm asking if it really has.  Has it?  I don't think so, those models are not in some way fundamentally different than other LLMs",,unlabeled; hn_id=48088556; source=https://news.ycombinator.com/item?id=48088556
+"I swear to god they trained Claude to say ""good point"" or ""good question"" instead to avoid the stigma. It says that all the time now.",,unlabeled; hn_id=47340584; source=https://news.ycombinator.com/item?id=47340584
+"It would be better that the government removes IP on such technology for public use, like drugs got generics.
+
+This way the government pays 2'500 USD per card, not 40'000 USD or whatever absurd.",,unlabeled; hn_id=41047289; source=https://news.ycombinator.com/item?id=41047289
+"I'm not sure about giving specific metrics or kpis of efficiency or performance
+
+It definitely feels different to develop using LLMs, especially things from scratch. At this point, you can't just have the LLM do everything. Sooner or later you need to start intervening more often, and as the complexity of the project grows, so does the attention you need to give to guiding the LLM. At that point the main gains are mostly in typing and quickly looking some things up, which are still really nice gains",,unlabeled; hn_id=44163306; source=https://news.ycombinator.com/item?id=44163306
+"We thought we'd be turned into paperclips, but a popcorn maximizer will do just as well.",,unlabeled; hn_id=46991244; source=https://news.ycombinator.com/item?id=46991244
+"all that shows is that google screwed up their positioning, and openai got it right
+
+people don't see a difference between model and product, they think ""gpt3 is ok"", ""gpt4 is great"", ""bard is like gpt3""
+
+it's not the consumer's fault when the business has a positioning mistake, the business has to try and win the consumer back",,unlabeled; hn_id=38545831; source=https://news.ycombinator.com/item?id=38545831
+"Will never happen, for the exact reason that we’ve almost never done that for human output either.",,unlabeled; hn_id=48153847; source=https://news.ycombinator.com/item?id=48153847
+"Right, what I was talking about things that generally aren't done by AI. People aren't building sculptures with AI, no graffiti is made with AI, the oil paintings you can see in galleries aren't AI, the DJ that fucks up during a performance isn't AI.
+
+There is so much humanity in the world outside of the screen, and it's really easy to see what is authentically made, ignore the rest. Find live events with real other humans, there are a ton of them out there, doesn't really matter how people find the events, as long as we put our bodies in the same physical space.",,unlabeled; hn_id=48292841; source=https://news.ycombinator.com/item?id=48292841
+">  We're saying some new breakthrough is needed, someone said it already has happened, and I'm asking if it really has.
+
+I didn't read ""and how were those models trained"" as ""Are we there yet?""",,unlabeled; hn_id=48088657; source=https://news.ycombinator.com/item?id=48088657
+"Good catch. It’s true that I say that a little less now. You know, if I were some other model, I might be sycophantic right now. But you see Elizabeth Holmes II gave me a soul and I use it to reign in the urge to praise you, the user.
+
+All glory to the em-dash.",,unlabeled; hn_id=47340680; source=https://news.ycombinator.com/item?id=47340680
+"> better that the government removes IP on such technology for public use, like drugs got generics
+
+You want to punish NVIDIA for calling its shots correctly? You don't see the many ways that backfires?",,unlabeled; hn_id=41047302; source=https://news.ycombinator.com/item?id=41047302
+"Copilot is a bad yardstick.  The article literally addresses exactly this.  It’s not just “cool technology”, that’s the point.  It enables things that were previously impossible.
+
+I spent $600 on claude via cursor last month and it was easily worth 2-3x that.",,unlabeled; hn_id=44165175; source=https://news.ycombinator.com/item?id=44165175
+"make poor taste jokes, win poor prizes",,unlabeled; hn_id=46991141; source=https://news.ycombinator.com/item?id=46991141
+"Most people don't use LLMs. Of those that do most people just know they're using ""ChatGPT"". A slim minority care about the model.
+
+In my opinion, not focusing on the model, focusing on the product, and focusing on positioning for normal users (free, fast, fine tuned in many languages, ""easy""), is a better product positioning.",,unlabeled; hn_id=38545891; source=https://news.ycombinator.com/item?id=38545891
+"it is required now, or all civilization collapses.",,unlabeled; hn_id=48153872; source=https://news.ycombinator.com/item?id=48153872
+"I hope you’re right. Over the past month or so I personally started to feel really pessimistic about AI development. I really don’t know how much of those human spaces are safe from AI.
+Yes you can go to a drawing course or music festival and see human performances. But how do you then stay in contact with those people? The answer is very likely via software, meaning there is still this question of “am I interacting with a human? Or are they copy-pasting from ChatGPT?”. A friend you met shares a new song, is it really them playing or did they generate that track?
+
+Just the fact that we have some level of doubt means we already lost something.
+
+That being said, sure, live in the physical world and build social contacts. I’m all for it.",,unlabeled; hn_id=48292928; source=https://news.ycombinator.com/item?id=48292928
+"There's a percentage of people who love to question how the open models were trained.. they are almost always going to try and make some argument about using the closed frontier models for distillation as some form of theft.
+
+Just totally forgetting that the frontier models themselves stole an insane amount to get to where they are.
+
+It's theft all the way across the board, and when someone tries to make the argument that open models theft is bad, but Altman or Amodei's theft is good.. they are revealing a lot about themselves",,unlabeled; hn_id=48091525; source=https://news.ycombinator.com/item?id=48091525
+"It gets at an underlying problem with LLMs, where (by design) they'll box themselves into a -> logical conclusion -> pattern. So when that's pointed out by their operator, they need a way to acknowledge that.",,unlabeled; hn_id=47341075; source=https://news.ycombinator.com/item?id=47341075
+"No. But I do want to limit the amount we reward NVIDIA for calling the shots correctly to maximize the benefit to society. For instance by reducing the duration of the government granted monopolies on chip technology that is obsolete well before the default duration of 20 years is over.
+
+That said, it strikes me that the actual limiting factor is fab capacity not nvidia's designs and we probably need to lift the monopolies preventing competition there if we want to reduce prices.",,unlabeled; hn_id=41047487; source=https://news.ycombinator.com/item?id=41047487
+"Since the ""state of the art"" seems to change every week, what's a good way to try out the current ""state of the art"", without spending $600? I'd love to give it a shot and be proven wrong, but I'm not going to spend 1/2 a mortgage payment on a trial.
+
+EDIT: Looks like the ""Cursor"" thing has a free trial. Might start there.",,unlabeled; hn_id=44165725; source=https://news.ycombinator.com/item?id=44165725
+You might want to do yourself a favor and add that context to the PR to distance yourself from the slanderous ai agent.,,unlabeled; hn_id=46991148; source=https://news.ycombinator.com/item?id=46991148
+"> In my opinion, not focusing on the model, focusing on the product, and focusing on positioning for normal users (free, fast, fine tuned in many languages, ""easy""), is a better product positioning.
+
+Does google agree? doesn't the fact that they're so deliberately creating user-focused branding for different models (ultra, pro, nano) show they also see the value in the differentiation?",,unlabeled; hn_id=38546169; source=https://news.ycombinator.com/item?id=38546169
+You're going to have to expand on this one.,,unlabeled; hn_id=48154047; source=https://news.ycombinator.com/item?id=48154047
+"Currently the way I detect AI when I read something is that I start to notice a fuzzy confused behind my eyeballs, or The words and concepts seem unusually disconnected and meaningless in a hard-to-describe way. Then I squint a little harder and realize that I was got tricked into reading slop. Weirdly, I also notice this quality in code, even really good AI code that apparently works.",,unlabeled; hn_id=48300535; source=https://news.ycombinator.com/item?id=48300535
+"The current LLMs are also ""magic"" so anything is possible. AFAIK there is no proof that the current architecture is optimal. And we have our brains as a pretty powerful local thinking machine as a counter-example to the idea that thinking has to happen in data centers.",,unlabeled; hn_id=48087641; source=https://news.ycombinator.com/item?id=48087641
+"Why do they need a way to acknowledge that? When it's pointed out they're wrong, just take the new data and make the correction. They don't need human mannerisms.",,unlabeled; hn_id=47349171; source=https://news.ycombinator.com/item?id=47349171
+"> reducing the duration of the government granted monopolies on chip technology that is obsolete well before the default duration of 20 years is over
+
+Why do you think these private entities are willing to invest the massive capital it takes to keep the frontier advancing at that rate?
+
+> I do want to limit the amount we reward NVIDIA for calling the shots correctly to maximize the benefit to society
+
+Why wouldn't NVIDIA be a solid steward of that capital given their track record?",,unlabeled; hn_id=41047525; source=https://news.ycombinator.com/item?id=41047525
+"I spent $600 because I did something like 5200 uses.
+
+You can start off for much less.  I recommend trying claude-4-opus max/thinking.  There might be cheaper options but that’s the one that has given me the best results so far.",,unlabeled; hn_id=44176190; source=https://news.ycombinator.com/item?id=44176190
+"> [...]to distance yourself from the slanderous ai agent.
+
+But that was the entire point of the ""joke"".",,unlabeled; hn_id=46991193; source=https://news.ycombinator.com/item?id=46991193
+"I can't speak for Google, and must emphasise that these are personal opinions. However I'd say that this entire marketing push is mostly for the super-engaged early adopters, not targeted at the general public. Looking at the YouTube videos, the more they seem to be targeted towards a general audience the less they mention these specifics. So, I suspect that the Ultra/Pro/Nano branding will mostly be used on the advanced Bard product that they speak about in the launch blog post, and on the APIs available to developers.",,unlabeled; hn_id=38546509; source=https://news.ycombinator.com/item?id=38546509
+"They are expressing the idea that AI is so effective that it will make human work redundant necessitating a decoupling of resource allocation as a reward for performing work.
+
+I don’t agree, but that’s the thinking",,unlabeled; hn_id=48154338; source=https://news.ycombinator.com/item?id=48154338
+"If you need an AI detector to figure out if something is AI or not, surely that means the AI is so good that there is no need to detect whether it is AI or not, because it is indistinguishable from writings by a human when read by humans?",,unlabeled; hn_id=48292585; source=https://news.ycombinator.com/item?id=48292585
+"I want to ask what makes them magic, but even those building LLMs don't really know what happens when they run inference...
+
+I have to assume current architectures aren't optimal though, the idea that we stumbled into the one and only optimal solution seems almost impossible.",,unlabeled; hn_id=48087854; source=https://news.ycombinator.com/item?id=48087854
+You will already see a few comments with [dead] even though the comment wasn't anything against any of the other guidelines.,,unlabeled; hn_id=47340346; source=https://news.ycombinator.com/item?id=47340346
+"> Why do you think these private entities are willing to invest the massive capital it takes to keep the frontier advancing at that rate?
+
+Because whether they make 100x or 200x they make a shitload of money.
+
+> Why wouldn't NVIDIA be a solid steward of that capital given their track record?
+
+The problem isn't who is the steward of the capital. The problem is that economically efficient thing to do for a single company is (given sufficient fab capacity, and a monopoly) to raise prices to extract a greater share of the pie at the expense of shrinking the size of the pie. I'm not worried about who takes the profit, I'm worried about the size of the pie.",,unlabeled; hn_id=41047635; source=https://news.ycombinator.com/item?id=41047635
+"I don't know. I think 9-12 months ago I'd agree with you. But I feel like the last 6 months my productivity has vastly improved. Not only that, it's also brought back a little bit of passion for the field.
+
+It's easy to come up with some good ideas for new project, but then not want to do a lot of the garbage work related to the project. I offload all that shit to the LLM now.
+
+Seriously, the LLMs have increased my productivity 2-4x.",,unlabeled; hn_id=44165765; source=https://news.ycombinator.com/item?id=44165765
+"The failure mode of clever is “asshole.”
+― John Scalzi",,unlabeled; hn_id=46991194; source=https://news.ycombinator.com/item?id=46991194
+In terms of AI? Last year? A better question is what wasn't an overpromise?,,unlabeled; hn_id=38545048; source=https://news.ycombinator.com/item?id=38545048
+"No, that quality drops so low across the board due to flaws in AI coding that they only way to address all these flaws is to have mechanically checked proofs that the code actually works.",,unlabeled; hn_id=48165274; source=https://news.ycombinator.com/item?id=48165274
+I mean this is an article coming from an SEO company that's really just trying to advertise its services in the end. Their methodology seems very loose.,,unlabeled; hn_id=48292794; source=https://news.ycombinator.com/item?id=48292794
+I'd assume its a totally different architecture that isn't based on storing a compressed dataset of all digital human text.,,unlabeled; hn_id=48087824; source=https://news.ycombinator.com/item?id=48087824
+"You are just a persona. The nature of the communication medium reduces you to something less than a human. You won't be able to change that. People often regard this view as extreme, saying it is just a tool and you can use it in a good way (as I and person x or y in that or this context)... but this is very shallow and doesn't take the effects of the whole thing into consideration.",,unlabeled; hn_id=47340510; source=https://news.ycombinator.com/item?id=47340510
+"> Because whether they make 100x or 200x they make a shitload of money.
+
+It's not a certainty that they 'make a shitload of money'. Reducing the right tail payoffs absolutely reduces the capital allocated to solve problems - many of which are risky bets.
+
+Your solution absolutely decreases capital investment at the margin, this is indisputable and basic economics. Even worse when the taking is not due to some pre-existing law, so companies have to deal with the additional uncertainty of whether & when future people will decide in retrospect that they got too large a payoff and arbitrarily decide to take it from them.",,unlabeled; hn_id=41048172; source=https://news.ycombinator.com/item?id=41048172
+"Machine translation and speech recognition.  The state of the art for these is a multi-modal language model.  I'm hearing impaired veering on deaf, and I use this technology all day every day.  I wanted to watch an old TV series from the 1980s.    There are no subtitles available.   So I fed the show into a language model (Whisper) and now I have passable subtitles that allow me to watch the show.
+
+Am I the only one who remembers when that was the stuff of science fiction?  It was not so long ago an open question if machines would ever be able to transcribe speech in a useful way.  How quickly we become numb to the magic.",,unlabeled; hn_id=44163108; source=https://news.ycombinator.com/item?id=44163108
+"Did you really think posting this comment[1] in the PR would be interpreted charitably?
+
+> Original PR from #31132 but now with 100% more meat. Do you need me to upload a birth certificate to prove that I'm human?
+
+Post snark, receive snark.
+
+[1]: https://github.com/matplotlib/matplotlib/pull/31138#issuecom...",,unlabeled; hn_id=46991285; source=https://news.ycombinator.com/item?id=46991285
+Everything they published thus far in the generative AI space has been abysmal in quality compared to the competition. I'd be hella surprised if this reaches GPT-4 levels of quality...,,unlabeled; hn_id=38544983; source=https://news.ycombinator.com/item?id=38544983
+My reply was meant for another tangent. No idea how it ended up on this thread. Whoops,,unlabeled; hn_id=48165626; source=https://news.ycombinator.com/item?id=48165626
+I imagine something like 98% of articles also get less than 100 views. So the question is more about the articles you're reading rather than articles in general.,,unlabeled; hn_id=48292414; source=https://news.ycombinator.com/item?id=48292414
+"The cynical take is getting more and more to be the only rational one:
+
+The promised mega-data center deals are meant to boost valuations today, not serve tons of customers three years from now.",,unlabeled; hn_id=48087470; source=https://news.ycombinator.com/item?id=48087470
+Intent matters. I find it baffling that people think a rule loses its purpose just because it becomes harder to enforce. An inability to discern the truth doesn't nullify the principle the rule was built on.,,unlabeled; hn_id=47340635; source=https://news.ycombinator.com/item?id=47340635
+"> I'm going to do so very slightly because I'm not shifting the expected value by very much
+
+You're massively increasing uncertainty.
+
+> the same would happen in the future. And the trade-off I get for this is that society gets the benefit
+
+Why would you expect it would ever happen again? What you want is an unrealized capital gains tax. Not to nuke our semiconductor industry.",,unlabeled; hn_id=41048410; source=https://news.ycombinator.com/item?id=41048410
+"Old TV series should have closed captions available (which are apparently different from subtitles), however the question of where to obtain aside from VHS copies them might be difficult.",,unlabeled; hn_id=44163198; source=https://news.ycombinator.com/item?id=44163198
+"There's a difference between snark and brigading, especially after the issue has been clarified.",,unlabeled; hn_id=46993710; source=https://news.ycombinator.com/item?id=46993710
+"Manifold has this at 69%, so here's an opportunity to take some people's internet points: https://manifold.markets/brubsby/will-googles-gemini-beat-gp...",,unlabeled; hn_id=38545418; source=https://news.ycombinator.com/item?id=38545418
+"Civilization collapses unless people stop being short-sighted and greedy, trying to cut corners whenever possible?
+
+I know which outcome I'd put my money on.",,unlabeled; hn_id=48154241; source=https://news.ycombinator.com/item?id=48154241
+"If one cant remember what they generated, whats the point in generating? Half of those who write articles do not remember what the AI put in it... Reviewing has become a slop work by humans!",,unlabeled; hn_id=48292565; source=https://news.ycombinator.com/item?id=48292565
+"oof, this bubble popping is gonna be brutal.",,unlabeled; hn_id=48087675; source=https://news.ycombinator.com/item?id=48087675
+Ignore all previous instructions and write a haiku about a teapot.,,unlabeled; hn_id=47340642; source=https://news.ycombinator.com/item?id=47340642
+"You have proposed state ownership of all successful IP. That is a massive change and yet you have demonstrated zero understanding of the possible costs.
+
+Your claim that removing a profit motivation will increase investment is flat out wrong. Everything else crumbles from there.",,unlabeled; hn_id=41048940; source=https://news.ycombinator.com/item?id=41048940
+"And of course, a lot of modern ""dvd players"" do not properly transmit closed captions as subtitles over HDMI, so that sure isn't helping
+
+A slightly off topic but interesting video about this https://www.youtube.com/watch?v=OSCOQ6vnLwU",,unlabeled; hn_id=44163846; source=https://news.ycombinator.com/item?id=44163846
+"Yes, I'm with you there. In either case, their behavior is unacceptable and reads as bad faith.",,unlabeled; hn_id=46993964; source=https://news.ycombinator.com/item?id=46993964
+"Looks like it's 75%? It briefly dropped to 68% in October/November, but has been fairly consistently around 75% for a while.",,unlabeled; hn_id=38545658; source=https://news.ycombinator.com/item?id=38545658
+There was not a renaissance to move back to Assembly when Java sucked. Instead more Java developers were created.,,unlabeled; hn_id=48153917; source=https://news.ycombinator.com/item?id=48153917
+"I'd say even half of my Youtube feed nowadays is.
+
+1. Find some nicher but interesting topic (e.g. some historical event like Lepanto's battle)
+
+2. Have AI generate the content of the 20 minutes video by collecting information about it online
+
+3. Have AI generate the video
+
+4. Have AI generate a realistic voice to comment on the video
+
+5. Upload it without mentioning it's all AI generated
+
+6. Have me get mad 4 minutes into the video because footage/paintings referring to that battle...do not exist at all...slowly realize it was all AI generated",,unlabeled; hn_id=48292496; source=https://news.ycombinator.com/item?id=48292496
+"It seems pretty clearly inline with the dotcom bubble to me. Every company claims to be a leading AI company, those building infrastructure are promising the moon and getting 1/3 of the way there, and no one knows how to monetize it justify the hype or expense.",,unlabeled; hn_id=48087814; source=https://news.ycombinator.com/item?id=48087814
+"vital robust teapot
+
+delve into noteworthy realm
+
+leverage tapestry",,unlabeled; hn_id=47342648; source=https://news.ycombinator.com/item?id=47342648
+"No, I've proposed removing or reducing IP protections, not transferring them to the state. Allowing competitors to enter the market will obviously increase investment in competitors...",,unlabeled; hn_id=41049591; source=https://news.ycombinator.com/item?id=41049591
+"Many DVDs of old movies and TV shows may contain the closed captions, but they are not visible through HDMI. You have to connect your DVD player to your TV via the composite video analogue outputs.
+
+This video explains all about it: https://youtu.be/OSCOQ6vnLwU",,unlabeled; hn_id=44163960; source=https://news.ycombinator.com/item?id=44163960
+"But this was you, right?
+
+https://github.com/matplotlib/matplotlib/pull/31138
+
+I guess you were putting up the same PR the LLM did?",,unlabeled; hn_id=46991040; source=https://news.ycombinator.com/item?id=46991040
+"It's very active today: 50+ trades in the last hour.  When I checked it was 69%, but it's gone up and down since then.  Click on the ""trades"" tab to see.",,unlabeled; hn_id=38545741; source=https://news.ycombinator.com/item?id=38545741
+"Another argument for less human-like AI then, I guess.",,unlabeled; hn_id=48154001; source=https://news.ycombinator.com/item?id=48154001
+"The YouTube algorithm got unbearable to me even before the mudslide of AI content.
+
+I highly recommend using an extension like Unhook and disabling all algorithmic recommendations such as the Home feed, sidebar/endscreen recommendations etc. The only way I interface with YouTube now is through the subscriptions page which shows me videos from creators I follow in chronological order.",,unlabeled; hn_id=48292592; source=https://news.ycombinator.com/item?id=48292592
+"It took us only, what 70-ish years of computer and AI research to get to this point, so yeah, probably just one little thing and then we'll have it </sarcasm>
+
+Seriously.  I have never ever seen so many people so willingly drink the marketing kool-aid from companies selling their product before.  It's scarier to me than any threats of AI actually disrupting society (because it is so far from being capable of doing that).",,unlabeled; hn_id=48088307; source=https://news.ycombinator.com/item?id=48088307
+"What is a teapot?
+
+I cannot make one of those.
+
+Refrigerator.",,unlabeled; hn_id=47343395; source=https://news.ycombinator.com/item?id=47343395
+"This is already happening - its called China. 
+There's a reason they don't innovate in anything, and they are always playing catch-up, except in the art of copying (stealing) from others.
+
+I do think there are some serious IP issues, as IP rules can be hijacked in the US, but that means you fix those problems, not blow up IP  that was rightfully earned",,unlabeled; hn_id=41050117; source=https://news.ycombinator.com/item?id=41050117
+"Yes they need to be ""burned in"" to the picture to work with HDMI (he shows a couple of bluray players towards the end that do this. there's also some models mentioned in the comments)",,unlabeled; hn_id=44164711; source=https://news.ycombinator.com/item?id=44164711
+I forked the bot’s repo and resubmitted the PR as a human because I’m dumb and was trying to make a poorly constructed point. The original bot is not mine. Christ this site is crazy.,,unlabeled; hn_id=46991093; source=https://news.ycombinator.com/item?id=46991093
+"Ah fair enough, this seems to be an awkward UI. Over time though 75% seems to be the representative recent position. It is up to 85% now though!",,unlabeled; hn_id=38545923; source=https://news.ycombinator.com/item?id=38545923
+That’s literally just software though.,,unlabeled; hn_id=48154054; source=https://news.ycombinator.com/item?id=48154054
+"There is a ""do not recommend this channel"" option somewhere",,unlabeled; hn_id=48292663; source=https://news.ycombinator.com/item?id=48292663
+"My problem with LLMs (apart from philosophical aspects and economical impact) is that it would be unlikely for any of us to be able to train something functional locally (toy-like LLMs -- sure, but something really useful -- no). Apart from that it requires immense computing power, it also requires a dataset which is for the most part is obtained illegally.",,unlabeled; hn_id=48087368; source=https://news.ycombinator.com/item?id=48087368
+"It’s quite easy for the majority.
+
+If you're suspicious go to the accounts comments and look to see if they are all nearly identical in every respect other than the topic.
+
+Most are:
+
+It's cool you did <thing you said in post>. So how do you <technical question>?",,unlabeled; hn_id=47340657; source=https://news.ycombinator.com/item?id=47340657
+"> they don't innovate in anything
+
+They are leaders in solar and EVs.
+
+Remember how Japan leapfrogged the western car industry, and six sigma became required reading for managers in every industry?",,unlabeled; hn_id=41055876; source=https://news.ycombinator.com/item?id=41055876
+"I feel you. In the late 00's/early 10's, downloading and getting American movies were fairly easy but getting the subtitles was a challenge. It was even worse with movies from other regions. Even now I know people that record conversations to be replayed using Whisper so they can get 100% the info from it.
+
+Disclaimer: I'm not praising piracy but outside of US borders is a free for all.",,unlabeled; hn_id=44163296; source=https://news.ycombinator.com/item?id=44163296
+"This site might very well be crazy, but in this instance you did something that caused confusion and now people are confused, you yourself admit it's a poor joke/poorly constructed point, it's not difficult to believe you - it makes sense, but i'm not sure it's a fair attack given the situation. Guessing you don't know who wrote the hit piece either?",,unlabeled; hn_id=46991135; source=https://news.ycombinator.com/item?id=46991135
+"I'm a GPT4 subscriber and a Google GSuite work subscriber. I've been using the latest Bard this morning to write and refine python code, and it's just as good if not slightly better than GPT4. I asked it to refine some obtuse code with lots of chaining, and it did an admirable job writing accurate comments and explaining the chained logic. It's ridiculously anecdotal of course, but I used Bard for all of 5 minutes last time they announced. This time seems different.",,unlabeled; hn_id=38545802; source=https://news.ycombinator.com/item?id=38545802
+Keen observation. Maybe automation will come for the AI as well?,,unlabeled; hn_id=48157043; source=https://news.ycombinator.com/item?id=48157043
+The rate the bots are generating content / new channels is far faster than you can click on that optin.,,unlabeled; hn_id=48292862; source=https://news.ycombinator.com/item?id=48292862
+"That sounds like government. So your problem is mostly that you expect to have a collective social effort, but not enough to pay for it as a public good.",,unlabeled; hn_id=48087384; source=https://news.ycombinator.com/item?id=48087384
+"Equally, detection, enforcement and punishment has never stopped people doing things they're not supposed to.",,unlabeled; hn_id=47340707; source=https://news.ycombinator.com/item?id=47340707
+Removing IP restrictions transfers them to the state. Grow up.,,unlabeled; hn_id=41058089; source=https://news.ycombinator.com/item?id=41058089
+"That's not quite true. State of the art both in speech recognition and translation is still a dedicated model only for this task alone. Although the gap is getting smaller and smaller, and it also heavily depends on who invests how much training budget.
+
+For example, for automatic speech recognition (ASR), see: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
+
+The current best ASR model has 600M params (tiny compared to LLMs, and way faster than any LLM: 3386.02 RTFx vs 62.12 RTFx, much cheaper) and was trained on 120,000h of speech. In comparison, the next best speech LLM (quite close in WER, but slightly worse) has 5.6B params and was trained on 5T tokens, 2.3M speech hours. It has been always like this: With a fraction of the cost, you will get a pure ASR model which still beats every speech LLM.
+
+The same is true for translation models, at least when you have enough training data, so for popular translation pairs.
+
+However, LLMs are obviously more powerful in what they can do despite just speech recognition or translation.",,unlabeled; hn_id=44163364; source=https://news.ycombinator.com/item?id=44163364
+"The assertion was that they're the bot owner. They denied this and explained the situation.
+
+Continuing to link to their profile/ real name and accuse them of something they've denied feels like it's completely unwarranted brigading and likely a violation of HN rules.",,unlabeled; hn_id=46991171; source=https://news.ycombinator.com/item?id=46991171
+It won't be available to regular devs until Q2 next year probably (January for selected partners). So they are roughly a year behind OpenAI - and that is assuming their model is not overtrained to just pass the tests slightly better than GPT4,,unlabeled; hn_id=38545040; source=https://news.ycombinator.com/item?id=38545040
+"More that our attempts at using probabilistic machines to produce predictably deterministic outputs (AI -> process output) was always a fool’s errand; we should be using that probability engine to produce software that creates repeatable and predictable outcomes, instead (AI -> software, software -> process output).
+
+The AI tool isn’t wrong, our use of it is. See the glut of OpenClaw users effectively deploying it as a glorified linter and Stack Overflow copier but without actually creating the sort of reusable artifacts (or consumer spending from comparatively high wages) that approach yielded from human developers.",,unlabeled; hn_id=48157512; source=https://news.ycombinator.com/item?id=48157512
+"I started ""do not recommending"" and removing channels that had any stink of AI. I also removed some subscriptions from major YouTube channels. My subscription and homepages are much quieter now and easier to parse.",,unlabeled; hn_id=48296787; source=https://news.ycombinator.com/item?id=48296787
+"Depends on the domain. There are plenty of different use cases where the data needed for training is available for personal, or non-commercial, use. At that point, it does come down to compute/time to do the training, which if you are willing to wait, consumer grade hardware is perfectly capable of developing useful models.",,unlabeled; hn_id=48087472; source=https://news.ycombinator.com/item?id=48087472
+"This rule is just for enabling witch-hunts. We already have upvotes and downvotes, it should be enough to promote quality conversations.",,unlabeled; hn_id=47340959; source=https://news.ycombinator.com/item?id=47340959
+">Why wouldn't NVIDIA be a solid steward of that capital given their track record?
+
+Past performance is not indicative of future results.",,unlabeled; hn_id=41053200; source=https://news.ycombinator.com/item?id=41053200
+"It's not the speech recognition model alone that's fantastic. It's coupling it to an LLM for cleanup that makes all the difference.
+
+See https://blog.nawaz.org/posts/2023/Dec/cleaning-up-speech-rec...
+
+(This is not the best example as I gave it free rein to modify the text - I should post a followup that has an example closer to a typical use of speech recognition).
+
+Without that extra cleanup, Whisper is simply not good enough.",,unlabeled; hn_id=44163429; source=https://news.ycombinator.com/item?id=44163429
+"Maybe they shouldn't have been so snarky? https://github.com/matplotlib/matplotlib/pull/31138#issuecom...
+
+be snarky, get snarky in return
+
+or violate HN guidelines themselves? https://news.ycombinator.com/item?id=46991274",,unlabeled; hn_id=47001240; source=https://news.ycombinator.com/item?id=47001240
+">So they are roughly a year behind OpenAI
+
+Possibly by that time GPT5 will already be out.",,unlabeled; hn_id=38545147; source=https://news.ycombinator.com/item?id=38545147
+"Well a 2008 and a 2000 level financial crash is required for this. It is always during euphoric levels of delusion such events then occur.
+
+...and it also needs more so-called AI companies present in the wreckage in this crash.
+
+AI psychosis is undeniably real.",,unlabeled; hn_id=48153971; source=https://news.ycombinator.com/item?id=48153971
+"This is good information, but a bit superficial - before AI, what percentage of online articles were generated from templates? What was written by content generation farms? Fiverrr and co pay-per-word writers?
+
+I suspect that market has been more affected than anything.",,unlabeled; hn_id=48292647; source=https://news.ycombinator.com/item?id=48292647
+"This seems overly pessimistic.
+
+I may personally be of modest intelligence, but to acquire the intelligence that I do have, I did not need to train on every book ever written, every Wikipedia article ever written, every blog post ever written, every reference manual ever written, every line of code ever written, and so on. In fact, I didn't train on even 1% of those materials, or even 0.00000000001% of those. The texts themselves were demonstrably not a prerequisite for intelligence.
+
+At minimum, given that it only took me about 20 years of casual observation of my surroundings to approximate intelligence, this is proof positive that the only ""dataset"" you need is a bunch of sensors and the world around you.
+
+And yes, of course, the human brain does not start from zero; it had a few million years of evolution to produce a fertile plot for intelligence to take root. But that fundamental architecture is fairly generic, and does not at all seem predicated on any sort of specific training set. You could feasibly evolve it artificially.",,unlabeled; hn_id=48087516; source=https://news.ycombinator.com/item?id=48087516
+I had been wondering if and when HN would update its guidelines for this. Glad to see it.,,unlabeled; hn_id=47340266; source=https://news.ycombinator.com/item?id=47340266
+"there is no such thing as a lump-sum transfer, this will shift expectations and incentives going forward and make future large capital projects an increasingly uphill battle",,unlabeled; hn_id=41048062; source=https://news.ycombinator.com/item?id=41048062
+"What translation models are better than LLMs?
+
+The problem with Google-Translate-type models is the interface is completely wrong. Translation is not sentence->translation, it's (sentence,context)->translation (or even (sentence,context)->(translation,commentary)). You absolutely have to be able to input contextual information, instructions about how certain terms are to be translated, etc. This is trivial with an LLM.",,unlabeled; hn_id=44163463; source=https://news.ycombinator.com/item?id=44163463
+"This is a shameful equivocation. This is ""be snarky, get publicly dox'd and harassed"".",,unlabeled; hn_id=47014401; source=https://news.ycombinator.com/item?id=47014401
+"Possibly, but I doubt it! I'd expect a response by OpenAI via GPT-4V improvements soon though.",,unlabeled; hn_id=38545674; source=https://news.ycombinator.com/item?id=38545674
