@@ -1,8 +1,7 @@
-Complete the student steps before training:
 260 rows have no label. Collection is not annotation.
-analysis has only 0 labeled posts; collect or label more.
-unsupported has only 0 labeled posts; collect or label more.
-question has only 0 labeled posts; collect or label more.
+Declared label analysis has no examples; review the taxonomy or collect that label.
+Declared label unsupported has no examples; review the taxonomy or collect that label.
+Declared label question has no examples; review the taxonomy or collect that label.
 Need 20 actually labeled cold rows; found 0.
 260 rows still have a pending workflow marker.
 Record at least three actual hard-case decisions.

@@ -1,7 +1,8 @@
 # Restore this prepared repository with its real history
 
 The ZIP includes the source files and takemeter-history.bundle. The bundle preserves
-the original starter history plus one genuine preparation commit. It does not claim
+the original starter history plus four genuine preparation and rubric-alignment
+commits. It does not claim
 that four Unit 5 milestones or the student's criteria have been completed.
 
 After extracting the ZIP, run this from its parent directory:

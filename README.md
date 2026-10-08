@@ -152,8 +152,11 @@ criteria from producing results. Notebook instructions that incorrectly referred
 a hosted connection or automatic pushes were corrected. The name is Win Aung and
 email remains blank because it was not provided. The proposed label map is configured
 in section 2. Section 5 saves the actual model and tokenizer under models/takemeter
-in addition to the starter's metrics and test split. Hyperparameters and splitting
-logic are unchanged. Models and caches remain excluded from Git.
+in addition to the starter's metrics and test split. First-run hyperparameters and splitting
+logic are unchanged. Results also record settings and file hashes so the declared
+second run can reject mismatched data or criteria. The comparison runner is
+`python tools/run_epoch_comparison.py --run first`, followed by `--run second`;
+both are gated on completed, committed student work. No comparison has run yet. Models and caches remain excluded from Git.
 
 ## How I Used AI
 

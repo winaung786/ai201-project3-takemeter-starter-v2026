@@ -5,7 +5,7 @@ check of actual evidence, not an awarded grade or a promise of full credit.
 
 | Category | Points | Evidence required | Current status |
 |---|---:|---|---|
-| Required evidence and good-faith build | 3 | Root criteria.md with five real criteria; one labeled CSV with text/label/note and at least 150 rows; five populated README sections and at least four new commits | Root files exist and README sections are populated. Criteria and labels remain unfinished. Audit git history for the real commit count. |
+| Required evidence and good-faith build | 3 | Root criteria.md with five real criteria; one labeled CSV with text/label/note and at least 150 rows; five populated README sections and at least four new commits | Root files exist and README sections are populated. Criteria and labels remain unfinished. The bundle preserves four real local commits; a submitted GitHub fork is still pending. |
 | Criteria name a target | 5 | Each of five criteria names a numerical target | 0/5 targets written by the student. |
 | Criteria testable by another reader | 4 | Each defines data/population, a calculation and an outcome; aggregation/empty-subset handling when relevant | 0/5 completed criteria. No testability claim yet. |
 | Criteria carry a reason | 3 | All five have a reason; at least three reasons specifically reference HN, the chosen labels or actual distribution | 0/5 completed reasons. Label distribution is unknown. |

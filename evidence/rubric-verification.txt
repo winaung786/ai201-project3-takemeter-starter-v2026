@@ -1,0 +1,7 @@
+CSV: 260 collected whole posts, 0 assigned labels; source data unchanged.
+Notebook and tool code compile. Offline form JavaScript syntax checked separately.
+Floor validator tested on isolated 149/150/199/200-row fixtures with/without documentation.
+Comparison arithmetic tested in memory with artificial metrics, never saved as real results.
+Current preflight correctly blocks unfinished labels and criteria before model imports.
+No model training or evaluation was run during this rubric audit.
+Semantic testability, reason specificity and genuine hard-case quality still need review of student work.
