@@ -1,35 +1,28 @@
-# Restore this prepared repository with its real history
+# Clone the published repository
 
-The ZIP includes the source files and takemeter-history.bundle. The bundle preserves
-the original starter history plus four genuine preparation and rubric-alignment
-commits. It does not claim
-that four Unit 5 milestones or the student's criteria have been completed.
+The prepared work is available at:
+https://github.com/winaung786/ai201-project3-takemeter-starter-v2026
 
-After extracting the ZIP, run this from its parent directory:
+Use this same fork for Units 5 and 6.
 
 ```bash
-git clone TakeMeter_Unit5/takemeter-history.bundle takemeter
-cd takemeter
-git remote rename origin archive
+git clone https://github.com/winaung786/ai201-project3-takemeter-starter-v2026.git
+cd ai201-project3-takemeter-starter-v2026
 ```
 
-Fork https://github.com/codepath/ai201-project3-takemeter-starter-v2026 on GitHub.
-Use the fork you will submit again in Unit 6. Add that actual fork as origin:
+The history includes four preparation commits. These do not claim that the
+student's five acceptance criteria, human annotation, or training are complete.
 
-```bash
-git remote add origin https://github.com/YOUR-USERNAME/ai201-project3-takemeter-starter-v2026.git
-```
+Before your own commits, configure your own Git name and email. No email has
+been invented. Follow RUNNING.md to create .venv and install the pinned packages;
+run test.py on your machine. The saved environment evidence describes the
+assistant's runtime.
 
-Before your own commits, set your own name and email. No email has been invented.
-Complete and commit the actual reading/taxonomy decisions, then your five criteria,
-then your reviewed labels before training. Commit the notebook's actual output files
-after training. Use git log to verify that the criteria commit comes first.
+Complete and commit your actual reading and taxonomy decisions, then your own
+five criteria, then your reviewed labels before training. Commit the notebook's
+actual output files after training. Use git log to verify that the criteria commit
+comes before the training results.
 
 ```bash
 git push -u origin main
 ```
-
-The ZIP excludes the virtual environment and model cache because those are machine
-specific. Recreate .venv using RUNNING.md; install ipykernel too if your editor needs
-a Jupyter kernel. The environment-check evidence describes the assistant's runtime,
-not a replacement for running test.py on your machine.

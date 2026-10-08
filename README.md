@@ -1,7 +1,9 @@
 # TakeMeter — Hacker News AI discussions
 
-**Build status:** Preparation complete; student annotation, acceptance criteria,
-GitHub fork, and training remain pending. This is not a completed Unit 5 submission.
+**Repository:** https://github.com/winaung786/ai201-project3-takemeter-starter-v2026
+
+**Build status:** Prepared work published with four new commits; student annotation,
+acceptance criteria, and training remain pending. This is not a completed Unit 5 submission.
 No metric, cold label, human review, or milestone completion is invented.
 
 ## What This Does
