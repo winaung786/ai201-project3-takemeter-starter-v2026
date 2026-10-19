@@ -47,7 +47,7 @@ These are completed AI decisions for discussion, not student-authored hard-case 
 [HN 48292410](https://news.ycombinator.com/item?id=48292410)
 
 > > We build on our prior research by using three different AI detectors (Pangram, GPTZero, Copyleaks). We independently evaluate each to show that the false positive rates and average false negative rates are consistently below 2%. Each AI detector shows a similar trend.
-> 
+>
 > This is all bullshit, none of those actually work, and the false-positives rates are sky-high. I'm not sure how any serious person have tried out any of those services and came away with the impression of "Well, better than nothing" because literally, it seems the opposite.
 
 **Chosen:** unsupported. **Alternative:** analysis.
@@ -59,7 +59,7 @@ These are completed AI decisions for discussion, not student-authored hard-case 
 [HN 44165725](https://news.ycombinator.com/item?id=44165725)
 
 > Since the "state of the art" seems to change every week, what's a good way to try out the current "state of the art", without spending $600? I'd love to give it a shot and be proven wrong, but I'm not going to spend 1/2 a mortgage payment on a trial.
-> 
+>
 > EDIT: Looks like the "Cursor" thing has a free trial. Might start there.
 
 **Chosen:** question. **Alternative:** unsupported.

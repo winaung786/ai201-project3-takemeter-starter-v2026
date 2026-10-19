@@ -34,10 +34,11 @@
   "criterion_3_balance": false,
   "original_submission_validator": "expected blocked, exit 1; required human work remains pending",
   "files_sha256": {
-    "dataset-review.md": "7b4edc924f3938d0e3b75d5117365b062dbfab2a80369b357f5df7788de77d26",
+    ".gitattributes": "0fef9527f3da25115cc538b17db9609529dadb699f322095724aadd51e1bee18",
+    "dataset-review.md": "2e5c3867bd1540046b153af93a7ecd75a3282b5e970dcca91b495a91d98d50dd",
     "independent20.ai.json": "687e935fa7f155f685f6e108764d52be2b6a27676b07138f2122f3078593edb4",
-    "labels.csv": "d5584f4ab17f22c1d9d9dbc265919276cd4c82cf2b51e96fbc9644df1b261bdf",
-    "review-checkpoint.ai.json": "ef377448a1a89ef3c7e347bbf68e836c1e2bb6d4ae31a2829081e9a406d18853",
-    "submission-gate.txt": "92c61afa29966267a862c18da625d499faad961ee17fa2386960580ef7c8bf90"
+    "labels.csv": "25c6bdd2ac55047e4f317c7ee2922de43a4cc604546dbcbdeddc0f5f91f113bc",
+    "review-checkpoint.ai.json": "cbb8f90ee40685fa834daac30f03f355c37ea81ff713c52431ac523511e7b6ba",
+    "submission-gate.txt": "8a72e9d334cfe64144b1bca30039e91a9b467384fc1bc62a215f550c69784b5a"
   }
 }
