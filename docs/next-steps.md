@@ -3,6 +3,14 @@
 The five student acceptance criteria were committed at cc8ae32 before any scores.
 Do not write them again or replace their targets in response to eventual results.
 
+A completed **AI-only** review is available in
+[reviews/2026-10-19-ai/dataset-review.md](../reviews/2026-10-19-ai/dataset-review.md).
+It includes 200 AI judgments, three corrections to the original 180 suggestions,
+and three explained hard cases. All human steps below remain pending. Do not open
+the package's first-20 AI answers before completing your unaided cold pass. Its
+checkpoint cannot be imported into the human form, and its CSV must not be mistaken
+for a human-reviewed export.
+
 1. Review the draft taxonomy, its examples, reading pack and boundary rule.
 2. Download annotation_review.html with GitHub's **Download raw file** control and
    open the downloaded file locally. If you used an older form, download its

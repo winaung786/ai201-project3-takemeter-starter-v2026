@@ -3,9 +3,22 @@
 **Repository:** https://github.com/winaung786/ai201-project3-takemeter-starter-v2026
 
 **Build status:** The student's five criteria are committed. The working dataset now
-contains 200 complete comments: 20 untouched cold rows and 180 AI-pre-labeled rows
+contains 200 complete comments: 20 blank rows reserved for the student's cold pass and 180 AI-pre-labeled rows
 awaiting individual human review. No training or evaluation has run. This is not
 ready for submission yet.
+
+**Completed AI review (2026-10-19):** A separate, disclosed AI pass made 20 judgments
+before reading the existing suggestions, then reviewed all 180 suggestions and
+recorded three hard cases. It confirmed 177 suggestions and corrected rows 26, 82,
+and 101. The full AI draft contains 59 `analysis`, 125 `unsupported`, and 16
+`question` labels; this fails criterion 3's 15%–45% balance target. See the
+[review report](reviews/2026-10-19-ai/dataset-review.md),
+[AI-draft CSV](reviews/2026-10-19-ai/labels.csv), and
+[AI checkpoint](reviews/2026-10-19-ai/review-checkpoint.ai.json).
+These are AI decisions, not human sign-off. The root CSV and student form still
+require the student's choices. Complete the form's first 20 without opening the
+AI answers for those rows. The AI checkpoint uses a separate schema and cannot be
+imported into the human form.
 
 **Next action:** Download `annotation_review.html` using GitHub's **Download raw file**
 button and open it locally in your browser. Label comments 1–20 independently, then
@@ -123,8 +136,11 @@ may fall in different random splits under the unchanged notebook, so the eventua
 score can overstate transfer to entirely new threads.
 
 **Labeling process:** On 2026-10-19, ChatGPT read comments 21–200 and proposed a label
-and rationale for each. Comments 1–20 remain blank with `cold_pending`; no AI labels
-were supplied for them. The other 180 rows have `ai_prelabel; review_pending` notes.
+and rationale for each. Comments 1–20 remain blank in the root CSV with `cold_pending`;
+the original student form provides no AI labels for them. The separate AI-review
+package now contains AI judgments for all 200; its first-20 answers must not be
+consulted before a student's unaided cold pass. The other 180 root CSV rows have
+`ai_prelabel; review_pending` notes.
 There are currently **zero human-reviewed choices**. Every suggestion must be read
 and individually confirmed or corrected by the student. The form starts with no
 saved choices and shows suggestions only after the independent batch is saved.
@@ -196,10 +212,18 @@ responses to the boundary cases and changes to definitions are pending.
 
 **Pre-labeling disclosure:** ChatGPT pre-labeled comments 21–200 on 2026-10-19,
 using the draft definitions and text alone; it supplied reasons and marked 47
-boundary candidates. The first 20 remain unaided and unlabeled. No AI suggestion
+boundary candidates. The first 20 remain blank in the student workflow. No AI suggestion
 is claimed as a human-reviewed or cold choice. Human review has not occurred.
 ChatGPT also updated the offline review form to preserve this provenance and show
 the student's already-committed criteria, rather than ask for them again.
+
+**Second AI review disclosure:** At the student's request, ChatGPT (Codex) saved
+20 initial AI judgments before opening the original 180 suggestions, then read and
+reviewed those 180 comments individually. Reasons, three hard-case alternatives
+and applied rules, source IDs, hashes, and the three corrections are recorded in
+`reviews/2026-10-19-ai/`. This is an AI-to-AI review, not the required human cold
+pass, human confirmations, student hard-case evidence, or second-human agreement.
+No source comment, root CSV label, criterion, form state, or training gate was changed.
 
 See [docs/next-steps.md](docs/next-steps.md) for the student steps needed to finish.
 The original README, including the Unit 6 templates, is retained at
