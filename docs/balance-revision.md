@@ -1,5 +1,10 @@
 # Balance revision before human annotation
 
+**Historical preparation stage:** This page records the earlier sample revision.
+The subsequent assistant review filled all 200 labels: 72 analysis, 81 unsupported
+and 47 question. There are now zero blank labels and zero pending assistant
+reviews in the root CSV. See [the completed report](../reviews/2026-10-19-completed/dataset-review.md).
+
 The first AI review of the original 200-comment sample gave 59 analysis, 125
 unsupported and 16 question labels. Unsupported was 62.5% and question was 8.0%,
 outside the student's committed 15%–45% target. That result is preserved in

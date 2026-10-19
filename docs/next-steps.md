@@ -1,4 +1,14 @@
-# What remains before training
+# Human-only course steps
+
+The assistant's annotation task is complete: root `labels.csv` has 200 filled
+labels, a reason per comment, zero pending markers, and three documented hard
+cases. See [the completed review](../reviews/2026-10-19-completed/dataset-review.md).
+The counts are 72 analysis, 81 unsupported and 47 question, all within 15%–45%.
+
+The checklist below concerns the assignment's separate human-only requirements.
+It is not a list of unfinished assistant annotations. Assistant work cannot be
+represented as an unaided human cold pass or a second human's agreement result.
+No training or evaluation has run.
 
 The five student acceptance criteria were committed at cc8ae32 before any scores.
 Do not write them again or replace their targets in response to eventual results.
@@ -9,9 +19,9 @@ It includes 200 AI judgments, three corrections to the original 180 suggestions,
 and three explained hard cases. All human steps below remain pending. Do not open
 the package's first-20 AI answers before completing your unaided cold pass. Its
 checkpoint cannot be imported into the human form, and its CSV must not be mistaken
-for a human-reviewed export. The current working sample has since been revised:
-65 analysis, 70 unsupported and 45 question suggestions, plus the original 20 blank
-cold rows. See [balance-revision.md](balance-revision.md) for the sampling change.
+for a human-reviewed export. The sample was subsequently revised, then the 20
+remaining labels were filled in the completed assistant review. See
+[balance-revision.md](balance-revision.md) for the earlier sampling change.
 
 1. Review the draft taxonomy, its examples, reading pack and boundary rule.
 2. Download annotation_review.html with GitHub's **Download raw file** control and

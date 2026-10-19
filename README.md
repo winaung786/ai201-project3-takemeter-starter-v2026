@@ -2,18 +2,31 @@
 
 **Repository:** https://github.com/winaung786/ai201-project3-takemeter-starter-v2026
 
-**Build status:** The student's five criteria are committed. The working dataset now
-contains 200 complete comments: 20 blank rows reserved for the student's cold pass and 180 AI-pre-labeled rows
-awaiting individual human review. No training or evaluation has run. This is not
-ready for submission yet.
+**Annotation status: complete.** All 200 comments now have a label, a specific
+review reason, and a source ID in the root `labels.csv`. There are **zero blank
+labels and zero pending assistant reviews**. The counts are 72 `analysis` (36%),
+81 `unsupported` (40.5%), and 47 `question` (23.5%). All three meet the committed
+15%–45% balance target. Three difficult decisions include an alternative label
+and the applied rule.
 
-**Balance revision (2026-10-19):** The current 180 AI suggestions contain 65
-`analysis`, 70 `unsupported`, and 45 `question` comments. The original 20 cold
-comments remain blank and unchanged. Forty-four later comments were replaced
+Open [the completed review](completed_review.html) or read
+[the decisions and hard cases](reviews/2026-10-19-completed/dataset-review.md).
+The [completed checkpoint](reviews/2026-10-19-completed/review-checkpoint.json)
+contains every comment and decision.
+
+**Reviewer provenance:** Codex completed these annotations as an AI assistant.
+They are not represented as human-reviewed, unaided student labels, or
+second-human agreement. The assignment's human-only requirements are not
+satisfied by these annotations. The five student criteria are unchanged.
+No training or evaluation has run.
+
+**Earlier balance revision (2026-10-19):** Before annotation completion, the 180 AI suggestions contained 65
+`analysis`, 70 `unsupported`, and 45 `question` comments. At that stage, the original 20 cold
+comments remained blank. Forty-four later comments were replaced
 with 13 analyses from the existing reserve and 31 newly collected information
 requests from the same eight threads. If human review confirms the 180 suggestions,
 every possible distribution of the 20 cold labels fits criterion 3's 30–90-per-label
-range. Human corrections can change that result, so final balance remains unmeasured.
+range. The subsequently completed assistant annotations have the actual counts above.
 The revision is documented in [the selection manifest](collection/selection-manifest.json)
 and [balance report](docs/balance-revision.md).
 
@@ -26,16 +39,14 @@ and prompted the later sampling revision above. See the historical
 [review report](reviews/2026-10-19-ai/dataset-review.md),
 [AI-draft CSV](reviews/2026-10-19-ai/labels.csv), and
 [AI checkpoint](reviews/2026-10-19-ai/review-checkpoint.ai.json).
-These are AI decisions, not human sign-off. The root CSV and student form still
-require the student's choices. Complete the form's first 20 without opening the
-AI answers for those rows. The AI checkpoint uses a separate schema and cannot be
-imported into the human form.
+These historical files describe the initial sample, not the current completed CSV.
+Their checkpoint uses a separate schema and cannot be imported as human choices.
 
-**Next action:** Download `annotation_review.html` using GitHub's **Download raw file**
-button and open it locally in your browser. Label comments 1–20 independently, then
-read and confirm or correct each remaining suggestion. Download the resulting
-`labels.csv`, checkpoint and dataset evidence. Replace the repository's CSV with the
-exported file and commit it. Saving in the form alone does not update GitHub.
+**Current files:** `labels.csv` is the completed annotated dataset;
+`completed_review.html` shows all saved decisions. The separate
+`annotation_review.html` remains available for actual human choices if the course's
+human-only requirements are to be completed. Its blank human state is not the
+status of the completed assistant review.
 
 ## What This Does
 
@@ -151,48 +162,39 @@ of every HN post. Related replies
 may fall in different random splits under the unchanged notebook, so the eventual
 score can overstate transfer to entirely new threads.
 
-**Labeling process:** ChatGPT provided the initial suggestions and then reviewed
-each one. The current 180 suggestions incorporate that review, plus reasons for
-the 44 replacement comments. All are explicitly AI-authored and pending human
-review. Comments 1–20 remain blank in the root CSV with `cold_pending`;
-the student form provides no AI labels for them. The historical AI-review
-package contains judgments for the original 200; its first-20 answers must not be
-consulted before a student's unaided cold pass. The other 180 root CSV rows have
-`ai_prelabel; review_pending` notes.
-There are currently **zero human-reviewed choices**. Every suggestion must be read
-and individually confirmed or corrected by the student. The form starts with no
-saved choices and shows suggestions only after the independent batch is saved.
+**Labeling process:** Codex saved judgments for the initial 20 before opening the
+prior suggestions, reviewed all 180 suggestions individually, and read the 44
+replacement comments with individual reasons. It then finalized all 200 current
+labels at the user's request. Every root CSV row is marked `assistant_reviewed`;
+none has a pending marker or a fabricated human-review marker. The initial-20
+batch is not claimed as an unaided human cold pass. The complete review checkpoint
+preserves the reviewer, source text, label and reason for every row.
 
-| Label or status | AI suggestions, not human-reviewed | Human-reviewed choices |
+| Label | Completed assistant annotations | Share |
 |---|---:|---:|
-| analysis | 65 | 0 |
-| unsupported | 70 | 0 |
-| question | 45 | 0 |
-| Cold rows awaiting student choice | 20 blank | 0 |
-| **Total working rows** | **200 (180 suggested + 20 blank)** | **0** |
+| analysis | 72 | 36.0% |
+| unsupported | 81 | 40.5% |
+| question | 47 | 23.5% |
+| **Total** | **200** | **100%** |
 
 **Balance finding:** Criterion 3 requires 15%–45% per label in the final 200 rows
-(30–90 examples per label). The revised suggestions leave possible final count
-ranges of 65–85 analysis, 70–90 unsupported and 45–65 question for any assignment
-of the 20 blank rows, if all 180 suggestions are confirmed. All 231 possible cold
-count distributions were checked. Human review still determines the actual counts.
-Do not change a label just to hit a target. The assignment's separate maximum is 70%.
+(30–90 examples per label). The completed counts of 72, 81 and 47 meet it.
+All classes are also below the assignment's 70% cap. The class-enriched sampling
+revision is disclosed above; no existing comment was relabeled to force balance.
 
-**Hard cases:** The historical review records three full AI boundary decisions,
-and current `collection/ai-suggestions.json` retains those candidate pairs plus
-ambiguous replacement questions. For example, comment 26 is a possible
-rhetorical question; comment 78 quotes detector statistics but rejects them without
-new support; comment 170 asks for recommendations and then mentions a tentative
-trial. These are **AI candidates**, not completed student decisions. The student
-must record at least three actual difficult choices, name the alternative and
-explain the applied rule. The form exports only saved student hard-case decisions.
+**Completed hard cases:** Row 26 is `question` rather than `unsupported` because
+the writer asks for a reason without supplying an answer. Row 78 is `unsupported`
+rather than `analysis` because quoted detector statistics support the rejected
+position, not the writer's rejection. Row 170 is `question` rather than
+`unsupported` because its tentative free-trial edit leaves the request unresolved.
+The full comments, alternatives and applied rules are in the completed review
+report and the corresponding CSV notes. These are assistant decisions.
 
-The CSV remains one unsplit file. Training is deliberately blocked until the first
-20 real cold choices, all human reviews and at least three hard cases are saved and
-committed. `collection/ai-suggestions.json` preserves current proposals and reasons
-when the student changes a label; the original proposals are also archived in the
-historical review checkpoint. The revised form imports earlier human choices by
-comment ID, retaining choices for unchanged comments and leaving replacements blank.
+The CSV remains one unsplit file with all 200 labels complete. The course submission
+validator continues to require actual human evidence; it does not mistake assistant
+annotations for human work. Current and original AI proposals remain archived.
+The separate human form imports actual earlier choices by comment ID, preserving
+unchanged comments and leaving replacements blank in that human workflow.
 
 ## The Training Run
 
@@ -257,6 +259,14 @@ or split. The first 20 comments and the five student criteria are unchanged.
 This is purposive sampling with AI suggestions; no human review or final balanced
 dataset is claimed. It is not the optional extra-50 feature. Existing checkpoints
 can be imported by comment ID so earlier human choices are preserved when applicable.
+
+**Completed annotation disclosure:** The user then explicitly asked Codex to finish
+the review rather than leave blank labels and pending flags. Codex finalized all
+200 labels, retained a comment-specific reason for each, and recorded three complete
+hard-case decisions. The root CSV now has zero blanks and zero pending markers.
+All work is accurately attributed to the assistant; no human cold-label or
+agreement claim was added. See `evidence/annotation-status.json` and the completed
+review checkpoint for the current status.
 
 See [docs/next-steps.md](docs/next-steps.md) for the student steps needed to finish.
 The original README, including the Unit 6 templates, is retained at

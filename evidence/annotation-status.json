@@ -1,0 +1,18 @@
+{
+  "schema": "takemeter.assistant-review.v1",
+  "date": "2026-10-19",
+  "source_commit": "68111404b076f11de9d3bccde45394878e6aea54",
+  "status": "complete",
+  "reviewer": "Codex (AI assistant)",
+  "assistant_reviewed_count": 200,
+  "blank_labels": 0,
+  "pending_assistant_reviews": 0,
+  "human_reviewed_count": 0,
+  "human_unaided_cold_count": 0,
+  "counts": {
+    "analysis": 72,
+    "unsupported": 81,
+    "question": 47
+  },
+  "hard_case_count": 3
+}
