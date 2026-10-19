@@ -2,9 +2,16 @@
 
 **Repository:** https://github.com/winaung786/ai201-project3-takemeter-starter-v2026
 
-**Build status:** Prepared work published with four new commits; student annotation,
-acceptance criteria, and training remain pending. This is not a completed Unit 5 submission.
-No metric, cold label, human review, or milestone completion is invented.
+**Build status:** The student's five criteria are committed. The working dataset now
+contains 200 complete comments: 20 untouched cold rows and 180 AI-pre-labeled rows
+awaiting individual human review. No training or evaluation has run. This is not
+ready for submission yet.
+
+**Next action:** Download `annotation_review.html` using GitHub's **Download raw file**
+button and open it locally in your browser. Label comments 1–20 independently, then
+read and confirm or correct each remaining suggestion. Download the resulting
+`labels.csv`, checkpoint and dataset evidence. Replace the repository's CSV with the
+exported file and commit it. Saving in the form alone does not update GitHub.
 
 ## What This Does
 
@@ -102,37 +109,52 @@ A fourth label and 50 extra examples for the thinnest label are not declared.
 
 ## The Dataset
 
-**Source:** 260 distinct complete comments from eight public Hacker News AI threads,
-collected using the public Algolia HN API. Each comment is one collection unit.
-Sources, original HTML, collection time, IDs and exact-text hashes are retained in
-collection/sources.json. Rendering HTML as readable plain text preserves the whole
-comment's visible wording. No included comment is shortened.
+**Source:** 260 distinct complete comments were collected from eight public Hacker
+News AI threads with the public Algolia HN API. The working `labels.csv` uses the
+first 200 in their original collection order, selected without using suggested
+labels or model scores. The remaining 60 are reserves in `collection/sources.json`,
+not a pre-split test set. Sources, original HTML, collection times, IDs and text
+hashes for all 260 remain in that archive. No included comment is shortened.
 
-**Sampling:** Round-robin through eight comment trees. Whole comments of 5–180 words
-are eligible. Blank/deleted and normalized duplicate text are excluded. This short
-comment sample is not representative of every HN post. Related replies may be placed
-in different random splits by the unchanged notebook, so the held-out score measures
-within-community performance and can overstate transfer to entirely new threads.
+**Sampling:** Collection rotated through eight comment trees. Whole comments of
+5–180 words were eligible; blank/deleted and normalized duplicates were excluded.
+This short-comment sample is not representative of every HN post. Related replies
+may fall in different random splits under the unchanged notebook, so the eventual
+score can overstate transfer to entirely new threads.
 
-**Annotation:** No posts are labeled yet. The first 20 are reserved as cold_pending,
-not marked cold. The offline annotation form supplies no suggested labels. After
-these 20 are labeled by the student without AI assistance, the remaining posts may
-be manually labeled or AI pre-labeled and individually reviewed by the student.
-Workflow notes must reflect what actually happened.
+**Labeling process:** On 2026-10-19, ChatGPT read comments 21–200 and proposed a label
+and rationale for each. Comments 1–20 remain blank with `cold_pending`; no AI labels
+were supplied for them. The other 180 rows have `ai_prelabel; review_pending` notes.
+There are currently **zero human-reviewed choices**. Every suggestion must be read
+and individually confirmed or corrected by the student. The form starts with no
+saved choices and shows suggestions only after the independent batch is saved.
 
-| Label or status | Count | Share of all collected posts |
+| Label or status | AI suggestions, not human-reviewed | Human-reviewed choices |
 |---|---:|---:|
-| analysis | 0 | 0% |
-| unsupported | 0 | 0% |
-| question | 0 | 0% |
-| Unlabeled | 260 | 100% |
-| **Total collected** | **260** | **100%** |
+| analysis | 53 | 0 |
+| unsupported | 113 | 0 |
+| question | 14 | 0 |
+| Cold rows awaiting student choice | 20 blank | 0 |
+| **Total working rows** | **200 (180 suggested + 20 blank)** | **0** |
 
-Label balance cannot be assessed yet. No final label may exceed 70%.
-Three real candidate hard cases are documented in docs/hard-case-candidates.md.
-No completed hard-case decision is currently claimed.
-The student's actual decisions and explanations must replace candidates before
-submission; they are not claimed as completed annotations.
+**Balance finding:** Criterion 3 requires 15%–45% per label in the final 200 rows
+(30–90 examples per label). The 113 current `unsupported` suggestions already
+exceed that ceiling; this is an initial warning, not a final verdict based on human
+labels. Do not change a label just to hit a target. Review the text honestly and
+report the final distribution. The assignment's separate maximum remains 70%.
+
+**Hard cases:** `collection/ai-suggestions.json` contains 47 AI boundary flags with
+both candidate labels and an AI rationale. For example, comment 26 is a possible
+rhetorical question; comment 78 quotes detector statistics but rejects them without
+new support; comment 170 asks for recommendations and then mentions a tentative
+trial. These are **AI candidates**, not completed student decisions. The student
+must record at least three actual difficult choices, name the alternative and
+explain the applied rule. The form exports only saved student hard-case decisions.
+
+The CSV remains one unsplit file. Training is deliberately blocked until the first
+20 real cold choices, all human reviews and at least three hard cases are saved and
+committed. `collection/ai-suggestions.json` preserves the AI's original proposals
+and explanations even when the student changes a label.
 
 ## The Training Run
 
@@ -172,8 +194,12 @@ cases and an offline review form with blank criterion fields and no label sugges
 It configured and verified the environment and added a training check. The student's
 responses to the boundary cases and changes to definitions are pending.
 
-**Pre-labeling disclosure:** None has occurred. No row is falsely described as cold,
-human-reviewed, or AI-pre-labeled. Update this disclosure after the actual workflow.
+**Pre-labeling disclosure:** ChatGPT pre-labeled comments 21–200 on 2026-10-19,
+using the draft definitions and text alone; it supplied reasons and marked 47
+boundary candidates. The first 20 remain unaided and unlabeled. No AI suggestion
+is claimed as a human-reviewed or cold choice. Human review has not occurred.
+ChatGPT also updated the offline review form to preserve this provenance and show
+the student's already-committed criteria, rather than ask for them again.
 
 See [docs/next-steps.md](docs/next-steps.md) for the student steps needed to finish.
 The original README, including the Unit 6 templates, is retained at

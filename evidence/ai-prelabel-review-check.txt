@@ -1,0 +1,13 @@
+2026-10-19 — preparation checks only; no training or evaluation occurred.
+PASS: 200 exact source comments in original collection order; zero normalized duplicates.
+PASS: first 20 rows and their cold_pending notes preserved unchanged from cc8ae32.
+PASS: 180 AI suggestions have review_pending; none claims human_reviewed or cold.
+AI suggestion counts only: analysis 53; unsupported 113; question 14.
+PASS: student criteria unchanged byte-for-byte from cc8ae32.
+PASS: generated form starts with zero saved human choices and shows committed criteria.
+PASS: suggestions stay hidden until the independent batch is saved; no automatic label acceptance.
+PASS: a hard-case choice requires an explanation.
+PASS: earlier 260-row checkpoint can migrate its first 200 saved choices, preserving manual provenance.
+PASS: CSV export preserves original AI suggestion and marks actual saved AI-assisted reviews.
+PASS: real preflight still rejects missing cold labels, pending reviews and missing hard-case decisions.
+UI checks used synthetic in-memory choices only. No test choice entered labels.csv.
