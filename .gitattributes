@@ -1,0 +1,2 @@
+# Preserve embedded source-comment newlines in the training CSV on every platform.
+labels.csv -text

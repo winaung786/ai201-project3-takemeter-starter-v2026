@@ -1,1134 +1,1095 @@
 {
   "created_at": "2026-10-19",
-  "method": "AI pre-labeling by ChatGPT; not human-reviewed; not training results",
-  "selection": "First 200 collected comments in original order, fixed independently of suggested labels; first 20 never pre-labeled. Remaining 60 comments remain in collection/sources.json as reserves.",
+  "method": "Revised AI suggestions after class-balance audit; not human-reviewed",
+  "selection": "Current 200-comment working sample described in selection-manifest.json; first 20 original comments remain blank in the student workflow.",
   "suggestions": [
     {
       "row": 21,
       "label": "unsupported",
-      "reason": "A joking approval offers no supporting detail.",
+      "reason": "The quoted output is the subject of a joke about ideal behavior, not support for a substantive assessment.",
       "source_id": 48154772
     },
     {
       "row": 22,
       "label": "unsupported",
-      "reason": "The attributed maxim and joke provide no evidence for the claim.",
+      "reason": "A humorous maxim and uncertain attribution provide no specific evidence for the thinking-versus-understanding claim.",
       "source_id": 48292424
     },
     {
       "row": 23,
       "label": "unsupported",
-      "reason": "Predictions about society rely on a broad streaming analogy without a specific supporting observation.",
+      "reason": "The predictions about adoption and social control rely on a broad streaming analogy and generalizations about people without a specific observation.",
       "source_id": 48087722
     },
     {
       "row": 24,
       "label": "question",
-      "reason": "The writer asks which aspect is disliked without supplying an answer.",
+      "reason": "The writer requests clarification of what the other person dislikes without supplying an answer.",
       "source_id": 47340345
     },
     {
       "row": 25,
       "label": "analysis",
-      "reason": "A directly relevant Meta announcement link supports the licensing claim.",
+      "reason": "The Meta announcement URL directly supports the claim about allowing training on model outputs.",
       "source_id": 41050420
     },
     {
       "row": 26,
-      "label": "unsupported",
-      "reason": "The question functions as an objection to the workflow rather than a neutral request.",
-      "alternative": "question",
-      "source_id": 44163144
+      "label": "question",
+      "reason": "The entire comment requests the reason for choosing a workflow over reading code. Its challenging wording permits a rhetorical reading, but it supplies no answer or developed conclusion, so the direct-information-request rule takes priority.",
+      "source_id": 44163144,
+      "alternative": "unsupported"
     },
     {
       "row": 27,
       "label": "unsupported",
-      "reason": "Earlier frameworks and successful predictions are asserted without identifying either.",
+      "reason": "The frameworks and supposedly successful predictions are never identified, leaving the main claim without specific support.",
       "source_id": 46990922
     },
     {
       "row": 28,
       "label": "unsupported",
-      "reason": "The moat explanation describes general community familiarity without a concrete instance.",
+      "reason": "General community familiarity is asserted without an actual example of a model strength, weakness, or adoption result.",
       "source_id": 38545213
     },
     {
       "row": 29,
       "label": "question",
-      "reason": "The writer asks the other person to clarify the intended meaning.",
+      "reason": "The writer explicitly asks which of two meanings the previous response intended; the joke does not supply an answer.",
       "source_id": 48154869
     },
     {
       "row": 30,
       "label": "unsupported",
-      "reason": "A bare attribution correction names Karpathy but supplies no supporting source.",
+      "reason": "This is a bare attribution correction; the named person is the claim rather than evidence supporting it.",
       "source_id": 48292659
     },
     {
       "row": 31,
       "label": "unsupported",
-      "reason": "The historical federation analogy lacks a specific supporting observation.",
+      "reason": "The hopeful federation prediction rests on a broad library-and-printing-press analogy with no specific instance or cited history.",
       "source_id": 48088243
     },
     {
       "row": 32,
       "label": "unsupported",
-      "reason": "The proposed overlap with crypto sentiment is speculative and unsupported.",
+      "reason": "The overlap between groups and the two possible market outcomes are speculative and unsupported by observations.",
       "source_id": 47340392
     },
     {
       "row": 33,
       "label": "question",
-      "reason": "Quoted context identifies the subject of an unanswered request for explanation.",
+      "reason": "The quotation supplies context for an unanswered request for explanation; it is not evidence for a separate argument.",
       "source_id": 41055065
     },
     {
       "row": 34,
       "label": "unsupported",
-      "reason": "The coder black-belt remark is a joke rather than evidence.",
+      "reason": "The 943x black-belt remark is comic exaggeration, not a measured observation.",
       "source_id": 44163161
     },
     {
       "row": 35,
       "label": "unsupported",
-      "reason": "The emotional assessment and human-nature generalization are unsupported.",
+      "reason": "The human-nature generalization and emotional reaction contain no supporting detail.",
       "source_id": 46990941
     },
     {
       "row": 36,
       "label": "analysis",
-      "reason": "A specific Gemini Pro versus GPT-3.5 benchmark comparison is offered as the premise.",
-      "alternative": "unsupported",
+      "reason": "The Gemini Pro versus GPT-3.5 benchmark comparison supplies a concrete comparative premise for the utility judgment. The benchmark is unnamed, which limits verification but does not remove the offered comparison.",
       "source_id": 38546110
     },
     {
       "row": 37,
       "label": "unsupported",
-      "reason": "The short denial is an unsupported statement.",
+      "reason": "The writer offers a short conversational denial without supporting detail.",
       "source_id": 48154942
     },
     {
       "row": 38,
       "label": "analysis",
-      "reason": "The writer gives a concrete recollection and a directly relevant source link.",
+      "reason": "A first-person account of seeing the retweet and a directly relevant tweet URL support the explanation of the quotation's provenance.",
       "source_id": 48292776
     },
     {
       "row": 39,
       "label": "analysis",
-      "reason": "The broadband and Napster example supplies a concrete historical premise for the argument.",
-      "alternative": "unsupported",
+      "reason": "The broadband-enabled Napster and MP3-sharing example provides a concrete historical premise for the alternatives-to-streaming argument despite speculative extensions to AI.",
       "source_id": 48089486
     },
     {
       "row": 40,
       "label": "unsupported",
-      "reason": "The correction about humans behind bots has no supporting detail.",
+      "reason": "The claimed presence of humans behind the bots is asserted without an example or source.",
       "source_id": 47340316
     },
     {
       "row": 41,
       "label": "unsupported",
-      "reason": "Curiosity is followed by an unsupported preference about governments.",
+      "reason": "An expression of curiosity is followed by an unsupported preference; there is no explicit request for information.",
       "source_id": 41066790
     },
     {
       "row": 42,
       "label": "analysis",
-      "reason": "A specific claim attributed to the article supplies the premise of a sarcastic counterargument.",
-      "alternative": "unsupported",
+      "reason": "The writer uses the article's specific claim about tedious or repetitive code as a premise in a sarcastic consistency argument about code review.",
       "source_id": 44163185
     },
     {
       "row": 43,
       "label": "unsupported",
-      "reason": "The rhetorical question advocates a position without specific evidence.",
-      "alternative": "question",
+      "reason": "The question advocates concern about competitive intelligences rather than requesting a neutral explanation, and the assertions have no concrete support.",
       "source_id": 46990970
     },
     {
       "row": 44,
       "label": "analysis",
-      "reason": "First-hand production use of GPT-3.5 supports the assessment of its utility.",
+      "reason": "First-hand production use of GPT-3.5 and comparison with the needs of the writer's prompt support considering a similarly capable model.",
       "source_id": 38547541
     },
     {
       "row": 45,
       "label": "unsupported",
-      "reason": "The standalone species correction has no supporting evidence.",
+      "reason": "The standalone species correction supplies no support beyond the assertion itself.",
       "source_id": 48155229
     },
     {
       "row": 46,
       "label": "unsupported",
-      "reason": "The speculation about workers supplies no concrete observation.",
+      "reason": "The explanation of other people's motivations is speculation with no concrete example.",
       "source_id": 48292481
     },
     {
       "row": 47,
       "label": "analysis",
-      "reason": "Named hardware, costs and time-to-first-token support the local-inference objection.",
+      "reason": "Named hardware, dollar costs, memory, and time to first token substantiate the local-inference cost and speed objection.",
       "source_id": 48087215
     },
     {
       "row": 48,
       "label": "unsupported",
-      "reason": "The broad frequency claim is illustrated by a generic phrase rather than a specific observation.",
+      "reason": "A generic quoted phrase illustrates the claim but does not identify a concrete instance or establish the claimed frequency.",
       "source_id": 47340356
     },
     {
       "row": 49,
       "label": "analysis",
-      "reason": "The distinction between distributed weights and missing build data supports the licensing argument.",
+      "reason": "The missing curation code and training data explain the inability to reproduce a build and support the criticism of calling distributed weights source code.",
       "source_id": 41054041
     },
     {
       "row": 50,
       "label": "unsupported",
-      "reason": "The imagined chain of agents is satirical speculation.",
+      "reason": "The expanding chain of sales, accounting, audit, and legal agents is a satirical imagined scenario rather than an observed outcome.",
       "source_id": 44163849
     },
     {
       "row": 51,
       "label": "unsupported",
-      "reason": "The sigmoid-curve concern has no specific supporting evidence.",
+      "reason": "The predicted sigmoid growth and reduced cuteness are unsupported assessments without a measured trend.",
       "source_id": 46990997
     },
     {
       "row": 52,
       "label": "unsupported",
-      "reason": "An announcement reaction expresses excitement without support for a main argument.",
+      "reason": "The main point is excitement about the announced change, with no substantive supported assessment.",
       "source_id": 38544863
     },
     {
       "row": 53,
       "label": "unsupported",
-      "reason": "The bug-fixing argument stays general without a specific case, measurement or source.",
-      "alternative": "analysis",
+      "reason": "The writer disputes an argument and asserts rapid bug fixing, but supplies no specific bug, measured result, or observed outcome supporting those assertions.",
       "source_id": 48153722
     },
     {
       "row": 54,
       "label": "unsupported",
-      "reason": "The percentage expresses agreement and is not evidence.",
+      "reason": "The percentage expresses strength of agreement and is not a supporting measurement.",
       "source_id": 48292641
     },
     {
       "row": 55,
       "label": "analysis",
-      "reason": "A relevant quotation from the article supports the limited-task counterargument.",
+      "reason": "The supplied article quotation explicitly lists narrow local-model tasks and directly supports the writer's interpretation of the article's point.",
       "source_id": 48087268
     },
     {
       "row": 56,
       "label": "unsupported",
-      "reason": "The rhetorical question advances a conclusion about disclosure rules.",
-      "alternative": "question",
+      "reason": "The speculative question leads into the writer's own conclusion that disclosure is preferable, without a concrete observation or source.",
       "source_id": 47340409
     },
     {
       "row": 57,
       "label": "unsupported",
-      "reason": "Curiosity and a potential-leader claim provide no supporting detail.",
+      "reason": "Calling Llama 3.1 a potential leader and expressing curiosity about future rankings offers no supporting result or direct request for an answer.",
       "source_id": 41047050
     },
     {
       "row": 58,
       "label": "unsupported",
-      "reason": "The sarcasm interpretation is a bare assertion.",
+      "reason": "The sarcasm diagnosis is a bare conversational assertion.",
       "source_id": 44163224
     },
     {
       "row": 59,
       "label": "analysis",
-      "reason": "The specific next-token mechanism is offered to support the rejection of intentionality.",
-      "alternative": "unsupported",
+      "reason": "The next-token generation mechanism is a specific technical premise offered to support the denial of intentional action. Labeling its presence does not verify the philosophical conclusion.",
       "source_id": 46991212
     },
     {
       "row": 60,
       "label": "unsupported",
-      "reason": "The model comparison is a bare assertion with a speculative caveat.",
+      "reason": "The GPT-3.5 parity statement is itself the main claim, with an unsubstantiated overtraining caveat and no supporting benchmark or observation.",
       "source_id": 38545019
     },
     {
       "row": 61,
       "label": "unsupported",
-      "reason": "The silent-corruption scenario is hypothetical rather than a checkable observation.",
-      "alternative": "analysis",
+      "reason": "The quarterly-process corruption scenario explains a plausible risk but is explicitly hypothetical; it does not identify an actual incident, measurement, or source under the observation-based rule.",
       "source_id": 48154059
     },
     {
       "row": 62,
       "label": "analysis",
-      "reason": "A concrete first-hand theatre observation supports the concern about outsourcing judgment.",
+      "reason": "The first-person theatre encounter, the advice about centered seats, and the observed reaction support the concern about outsourcing everyday judgment.",
       "source_id": 48292510
     },
     {
       "row": 63,
       "label": "analysis",
-      "reason": "Hardware specifications, tasks and six months of first-hand experience support the criticism.",
+      "reason": "Server specifications, six months of use, concrete RSS tasks, and queue growth support the performance criticism.",
       "source_id": 48087418
     },
     {
       "row": 64,
       "label": "unsupported",
-      "reason": "The universal claim about self-censorship and stated preference lack specific support.",
+      "reason": "The universal historical claim about self-censorship and the preference for human conversation contain no specific supporting instance.",
       "source_id": 47340166
     },
     {
       "row": 65,
       "label": "unsupported",
-      "reason": "Broad political and censorship accusations are not backed by an identified source.",
+      "reason": "Dates and publication names accompany political accusations, but no particular article, quoted passage, or documented action substantiates those accusations.",
       "source_id": 41047281
     },
     {
       "row": 66,
       "label": "unsupported",
-      "reason": "The question recommends an AI-summary workflow rather than neutrally seeking information.",
-      "alternative": "question",
+      "reason": "Why not use AI functions primarily as a recommendation to summarize code, rather than a request for an unknown fact, and supplies no evidence for the recommendation.",
       "source_id": 44163942
     },
     {
       "row": 67,
       "label": "unsupported",
-      "reason": "The tired-line reaction gives no supporting detail.",
+      "reason": "The tired-line response is an evaluative reaction without support; the year alone does not substantiate it.",
       "source_id": 46991482
     },
     {
       "row": 68,
       "label": "unsupported",
-      "reason": "The resource recommendation calls a link interesting without arguing a substantive claim.",
-      "alternative": "analysis",
+      "reason": "The URL is a resource recommendation, but the writer supplies no particular claim from it to support the interesting-link judgment.",
       "source_id": 38544877
     },
     {
       "row": 69,
       "label": "unsupported",
-      "reason": "The disagreement about the strength of an argument offers interpretation without a concrete supporting example.",
+      "reason": "The quoted argument identifies what the writer disputes; the judgment that it is a poor argument lacks a specific supporting observation.",
       "source_id": 48154617
     },
     {
       "row": 70,
       "label": "analysis",
-      "reason": "A linked report is supplied to support the numerical claim about AI-generated articles.",
+      "reason": "The numerical AI-article share claim is accompanied by a directly relevant report reference. The stored URL is abbreviated, so this classification does not imply the reference was retrieved or verified.",
       "source_id": 48292395
     },
     {
       "row": 71,
       "label": "analysis",
-      "reason": "Named devices, model sizes and a first-hand MacBook configuration support the counterargument.",
+      "reason": "Specific devices, model sizes, a named MacBook configuration, and first-hand coding use support the local-model counterexample.",
       "source_id": 48087978
     },
     {
       "row": 72,
       "label": "unsupported",
-      "reason": "The broad murder-law analogy explicitly supplies no evidence.",
+      "reason": "The law analogy makes a conceptual point but provides no particular supporting observation; the writer explicitly acknowledges the absence of evidence.",
       "source_id": 47340270
     },
     {
       "row": 73,
       "label": "unsupported",
-      "reason": "The quoted position is rejected without evidence for the rejection.",
+      "reason": "The quotation identifies the rejected position, while the writer's prediction about privately held detectors has no separate support.",
       "source_id": 41048308
     },
     {
       "row": 74,
       "label": "unsupported",
-      "reason": "The proposed future workflow and claims about unfamiliar users remain speculation.",
+      "reason": "The agent-review workflow is introduced as an imagined future and the claim about others' unfamiliarity has no concrete example.",
       "source_id": 44163218
     },
     {
       "row": 75,
       "label": "question",
-      "reason": "The writer requests a concrete distinction without explicitly providing an answer.",
-      "alternative": "unsupported",
+      "reason": "The writer requests a concrete distinction between two descriptions without giving an answer; a possible challenge to the distinction remains an alternative reading.",
       "source_id": 46991546
     },
     {
       "row": 76,
       "label": "unsupported",
-      "reason": "The comment supplies a resource pointer without a substantive supported claim.",
-      "alternative": "analysis",
+      "reason": "This is a resource pointer without a substantive claim or quoted report finding. Naming a technical report alone does not create supported analysis.",
       "source_id": 38544950
     },
     {
       "row": 77,
       "label": "unsupported",
-      "reason": "The explanation of perceived intent and downvotes supplies no specific supporting evidence.",
+      "reason": "The response revises an interpretation of downvotes and others' intentions without specific evidence supporting that interpretation.",
       "source_id": 48154659
     },
     {
       "row": 78,
       "label": "unsupported",
-      "reason": "The writer quotes detector statistics but rejects them without supplying support for the rejection.",
-      "alternative": "analysis",
-      "source_id": 48292410
+      "reason": "The quoted detector statistics belong to the position being rejected. The writer offers no test result, concrete personal trial, or citation supporting the opposite claim about high false positives.",
+      "source_id": 48292410,
+      "alternative": "analysis"
     },
     {
       "row": 79,
       "label": "analysis",
-      "reason": "A specific first-hand ETF transcription workflow includes before-and-after timings.",
+      "reason": "A concrete ETF-to-YAML workflow and reported change from 10–20 minutes to seconds support the first-person productivity claim.",
       "source_id": 48087435
     },
     {
       "row": 80,
       "label": "unsupported",
-      "reason": "The comparison asserts different consequences without a concrete documented case.",
+      "reason": "The comparative assertion about legal consequences and HN guidelines supplies no specific rule, incident, or source supporting the contrast.",
       "source_id": 47340348
     },
     {
       "row": 81,
       "label": "analysis",
-      "reason": "The concrete spam-generation versus classification cost asymmetry supports the compute objection.",
-      "alternative": "unsupported",
+      "reason": "The specific spam-generation versus per-message classification cost asymmetry supplies a technical premise for the objection to a simple compute-power comparison.",
       "source_id": 41051804
     },
     {
       "row": 82,
-      "label": "question",
-      "reason": "The writer asks for clarification of whether the earlier remark was sarcastic.",
-      "alternative": "unsupported",
+      "label": "unsupported",
+      "reason": "Lol omg and I guess announce the writer's own surprised conclusion that the earlier comment was not sarcastic. The question-like punctuation does not make the main reaction an unanswered information request.",
       "source_id": 44163708
     },
     {
       "row": 83,
       "label": "unsupported",
-      "reason": "The analogy between synapses and tokens advances a philosophical claim without a specific supporting observation.",
+      "reason": "The denial of human consciousness is an argumentative analogy to token generation, without a concrete observation or source establishing the conclusion.",
       "source_id": 46999669
     },
     {
       "row": 84,
       "label": "unsupported",
-      "reason": "The search-style correction is a joke without supporting evidence.",
+      "reason": "The search-engine phrasing is an idiom joke; the number is part of the idiom rather than evidence.",
       "source_id": 38545398
     },
     {
       "row": 85,
       "label": "analysis",
-      "reason": "A specific publicly attributed Codex claim is offered as the basis for holding vendors to their stated standard.",
-      "alternative": "unsupported",
+      "reason": "A specific attributed public account of Codex completing tasks while its user plays with a child supports the demand to hold vendors to their claimed standard. The attribution is not independently verified.",
       "source_id": 48154075
     },
     {
       "row": 86,
       "label": "unsupported",
-      "reason": "The gaslighting question functions as an accusation rather than a neutral information request.",
-      "alternative": "question",
+      "reason": "The gaslighting question primarily conveys an accusation and supplies no supporting instance, rather than neutrally asking about identity.",
       "source_id": 48292474
     },
     {
       "row": 87,
       "label": "unsupported",
-      "reason": "The data-center prediction supplies no supporting mechanism or observation.",
+      "reason": "The data-center prediction invokes an unspecified future breakthrough without evidence or an identified mechanism.",
       "source_id": 48087298
     },
     {
       "row": 88,
       "label": "unsupported",
-      "reason": "The enforcement argument relies on a broad law analogy rather than an actual supporting observation.",
+      "reason": "The law comparison supplies no verified law, detection method, or actual case supporting the enforcement claim.",
       "source_id": 47340377
     },
     {
       "row": 89,
       "label": "analysis",
-      "reason": "Relevant OLMo, Dolma and OSI source links support the open-source distinction.",
+      "reason": "Specific transparency requirements, the named OLMo and Dolma examples, and relevant references support the distinction between open weights and open source. The abbreviated URLs are not independently retrieved.",
       "source_id": 41047112
     },
     {
       "row": 90,
       "label": "question",
-      "reason": "The quoted productivity numbers are the subject of an unanswered clarification request.",
+      "reason": "The writer asks what the quoted productivity multipliers mean. Strong language does not supply an answer or eliminate the clarification request.",
       "source_id": 44163146
     },
     {
       "row": 91,
       "label": "unsupported",
-      "reason": "The objection and deployment alternatives remain conditional reasoning without specific evidence about this case.",
-      "alternative": "analysis",
+      "reason": "The writer goes beyond the opening question to advocate an evidential objection and a conditional alternative explanation, without concrete facts about the agent's configuration or deployment.",
       "source_id": 46991803
     },
     {
       "row": 92,
       "label": "analysis",
-      "reason": "A relevant quoted launch announcement supports the claim of incoming competition.",
+      "reason": "The detailed quoted availability plan supports the narrow prediction of incoming API competition; the enthusiastic tone does not remove that support.",
       "source_id": 38544901
     },
     {
       "row": 93,
       "label": "analysis",
-      "reason": "The linked HN guidelines support the quoted behavioral requirements.",
+      "reason": "The quoted conduct requirements are backed by the directly relevant HN guidelines URL.",
       "source_id": 48158067
     },
     {
       "row": 94,
       "label": "unsupported",
-      "reason": "The reply attributes gullibility and machine involvement without concrete support.",
+      "reason": "The claims about gullibility and machine-generated encouragement are generalized judgments without a particular observed example.",
       "source_id": 48292514
     },
     {
       "row": 95,
       "label": "question",
-      "reason": "The writer asks which technological breakthrough is meant.",
+      "reason": "The entire contribution asks which breakthrough the other person means and advances no answer.",
       "source_id": 48087327
     },
     {
       "row": 96,
       "label": "unsupported",
-      "reason": "The comparison explicitly remains a guess and supplies no concrete case.",
+      "reason": "The writer explicitly guesses about comparative detection rates and supplies no measurements or particular cases.",
       "source_id": 47340424
     },
     {
       "row": 97,
       "label": "question",
-      "reason": "The writer requests the missing consequence of the other person's definition.",
+      "reason": "The quote identifies an incomplete conditional, and the writer requests the missing consequence rather than arguing for an answer.",
       "source_id": 41047157
     },
     {
       "row": 98,
       "label": "unsupported",
-      "reason": "The motive attributed to programmers is a joking generalization.",
+      "reason": "The invented history of programmers' motives is a humorous generalization without a concrete source or observation.",
       "source_id": 44163205
     },
     {
       "row": 99,
       "label": "question",
-      "reason": "The writer asks what is known about the agent's autonomy and how likely it is.",
+      "reason": "The writer directly asks the OP for evidence and an assessment of autonomous publication without asserting an alternative conclusion.",
       "source_id": 46990886
     },
     {
       "row": 100,
       "label": "unsupported",
-      "reason": "The general allegation of Google overpromising names no particular example.",
+      "reason": "The warning alleges a habit of overpromising but gives no instance or source supporting the allegation.",
       "source_id": 38544928
     },
     {
       "row": 101,
-      "label": "analysis",
-      "reason": "The specific point attributed to the tweet supports the distinction between repair speed and release discipline.",
-      "alternative": "unsupported",
+      "label": "unsupported",
+      "reason": "The tweet paraphrase identifies the disputed point, but the assertions about skipped release engineering, user tolerance, and broken software provide no specific release, outcome, or cited observation supporting the writer's caution.",
       "source_id": 48154033
     },
     {
       "row": 102,
       "label": "question",
-      "reason": "The writer asks for an explanation of the observed positive-rate trend.",
+      "reason": "The writer asks for an explanation of the positive-rate trend without supplying one.",
       "source_id": 48292476
     },
     {
       "row": 103,
       "label": "unsupported",
-      "reason": "The vague breakthrough description offers neither evidence nor a concrete technical mechanism.",
+      "reason": "Magic math describes an imagined efficiency improvement without a concrete technical mechanism, observation, or source.",
       "source_id": 48087341
     },
     {
       "row": 104,
       "label": "analysis",
-      "reason": "A relevant source link supports the challenge to the law analogy.",
+      "reason": "A directly relevant source reference supports the objection that the cited prohibition law may not exist; the stored abbreviated link is not fact-checked.",
       "source_id": 47340567
     },
     {
       "row": 105,
       "label": "unsupported",
-      "reason": "The benefits and risks remain general claims without a concrete supporting example.",
+      "reason": "The writer answers their own opening question with general benefits and risks, but supplies no particular example, result, or source.",
       "source_id": 41047344
     },
     {
       "row": 106,
       "label": "unsupported",
-      "reason": "The hello-world interpretation and skepticism are speculative rather than evidenced.",
+      "reason": "The hello-world explanation and doubts about project complexity are speculative reactions rather than direct information requests or supported observations.",
       "source_id": 44163217
     },
     {
       "row": 107,
       "label": "unsupported",
-      "reason": "The evaluation of maintainers' conduct supplies no specific supporting detail.",
+      "reason": "The assessment of the maintainers' conduct supplies no concrete action supporting the praise.",
       "source_id": 46990934
     },
     {
       "row": 108,
       "label": "question",
-      "reason": "The writer asks which actual instances support an overpromising claim.",
+      "reason": "The writer requests the particular instances behind the previous accusation despite using a declarative sentence form.",
       "source_id": 38544962
     },
     {
       "row": 109,
       "label": "unsupported",
-      "reason": "The proposed quality ratio is defined but no measured result or concrete example is supplied.",
-      "alternative": "analysis",
+      "reason": "The proposed defects-per-fix ratio is a conceptual criterion rather than a measured finding or concrete supporting example.",
       "source_id": 48154048
     },
     {
       "row": 110,
       "label": "analysis",
-      "reason": "First-hand detector tests and a linked HN example support the false-positive objection.",
+      "reason": "Reported tests on the writer's own older HN comments, a specific em-dash example, and relevant HN and detector references support the false-positive argument.",
       "source_id": 48292551
     },
     {
       "row": 111,
       "label": "analysis",
-      "reason": "The concrete historical MP3 and 4K hardware example supports the hardware-improvement argument.",
-      "alternative": "unsupported",
+      "reason": "The concrete change from taxing MP3 and 4K playback to routine playback supplies a historical workload example supporting the hardware-improvement argument, even though its AI projection remains uncertain.",
       "source_id": 48087549
     },
     {
       "row": 112,
       "label": "unsupported",
-      "reason": "The enforcement conclusion relies on a hypothetical bathroom-singing analogy.",
+      "reason": "The unenforceability conclusion relies on a hypothetical private-bathroom analogy rather than a specific supporting case.",
       "source_id": 47341323
     },
     {
       "row": 113,
       "label": "unsupported",
-      "reason": "The risk of training-time advertising is speculative without a concrete example.",
+      "reason": "Training-time advertising is posed as a possible risk, without an observed instance, mechanism detail, or source.",
       "source_id": 41047168
     },
     {
       "row": 114,
       "label": "unsupported",
-      "reason": "The capability assessment supplies no task, tool or result.",
+      "reason": "The capability assessment names no particular complex task, tool, or observed result.",
       "source_id": 44165719
     },
     {
       "row": 115,
       "label": "analysis",
-      "reason": "A specific prompt pattern and relevant quotation from the author support the missing-prompt objection.",
-      "alternative": "unsupported",
+      "reason": "A quoted prompt pattern and the author's specific statement about needing the model and soul document support the objection about missing configuration information. The sweeping claims about every story are not thereby verified.",
       "source_id": 46992638
     },
     {
       "row": 116,
       "label": "analysis",
-      "reason": "A relevant Reuters source supports the Bard overpromising example.",
+      "reason": "The Bard launch example is accompanied by a relevant Reuters reference supporting the overpromising allegation; the stored abbreviated URL is not retrieved.",
       "source_id": 38545020
     },
     {
       "row": 117,
       "label": "analysis",
-      "reason": "A detailed first-hand Opus failure and reported frequency support the reliability criticism.",
+      "reason": "A detailed first-person Opus attempt, ignored algorithm and tests, unchanged behavior, and reported recurrence support the reliability criticism.",
       "source_id": 48156668
     },
     {
       "row": 118,
       "label": "analysis",
-      "reason": "The named detectors, 2000 generated articles and dated comparison corpus support the study-method argument.",
+      "reason": "The named study, 2,000 generated articles, dated historical corpus, and separate false-positive and false-negative procedures are specific support for the methodological argument.",
       "source_id": 48292830
     },
     {
       "row": 119,
       "label": "analysis",
-      "reason": "Specific memory capacity and bandwidth constraints support the objection to a hardware forecast.",
-      "alternative": "unsupported",
+      "reason": "Memory capacity and bandwidth are identified as specific technical bottlenecks supporting the objection to extrapolating consumer-device capability. The future availability prediction remains an inference.",
       "source_id": 48087912
     },
     {
       "row": 120,
       "label": "unsupported",
-      "reason": "The general moderation and self-censorship claims include no actual ratio, example or source.",
+      "reason": "The moderation and self-censorship claims contain no actual ratio, particular incident, or supporting source.",
       "source_id": 47340301
     },
     {
       "row": 121,
       "label": "analysis",
-      "reason": "A relevant Stanford lecture link supports the proposal for partially disclosed training methods.",
+      "reason": "A relevant Stanford lecture reference and concrete examples of partially disclosing filtering methods support the proposal for sharing training information without all details.",
       "source_id": 41048132
     },
     {
       "row": 122,
       "label": "unsupported",
-      "reason": "The writer describes a general preference for tedious tasks without a concrete tool-and-outcome example.",
-      "alternative": "analysis",
+      "reason": "The first-person statement describes a broad task preference but identifies no concrete task, tool, completed output, or measured result.",
       "source_id": 44172254
     },
     {
       "row": 123,
       "label": "unsupported",
-      "reason": "The wishful-thinking objection rests on general methodological reasoning without a specific supporting instance.",
+      "reason": "The methodological argument and mention of Moltbook do not provide a particular observed instance supporting the wishful-thinking explanation.",
       "source_id": 46993679
     },
     {
       "row": 124,
       "label": "unsupported",
-      "reason": "The writer disputes the interpretation of a link without identifying supporting content from it.",
+      "reason": "The writer rejects an interpretation of a link without quoting particular contents or supplying a comparison establishing the objection.",
       "source_id": 38545065
     },
     {
       "row": 125,
       "label": "analysis",
-      "reason": "A first-hand workplace observation of AI use in code, tests and reviews supports the concern.",
+      "reason": "The first-person workplace observation identifies AI use across writing, tests, and reviews, supporting the concern about losing independent cross-checks.",
       "source_id": 48153820
     },
     {
       "row": 126,
       "label": "analysis",
-      "reason": "The writer explicitly reports first-hand detector trials on their own pre-LLM writing.",
+      "reason": "The writer reports actual detector trials on generated text and their own pre-LLM writing. An admission that the experience is anecdotal does not erase those concrete trials.",
       "source_id": 48292907
     },
     {
       "row": 127,
       "label": "analysis",
-      "reason": "Named models and specific decoding and quantization methods support the claimed local-model trend.",
-      "alternative": "unsupported",
+      "reason": "Named model releases, MTP decoding, and quantization supply specific technical examples behind the local-model improvement argument, without verifying its market prediction.",
       "source_id": 48087559
     },
     {
       "row": 128,
       "label": "unsupported",
-      "reason": "The household-rule analogy stops before supplying a concrete outcome.",
+      "reason": "The household rule is introduced, but the actual outcome is left unsaid; the rhetorical guess-what prompt does not supply evidence.",
       "source_id": 47340353
     },
     {
       "row": 129,
       "label": "analysis",
-      "reason": "Dated program costs and two relevant sources support the public-infrastructure analogy.",
+      "reason": "Specific construction dates, quantities, historical and inflation-adjusted costs, and relevant sources support the public-infrastructure analogy.",
       "source_id": 41047116
     },
     {
       "row": 130,
       "label": "analysis",
-      "reason": "The reported first-hand tripling of output supports the productivity claim.",
+      "reason": "The writer reports a first-person before-and-after output increase and workplace comparison in support of the productivity interpretation; the multiplier is not independently measured here.",
       "source_id": 44163399
     },
     {
       "row": 131,
       "label": "analysis",
-      "reason": "A specific pull request and archive link support the ownership claim; this label does not verify the accusation.",
+      "reason": "A specific pull request and archive reference are supplied as evidence for the ownership account. The classification neither verifies the accusation nor restores the redacted identity.",
       "source_id": 46990904
     },
     {
       "row": 132,
       "label": "analysis",
-      "reason": "First-hand Bard observations identify concrete speed, retrieval and coding outcomes.",
+      "reason": "First-person observations identify particular Bard strengths in speed and live retrieval and a weakness in coding, supporting the mixed performance assessment.",
       "source_id": 38545388
     },
     {
       "row": 133,
       "label": "analysis",
-      "reason": "A specific attributed talk quotation supports the point about the limits of tests.",
+      "reason": "The named Rich Hickey talk and explicitly qualified quotation provide a specific source for the limits-of-test-coverage point; the writer acknowledges adapting a typechecker remark.",
       "source_id": 48154107
     },
     {
       "row": 134,
       "label": "unsupported",
-      "reason": "The sweeping forecasts about identification and human contact lack specific supporting evidence.",
+      "reason": "The inevitability and human-contact predictions are broad claims without particular detection results, costs, or observed examples.",
       "source_id": 48292548
     },
     {
       "row": 135,
       "label": "question",
-      "reason": "The writer requests information about model development and training.",
-      "alternative": "unsupported",
+      "reason": "The writer asks how the models were trained without giving an answer; a possible implied challenge to local independence remains secondary.",
       "source_id": 48088289
     },
     {
       "row": 136,
       "label": "unsupported",
-      "reason": "The language-model imitation is a joke.",
+      "reason": "The human-language-model imitation and mock offer are humorous reactions rather than an actual information request.",
       "source_id": 47340391
     },
     {
       "row": 137,
       "label": "unsupported",
-      "reason": "The GPU lifespan, price and grant claims are predictions without a specific observation.",
+      "reason": "GPU lifespan, price increases, and the merits of research grants are asserted without a specific comparison or source.",
       "source_id": 41047193
     },
     {
       "row": 138,
       "label": "unsupported",
-      "reason": "The numerical productivity scale is invented for a hypothetical interpretation rather than a measurement.",
+      "reason": "The scale and numerical values are invented assumptions in a humorous interpretation, not measured productivity evidence.",
       "source_id": 44164112
     },
     {
       "row": 139,
       "label": "analysis",
-      "reason": "The writer supplies a specific first-hand action and outcome: submitting and closing a second pull request.",
-      "alternative": "unsupported",
+      "reason": "The writer identifies an actual first-person action, submitting a second pull request, and its outcome, closing it after criticism, to explain the joke.",
       "source_id": 46991056
     },
     {
       "row": 140,
       "label": "analysis",
-      "reason": "The writer describes a concrete Slack bot they built with webpage and search access.",
+      "reason": "A concrete workplace Slack bot built by the writer, with webpage loading and search capabilities, supports the claim about access to live data.",
       "source_id": 38546151
     },
     {
       "row": 141,
       "label": "unsupported",
-      "reason": "The broad allegation about lab marketing has no particular example.",
+      "reason": "The allegation about most labs' marketing names no particular campaign or observed example.",
       "source_id": 48153824
     },
     {
       "row": 142,
-      "label": "unsupported",
-      "reason": "The recommendation rests on broad assertions and generic offline activities.",
-      "source_id": 48292567
+      "label": "analysis",
+      "reason": "The named Manifold market, reported 69% probability, and relevant link support the market-opportunity observation.",
+      "source_id": 38545418
     },
     {
       "row": 143,
-      "label": "unsupported",
-      "reason": "The comment states a preference about relevance without supporting evidence.",
-      "source_id": 48088487
+      "label": "analysis",
+      "reason": "A specific DVD-to-HDMI closed-caption limitation and relevant explanatory video support the accessibility objection.",
+      "source_id": 44163846
     },
     {
       "row": 144,
-      "label": "unsupported",
-      "reason": "The general claim about unnamed agents supplies no concrete observed example.",
-      "source_id": 47340416
+      "label": "analysis",
+      "reason": "The writer reports concrete market values and an October–November comparison supporting the correction to the quoted probability.",
+      "source_id": 38545658
     },
     {
       "row": 145,
       "label": "analysis",
-      "reason": "The government-supercomputer example supplies a checkable premise for the infrastructure argument.",
-      "alternative": "unsupported",
+      "reason": "The distinction between grant-funded access to privately owned GPUs and government-owned supercomputers supplies a checkable institutional premise for the infrastructure argument.",
       "source_id": 41047234
     },
     {
       "row": 146,
-      "label": "unsupported",
-      "reason": "The hexadecimal remark is a standalone joke or assertion rather than supported analysis.",
-      "source_id": 44164124
+      "label": "analysis",
+      "reason": "A first-person encounter with a Lepanto video and nonexistent battle imagery supplies a concrete example supporting the complaint about generated videos.",
+      "source_id": 48292496
     },
     {
       "row": 147,
-      "label": "unsupported",
-      "reason": "The popcorn reaction has no supporting evidence.",
-      "source_id": 46991116
+      "label": "analysis",
+      "reason": "The composite-versus-HDMI caption distinction and relevant video support the specific technical explanation.",
+      "source_id": 44163960
     },
     {
       "row": 148,
       "label": "analysis",
-      "reason": "The product-versus-model distinction and specific feature observations support the comparison caveat.",
-      "alternative": "unsupported",
+      "reason": "The product-versus-model distinction and particular categories of release changes support the warning that comparisons need a time and model specification.",
       "source_id": 38545700
     },
     {
       "row": 149,
-      "label": "unsupported",
-      "reason": "The imagined post-AI future expresses a wish rather than an evidence-backed claim.",
-      "source_id": 48153829
+      "label": "analysis",
+      "reason": "A first-person market check, 50-plus recent trades, and the trades-tab instruction support the explanation of changing probabilities.",
+      "source_id": 38545741
     },
     {
       "row": 150,
-      "label": "unsupported",
-      "reason": "The broad claims about offline AI content and politics supply no specific supporting case.",
-      "source_id": 48292814
+      "label": "analysis",
+      "reason": "The writer describes their own Unhook configuration and subscriptions-only workflow in support of the recommendation to avoid algorithmic feeds.",
+      "source_id": 48292592
     },
     {
       "row": 151,
-      "label": "unsupported",
-      "reason": "The writer answers the rhetorical question and asserts no breakthrough without evidence.",
-      "alternative": "question",
-      "source_id": 48088556
+      "label": "analysis",
+      "reason": "The specific first-person sequence of forking a repository and resubmitting its pull request supports the clarification of the writer's involvement.",
+      "source_id": 46991093
     },
     {
       "row": 152,
       "label": "analysis",
-      "reason": "Specific observed Claude phrases support the first-hand report of changed response style, while the training motive remains speculation.",
-      "alternative": "unsupported",
+      "reason": "Specific reported Claude phrases support the observation of changed response style. They provide a premise for the writer's conjecture without establishing the claimed training motive.",
       "source_id": 47340584
     },
     {
       "row": 153,
-      "label": "unsupported",
-      "reason": "The proposed prices and generics analogy are hypothetical rather than documented evidence.",
-      "source_id": 41047289
+      "label": "analysis",
+      "reason": "Reported 75% and 85% market observations support the interpretation of the changing interface value.",
+      "source_id": 38545923
     },
     {
       "row": 154,
-      "label": "unsupported",
-      "reason": "The general development impressions do not identify a concrete task or measured outcome.",
-      "alternative": "analysis",
-      "source_id": 44163306
+      "label": "analysis",
+      "reason": "The writer supplies a first-person account of subtitle availability and an actual Whisper conversation-replay use case supporting the accessibility point.",
+      "source_id": 44163296
     },
     {
       "row": 155,
-      "label": "unsupported",
-      "reason": "The maximizer comparison is a joke without supporting evidence.",
-      "source_id": 46991244
+      "label": "analysis",
+      "reason": "An actual Bard Python-chaining task, its comments and explanation, and a comparison with a previous trial support the improved-performance impression.",
+      "source_id": 38545802
     },
     {
       "row": 156,
-      "label": "unsupported",
-      "reason": "The branding explanation generalizes about consumers without an identified observation or source.",
-      "source_id": 38545831
+      "label": "analysis",
+      "reason": "The ASR leaderboard reference, model sizes, training quantities, and RTFx values specifically support the dedicated-model comparison.",
+      "source_id": 44163364
     },
     {
       "row": 157,
-      "label": "unsupported",
-      "reason": "The prediction rests on an unsupported sweeping comparison with human output.",
-      "source_id": 48153847
+      "label": "analysis",
+      "reason": "The first-person channel filtering and the resulting quieter, easier-to-parse feed support the described remedy.",
+      "source_id": 48296787
     },
     {
       "row": 158,
-      "label": "unsupported",
-      "reason": "The recommendation lists generic offline activities without a specific supporting observation.",
-      "alternative": "analysis",
-      "source_id": 48292841
+      "label": "question",
+      "reason": "The main request asks whether the other person has seen DeepL or another tool invent content; the opening supplies context without answering it.",
+      "source_id": 44164556
     },
     {
       "row": 159,
-      "label": "unsupported",
-      "reason": "The reply states a personal interpretation of another comment without advancing supported analysis.",
-      "source_id": 48088657
+      "label": "question",
+      "reason": "The writer directly asks which things are being equated and does not advance an answer.",
+      "source_id": 47029171
     },
     {
       "row": 160,
-      "label": "unsupported",
-      "reason": "The simulated model confession is satire.",
-      "source_id": 47340680
+      "label": "question",
+      "reason": "The quoted brand-reputation claim provides context for a request to clarify the other person's causal explanation; no answer is supplied.",
+      "source_id": 38545271,
+      "alternative": "unsupported"
     },
     {
       "row": 161,
-      "label": "unsupported",
-      "reason": "The rhetorical questions imply a policy objection without supporting evidence.",
-      "alternative": "question",
-      "source_id": 41047302
+      "label": "question",
+      "reason": "The writer directly requests the tool being used and offers Whisper only as a candidate, not a settled answer.",
+      "source_id": 44164136
     },
     {
       "row": 162,
       "label": "analysis",
-      "reason": "A specific first-hand monthly Claude expenditure and estimated return support the endorsement.",
+      "reason": "The reported $600 monthly Claude-via-Cursor spend and estimated return are concrete first-person details supporting the endorsement; their accuracy is not verified.",
       "source_id": 44165175
     },
     {
       "row": 163,
-      "label": "unsupported",
-      "reason": "The proverb-style reaction offers no supporting evidence.",
-      "source_id": 46991141
+      "label": "question",
+      "reason": "The writer asks whether the reported benchmarks are hand-picked or indicate state-of-the-art performance; the comparison is context for an unanswered request.",
+      "source_id": 38544939
     },
     {
       "row": 164,
-      "label": "unsupported",
-      "reason": "The population proportions and marketing preferences are asserted without data.",
-      "source_id": 38545891
+      "label": "question",
+      "reason": "The quotation identifies proposed public investments and the writer explicitly requests more explanation without supplying it.",
+      "source_id": 41047484
     },
     {
       "row": 165,
-      "label": "unsupported",
-      "reason": "The civilization-collapse prediction supplies no supporting evidence.",
-      "source_id": 48153872
+      "label": "question",
+      "reason": "The writer asks how the upcoming model will compare with GPT-5; the release reaction does not supply an answer.",
+      "source_id": 38544951,
+      "alternative": "unsupported"
     },
     {
       "row": 166,
-      "label": "unsupported",
-      "reason": "Personal pessimism and hypothetical social encounters support no checkable main claim.",
-      "source_id": 48292928
+      "label": "question",
+      "reason": "Reference is an explicit request for a source, reinforced by the explanation that the claim would be interesting if true.",
+      "source_id": 44163781
     },
     {
       "row": 167,
-      "label": "unsupported",
-      "reason": "The accusations of theft and inconsistency are broad and unsupported.",
-      "source_id": 48091525
+      "label": "question",
+      "reason": "The writer asks how a possible licensing problem can be enforced and supplies no enforcement mechanism or answer.",
+      "source_id": 46990980
     },
     {
       "row": 168,
-      "label": "unsupported",
-      "reason": "The general mechanism claim about acknowledgment has no concrete observed instance.",
-      "source_id": 47341075
+      "label": "question",
+      "reason": "The comment requests whether a particular Whisper hallucination problem has been solved; the detailed failure description identifies the question's subject.",
+      "source_id": 44165134
     },
     {
       "row": 169,
       "label": "analysis",
-      "reason": "The specific 20-year patent-duration premise supports the proposed chip-policy change.",
-      "alternative": "unsupported",
+      "reason": "The specific 20-year monopoly-duration premise supports the proposal to shorten protection in a rapidly changing technology; this classification is not a legal or economic verification.",
       "source_id": 41047487
     },
     {
       "row": 170,
       "label": "question",
-      "reason": "The main request seeks an affordable way to try current systems; the tentative edit does not settle the request.",
-      "alternative": "unsupported",
-      "source_id": 44165725
+      "reason": "The main request seeks an affordable way to try current models. The edit identifies a possible free trial but says might start there, leaving the recommendation request unresolved rather than replacing it with a settled answer.",
+      "source_id": 44165725,
+      "alternative": "unsupported"
     },
     {
       "row": 171,
-      "label": "unsupported",
-      "reason": "The recommendation and characterization of an agent are not supported in the comment.",
-      "source_id": 46991148
+      "label": "question",
+      "reason": "The reported small gains motivate a request to distinguish two explanations, without choosing either one.",
+      "source_id": 38544997
     },
     {
       "row": 172,
       "label": "analysis",
-      "reason": "The concrete Ultra, Pro and Nano branding examples support the rhetorical counterargument.",
-      "alternative": "question",
+      "reason": "The named Ultra, Pro, and Nano branding tiers are concrete examples supporting the rhetorical counterargument about model differentiation.",
       "source_id": 38546169
     },
     {
       "row": 173,
       "label": "question",
-      "reason": "The writer asks the other person to expand their explanation.",
+      "reason": "The imperative asks the other person to explain further and supplies no answer, even without a question mark.",
       "source_id": 48154047
     },
     {
       "row": 174,
-      "label": "unsupported",
-      "reason": "The impressionistic detection description names no concrete text or verified outcome.",
-      "alternative": "analysis",
-      "source_id": 48300535
+      "label": "question",
+      "reason": "The writer requests clarification of aesthetically versus quantitatively and gives possible interpretations without settling the meaning.",
+      "source_id": 48156787
     },
     {
       "row": 175,
       "label": "analysis",
-      "reason": "The concrete fact of local biological cognition is supplied as a counterexample to mandatory data-center computation.",
-      "alternative": "unsupported",
+      "reason": "Biological brains provide a concrete counterexample to the narrow claim that thinking must occur in data centers. This does not establish that any particular replacement architecture will work.",
       "source_id": 48087641
     },
     {
       "row": 176,
-      "label": "unsupported",
-      "reason": "The question is answered by the writer's own recommendation about correction behavior.",
-      "alternative": "question",
-      "source_id": 47349171
+      "label": "question",
+      "reason": "The entire comment asks whether AI talks about humans and offers no answer.",
+      "source_id": 48292573
     },
     {
       "row": 177,
-      "label": "unsupported",
-      "reason": "The rhetorical questions advance an investment-policy position without specific evidence.",
-      "alternative": "question",
-      "source_id": 41047525
+      "label": "question",
+      "reason": "Despite challenging language about bias, the writer asks for information supporting a position and provides no answer or competing argument.",
+      "source_id": 41051456
     },
     {
       "row": 178,
       "label": "analysis",
-      "reason": "Specific cost and usage counts plus a named model's first-hand results support the recommendation.",
+      "reason": "Reported spending, 5,200 uses, a named model, and the writer's experience support the claim that an initial trial can cost less and the model recommendation.",
       "source_id": 44176190
     },
     {
       "row": 179,
-      "label": "unsupported",
-      "reason": "The interpretation of the joke's intent is a bare assertion.",
-      "source_id": 46991193
+      "label": "question",
+      "reason": "The writer requests confirmation that public clusters already provide the described proposal-based access; the tentative description specifies what is being asked.",
+      "source_id": 41047342,
+      "alternative": "unsupported"
     },
     {
       "row": 180,
       "label": "analysis",
-      "reason": "Observed differences between public YouTube material and a named launch blog support the marketing interpretation.",
-      "alternative": "unsupported",
+      "reason": "The writer reports a concrete observed difference in model-specific wording across YouTube material aimed at different audiences and relates it to the launch post, supporting the marketing interpretation.",
       "source_id": 38546509
     },
     {
       "row": 181,
-      "label": "unsupported",
-      "reason": "The writer paraphrases an economic prediction without evidence and explicitly disagrees.",
-      "source_id": 48154338
+      "label": "question",
+      "reason": "The writer directly asks where a member of the public can obtain access without supplying a location.",
+      "source_id": 41049356
     },
     {
       "row": 182,
-      "label": "unsupported",
-      "reason": "The question itself advocates a conclusion about detection and indistinguishability.",
-      "alternative": "question",
-      "source_id": 48292585
+      "label": "question",
+      "reason": "Both sentences request an explanation of a specific HellaSwag lag and possible benchmark characteristics, without an answer.",
+      "source_id": 38545192
     },
     {
       "row": 183,
-      "label": "unsupported",
-      "reason": "The architecture hypothesis is speculative and does not supply specific evidence.",
-      "source_id": 48087854
+      "label": "question",
+      "reason": "The Baidu comparison motivates an unanswered request to explain what is different about inference, rather than settling the explanation.",
+      "source_id": 48089733
     },
     {
       "row": 184,
       "label": "analysis",
-      "reason": "The claimed visible dead-comment markers are offered as concrete observations of enforcement.",
-      "alternative": "unsupported",
+      "reason": "The specifically reported dead-comment markers are offered as an observable enforcement outcome supporting the reply. No claim is made here that the enforcement attribution was verified.",
       "source_id": 47340346
     },
     {
       "row": 185,
-      "label": "unsupported",
-      "reason": "The policy argument uses general economic reasoning and hypothetical returns without a concrete observed case.",
-      "alternative": "analysis",
-      "source_id": 41047635
+      "label": "question",
+      "reason": "The two questions ask about the other person's language-barrier experience and use of English without supplying an answer.",
+      "source_id": 48292724
     },
     {
       "row": 186,
       "label": "analysis",
-      "reason": "A first-hand productivity estimate and time comparison support the claimed benefit.",
+      "reason": "The writer reports a first-person change over six months and a 2–4x productivity estimate as support for the claimed benefit, without an independently verified measurement.",
       "source_id": 44165765
     },
     {
       "row": 187,
-      "label": "unsupported",
-      "reason": "The attributed aphorism is an unsupported judgment.",
-      "source_id": 46991194
+      "label": "question",
+      "reason": "The writer asks whether distributed training on volunteer hardware is feasible and supplies no conclusion.",
+      "source_id": 41047483
     },
     {
       "row": 188,
-      "label": "unsupported",
-      "reason": "The rhetorical question makes an overpromising accusation without a particular example.",
-      "source_id": 38545048
+      "label": "question",
+      "reason": "The main requests identify which profile is allegedly fake and what a quoted phrase means; contextual observations do not resolve those requests.",
+      "source_id": 46994407
     },
     {
       "row": 189,
-      "label": "unsupported",
-      "reason": "The sweeping claim about code quality and required proofs supplies no specific supporting instance.",
-      "source_id": 48165274
+      "label": "question",
+      "reason": "The quotation supplies context for a direct request about maintaining spoken-English ability, with no answer.",
+      "source_id": 48295942
     },
     {
       "row": 190,
-      "label": "unsupported",
-      "reason": "The motive allegation and methodology assessment identify no concrete methodological defect.",
-      "alternative": "analysis",
-      "source_id": 48292794
+      "label": "question",
+      "reason": "The writer asks whether SSDs could supplement VRAM and tentatively notes a tradeoff, without claiming that the proposed approach actually works.",
+      "source_id": 41055544,
+      "alternative": "unsupported"
     },
     {
       "row": 191,
-      "label": "unsupported",
-      "reason": "The proposed alternative architecture is explicitly an assumption.",
-      "source_id": 48087824
+      "label": "question",
+      "reason": "The writer asks whether a specific instruction to Claude failed and supplies no result.",
+      "source_id": 44166195
     },
     {
       "row": 192,
-      "label": "unsupported",
-      "reason": "The broad philosophical claims about the medium lack specific supporting observations.",
-      "source_id": 47340510
+      "label": "question",
+      "reason": "The comment requests an operational definition of working correctly and clarification of the other person's criteria; it does not provide the requested definition.",
+      "source_id": 46993859
     },
     {
       "row": 193,
-      "label": "unsupported",
-      "reason": "The investment-policy argument asserts general economic relationships without a concrete case.",
-      "source_id": 41048172
+      "label": "question",
+      "reason": "The writer asks what benefits the model would have over smaller OpenAI models and advances no answer.",
+      "source_id": 38546433
     },
     {
       "row": 194,
       "label": "analysis",
-      "reason": "A concrete first-hand Whisper workflow and usable subtitle outcome support the capability claim.",
+      "reason": "The concrete Whisper workflow turns an older unsubtitled series into usable subtitles, supplying a first-person task and outcome supporting the capability claim.",
       "source_id": 44163108
     },
     {
       "row": 195,
       "label": "analysis",
-      "reason": "A specific PR quotation and source link support the snark interpretation.",
+      "reason": "The specific PR quotation and relevant source reference support the snark interpretation; the opening question is rhetorical.",
       "source_id": 46991285
     },
     {
       "row": 196,
-      "label": "unsupported",
-      "reason": "The blanket quality comparison and forecast supply no measured example.",
-      "source_id": 38544983
+      "label": "question",
+      "reason": "The unavailability observation motivates a direct request for insight into the Canadian rollout difference, with no proposed explanation.",
+      "source_id": 38545230
     },
     {
       "row": 197,
-      "label": "unsupported",
-      "reason": "The misplaced-reply explanation is a standalone statement without supporting evidence.",
-      "source_id": 48165626
+      "label": "question",
+      "reason": "The tentative ROCm-inference context leads to a request to clarify whether the other person means training.",
+      "source_id": 41047851
     },
     {
       "row": 198,
-      "label": "unsupported",
-      "reason": "The article-view figures are explicitly imagined rather than measured.",
-      "source_id": 48292414
+      "label": "question",
+      "reason": "The writer explicitly seeks to learn whether users supply more involved prompts than simple response instructions; the skepticism remains a request rather than an answer.",
+      "source_id": 47340432,
+      "alternative": "unsupported"
     },
     {
       "row": 199,
-      "label": "unsupported",
-      "reason": "The valuation motive is alleged without a supporting source or concrete transaction.",
-      "source_id": 48087470
+      "label": "question",
+      "reason": "The writer asks in what context the cases were witnessed and distinguishes possible sources of knowledge without answering that request.",
+      "source_id": 48300605
     },
     {
       "row": 200,
-      "label": "unsupported",
-      "reason": "The principle-versus-enforcement argument is general reasoning without a specific supporting fact.",
-      "source_id": 47340635
+      "label": "question",
+      "reason": "The writer explicitly calls this an honest question about local models with better harnesses and says they lack the knowledge to decide; the possible scenario is not a settled answer.",
+      "source_id": 48089768
     }
   ]
 }

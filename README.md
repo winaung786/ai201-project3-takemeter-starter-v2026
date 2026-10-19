@@ -7,11 +7,22 @@ contains 200 complete comments: 20 blank rows reserved for the student's cold pa
 awaiting individual human review. No training or evaluation has run. This is not
 ready for submission yet.
 
-**Completed AI review (2026-10-19):** A separate, disclosed AI pass made 20 judgments
+**Balance revision (2026-10-19):** The current 180 AI suggestions contain 65
+`analysis`, 70 `unsupported`, and 45 `question` comments. The original 20 cold
+comments remain blank and unchanged. Forty-four later comments were replaced
+with 13 analyses from the existing reserve and 31 newly collected information
+requests from the same eight threads. If human review confirms the 180 suggestions,
+every possible distribution of the 20 cold labels fits criterion 3's 30–90-per-label
+range. Human corrections can change that result, so final balance remains unmeasured.
+The revision is documented in [the selection manifest](collection/selection-manifest.json)
+and [balance report](docs/balance-revision.md).
+
+**Historical AI review of the initial sample (2026-10-19):** A separate, disclosed AI pass made 20 judgments
 before reading the existing suggestions, then reviewed all 180 suggestions and
 recorded three hard cases. It confirmed 177 suggestions and corrected rows 26, 82,
 and 101. The full AI draft contains 59 `analysis`, 125 `unsupported`, and 16
-`question` labels; this fails criterion 3's 15%–45% balance target. See the
+`question` labels; that initial sample failed criterion 3's 15%–45% balance target
+and prompted the later sampling revision above. See the historical
 [review report](reviews/2026-10-19-ai/dataset-review.md),
 [AI-draft CSV](reviews/2026-10-19-ai/labels.csv), and
 [AI checkpoint](reviews/2026-10-19-ai/review-checkpoint.ai.json).
@@ -122,23 +133,30 @@ A fourth label and 50 extra examples for the thinnest label are not declared.
 
 ## The Dataset
 
-**Source:** 260 distinct complete comments were collected from eight public Hacker
-News AI threads with the public Algolia HN API. The working `labels.csv` uses the
-first 200 in their original collection order, selected without using suggested
-labels or model scores. The remaining 60 are reserves in `collection/sources.json`,
-not a pre-split test set. Sources, original HTML, collection times, IDs and text
-hashes for all 260 remain in that archive. No included comment is shortened.
+**Source:** The original collection contained 260 distinct complete comments from
+eight public Hacker News AI threads. The later balance revision added 31 new
+comments from those same threads using the public Algolia HN API. The archive now
+contains 291 comments with original HTML, collection metadata, IDs and text hashes.
+The working `labels.csv` retains 156 original examples, including all first 20,
+and replaces 44 later examples with 13 reserve analyses and 31 new questions.
+The remaining 91 archived comments are reserves, not a test set. No included
+comment is shortened. `collection/selection-manifest.json` records every change.
 
 **Sampling:** Collection rotated through eight comment trees. Whole comments of
 5–180 words were eligible; blank/deleted and normalized duplicates were excluded.
-This short-comment sample is not representative of every HN post. Related replies
+The revised working sample is deliberately enriched by proposed class. It must
+not be used to estimate label prevalence across HN. No model score or test split
+was used to select replacements. This short-comment sample is not representative
+of every HN post. Related replies
 may fall in different random splits under the unchanged notebook, so the eventual
 score can overstate transfer to entirely new threads.
 
-**Labeling process:** On 2026-10-19, ChatGPT read comments 21–200 and proposed a label
-and rationale for each. Comments 1–20 remain blank in the root CSV with `cold_pending`;
-the original student form provides no AI labels for them. The separate AI-review
-package now contains AI judgments for all 200; its first-20 answers must not be
+**Labeling process:** ChatGPT provided the initial suggestions and then reviewed
+each one. The current 180 suggestions incorporate that review, plus reasons for
+the 44 replacement comments. All are explicitly AI-authored and pending human
+review. Comments 1–20 remain blank in the root CSV with `cold_pending`;
+the student form provides no AI labels for them. The historical AI-review
+package contains judgments for the original 200; its first-20 answers must not be
 consulted before a student's unaided cold pass. The other 180 root CSV rows have
 `ai_prelabel; review_pending` notes.
 There are currently **zero human-reviewed choices**. Every suggestion must be read
@@ -147,20 +165,22 @@ saved choices and shows suggestions only after the independent batch is saved.
 
 | Label or status | AI suggestions, not human-reviewed | Human-reviewed choices |
 |---|---:|---:|
-| analysis | 53 | 0 |
-| unsupported | 113 | 0 |
-| question | 14 | 0 |
+| analysis | 65 | 0 |
+| unsupported | 70 | 0 |
+| question | 45 | 0 |
 | Cold rows awaiting student choice | 20 blank | 0 |
 | **Total working rows** | **200 (180 suggested + 20 blank)** | **0** |
 
 **Balance finding:** Criterion 3 requires 15%–45% per label in the final 200 rows
-(30–90 examples per label). The 113 current `unsupported` suggestions already
-exceed that ceiling; this is an initial warning, not a final verdict based on human
-labels. Do not change a label just to hit a target. Review the text honestly and
-report the final distribution. The assignment's separate maximum remains 70%.
+(30–90 examples per label). The revised suggestions leave possible final count
+ranges of 65–85 analysis, 70–90 unsupported and 45–65 question for any assignment
+of the 20 blank rows, if all 180 suggestions are confirmed. All 231 possible cold
+count distributions were checked. Human review still determines the actual counts.
+Do not change a label just to hit a target. The assignment's separate maximum is 70%.
 
-**Hard cases:** `collection/ai-suggestions.json` contains 47 AI boundary flags with
-both candidate labels and an AI rationale. For example, comment 26 is a possible
+**Hard cases:** The historical review records three full AI boundary decisions,
+and current `collection/ai-suggestions.json` retains those candidate pairs plus
+ambiguous replacement questions. For example, comment 26 is a possible
 rhetorical question; comment 78 quotes detector statistics but rejects them without
 new support; comment 170 asks for recommendations and then mentions a tentative
 trial. These are **AI candidates**, not completed student decisions. The student
@@ -169,8 +189,10 @@ explain the applied rule. The form exports only saved student hard-case decision
 
 The CSV remains one unsplit file. Training is deliberately blocked until the first
 20 real cold choices, all human reviews and at least three hard cases are saved and
-committed. `collection/ai-suggestions.json` preserves the AI's original proposals
-and explanations even when the student changes a label.
+committed. `collection/ai-suggestions.json` preserves current proposals and reasons
+when the student changes a label; the original proposals are also archived in the
+historical review checkpoint. The revised form imports earlier human choices by
+comment ID, retaining choices for unchanged comments and leaving replacements blank.
 
 ## The Training Run
 
@@ -182,10 +204,11 @@ test_split.csv do not yet exist. No test split has been created or examined.
 **Planned split:** The starter notebook creates stratified 70/15/15 partitions from
 one unsplit labels.csv. Actual split sizes and per-label counts are not available yet.
 
-**Verified environment:** Python 3.12.14, CPU, 9 passed and 0 failed in test.py.
-The expected Unit 6 baseline-cache warning remains. See evidence/environment-check.txt,
-evidence/notebook-setup.txt and evidence/package-versions.json. This is the assistant's
-Linux runtime, not proof of the student's own device or notebook setup.
+**Verified local Windows environment:** Python 3.12.14, CPU, all six required packages
+installed in `.venv`; `test.py` reported 9 passed and 0 failed. The Unit 6 baseline
+model has not been downloaded and produces the expected cache warning. See
+`evidence/windows-environment-ready.json` for exact versions. Earlier Linux checks
+remain historical evidence. Environment readiness is not a completed training run.
 
 **Changes from the starter:** A pre-training guard stops unfinished annotation and
 criteria from producing results. Notebook instructions that incorrectly referred to
@@ -223,7 +246,17 @@ reviewed those 180 comments individually. Reasons, three hard-case alternatives
 and applied rules, source IDs, hashes, and the three corrections are recorded in
 `reviews/2026-10-19-ai/`. This is an AI-to-AI review, not the required human cold
 pass, human confirmations, student hard-case evidence, or second-human agreement.
-No source comment, root CSV label, criterion, form state, or training gate was changed.
+That historical AI review changed no source comment, root CSV label, criterion,
+form state, or training gate.
+
+**Balance revision disclosure:** After the initial AI draft missed criterion 3,
+ChatGPT screened additional whole comments from the same eight threads, selected
+31 real information requests with individual reasons, and reused 13 previously
+archived analyses. It replaced 44 later unsupported examples before any training
+or split. The first 20 comments and the five student criteria are unchanged.
+This is purposive sampling with AI suggestions; no human review or final balanced
+dataset is claimed. It is not the optional extra-50 feature. Existing checkpoints
+can be imported by comment ID so earlier human choices are preserved when applicable.
 
 See [docs/next-steps.md](docs/next-steps.md) for the student steps needed to finish.
 The original README, including the Unit 6 templates, is retained at

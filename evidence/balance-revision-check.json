@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-19",
+  "status": "passed preparation checks; student annotation incomplete",
+  "archive_rows": 291,
+  "original_260_records_unchanged": true,
+  "working_rows": 200,
+  "unique_ids": 200,
+  "unique_normalized_texts": 200,
+  "whole_text_and_hashes_preserved": true,
+  "original_cold_rows_unchanged": 20,
+  "cold_labels_blank": 20,
+  "ai_suggestions": {
+    "unsupported": 70,
+    "question": 45,
+    "analysis": 65
+  },
+  "replaced_comments": 44,
+  "reserve_analyses": 13,
+  "new_information_requests": 31,
+  "all_231_cold_count_distributions_with_confirmed_suggestions_within_15_to_45_percent": true,
+  "criteria_unchanged": true,
+  "human_review_markers_added": 0,
+  "form_workflow_check": "PASS: empty human state; cold suggestion gate; 156 ID-matched choices retained and 44 new rows blank; first missing row selected; duplicate IDs, changed cold IDs, AI files, and invalid labels rejected atomically. Test choices existed only in memory.",
+  "submission_gate": "expected blocked; five unfinished human-work checks",
+  "training_or_evaluation_run": false
+}

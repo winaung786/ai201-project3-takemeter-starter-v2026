@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
-source = json.loads((root / "collection/sources.json").read_text())["posts"]
+source = json.loads((root / "collection/sources.json").read_text(encoding="utf-8"))["posts"]
 by_id = {p["id"]: p for p in source}
 with (root / "labels.csv").open(newline="", encoding="utf-8-sig") as f:
     rows = list(csv.DictReader(f))
@@ -14,10 +14,13 @@ for row in rows:
     post = by_id[post_id]
     assert post["text"] == row["text"]
     posts.append(post)
-suggestions = json.loads((root / "collection/ai-suggestions.json").read_text())["suggestions"]
+suggestions = json.loads((root / "collection/ai-suggestions.json").read_text(encoding="utf-8"))["suggestions"]
 assert all(s["row"] > 20 for s in suggestions)
-payload = json.dumps({"posts": posts, "suggestions": suggestions,
-                      "criteria": (root / "criteria.md").read_text()}, ensure_ascii=False).replace("<", "\\u003c")
+selection_path = root / "collection/selection-manifest.json"
+selection = json.loads(selection_path.read_text(encoding="utf-8")) if selection_path.exists() else {}
+selection_note = selection.get("selection_note", "The working file uses the first 200 collected comments in their original order. Another 60 remain in the source archive. No comment is shortened.")
+payload = json.dumps({"posts": posts, "suggestions": suggestions, "selection_note": selection_note,
+                      "criteria": (root / "criteria.md").read_text(encoding="utf-8")}, ensure_ascii=False).replace("<", "\\u003c")
 html = r'''<!doctype html>
 <html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TakeMeter — review your dataset</title>
@@ -27,7 +30,7 @@ body{margin:0;background:#f3f5fa;color:#162138;font:16px/1.55 system-ui,sans-ser
 <h1>TakeMeter dataset review</h1>
 <p class="muted">Your criteria are committed. Next: 20 independent labels, then review 180 AI suggestions.</p>
 <section><h2>Start here</h2>
-<p>The working file uses the first 200 collected comments in their original order. Another 60 remain in the source archive. No comment is shortened. Read the reading pack and review the draft definitions before starting.</p>
+<p id="selection_note"></p><p>Read the reading pack and review the draft definitions before starting. No included comment is shortened.</p>
 <p><strong>Comments 1–20:</strong> choose labels yourself without AI advice. <strong>Comments 21–200:</strong> read the full comment, consider the AI suggestion, then choose or correct its label. Nothing is counted as reviewed until you save your own choice.</p>
 <details><summary>Label definitions and decision rules</summary><ul><li><strong>analysis:</strong> Supports its main claim with a specific, checkable detail, concrete first-hand observation or relevant cited source.</li><li><strong>unsupported:</strong> Primarily a statement, judgment, joke, agreement or reaction without specific support for its main point.</li><li><strong>question:</strong> Primarily requests information or clarification without advancing its own answer or advocating a conclusion.</li></ul><p>Supporting details must relate to the main claim. “I agree 100%” is not evidence. A quotation that the writer rejects does not by itself support the rejection. Rhetorical or self-answered questions follow the analysis/unsupported rule. Classify support present in the text; this is not fact-checking.</p></details>
 <label><input id="taxonomy_ok" type="checkbox"> I have reviewed these definitions and will apply them consistently.</label>
@@ -45,7 +48,7 @@ body{margin:0;background:#f3f5fa;color:#162138;font:16px/1.55 system-ui,sans-ser
 <script>
 const data=__DATA__,posts=data.posts;
 const suggestions=new Map(data.suggestions.map(s=>[s.source_id,s]));
-const KEY='takemeter-hn-review-v1',allowed=['analysis','unsupported','question'];
+const KEY='takemeter-hn-review-balanced-20261019',allowed=['analysis','unsupported','question'];
 const blank=()=>({label:'',note:'',hard:false,saved_at:null,provenance:''});
 let state={index:0,taxonomy_ok:false,labels:posts.map(blank)};
 function normalize(raw,version){
@@ -98,8 +101,15 @@ $('back').onclick=()=>{state.index=Math.max(0,state.index-1);render()};$('next')
 $('csv_export').onclick=()=>{download('labels.csv',csvBody(),'text/csv;charset=utf-8');const done=state.labels.filter(r=>r.label).length;message(`CSV downloaded: ${done} reviewed choices. Unfinished rows retain pending markers. Upload this file to GitHub; this form does not push it.`)};
 $('state_export').onclick=()=>download('review-checkpoint.json',JSON.stringify({version:2,post_ids:posts.map(p=>p.id),state},null,2),'application/json');
 $('state_import').onchange=async e=>{try{
- const d=JSON.parse(await e.target.files[0].text());if(![1,2].includes(d.version)||!Array.isArray(d.post_ids)||JSON.stringify(d.post_ids.slice(0,posts.length))!==JSON.stringify(posts.map(p=>p.id)))throw Error('This checkpoint belongs to another collection.');
- const restored=normalize(d.state,d.version);state=restored;render();message('Checkpoint restored. Earlier manual choices keep their manual provenance.');
+ const d=JSON.parse(await e.target.files[0].text());
+ if(![1,2].includes(d.version)||!Array.isArray(d.post_ids)||!d.state||!Array.isArray(d.state.labels)||d.post_ids.length!==d.state.labels.length||new Set(d.post_ids).size!==d.post_ids.length)throw Error('Invalid human-review checkpoint. AI review files cannot be imported.');
+ if(JSON.stringify(d.post_ids.slice(0,20))!==JSON.stringify(posts.slice(0,20).map(p=>p.id)))throw Error('This checkpoint has different cold comments. Keep your original checkpoint and review form.');
+ const oldById=new Map(d.post_ids.map((id,i)=>[id,d.state.labels[i]]));
+ const mapped=posts.map(p=>oldById.get(p.id)||blank());
+ const restored=normalize({...d.state,labels:mapped,index:0},d.version);
+ const firstMissing=restored.labels.findIndex(r=>!r.label);restored.index=firstMissing<0?0:firstMissing;
+ const matched=posts.filter((p,i)=>oldById.has(p.id)&&restored.labels[i].label).length;
+ state=restored;render();message(`Checkpoint restored by comment ID: ${matched} saved choices retained. New or unfinished comments remain blank. Keep your original checkpoint as a backup.`);
 }catch(err){message(err.message)}};
 $('dataset_export').onclick=()=>{
  const done=state.labels.filter(r=>r.label).length,counts={analysis:0,unsupported:0,question:0};state.labels.forEach(r=>{if(r.label)counts[r.label]++});
@@ -107,7 +117,7 @@ $('dataset_export').onclick=()=>{
  let hard=0;posts.forEach((p,i)=>{const r=state.labels[i];if(r.label&&r.hard){hard++;text+=`\n### ${hard}. HN ${p.id}\n\n${p.source_url}\n\n`+p.text.split('\n').map(line=>'> '+line).join('\n')+`\n\n**Chosen label:** ${r.label}\n\n**Student explanation:** ${r.note}\n`;}});
  text+=`\nSaved student hard cases: ${hard}. At least three are required.\n`;download('dataset-review.md',text,'text/markdown');message('Reviewed counts and your saved hard-case decisions exported.');
 };
-$('criteria').textContent=data.criteria;render();
+$('criteria').textContent=data.criteria;$('selection_note').textContent=data.selection_note;render();
 </script></html>'''
-(root / "annotation_review.html").write_text(html.replace("__DATA__", payload), encoding="utf-8")
+(root / "annotation_review.html").write_text(html.replace("__DATA__", payload), encoding="utf-8", newline="\n")
 print(f"Built review form: {len(posts)} posts; {len(suggestions)} unreviewed AI suggestions; 20 untouched cold rows.")

@@ -10,7 +10,7 @@ check of actual evidence, not an awarded grade or a promise of full credit.
 | Criteria testable by another reader | 4 | Each defines data/population, a calculation and an outcome; aggregation/empty-subset handling when relevant | All five state measurements. Remaining clarity issues: criterion 4 leaves sample selection unspecified; criterion 5 needs the maximum-softmax and empty-correct-subset conventions stated before testing. Targets are preserved. |
 | Criteria carry a reason | 3 | All five have a reason; at least three reasons specifically reference HN, the chosen labels or actual distribution | 5/5 reasons supplied. Several reference HN examples; final reasons should align with analysis/unsupported/question and the actual reviewed distribution. |
 | README taxonomy | 2 | Each label has one sentence and two real examples, plus a hardest-boundary rule | Now included directly in README. Draft still requires student review. |
-| README dataset | 2 | Source, actual labeling workflow, real counts per label, three hard cases with decisions | Source and process status are documented. 260 collected; 200 working rows; 180 AI suggestions pending human review; 20 cold rows blank; 0 student hard-case decisions. |
+| README dataset | 2 | Source, actual labeling workflow, real counts per label, three hard cases with decisions | 291 archived; 200 working rows; revised suggestions are 65 analysis, 70 unsupported and 45 question; 20 original cold rows remain blank; no human choices or student hard-case decisions. Replacement IDs, reasons and sampling limitations are documented. |
 | README training | 1 | Starting model, actual settings, any change and reason | Default plan documented; no completed run yet. |
 
 ## Floor versus target
