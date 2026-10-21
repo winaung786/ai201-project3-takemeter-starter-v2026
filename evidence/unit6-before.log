@@ -1,0 +1,96 @@
+device: cpu  (CPU)
+torch:  2.6.0+cpu
+
+⚠️  WRITE THIS DOWN. Your results depend on it.
+
+Two people running this notebook on the same data with the same seed can
+get different numbers, because different hardware does the arithmetic in
+a slightly different order. That is not a bug and it is not one of you
+being wrong — it is a real property of the thing you are building, and
+unit 6 asks you to report it alongside your three seeds.
+3 labels: analysis, unsupported, question
+seed 42, 3 epochs, lr 2e-05, batch 16
+Loaded labels.csv: 200 rows
+Columns: text, label, note
+
+============================================================
+Seed 42  (1 of 3)
+============================================================
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/139 [00:00<?, ? examples/s]Map: 100%|██████████| 139/139 [00:00<00:00, 2639.41 examples/s]
+Map:   0%|          | 0/31 [00:00<?, ? examples/s]Map: 100%|██████████| 31/31 [00:00<00:00, 1288.53 examples/s]
+{'eval_loss': 1.0404595136642456, 'eval_accuracy': 0.5161290322580645, 'eval_f1_macro': 0.3863837312113174, 'eval_runtime': 2.2478, 'eval_samples_per_second': 13.791, 'eval_steps_per_second': 0.89, 'epoch': 1.0}
+{'loss': 1.0846, 'grad_norm': 1.4328111410140991, 'learning_rate': 1.3333333333333333e-05, 'epoch': 1.1111111111111112}
+{'eval_loss': 0.9916051626205444, 'eval_accuracy': 0.6129032258064516, 'eval_f1_macro': 0.4692028985507246, 'eval_runtime': 2.2443, 'eval_samples_per_second': 13.813, 'eval_steps_per_second': 0.891, 'epoch': 2.0}
+{'loss': 1.0093, 'grad_norm': 1.888914704322815, 'learning_rate': 5.925925925925926e-06, 'epoch': 2.2222222222222223}
+{'eval_loss': 0.9659778475761414, 'eval_accuracy': 0.5483870967741935, 'eval_f1_macro': 0.4177777777777778, 'eval_runtime': 2.0579, 'eval_samples_per_second': 15.064, 'eval_steps_per_second': 0.972, 'epoch': 3.0}
+{'train_runtime': 111.3328, 'train_samples_per_second': 3.746, 'train_steps_per_second': 0.243, 'train_loss': 1.0302180890683774, 'epoch': 3.0}
+Map:   0%|          | 0/30 [00:00<?, ? examples/s]Map: 100%|██████████| 30/30 [00:00<00:00, 3874.17 examples/s]
+Saved audited seed 42, epochs=3
+  accuracy 0.667   macro F1 0.503
+
+============================================================
+Seed 7  (2 of 3)
+============================================================
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/139 [00:00<?, ? examples/s]Map: 100%|██████████| 139/139 [00:00<00:00, 5913.34 examples/s]
+Map:   0%|          | 0/31 [00:00<?, ? examples/s]Map: 100%|██████████| 31/31 [00:00<00:00, 4438.57 examples/s]
+{'eval_loss': 1.056686520576477, 'eval_accuracy': 0.6129032258064516, 'eval_f1_macro': 0.4619047619047619, 'eval_runtime': 2.0627, 'eval_samples_per_second': 15.028, 'eval_steps_per_second': 0.97, 'epoch': 1.0}
+{'loss': 1.0758, 'grad_norm': 1.583525538444519, 'learning_rate': 1.3333333333333333e-05, 'epoch': 1.1111111111111112}
+{'eval_loss': 1.0295814275741577, 'eval_accuracy': 0.7096774193548387, 'eval_f1_macro': 0.5398550724637681, 'eval_runtime': 1.9494, 'eval_samples_per_second': 15.902, 'eval_steps_per_second': 1.026, 'epoch': 2.0}
+{'loss': 1.0228, 'grad_norm': 1.7272846698760986, 'learning_rate': 5.925925925925926e-06, 'epoch': 2.2222222222222223}
+{'eval_loss': 1.0159367322921753, 'eval_accuracy': 0.6774193548387096, 'eval_f1_macro': 0.5151515151515151, 'eval_runtime': 2.1932, 'eval_samples_per_second': 14.134, 'eval_steps_per_second': 0.912, 'epoch': 3.0}
+{'train_runtime': 102.2705, 'train_samples_per_second': 4.077, 'train_steps_per_second': 0.264, 'train_loss': 1.0347099304199219, 'epoch': 3.0}
+Map:   0%|          | 0/30 [00:00<?, ? examples/s]Map: 100%|██████████| 30/30 [00:00<00:00, 3182.16 examples/s]
+Saved audited seed 7, epochs=3
+  accuracy 0.633   macro F1 0.488
+
+============================================================
+Seed 2024  (3 of 3)
+============================================================
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/139 [00:00<?, ? examples/s]Map: 100%|██████████| 139/139 [00:00<00:00, 5538.22 examples/s]
+Map:   0%|          | 0/31 [00:00<?, ? examples/s]Map: 100%|██████████| 31/31 [00:00<00:00, 4535.17 examples/s]
+{'eval_loss': 1.04594087600708, 'eval_accuracy': 0.45161290322580644, 'eval_f1_macro': 0.2571059431524548, 'eval_runtime': 2.0395, 'eval_samples_per_second': 15.2, 'eval_steps_per_second': 0.981, 'epoch': 1.0}
+{'loss': 1.0891, 'grad_norm': 1.5614386796951294, 'learning_rate': 1.3333333333333333e-05, 'epoch': 1.1111111111111112}
+{'eval_loss': 1.0021672248840332, 'eval_accuracy': 0.6129032258064516, 'eval_f1_macro': 0.46336429308565535, 'eval_runtime': 2.037, 'eval_samples_per_second': 15.219, 'eval_steps_per_second': 0.982, 'epoch': 2.0}
+{'loss': 1.0041, 'grad_norm': 2.063624858856201, 'learning_rate': 5.925925925925926e-06, 'epoch': 2.2222222222222223}
+{'eval_loss': 0.9854474663734436, 'eval_accuracy': 0.6129032258064516, 'eval_f1_macro': 0.46336429308565535, 'eval_runtime': 2.0018, 'eval_samples_per_second': 15.486, 'eval_steps_per_second': 0.999, 'epoch': 3.0}
+{'train_runtime': 100.8423, 'train_samples_per_second': 4.135, 'train_steps_per_second': 0.268, 'train_loss': 1.0247994352270056, 'epoch': 3.0}
+Map:   0%|          | 0/30 [00:00<?, ? examples/s]Map: 100%|██████████| 30/30 [00:00<00:00, 3854.59 examples/s]
+Saved audited seed 2024, epochs=3
+  accuracy 0.500   macro F1 0.382
+
+
+============================================================
+All three done.
+============================================================
+Wrote results_three_seeds_before.json.
+Re-running after your improvement? Set RUN_LABEL = "after" first,
+or you will overwrite the numbers you are comparing against.
+Wrote results_three_seeds_before.json. Commit it.
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.667 | 0.633 | 0.500 | 0.167 |
+| Macro F1 | 0.503 | 0.488 | 0.382 | 0.122 |
+| F1 — `analysis` | 0.769 | 0.818 | 0.600 | 0.218 |
+| F1 — `unsupported` | 0.741 | 0.645 | 0.545 | 0.195 |
+| F1 — `question` | 0.000 | 0.000 | 0.000 | 0.000 |
+
+Accuracy moved 0.167 across seeds — more than 10 points. Your dataset is too small or too lopsided for a stable measure. That IS a diagnosis. Write it down.
+| true \ predicted | analysis | unsupported | question |
+|---|---|---|---|
+| **analysis** | 10 | 1 | 0 |
+| **unsupported** | 2 | 10 | 0 |
+| **question** | 3 | 4 | 0 |
+
+Biggest confusion: 4 real `question` posts called `unsupported`.
+The other direction: 0 real `unsupported` posts called `question`.
+
+That's lopsided — the model leans toward `unsupported` on this pair.
+A direction like that usually points at your labelling rather than the
+model. Your agreement report is the thing that can tell you which.
+Protected Unit 5 artifacts unchanged; all within-seed splits disjoint.

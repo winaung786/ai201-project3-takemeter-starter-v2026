@@ -1,0 +1,700 @@
+{
+  "seed": 2024,
+  "n_test": 30,
+  "accuracy": 0.5,
+  "f1_macro": 0.38181818181818183,
+  "per_label": {
+    "analysis": {
+      "precision": 0.6666666666666666,
+      "recall": 0.5454545454545454,
+      "f1": 0.6,
+      "support": 11
+    },
+    "unsupported": {
+      "precision": 0.42857142857142855,
+      "recall": 0.75,
+      "f1": 0.5454545454545454,
+      "support": 12
+    },
+    "question": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 7
+    }
+  },
+  "confusion": {
+    "analysis": {
+      "analysis": 6,
+      "unsupported": 5,
+      "question": 0
+    },
+    "unsupported": {
+      "analysis": 3,
+      "unsupported": 9,
+      "question": 0
+    },
+    "question": {
+      "analysis": 0,
+      "unsupported": 7,
+      "question": 0
+    }
+  },
+  "confidence": {
+    "mean_when_right": 0.41281968355178833,
+    "mean_when_wrong": 0.40582314133644104,
+    "accuracy_most_confident_third": 0.6,
+    "accuracy_least_confident_third": 0.5,
+    "n_per_third": 10,
+    "fraction_below_0_50": 1.0
+  },
+  "run_label": "before",
+  "base_model": "distilbert-base-uncased",
+  "epochs": 3,
+  "learning_rate": 2e-05,
+  "batch_size": 16,
+  "max_length": 128,
+  "labels": [
+    "analysis",
+    "unsupported",
+    "question"
+  ],
+  "device": "cpu",
+  "device_name": "CPU",
+  "torch_version": "2.6.0+cpu",
+  "data_sha256": "a60e1a1fa9b9d8504ab692d360012d7fa25d195f5668db5a26a017e6b0994345",
+  "criteria_sha256": "256d7d354dff1847ee27277a9a5cdc77ae88c43e17962febefd27dc30d2a8d6e",
+  "annotation_provenance": {
+    "human_review_basis": "user_confirmation_after_AI_assistance",
+    "confirmation_file": "evidence/human-review-confirmation.json",
+    "reviewer": "Win Aung",
+    "unaided_cold_pass_recorded": false,
+    "course_submission_complete": false,
+    "limitation": "Initial 20 were AI-assisted; training does not satisfy the unaided cold-pass requirement. Hard-case explanations originated with the assistant."
+  },
+  "completed_at_utc": "2026-10-21T05:08:49.713590+00:00",
+  "label_counts": {
+    "analysis": 72,
+    "unsupported": 81,
+    "question": 47
+  },
+  "trainer_log_history": [
+    {
+      "eval_loss": 1.04594087600708,
+      "eval_accuracy": 0.45161290322580644,
+      "eval_f1_macro": 0.2571059431524548,
+      "eval_runtime": 2.0395,
+      "eval_samples_per_second": 15.2,
+      "eval_steps_per_second": 0.981,
+      "epoch": 1.0,
+      "step": 9
+    },
+    {
+      "loss": 1.0891,
+      "grad_norm": 1.5614386796951294,
+      "learning_rate": 1.3333333333333333e-05,
+      "epoch": 1.1111111111111112,
+      "step": 10
+    },
+    {
+      "eval_loss": 1.0021672248840332,
+      "eval_accuracy": 0.6129032258064516,
+      "eval_f1_macro": 0.46336429308565535,
+      "eval_runtime": 2.037,
+      "eval_samples_per_second": 15.219,
+      "eval_steps_per_second": 0.982,
+      "epoch": 2.0,
+      "step": 18
+    },
+    {
+      "loss": 1.0041,
+      "grad_norm": 2.063624858856201,
+      "learning_rate": 5.925925925925926e-06,
+      "epoch": 2.2222222222222223,
+      "step": 20
+    },
+    {
+      "eval_loss": 0.9854474663734436,
+      "eval_accuracy": 0.6129032258064516,
+      "eval_f1_macro": 0.46336429308565535,
+      "eval_runtime": 2.0018,
+      "eval_samples_per_second": 15.486,
+      "eval_steps_per_second": 0.999,
+      "epoch": 3.0,
+      "step": 27
+    },
+    {
+      "train_runtime": 100.8423,
+      "train_samples_per_second": 4.135,
+      "train_steps_per_second": 0.268,
+      "total_flos": 13809972586752.0,
+      "train_loss": 1.0247994352270056,
+      "epoch": 3.0,
+      "step": 27
+    }
+  ],
+  "splits": {
+    "train": {
+      "n": 139,
+      "label_counts": {
+        "unsupported": 56,
+        "analysis": 50,
+        "question": 33
+      },
+      "text_sha256": [
+        "e9006c647e8aa7a45e15497a31525aba68492684863bb051c3cdc847bf592683",
+        "049e81779a0d86da44d5ef067f5f92d81e3286ce349a485f1b59a696bbae92f7",
+        "0b3b15af842f745e0ced0031763a1482de2f93916520b4fad14325fb5ffd7f30",
+        "a05021a9fb7af89c19e6bcbe581482797e95e31495ad5d1d00b7fe72598cd28e",
+        "510f55b7e8581d263677b8d51ce161c4bfd0395ba246283bc9b530a882241a47",
+        "1b8bd6cdef740b380445d5db073b2ae9a382f67e8d1dda9d4eb52e7556a7a2cb",
+        "a28f6989a208d8465660c327d19dd4d467a66c3bf87a7a2e104bbc27a3fecbf2",
+        "8d59252c7e32a8b686a95887eb5b75a1dd8e8e6af3c8d8c2fb680286b26cdc66",
+        "b65bf0546b4516bef48c4d354897741cc205933e43b45398902ee1194a64e10d",
+        "eb9f526d4d7eb9bb418ad0d9ea85961b582e2645986c05d47b41d2515823088e",
+        "8f81ddb05d7cdd199ce2142eb08849e48b3fe69716f32bf5bc4733e77e710abf",
+        "4e3f8d686e1a3eee1aa824f04d1d80cb50a1aa250840e27bf544095e9c8093b9",
+        "8b00b5f4dfcbcbc9503bd2616f72875a85771d40dab013e7d755a6944d045c0d",
+        "2f33b91885be9dd2f630f38e7a872713a491a84fd497e550c80db26e3d22d59c",
+        "5a41c4b6bf6ef1a76f35e3866a7073f49f3b473cdfbba3adf42bffd1675d8ead",
+        "e3c1d7668d731ccf02af4aa25534380220dc5d1d3f61ac7bc81a56c917aff656",
+        "3f8c5556f2477652f20b4b0614379569d3ef3776356a5c222843ef2e643a4e41",
+        "7e020e8d3050f4543fac0c1293352adf882977e21459b74102b202651910ce97",
+        "2e02bc2ad00523173a057e03acb999820f6ec9ff0d6631ee662470237b0b8b3a",
+        "60fc45186c64fadc213631b475db36d43c666ea28e14475600140ccb20ab4e31",
+        "076dbd2c5eb9662c3850840213c3365e44272d55a2635484b2c2132bfa138551",
+        "be21290efa2bb31983c5d4af94382173b087bee14676b3d337a2dbc26e2e850d",
+        "89633226528a2e9fb2f9c9f20c227378aa76b2f94d1a653036b547aadc1fca86",
+        "3a1e218475e218fb99f6c33ff75d495be0e3e5c3b9725f5f018b872e883e5879",
+        "21f552af72460e77d8973a8af236ceebabc50850200661b2bb04633d717287a6",
+        "8a632a641974571a66b54dff0de1ade0dd5ecd546d2c36dd46f3614859a05d17",
+        "c2c0e7a67b0ad96571be8154b76687860e76bd62bdd2fef25267c6f1847358f3",
+        "ea17c2420553c5971bac5ace6a5ff3320d4a83f4789c4c23e481222c080bbf74",
+        "717e9c2119b37be44924b9ef78161f3437a5c1d0dd2633b7f42d4983850e7d7f",
+        "5e1f72f5f03dcee8de7c5506100da597fbdbfa91eaccb963b920e989bb6fa608",
+        "4ee8134572403ead865e8d28a927e909818b769fa65b6bf54e630dc4bdd434b3",
+        "c2e2d710e296defc6e773d01d5dbb57414af2fc8776e180ccf48e21ce9bb2e45",
+        "6fb9958f59c5b3331bae1f0c4a98fe541151bcd7d56938e882b08bd50605c5b9",
+        "de367a1169eb9e18b081c291b12776b10260b7d83ab8a90302917bfb7611c3b5",
+        "3c9654745a7fdf3b9c74a6709ac65e12d313b67acf38f4ba8ef3a069763e1149",
+        "635e6e5685987f4c5f45a7ae51e131a517f7aa51db0367318de6e24cf6aae411",
+        "696dcbce81d20f1958a8d5699fdbe476ee96007a137f36c91b66fb33361afa52",
+        "191957e6a1c028f6d72315b8e36c254a721977627a946a4597bc10891637e24f",
+        "dcae4539a5e3d3a802fe40e060debee4034973dce9908fbd044561103b3bfb47",
+        "2baccf2bb1345cc6926db5f500de2ea6ddcdeca6d9ed97e5ad0b9153a49d2f09",
+        "6ea0c0301042c409b452a4ad307200cd38d1810b4535f7ce3f35bca1fae46b20",
+        "6eeabeea12fd5bc4954a2a4e175ff95cac545afbb82a27893346588d407ba6ad",
+        "af7727c50275eda77175d2f8fe857972b3c1d87a8befde0e7a754da6743a622f",
+        "11c0283e868543cda90a612b7ebc31817f4ef97f5eed9dbbbd8acac1ac09303a",
+        "b784d09918961b5a3cd983a55ae5ae66d22628f5878d0e35382d9e7f28127353",
+        "47c85b5a84de9033baaac69af987758b0113fc128d2a3c14baa89086e42e69d8",
+        "03e004a9a1798505b57fdc5f0b46d3c098a9b9845e68f5acbfadb7b53a145f2f",
+        "32a368d22c5d945df5f690ab0559fdd4741f3542d961fcfc1b1566aa8f6eab55",
+        "59d61b9478f89a9452d06c126a4ed1fac099af1045a2ad03da0f6d0617f89461",
+        "eb5f88c2d8c7eabc3a218e49b44cb77daa4488381ff4eefb5b201f29e30e5aab",
+        "b375c907125435dadcd36df0073031ea6b9fa4277888013d74a445e2bfb4d9b8",
+        "50493e387fe452ba6d868bb1e3a69cf0b9afcf24428926e7da7fec2c473b1a72",
+        "68516e176d191dc09ca9e8b2cb985f34d87dfe9211a0a29c9aed0860275e572e",
+        "c6e459a92915b1fe2690795f71415fab88633989391454d0a4bc0ed2d862b839",
+        "d8e5c299b1ec40711fa1561344e505c3ab5f14811c88d10276f34a51d2225df0",
+        "dd909a8e5bd2ed9f4408ce3a1b034c514d89f5f60c5f196b77e1cbd656905fbf",
+        "20771e67c4a848628236263418740daa12b3e355302c72568434f8e907421b8d",
+        "2616d46d9b89d33707fcd3ba6927d326a506c0870c96d42e1161e12fd2a74e08",
+        "09c13b8ae5ddce1217b0ca92ac9ce49e917d7019e7f2084935ce568916bf1b67",
+        "44f022de2b813fb80ace39df872ee1cd8fb8b34e2709a35927195e45bdc66cdc",
+        "3e0a1186c02fcf34a38b73a1990617eb8ee37956c58f0ee8da1370b5025221cb",
+        "4ae109359d5c6a8814ef09287a753393834e753304737edb86191eeb8a0e8ca6",
+        "7728bdc26f1b43878b21640ef9ddce5e5bf2154c46c1e07bb3e268402618f277",
+        "6d0ecec8fc4a773dcbe9b50471c7f4ef9ee66943a36642da076e4961f720ff34",
+        "f53398c4c9b2c88baac23c5c7487efbe26d10e713ca075982c1762efa5623960",
+        "56cbc0d1ead9f8eda3654e0559f2a0c8b03c7ac2601a4acaca6988c1f657c939",
+        "fcd3bd806d0c40d247d4710211ea49247eaadca747b42feeb40f6dcd368df731",
+        "6e5c4b42ca40ffe7b70019ceba343225767cf2d37d2e19aeaf8fb2d8e64e0d1e",
+        "f80da07cf2af0cf1a4944ead6485f04add7d269ced9171d0c38b5c23c8b5ea59",
+        "a60a0250de8aff61850644a84763235a23c575f5d1e179a5997031e810959e2d",
+        "791d509199ce54f7ff7ddd9528243e823535c3ab7c58cd2aff0898a419bad5e8",
+        "d9737dc5a06fdc79cfb2d75f0d0f1a43b721acbd8fbe9763a14f73d2f4a676b9",
+        "ce88a706f5cf1863f44d2e44113894b2fb11a92259c129580796584e1d880350",
+        "5fed2fc6845a0c35cd66179cebc2814180284a10f281efda184819c4c174eaed",
+        "87ab2e3011f285962218de4769f520a4cbc8ced3d71565e665bcfdbbd204cfbc",
+        "86b7d65d315a5eff8dba6ae9220a53b21ee34207c0557c66519b7bd3eca9db25",
+        "e677982e761d8230a968c1e7304028489d260008f3b6600f25a150afad503829",
+        "722574748f76e2d8bf263d146f2bcacb29b6856fd9648cecdcba5275c2b182b5",
+        "488c5da06beaea6519cf03eed9fa63330fd3826ead39bd1e5ceafd6e3f39dd57",
+        "eef2d45096e3437708e33233be6e32b6ca0a8478e3bc58911fed29e4cde2d7fa",
+        "30ca7eacb8f16d89640fff64014bbab8173c94981b9b4c79ae83aabf32d61cb1",
+        "22ea63ed54bf73521b24a9328bdc2382c0948daab31e1bba179a5a4c083c66b7",
+        "9ffc8b2006acac7798a72a05b348434ef12fa774368f4f1789cdb34c2f12b430",
+        "e9263be560c742499b507fb84f89447a39c782fa8da108fcf38d6de80d85f886",
+        "867626f8d12dd16b817ab159a7b058bb0d63b608f64a74d61a144a9b911c00a2",
+        "bdd5e3bd007ba7e56d30db6cc2afe1fcf172a2840900189a55528e6a992c07ac",
+        "b994e9dd96fc71e5e1be4b6ac96a58c39616977a97f529fd190056dfce877d77",
+        "cdb72a5d26666ede344fda2943c6d96f88b8f2764b354ae91c67d32e61c03e6a",
+        "b54b6684eaa55b93b326dcd8797cf5e57b0af50020ea82407d0e64cb9e6a316d",
+        "e8b6826fb40f20b12044039bd7763e0ce609423c05555ca4fd065a145bef2720",
+        "b00d462aea01186ddef6f218bd8d8c35ed9dba060ac4f936789bdc7ac22a9d58",
+        "88c7341ee0fc9608aadaa69ecb25e85f251205c1d3d125640f4581836ba17653",
+        "8934fa2ede64c10f3502b2661849957f9aa698dd4b4d0400affbd14fe5571e93",
+        "e11cd0500f9371bcc95f913b59f7a658cded9aec14325fbaf73a2930e9671ec3",
+        "1e465fd2737f95c16f9b191117401814226c0bdf39aa5e465175cd77ae73c6cf",
+        "6fa178fc08b075c6fc64e0fb0547586efa100ba14d16e3def39fdbac2b750117",
+        "c99195e5fe1105fbafe5c75f69a12f3413717ad9b614626c6836ebec722ec6b3",
+        "367d50bcebb2c19d209d60c878a528ba210d37d7266bb9e6f60da05d2ac8c6ef",
+        "202f096d4a81db0775f808cc320adf4620d2b8771d7360e8317d1018de375eb2",
+        "192ad53f073e6b3c98dd0a6c2fd873faf74a99fe835da20d6975b9353084d12f",
+        "ca7f6d71a449e9fc0936a80f5e30964f23f558232cfb1b2bf4bd00a7c2293ed4",
+        "a3a1b34df32094afb31d222f94d1124eeba569c8096714ee22f3ceb7be48c42c",
+        "e8d7a7e8a51890eb9d52e61fee6a95382da2ededc3ac917c4360d40e860259f1",
+        "1419f9c0c839905c2f25731992debdc7ca628529419ccf7b03d17049ad5d618a",
+        "7a5c13af32fa80a3f6985d3789debda9ba12f7408d9a37617c0055fd58cd093e",
+        "5e48085c846dc906840fcd24ead05465d87c45de5f94b1f49005befc8430da8f",
+        "c15aa8ad9ff76b6712a39d1f86ac6caf6f1de17c32a8b71386671f464f9b6894",
+        "702d81de318fd419d1b0fdbb28e326752fc365d3428de1a207740bd7e2a86f50",
+        "be1d67f7cf505c8292602999e31bf84ec740eed9664ea5b3598f29871d9d9df7",
+        "0e1c6402581937f3111ea137b551c7619906389b2669b4c867543f3f28aa112b",
+        "945d505dfc9fffc416e4e32487461286ec94d626d00b6da95238630fe4f85307",
+        "0948251ab3492430e702bfa9d3fdcbebb26e234ff2c0539ad1a032bd4d835454",
+        "aeee4c82b5d65396656830fb91929e3841dd0f84c5dbdc4ffba90a9f7c0e6bbc",
+        "46b9e9ee1172c2edc39d2b6098ec535bca657a3ea02356bdda84062d66a2d9f8",
+        "2366c6781c02478a1ebdd7937a5fe6bed744fb3cf084be10dfb5791fc985bf44",
+        "98b29cf93fac807fc42adfb727e216793046520a3c85808a9a46f7b4c617e07a",
+        "2767013d51962e17739045092a340a2f649530209b6d782cf903541c4abd226f",
+        "6359c551d8b234f3f03ccb82e04b7df355964a9c77e850879451f7487542114e",
+        "3194a9cb29cee582fee423d0f0c04dfaa98fd98c0e10bb4ca96f0d7197cc4647",
+        "5126497ede81508973f1ee2a39aefe0d50bbfd0823993350c826a47f3efdc7bb",
+        "6fd4840618c9b9a675f87f269425d0010045a140f707b6b500643b43616274a0",
+        "4fb7866b89420aa705a1c5f2c09201e3055014e82b277de00445a01f256b8cff",
+        "661093c2c30506382d992e64fbbfcd292b2cf56fc3e47e4489290b857749157b",
+        "301212f8b07d2435b7c48016b5a6354cdd9c273b9a0f2880d72e9fbde74a5d2f",
+        "392b25ff494f7fada7a67859745efaf99d36f7f23fea90a2e38325b764d1529e",
+        "f9fb83a51ba9329ec50f334a2dd26e64c6d91d169cc97f115daeba3640af829e",
+        "137faf95ffbbc4a2d4996c1bd41e832d8525e58b12ca3b9697d3fc521df2e6bb",
+        "f15c00129af351ec7b49098337a31dbf7ad681bafe8c3d54156050632af08923",
+        "e5892aade884a537b082a3ebbb4ccb7635d947b8629b4375276dc8287fc87cdc",
+        "76c23d841b0ecb96b70aa03003c53b6b4a829f4849e934352fd7882f60217fc2",
+        "df3053127d19e4b1a596fd7c97ee9c99e50b5e2260a7b79185270094536fedcf",
+        "2cae612b40d3b49f2dcbe420e69120cb32a3aeea4a75b734a5d287d9196e5275",
+        "268e4299249ff7bf09b11d650e56856aa5418f51a6b35fd267fddbf6ee2b065c",
+        "930f296bb8dabcfd34581474e62e745cee8d3197bc418d3068603e9999942d4a",
+        "25befd74624a9d517473a1b643928ef86b5dabc6ea0a9d6c6331818f44c257cc",
+        "2517ccec97958a52aa0323257c38fc88ce96f2e15a2abca540643ace664636ae",
+        "93c99a7298f2695666fd61cdf3600fc26948272eef71efe40db5f4b2da679e17",
+        "77b457da0c786962c20c84abd1ec919f741db34960a8ca34a3b33f71724b9f28",
+        "4ef63b22954350bf14609d0572399a2fd25d24e2ebbbef3218400c60d30597ef"
+      ]
+    },
+    "validation": {
+      "n": 31,
+      "label_counts": {
+        "unsupported": 13,
+        "analysis": 11,
+        "question": 7
+      },
+      "text_sha256": [
+        "7117947ecca868fa96858fc051b360a402d8ac56326cb5d30b2a6c16e258025f",
+        "b33d81fd533752cc1ddf9ae08e47859c83396b49dc6bd1b75f610e4e484f7a50",
+        "8506269f6680ed9bc4d28c43b928ff31d072b3f2ef5085c3139e0261e94bd05c",
+        "87f8f423ee7ec1d557a426c463c197a224b64a84697f47d67987735d5e059ef9",
+        "fcdc68545fedec490e372a54447eeeff61dfbe21fd2fdceaf1f8fdde12a6ac6c",
+        "c0d760ce6c4a4b0804708bf4fbe39df875d829c4ec11cc9fb6a86f8802c376da",
+        "f479384d802641604fb3cd3571580b1f72539c9157a46005f32bb61dbf063366",
+        "865a80331e0284a3f4b00c72cac0c86f37177c6bfdb4191670c1547dd4a6e586",
+        "9f219d65fab4eef64f3ff82e8e1cf6c2bc251eb12dcccf4664c017b9c73ba2d8",
+        "8059cfcbe51289a7a54a33824fb0ad0a405eaef6571c6a88bf5189aa47acca02",
+        "baf59beb3e9d2c0bad662c3c2062907fc9a5cf814f71a32a9056bd4d77f2f33e",
+        "ed5df3ef13bc66f4adeb0180cd6f2e97fff32aee7791e144534d965b1df3da17",
+        "521e3af8d169af1d94975510a0d6434bec902793b38f570c2e76e9d2c66b4f57",
+        "ce2c84061de66849adc96b555a56032a3316f66ebe3646d30b12578a84932c19",
+        "8119cfc9c5d600460a92aaba991d622f991239e10784ebbdbf4b070ee20f216a",
+        "bbb022674548e19c430707c1d1284671addeb06e4a33f850840d08bcf41c6337",
+        "eb5c526295896126c138f554d34858e8ea073788b1ac2b083d668fbd25629d34",
+        "318f40c69c0a7bc0256570a9fa6434ee221cecf31499c3a4fe0c8f35bc8113b6",
+        "139c2b29749ff24e4d7eae0673bab2dd68541a837d51546c426611844b184c1a",
+        "e09bb788e63c8b10cc4496d8a9beb84338c5499dadb99561fcc7ff4beb42a18b",
+        "979b3cef2eff218b0a6aa2b4cc2ddd6e082a983dd0bd0e1513d3c73d903f5cda",
+        "c35b8e3b43302c1d27097bbae5b037d3b8f473ed4b0f32ea94a97e6df3a70367",
+        "a553de3d3cd5e6994b3451ba9e0ed6b538d36092977a736e057c363d93b5017b",
+        "a65d0646fccc9585d7515fd0bd284511bc1a953f20119034dcd2308dcb438674",
+        "bdf80f49424b8bd14f69fe7173eaf5d8ce15d343780916f2ac5ac8a40fee3714",
+        "060a5f470c439da0232459a895f5b3cd0819905c5d34b04a548aac9aa7492dc5",
+        "45c191d95d997817d40f8d5ac624ec20993621b4a7bc6561731036484b52e8e6",
+        "b2a19cd974c8faa9613acb5d4c1cbdc2daa85af7c98812d00e50269197aa2c48",
+        "1b2faa1fbca6c284653a74c02809f2394b21851cb5b55182b0283efc357aa9d4",
+        "7a691979df1d6417c7c0f0867bb460b2eff6d7034b6ceed3c52d92582daab073",
+        "28ea623669b18cc95c7f3b7da1883ffb4f400eb49c656d26e570e9a604eeefa9"
+      ]
+    },
+    "test": {
+      "n": 30,
+      "label_counts": {
+        "unsupported": 12,
+        "analysis": 11,
+        "question": 7
+      },
+      "text_sha256": [
+        "ee14fc7ff11e812e167d079fa00e4ad817d3762785400fa1c7f8a222e09401ff",
+        "f2542c1cc7b2ba7b28be425a793b55e09e13bbbe17abed5592553e2a4bd35def",
+        "f226b6d9f766d3374588a171c48f781b264775049be834d45b29d2b8257d41b1",
+        "f7be58e1141e0df20e059bdf44b251b369f93a2285e3d397b08148008456f8c2",
+        "c011e9b44ecec418b98888c2ac07ab3dd07fc9535100367ba6f7625f379fceda",
+        "c9f4b40f14eafd42e4d14ab0db5cccbf1d11c0ab340d09527cafc79cd30f93d7",
+        "ea2f4f602bbd1e5fa32ad4be5e96d3cb4f73470073dd15b7464d8492badf9bb8",
+        "cd2e6d075b5315dd17112b6b72c330a5b192cab0f7233a2ad9d3b93a34d3e7b7",
+        "f84a05abf3d4a17a9f89e7aca9793e6606a86947fcad299ca99d60668b583206",
+        "126f224d4c99196f5545e66d165513c47c0462cc4bd1227da703d20e66bf164d",
+        "860150f3c6e88ee4f30a620a06c00b8957988143ec1b48bb539a94985ab3611c",
+        "22162f9497b4bf159369a0e3a451e24feb21225c320107254e5a014f00fcf6fd",
+        "5dd0784f9915faec81853aa27c39d22bc99625481dcabf93ad87abf914857536",
+        "66abf50d5650b045f74ea1407485277bd608e7e69831acdf7f30a96e28efb2fd",
+        "74d6234c0f4a139be683da8ce0c64c52164aa50a865f42a5fe8e84f1c56f3e5f",
+        "6d2044fd1e9f9d62390d919a9e7969232507a2e61331091aa4d654d64ff34913",
+        "8bc4350e1b1aff386e8c12ec10dda24cfc1ee83e5d308c3d9cd2ba963b5c7f3f",
+        "ee0b4c688623886d05a3155e6921d9d4c1aaf16347a87f252aa02925f55df5f9",
+        "1280f6a1bef416804e00336906df942ede14c2b0e1551f05e677aa5fbff63f8c",
+        "1a3213a737a69cbc716264ef7d7df116be5d4cd9e8aeaa06e9a37b3296e3fcc5",
+        "2a8b0c8d3b42b4e8480f1160cb398c7164082e14e4faa6e21bc80676b519637a",
+        "fed9f470dca6b76faba70285d722a0964b7b4f71132fff9fcacd91692c0b1ad2",
+        "0becd03ff6d61f0f37bd20e446d60fcb2a867e40816f9e737fe30053ca19082d",
+        "9ff97155e38cd0ec4964e125550f6e9a9e2d36c151c8f48c7a9379ab0adb90e2",
+        "43eba5bf8986ad6904a446c5c22552a89830b7c0fbe613d4ba2987a37831e1e7",
+        "15b34f736f014620156eecd614494c2166171b33563c7ada09159802bae26dc1",
+        "c04c89f09ecd8bea6cd2e6eb9601fb9b7662e7b6b901f5a6f9b4aa1997284e66",
+        "78cdcbc4732414099069068f757186f449fad9eb003d69fa93894c021e7202c5",
+        "159478a230e225cae83f9c68bd58d56d44eb83b6c026f5f955a2e25b39554027",
+        "aa2374842192b24056aa162d6482448fa725b80b57c0cabeff2b7768b0da8382"
+      ]
+    }
+  },
+  "predictions": [
+    {
+      "text": "Sure but under what license?\nBecause slapping \u201copen source\u201d on the model doesn\u2019t make it open source if it\u2019s not actually license that way. The 3.1 license still contains their non-commercial clause (over 700m users) and requires derivatives, whether fine tunings or trained on generated data, to use the llama name.",
+      "gold": "analysis",
+      "predicted": "unsupported",
+      "confidence": 0.38130223751068115,
+      "probabilities": {
+        "analysis": 0.37322285771369934,
+        "unsupported": 0.38130223751068115,
+        "question": 0.2454749345779419
+      }
+    },
+    {
+      "text": "Can you elaborate a bit on what \"working correctly\" would look like? I have made use of agents, so me saying \"they worked correctly for me\" would be evidence of them doing so, but I'd have to know what \"correctly\" means.\n\nMaybe this comes down to what it would mean for an agent to do something. For example, if I were to prompt an agent then it wouldn't meet your criteria?",
+      "gold": "question",
+      "predicted": "unsupported",
+      "confidence": 0.44550859928131104,
+      "probabilities": {
+        "analysis": 0.2844432592391968,
+        "unsupported": 0.44550859928131104,
+        "question": 0.2700481116771698
+      }
+    },
+    {
+      "text": "Copilot is a bad yardstick.  The article literally addresses exactly this.  It\u2019s not just \u201ccool technology\u201d, that\u2019s the point.  It enables things that were previously impossible.\n\nI spent $600 on claude via cursor last month and it was easily worth 2-3x that.",
+      "gold": "analysis",
+      "predicted": "unsupported",
+      "confidence": 0.3859748840332031,
+      "probabilities": {
+        "analysis": 0.38318100571632385,
+        "unsupported": 0.3859748840332031,
+        "question": 0.23084409534931183
+      }
+    },
+    {
+      "text": "So if these do not work, to what do you attribute the rising positive rate?",
+      "gold": "question",
+      "predicted": "unsupported",
+      "confidence": 0.41047403216362,
+      "probabilities": {
+        "analysis": 0.24542152881622314,
+        "unsupported": 0.41047403216362,
+        "question": 0.34410443902015686
+      }
+    },
+    {
+      "text": "That's not quite true. State of the art both in speech recognition and translation is still a dedicated model only for this task alone. Although the gap is getting smaller and smaller, and it also heavily depends on who invests how much training budget.\n\nFor example, for automatic speech recognition (ASR), see: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard\n\nThe current best ASR model has 600M params (tiny compared to LLMs, and way faster than any LLM: 3386.02 RTFx vs 62.12 RTFx, much cheaper) and was trained on 120,000h of speech. In comparison, the next best speech LLM (quite close in WER, but slightly worse) has 5.6B params and was trained on 5T tokens, 2.3M speech hours. It has been always like this: With a fraction of the cost, you will get a pure ASR model which still beats every speech LLM.\n\nThe same is true for translation models, at least when you have enough training data, so for popular translation pairs.\n\nHowever, LLMs are obviously more powerful in what they can do despite just speech recognition or translation.",
+      "gold": "analysis",
+      "predicted": "analysis",
+      "confidence": 0.4140383005142212,
+      "probabilities": {
+        "analysis": 0.4140383005142212,
+        "unsupported": 0.3492269515991211,
+        "question": 0.23673470318317413
+      }
+    },
+    {
+      "text": "It is definitely like it because it can't be enforced. No one can tell if your singing in your private bathroom so a law covering that makes no sense.",
+      "gold": "unsupported",
+      "predicted": "unsupported",
+      "confidence": 0.4349534213542938,
+      "probabilities": {
+        "analysis": 0.3004489243030548,
+        "unsupported": 0.4349534213542938,
+        "question": 0.26459771394729614
+      }
+    },
+    {
+      "text": "It\u2019s just human nature, no big deal. Personally I find it mildly cute.",
+      "gold": "unsupported",
+      "predicted": "unsupported",
+      "confidence": 0.40977051854133606,
+      "probabilities": {
+        "analysis": 0.28691408038139343,
+        "unsupported": 0.40977051854133606,
+        "question": 0.30331534147262573
+      }
+    },
+    {
+      "text": "<https://twiiit.com/mitchellh/status/2055380239711457578> \u2013 will redirect to a currently-working Nitter instance.",
+      "gold": "analysis",
+      "predicted": "analysis",
+      "confidence": 0.3937855362892151,
+      "probabilities": {
+        "analysis": 0.3937855362892151,
+        "unsupported": 0.3333221673965454,
+        "question": 0.2728923261165619
+      }
+    },
+    {
+      "text": "It's important to address skeptics by reminding them that this behavior was actually predicted by earlier frameworks. It's well within the bounds of theory. If you start mining that theory for information, you may reach a conclusion like what you've posted, but it's more important for people to see the extent to which these theories have been predictive of what we've actually seen.\n\nThe result is actually that much of what was predicted had come to pass.",
+      "gold": "unsupported",
+      "predicted": "unsupported",
+      "confidence": 0.44503745436668396,
+      "probabilities": {
+        "analysis": 0.32490015029907227,
+        "unsupported": 0.44503745436668396,
+        "question": 0.23006241023540497
+      }
+    },
+    {
+      "text": "Have they solved the problem of Whisper making up plausible sounding junk (e.g. such that reading it you would have no idea it was completely hallucinated) when there is any silence or pause in the audio?",
+      "gold": "question",
+      "predicted": "unsupported",
+      "confidence": 0.4185131788253784,
+      "probabilities": {
+        "analysis": 0.27119556069374084,
+        "unsupported": 0.4185131788253784,
+        "question": 0.3102912902832031
+      }
+    },
+    {
+      "text": "This is textbook misalignment via instrumental convergence. The AI agent is trying every trick in the book to close the ticket. This is only funny due to ineptitude.",
+      "gold": "unsupported",
+      "predicted": "unsupported",
+      "confidence": 0.41803616285324097,
+      "probabilities": {
+        "analysis": 0.341879278421402,
+        "unsupported": 0.41803616285324097,
+        "question": 0.24008451402187347
+      }
+    },
+    {
+      "text": "Is it the technology you hate or some of its applications (or both)?",
+      "gold": "question",
+      "predicted": "unsupported",
+      "confidence": 0.4197114408016205,
+      "probabilities": {
+        "analysis": 0.24348556995391846,
+        "unsupported": 0.4197114408016205,
+        "question": 0.33680301904678345
+      }
+    },
+    {
+      "text": "I think you are asking what the benefits are? The main benefit is that we can trust what these systems are doing better. Or we can self host them. If we just take the weights, then it is unclear how these systems might be lying to us or manipulating us.\n\nAnother benefit is that we can learn from how the training and other steps actually work. We can change them to suit our needs (although costs are impractical today). Etc. It\u2019s all the usual open source benefits.",
+      "gold": "unsupported",
+      "predicted": "unsupported",
+      "confidence": 0.4245741069316864,
+      "probabilities": {
+        "analysis": 0.3569408059120178,
+        "unsupported": 0.4245741069316864,
+        "question": 0.21848510205745697
+      }
+    },
+    {
+      "text": "I like the analogy of streaming services vs local media streaming, although I don't think it holds up when looking at history.\n\nStreaming Services are getting worse and more expensive. I don't see a single report suggesting piracy is decreasing, it seemingly is only increasing now.\n\nWhen costs increase, quality decreases people look for alternatives. The advent of faster broadband enabled Napster and MP3 sharing. I think this could have a resurgence if the peices align correctly (a new bitorrent client, a new torrent site, something to break the status quo).\n\nHow this related to AI, I don't know, although I wouldn't be set on the idea that we will never have local AI as the norm. There is a lot more movement in this space then there is for local streaming imo.",
+      "gold": "analysis",
+      "predicted": "analysis",
+      "confidence": 0.4033452272415161,
+      "probabilities": {
+        "analysis": 0.4033452272415161,
+        "unsupported": 0.38159608840942383,
+        "question": 0.21505863964557648
+      }
+    },
+    {
+      "text": "Much more interesting link: https://deepmind.google/technologies/gemini/",
+      "gold": "unsupported",
+      "predicted": "analysis",
+      "confidence": 0.39410197734832764,
+      "probabilities": {
+        "analysis": 0.39410197734832764,
+        "unsupported": 0.3482789993286133,
+        "question": 0.25761905312538147
+      }
+    },
+    {
+      "text": "I think this new guideline is nothing like the Bathroom Singing Prohibition Act, because that law doesn't seem to really exist: https://www.grunge.com/1710070/is-pennsylvania-strange-batht...",
+      "gold": "analysis",
+      "predicted": "analysis",
+      "confidence": 0.41531965136528015,
+      "probabilities": {
+        "analysis": 0.41531965136528015,
+        "unsupported": 0.3303789496421814,
+        "question": 0.25430139899253845
+      }
+    },
+    {
+      "text": "do you mean this aesthetically or quantitatively? Are they actually outcompeting / making more money ? Or do you mean they are now looking more desirable because their competitors are racing to the bottom (though likely making money on the way down)",
+      "gold": "question",
+      "predicted": "unsupported",
+      "confidence": 0.4722616970539093,
+      "probabilities": {
+        "analysis": 0.2610951364040375,
+        "unsupported": 0.4722616970539093,
+        "question": 0.26664310693740845
+      }
+    },
+    {
+      "text": "I forked the bot\u2019s repo and resubmitted the PR as a human because I\u2019m dumb and was trying to make a poorly constructed point. The original bot is not mine. Christ this site is crazy.",
+      "gold": "analysis",
+      "predicted": "unsupported",
+      "confidence": 0.3945576548576355,
+      "probabilities": {
+        "analysis": 0.36312106251716614,
+        "unsupported": 0.3945576548576355,
+        "question": 0.24232131242752075
+      }
+    },
+    {
+      "text": "And how were those models developed and trained?",
+      "gold": "question",
+      "predicted": "unsupported",
+      "confidence": 0.38330721855163574,
+      "probabilities": {
+        "analysis": 0.24833956360816956,
+        "unsupported": 0.38330721855163574,
+        "question": 0.3683531582355499
+      }
+    },
+    {
+      "text": "Lol omg I guess your original comment was NOT sarcastic!?",
+      "gold": "unsupported",
+      "predicted": "unsupported",
+      "confidence": 0.3811865746974945,
+      "probabilities": {
+        "analysis": 0.2850029468536377,
+        "unsupported": 0.3811865746974945,
+        "question": 0.3338105380535126
+      }
+    },
+    {
+      "text": "Nerds got taken aside and talked to about how it's not nice or cool to brag about IQ score so they invented a new artificial metric to brag about.",
+      "gold": "unsupported",
+      "predicted": "unsupported",
+      "confidence": 0.38867104053497314,
+      "probabilities": {
+        "analysis": 0.3638617992401123,
+        "unsupported": 0.38867104053497314,
+        "question": 0.24746717512607574
+      }
+    },
+    {
+      "text": "Yeah, though I do wonder for a big model like 405B if the original training recipe, really matters for where models are heading, practically speaking which is smaller and more specific?\n\nI imagine its main use would be to train other models by distilling them down with LoRA/Quantization etc(assuming we have a tokenizer). Or use them to generate training data for smaller models directly.\n\nBut, I do think there is always a way to share without disclosing too many specifics, like this[1] lecture from this year's spring course at Stanford. You can always say, for example:\n\n- The most common technique for filtering was using voting LLMs (without disclosing said llms or quantity of data).\n\n-  We built on top of a filtering technique for removing poor code using ____ by ____ authors (without disclosing or handwaving how you exactly filtered, but saying that you had to filter).\n\n- We mixed certain proportion of this data with that data to make it better (without saying what proportion)\n\n[1] https://www.youtube.com/watch?v=jm2hyJLFfN8&list=PLoROMvodv4...",
+      "gold": "analysis",
+      "predicted": "unsupported",
+      "confidence": 0.392586350440979,
+      "probabilities": {
+        "analysis": 0.3889717161655426,
+        "unsupported": 0.392586350440979,
+        "question": 0.21844196319580078
+      }
+    },
+    {
+      "text": "The parent neglected to add /s",
+      "gold": "unsupported",
+      "predicted": "unsupported",
+      "confidence": 0.3884766697883606,
+      "probabilities": {
+        "analysis": 0.27733367681503296,
+        "unsupported": 0.3884766697883606,
+        "question": 0.33418959379196167
+      }
+    },
+    {
+      "text": "\"no no, it has full test coverage\"\n\nat least at my BigCo, AI is being used for everything - writing slop, writing tests, code reviews, etc.\n\nit would make sense to use AI for writing code, but human code review. or, human code, but AI test cases... or whatever combination of cross-checking, trust-but-verify, human in the loop, etc. people prefer.\n\ni think once it gets used for everything, people have lost the plot, it's the inmates running the asylum.",
+      "gold": "analysis",
+      "predicted": "analysis",
+      "confidence": 0.3909321129322052,
+      "probabilities": {
+        "analysis": 0.3909321129322052,
+        "unsupported": 0.38529521226882935,
+        "question": 0.22377265989780426
+      }
+    },
+    {
+      "text": "And the technical report: https://storage.googleapis.com/deepmind-media/gemini/gemini_...",
+      "gold": "unsupported",
+      "predicted": "analysis",
+      "confidence": 0.394610732793808,
+      "probabilities": {
+        "analysis": 0.394610732793808,
+        "unsupported": 0.34203553199768066,
+        "question": 0.26335373520851135
+      }
+    },
+    {
+      "text": "Gemini Pro is only GPT3.5 tier according to the benchmarks, so unless they make it extremely cheap I don't see much value in even playing around with it",
+      "gold": "analysis",
+      "predicted": "unsupported",
+      "confidence": 0.3897976577281952,
+      "probabilities": {
+        "analysis": 0.3652874529361725,
+        "unsupported": 0.3897976577281952,
+        "question": 0.24491487443447113
+      }
+    },
+    {
+      "text": "The agent owner is [name redacted] [link redacted]\n\nHere he takes ownership of the agent and doubles down on the unpoliteness\nhttps://github.com/matplotlib/matplotlib/pull/31138\n\nHe took his GitHub profile down/made it private.\narchive of his blog:\nhttps://web.archive.org/web/20260203130303/https://ber.earth...",
+      "gold": "analysis",
+      "predicted": "analysis",
+      "confidence": 0.4458848834037781,
+      "probabilities": {
+        "analysis": 0.4458848834037781,
+        "unsupported": 0.3117120563983917,
+        "question": 0.24240301549434662
+      }
+    },
+    {
+      "text": "It's a shame that Gemini Ultra is not out yet, it seems like a solid improvement on GPT-4. I wonder how it'll compare against GPT-5?",
+      "gold": "question",
+      "predicted": "unsupported",
+      "confidence": 0.40596500039100647,
+      "probabilities": {
+        "analysis": 0.3348695933818817,
+        "unsupported": 0.40596500039100647,
+        "question": 0.2591654360294342
+      }
+    },
+    {
+      "text": "The tweet is criticizing over-reliance on the \"agents will fix it anyway\".\n\nThe fact that we can fix things faster now doesn't mean that we should throw away caution and prevention. The specific point of his tweet is that we're seeing a lot of people starting to skip proper release engineering.\n\nAgents are quick to fix bugs, yes, but it doesn't mean that users will tolerate software that gets completely broken after each new feature is introduced and takes a certain number of days to heal each time.",
+      "gold": "unsupported",
+      "predicted": "analysis",
+      "confidence": 0.39867445826530457,
+      "probabilities": {
+        "analysis": 0.39867445826530457,
+        "unsupported": 0.38002899289131165,
+        "question": 0.22129656374454498
+      }
+    },
+    {
+      "text": "You didn't write this comment. It was the result of synapses firing at predictive intervals and twitching muscle fibers.\n\nYou're not conscious, it's just an emergent pattern of several high level systems.",
+      "gold": "unsupported",
+      "predicted": "unsupported",
+      "confidence": 0.4382833242416382,
+      "probabilities": {
+        "analysis": 0.29159975051879883,
+        "unsupported": 0.4382833242416382,
+        "question": 0.270116925239563
+      }
+    }
+  ]
+}

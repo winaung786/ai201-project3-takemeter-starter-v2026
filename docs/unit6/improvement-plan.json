@@ -1,0 +1,29 @@
+{
+  "changed_setting": "epochs",
+  "before": 3,
+  "after": 4,
+  "seeds": [
+    42,
+    7,
+    2024
+  ],
+  "data_sha256": "a60e1a1fa9b9d8504ab692d360012d7fa25d195f5668db5a26a017e6b0994345",
+  "criteria_sha256": "256d7d354dff1847ee27277a9a5cdc77ae88c43e17962febefd27dc30d2a8d6e",
+  "before_results_sha256": "4f74f5333bd27c346ff7561444a3695092bf8fa1737fbd398120e7d38610e21f",
+  "fixed_settings": {
+    "base_model": "distilbert-base-uncased",
+    "learning_rate": 2e-05,
+    "batch_size": 16,
+    "max_length": 128,
+    "labels": [
+      "analysis",
+      "unsupported",
+      "question"
+    ],
+    "device": "cpu",
+    "torch_version": "2.6.0+cpu"
+  },
+  "rationale": "Before runs struggle to learn the minority question category and produce low winning probabilities. Validation loss continues declining through epoch 3 across the three runs, which justifies testing one more optimization pass. This does not prove annotation quality: the independent staff exercise is still missing. Unit 5 already compared 3 and 4 epochs on seed 42; this Unit 6 experiment tests repeatability across all three seeds rather than claiming a new blind hypothesis.",
+  "stopping_rule": "Run exactly the same three seeds once at 4 epochs. Do not select another setting, relabel data, change definitions, or lower criteria in response to test results.",
+  "unresolved": "Human staff labels, authentic TF reference, and student adjudications are unavailable."
+}

@@ -1,0 +1,24 @@
+{
+  "provided_sources": [
+    {
+      "filename": "Pasted markdown.md",
+      "sha256": "b76712c2b8331de09e51e09d64a552010705961786c1a2e44df9e3c054bf1a1a"
+    },
+    {
+      "filename": "AI201 L6 \u00b7 Fa26 S1b (1).pptx",
+      "sha256": "a5eab3645234bb92e060128c79e6bc762722e280924ab03cae048b45f94d7f27"
+    }
+  ],
+  "rules_checked": [
+    "same repository",
+    "unchanged criteria unless legitimate measurement revision underneath originals",
+    "baseline on identical held-out posts",
+    "three seeds before and after",
+    "typed confusion matrices",
+    "five verdicts and evidence-based diagnoses",
+    "one measured improvement",
+    "independent staff labels before TF key",
+    "student adjudicates every disagreement",
+    "at least four new Unit 6 commits"
+  ]
+}
