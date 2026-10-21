@@ -45,7 +45,11 @@ def main():
     assert [(p["text"], p["gold"]) for p in baseline["predictions"]] == [(r["text"], r["label"]) for r in test]
     same(baseline["scores"], score([r["gold"] for r in baseline["predictions"]], [r["predicted"] for r in baseline["predictions"]], sorted(labels)))
     runs = {}
+    plan = json.loads((ROOT / "docs/unit6/improvement-plan.json").read_text())
+    assert sha(ROOT / "results_three_seeds_before.json") == plan["before_results_sha256"]
     for stage, epochs in [("before", 3), ("after", 4)]:
+        protected = json.loads((ROOT / f"evidence/unit6/{stage}/protected-files.json").read_text())
+        assert all(sha(ROOT / filename) == digest for filename, digest in protected.items())
         runs[stage] = json.loads((ROOT / f"results_three_seeds_{stage}.json").read_text())
         assert [r["seed"] for r in runs[stage]] == [42, 7, 2024]
         for r in runs[stage]:

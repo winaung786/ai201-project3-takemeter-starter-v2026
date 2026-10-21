@@ -1,5 +1,6 @@
 """Build the typed Unit 6 report from the committed-format result artifacts."""
 import json
+import re
 from collections import Counter
 from pathlib import Path
 import sys
@@ -27,7 +28,7 @@ def log(runs):
         ("2. Every label F1", "≥0.65 for all labels in every seed", ["; ".join(f"{l}: {r['per_label'][l]['f1']:.6f}" for l in LABELS) for r in runs], [all(r["per_label"][l]["f1"] >= .65 for l in LABELS) for r in runs]),
         ("3. Dataset balance", "Every label 15%–45% of all 200 comments", ["analysis 36%; unsupported 40.5%; question 23.5%"] * 3, [True] * 3),
         ("4. Human agreement", "≥80% on 30–50 comments", ["Not measured; human labels/key missing"] * 3, [False] * 3),
-        ("5. Prediction confidence", "Correct mean ≥0.70 AND all-test fraction <0.50 strictly <15%, every seed", [f"correct mean {r['confidence']['mean_when_right']:.6f}; low {r['confidence']['fraction_below_0_50']:.1%}" for r in runs], [(r["confidence"]["mean_when_right"] or 0) >= .7 and r["confidence"]["fraction_below_0_50"] < .15 for r in runs]),
+        ("5. Prediction confidence", "Correct mean ≥0.70; fraction of all test max-probs below 0.50 <15%; every seed", [f"correct mean {r['confidence']['mean_when_right']:.6f}; low {r['confidence']['fraction_below_0_50']:.1%}" for r in runs], [(r["confidence"]["mean_when_right"] or 0) >= .7 and r["confidence"]["fraction_below_0_50"] < .15 for r in runs]),
     ]
     for name, target, values, passing in items:
         rows.append("| " + " | ".join([name, target, *values, verdict(passing)]) + " |")
@@ -52,9 +53,10 @@ def main():
     baseline, original = load("baseline_results.json"), load("results.json")
     spread = max(r["accuracy"] for r in before) - min(r["accuracy"] for r in before)
     minima = [min((r["per_label"][l]["f1"], l) for l in LABELS) for r in before]
+    other_f1_misses = "; ".join(f"seed {r['seed']} {l}: {r['per_label'][l]['f1']:.6f}" for r in before for l in LABELS if l != "question" and r["per_label"][l]["f1"] < .65)
     question_recall = ", ".join(f"seed {r['seed']}: {r['per_label']['question']['recall']:.6f}" for r in before)
     lines = ["<!-- UNIT6-REPORT -->", "## Unit 6 status", "",
-        "**The baseline and before trials are complete.** " + ("All three after trials and the one-change comparison are also complete. " if after else "The declared after experiment is next. ") +
+        "**The baseline and before trials are complete.** " + ("All three after trials and the one-change comparison are also complete. " if after else "The declared after experiment is in progress. ") +
         "**The assignment is not complete:** the student's independent 30 staff labels, authentic TF reference file, and student adjudications are still missing. A blank form is not labeling evidence. No agreement rate or fabricated staff answers are reported.", "",
         "The original `criteria.md`, `labels.csv`, taxonomy, Unit 5 `results.json`, and `test_split.csv` are preserved. The [pre-run protocol](docs/unit6/plan.md) records the baseline prediction and measurement conventions. No Unit 6 stretch feature is claimed.", "",
         "## Baseline vs. Trained", "",
@@ -66,10 +68,11 @@ def main():
         log(before), "",
         "Criterion 3 is one dataset measurement repeated for clarity; criterion 4 is one human exercise, not three model-seed trials. `MISSED` on criterion 4 means the required evidence has not been demonstrated, **not** 0% measured agreement. The 30 staff posts use the staff running-forum taxonomy, which cannot directly validate every Hacker News annotation. No original target has been changed.", "",
         f"Before accuracy spread is **{spread:.6f} ({spread * 100:.1f} percentage points)**. " + ("This exceeds the brief's 10-point instability flag; one favorable split would be unreliable." if spread > .1 else "This does not exceed the brief's 10-point flag, but 30 test comments still make each accuracy error worth 3.33 points."), "",
+        "Always guessing the training-majority label `unsupported` would score 12/30 = 40% on each held-out split. The trained model beats that trivial reference, but its zero question recall shows why overall accuracy alone is insufficient.", "",
         "Rows below are true labels; columns are model predictions. Each matrix is for its own 30-post split, not a pooled independent sample.", "", matrices(before),
         "## Verdicts and Diagnoses", "",
         "1. **Accuracy — " + verdict([r["accuracy"] >= .75 for r in before]) + ".** The original rule requires every seed to reach 0.75. Minority-question errors limit accuracy: question recall is " + question_recall + ". Each split has only seven question examples and the training subset only 33. This makes weak question learning costly and estimates coarse. Continued validation-loss decline supports testing more optimization, but does not prove that training length is the only cause.", "",
-        "2. **Every-label F1 — " + verdict([all(r["per_label"][l]["f1"] >= .65 for l in LABELS) for r in before]) + ".** Minimum F1 by seed is " + "; ".join(f"{r['seed']}: {l} {v:.6f}" for r, (v, l) in zip(before, minima)) + ". Seed 42 sends all seven true questions to analysis or unsupported, while making no question predictions. Even the straightforward request “What are you using? whisper?” becomes unsupported. A more complex Cursor free-trial question becomes analysis, showing that an information request with contextual details is also difficult. The direction suggests a request-versus-statement weakness. Without the independent staff exercise, inconsistent labeling is a hypothesis, not an established diagnosis.", "",
+        "2. **Every-label F1 — " + verdict([all(r["per_label"][l]["f1"] >= .65 for l in LABELS) for r in before]) + ".** Minimum F1 by seed is " + "; ".join(f"{r['seed']}: {l} {v:.6f}" for r, (v, l) in zip(before, minima)) + ". Other misses: " + (other_f1_misses or "none") + ". Seed 42 sends all seven true questions to analysis or unsupported, while making no question predictions. Even the straightforward request “What are you using? whisper?” becomes unsupported. A more complex Cursor free-trial question becomes analysis, showing that an information request with contextual details is also difficult. The direction suggests a request-versus-statement weakness. False unsupported predictions also reduce that label's precision, while seed 2024 additionally confuses analysis and unsupported in both directions. Without the independent staff exercise, inconsistent labeling is a hypothesis, not an established diagnosis.", "",
         "3. **Balance — MET.** Counts remain analysis 72/200, unsupported 81/200, question 47/200: all fall within the original 15%–45% band. The smallest class still provides only 33 training examples per split. Passing the balance target does not ensure enough examples or representative prevalence; the Unit 5 purposive sampling remains disclosed.", "",
         "4. **Human agreement — MISSED, not demonstrated.** No independent student staff annotations or TF key are available. This is missing evidence rather than a measured model or annotator failure. A prior confirmation of all 200 AI-assisted project labels is one human review, not agreement between two humans. The staff exercise must be completed before diagnosing inconsistent rule application. Its different taxonomy also limits how far its result transfers to the Hacker News dataset.", "",
         "5. **Confidence — " + verdict([(r["confidence"]["mean_when_right"] or 0) >= .7 and r["confidence"]["fraction_below_0_50"] < .15 for r in before]) + ".** Read both conditions in each run-log cell. Winning probabilities remain too low, consistent with weak class separation after three epochs; they do not show that hedging caused the problem. Softmax confidence is uncalibrated, and raising it alone would not prove correctness. The saved probabilities permit direct recomputation of the correct-only mean and all-test low-confidence fraction.", "",
@@ -95,22 +98,25 @@ def main():
         regressions = sum(a["accuracy"] < b["accuracy"] for b, a in zip(before, after))
         lines += ["", f"Accuracy improved in **{improvements}/3** seeds and regressed in **{regressions}/3**; the paired table shows the size and label-specific direction of every change. " + ("The accuracy improvement repeated across all seeds, though this small experiment does not establish performance outside these eight threads." if improvements == 3 else "The change did not establish a consistent accuracy improvement across the three seeds."), "",
                   f"After accuracy spread: **{max(r['accuracy'] for r in after)-min(r['accuracy'] for r in after):.6f}**. Final criterion verdicts must still hold in every seed; improvements do not automatically become passes.", "", matrices(after)]
+        lines += ["Final verdicts: accuracy **" + verdict([r["accuracy"] >= .75 for r in after]) + "**; every-label F1 **" + verdict([all(r["per_label"][l]["f1"] >= .65 for l in LABELS) for r in after]) + "**; balance **MET**; human agreement **MISSED — not demonstrated**; confidence **" + verdict([(r["confidence"]["mean_when_right"] or 0) >= .7 and r["confidence"]["fraction_below_0_50"] < .15 for r in after]) + "**.", ""]
     else:
         lines += ["The after experiment is not yet complete; no after scores are reported.", ""]
     lines += ["## What's Still Broken", "",
         "For any remaining accuracy or per-label F1 miss, the next step would be a separate development-set audit of request-versus-statement examples, followed by targeted new questions if warranted; no extra fix is made here because this unit allows one measured improvement. Seven question test examples per seed remain too few for precise per-label estimates, and comment-level splits within eight threads do not establish transfer to unseen threads or the whole of Hacker News.", "",
         "Criterion 4 remains untested until the student provides the blind labels and TF reference, then personally adjudicates disagreements. Confidence misses require a later calibration/abstention study on validation data rather than forcing probabilities upward to pass a threshold; no additional test-driven tuning was performed.", "",
         "The intended taxonomy distinguishes evidence supporting a main claim, unsupported statements, and genuine information requests. The before matrix shows that the learned classifier instead favors the two statement categories and misses genuine questions, so it has only partially learned that intended distinction.", "",
-        "Reproduce with the repository virtual environment and recorded environment variables: `python tools/run_unit6.py --run before --allow-assisted-initial20`, then the declared `--run after`, then `python tools/verify_unit6.py` and `python tools/build_unit6_report.py`. The runner refuses to overwrite existing results; preserve or move prior outputs for a deliberate new experiment. `evidence/unit6/verification.json` records the completed arithmetic and split checks. Large model caches and weights remain excluded from Git.", ""]
+        "Reproduce with the repository virtual environment and the environment variables in [the reproduction guide](docs/unit6/reproduce.md): `python tools/run_unit6.py --run before --allow-assisted-initial20`, then the declared `--run after`, then `python tools/verify_unit6.py` and `python tools/build_unit6_report.py`. The runner refuses to overwrite existing results; preserve or move prior outputs for a deliberate new experiment. After verification runs, `evidence/unit6/verification.json` records its arithmetic and split checks. Large model caches and weights remain excluded from Git.", ""]
     readme = (ROOT / "README.md").read_text().split("<!-- UNIT6-REPORT -->")[0].rstrip()
-    disclosure = "**Unit 6 AI assistance:** Codex read the provided assignment and PowerPoint, ran the local baseline and six notebook-based training trials, checked saved predictions and split isolation, and drafted the typed tables and diagnoses. The original student criteria and confirmed project labels were kept unchanged. The 30 staff labels are a blank student form; no AI-generated staff key, claimed human answers, agreement rate, or student adjudications were supplied. The Unit 6 interpretation is AI-assisted and should be reviewed by the student.\n\n"
-    if "**Unit 6 AI assistance:**" not in readme:
-        readme = readme.replace("## How I Used AI\n\n", "## How I Used AI\n\n" + disclosure)
-    if after:
-        readme = readme.replace("and the three-seed Unit 6 evaluation has not run. No three-seed pass is claimed.", "as recorded at the end of Unit 5. The Unit 6 three-seed results are now reported below.")
+    trials = "six notebook-based training trials" if after else "three before trials and launched the after experiment"
+    disclosure = f"**Unit 6 AI assistance:** Codex read the provided assignment and PowerPoint, ran the local baseline and {trials}, recorded predictions and split isolation, and drafted the typed tables and diagnoses. The original student criteria and confirmed project labels were kept unchanged. The 30 staff labels are a blank student form; no AI-generated staff key, claimed human answers, agreement rate, or student adjudications were supplied. The Unit 6 interpretation is AI-assisted and should be reviewed by the student.\n\n"
+    readme = re.sub(r"\*\*Unit 6 AI assistance:\*\*.*?\n\n", "", readme, count=1, flags=re.S)
+    readme = readme.replace("## How I Used AI\n\n", "## How I Used AI\n\n" + disclosure)
+    readme = readme.replace("and the three-seed Unit 6 evaluation has not run. No three-seed pass is claimed.", "as recorded at the end of Unit 5. The Unit 6 three-seed results are now reported below.")
+    note = "**Unit 6:** " + ("Baseline, all six training trials, and the measured improvement are complete" if after else "Baseline and three before trials are complete; the after experiment is running") + "; independent student staff labels, the TF reference, and student adjudications remain required."
+    readme = re.sub(r"^\*\*Unit 6:\*\*.*?\n\n", "", readme, count=1, flags=re.M)
+    readme = readme.replace("**Build status:", note + "\n\n**Build status:", 1)
     (ROOT / "README.md").write_text(readme + "\n\n" + "\n".join(lines))
-    (ROOT / "docs/unit6/report.md").write_text("\n".join(lines).replace("<!-- UNIT6-REPORT -->\n", ""))
-    print("README and typed Unit 6 report rebuilt from actual results.")
+    print("Typed Unit 6 README report rebuilt from actual results.")
 
 
 if __name__ == "__main__":
