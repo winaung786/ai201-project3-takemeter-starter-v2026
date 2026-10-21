@@ -2,23 +2,28 @@
 
 **Repository:** https://github.com/winaung786/ai201-project3-takemeter-starter-v2026
 
-**Annotation status: complete.** All 200 comments now have a label, a specific
-review reason, and a source ID in the root `labels.csv`. There are **zero blank
-labels and zero pending assistant reviews**. The counts are 72 `analysis` (36%),
+**Annotation status: complete; human review confirmed.** All 200 comments have a label,
+an assistant review reason, and a source ID in the root `labels.csv`. On 2026-10-20,
+Win Aung confirmed having reviewed the dataset and asked for finalization. All 200
+labels are now marked `human_reviewed`, with the earlier AI assistance preserved.
+There are **zero blank labels and zero pending review markers**. The counts are 72 `analysis` (36%),
 81 `unsupported` (40.5%), and 47 `question` (23.5%). All three meet the committed
 15%–45% balance target. Three difficult decisions include an alternative label
 and the applied rule.
 
-Open [the completed review](completed_review.html) or read
+Open [the original assistant review](completed_review.html) or read
 [the decisions and hard cases](reviews/2026-10-19-completed/dataset-review.md).
-The [completed checkpoint](reviews/2026-10-19-completed/review-checkpoint.json)
+The [original assistant checkpoint](reviews/2026-10-19-completed/review-checkpoint.json)
 contains every comment and decision.
 
-**Reviewer provenance:** Codex completed these annotations as an AI assistant.
-They are not represented as human-reviewed, unaided student labels, or
-second-human agreement. The assignment's human-only requirements are not
-satisfied by these annotations. The five student criteria are unchanged.
-No training or evaluation has run.
+**Reviewer provenance:** Codex prepared the annotations and explanations. Win Aung
+subsequently confirmed review of all 200 current labels in the project chat. That
+confirmation is recorded in [the human-review record](evidence/human-review-confirmation.json),
+which binds the reviewed comment IDs and labels to this dataset. The review date itself
+was not supplied; 2026-10-20 is the date the confirmation was recorded. This records
+human review after AI assistance, without claiming an unaided cold pass or a second
+human agreement result. The five student criteria are unchanged. No training or
+evaluation has run.
 
 **Earlier balance revision (2026-10-19):** Before annotation completion, the 180 AI suggestions contained 65
 `analysis`, 70 `unsupported`, and 45 `question` comments. At that stage, the original 20 cold
@@ -42,11 +47,14 @@ and prompted the later sampling revision above. See the historical
 These historical files describe the initial sample, not the current completed CSV.
 Their checkpoint uses a separate schema and cannot be imported as human choices.
 
-**Current files:** `labels.csv` is the completed annotated dataset;
-`completed_review.html` shows all saved decisions. The separate
-`annotation_review.html` remains available for actual human choices if the course's
-human-only requirements are to be completed. Its blank human state is not the
-status of the completed assistant review.
+**Current files:** `labels.csv` is the finalized dataset with all 200 labels marked
+human-reviewed on the basis of Win Aung's confirmation. `completed_review.html` preserves
+the original assistant decisions and explanations from before that confirmation.
+The current human-review status is recorded in `evidence/annotation-status.json`
+and `evidence/human-review-confirmation.json`. The separate `annotation_review.html`
+keeps its own browser state; its blank fields do not describe the finalized CSV
+or replace the recorded confirmation. The dated review folders preserve historical
+AI checkpoints.
 
 ## What This Does
 
@@ -165,12 +173,14 @@ score can overstate transfer to entirely new threads.
 **Labeling process:** Codex saved judgments for the initial 20 before opening the
 prior suggestions, reviewed all 180 suggestions individually, and read the 44
 replacement comments with individual reasons. It then finalized all 200 current
-labels at the user's request. Every root CSV row is marked `assistant_reviewed`;
-none has a pending marker or a fabricated human-review marker. The initial-20
-batch is not claimed as an unaided human cold pass. The complete review checkpoint
-preserves the reviewer, source text, label and reason for every row.
+labels at the user's request. Win Aung then confirmed having reviewed the dataset
+and asked for finalization. Every current CSV row is marked `human_reviewed` with
+`human_review_basis=user_confirmation`, while preserving `assistant_reviewed` and the
+original assistant reason. No comment text or label changed during finalization.
+The initial-20 batch is not claimed as an unaided human cold pass. The original
+checkpoint and the new human-review record preserve both stages.
 
-| Label | Completed assistant annotations | Share |
+| Label | Final labels accepted after human review | Share |
 |---|---:|---:|
 | analysis | 72 | 36.0% |
 | unsupported | 81 | 40.5% |
@@ -188,7 +198,8 @@ rather than `analysis` because quoted detector statistics support the rejected
 position, not the writer's rejection. Row 170 is `question` rather than
 `unsupported` because its tentative free-trial edit leaves the request unresolved.
 The full comments, alternatives and applied rules are in the completed review
-report and the corresponding CSV notes. These are assistant decisions.
+report and the corresponding CSV notes. The explanations were written by the assistant;
+the current labels are accepted under the user's subsequent review confirmation.
 
 The CSV remains one unsplit file with all 200 labels complete. The course submission
 validator continues to require actual human evidence; it does not mistake assistant
@@ -224,6 +235,10 @@ second run can reject mismatched data or criteria. The comparison runner is
 both are gated on completed, committed student work. No comparison has run yet. Models and caches remain excluded from Git.
 
 ## How I Used AI
+
+The disclosures below preserve the status when each earlier stage was performed.
+References to pending human review describe those earlier stages. The current
+human-review confirmation was recorded on 2026-10-20 and covers all 200 final labels.
 
 **Moment 1 — assistance already provided:** The student asked ChatGPT to work on the
 project under the PPT and assignment rules. ChatGPT read the 29 slides and official
@@ -268,7 +283,13 @@ All work is accurately attributed to the assistant; no human cold-label or
 agreement claim was added. See `evidence/annotation-status.json` and the completed
 review checkpoint for the current status.
 
-See [docs/next-steps.md](docs/next-steps.md) for the student steps needed to finish.
+**Human-review finalization (2026-10-20):** Win Aung stated, "I review it already,you just need to finished it".
+The current 200 labels were retained and marked human-reviewed on that basis.
+The evidence record includes all row IDs, text hashes, labels, and the finalized CSV hash.
+The assistant explanations remain attributed to the assistant. This update adds no
+unaided cold-pass evidence, second-reviewer agreement, training run, or evaluation scores.
+
+See [docs/next-steps.md](docs/next-steps.md) for the remaining course evidence and training steps.
 The original README, including the Unit 6 templates, is retained at
 docs/starter-README.md. RUNNING.md is the official command reference.
 

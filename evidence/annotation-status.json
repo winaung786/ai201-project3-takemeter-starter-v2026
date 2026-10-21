@@ -1,18 +1,25 @@
 {
-  "schema": "takemeter.assistant-review.v1",
-  "date": "2026-10-19",
-  "source_commit": "68111404b076f11de9d3bccde45394878e6aea54",
+  "schema": "takemeter.annotation-status.v2",
+  "date": "2026-10-20",
+  "source_commit": "dd6ad358d2daa82a6b28b829693d69597421951c",
   "status": "complete",
-  "reviewer": "Codex (AI assistant)",
+  "reviewer": "Win Aung",
   "assistant_reviewed_count": 200,
   "blank_labels": 0,
   "pending_assistant_reviews": 0,
-  "human_reviewed_count": 0,
+  "human_reviewed_count": 200,
   "human_unaided_cold_count": 0,
   "counts": {
     "analysis": 72,
     "unsupported": 81,
     "question": 47
   },
-  "hard_case_count": 3
+  "hard_case_count": 3,
+  "human_review_basis": "user_confirmation",
+  "human_review_evidence": "evidence/human-review-confirmation.json",
+  "assistant_reviewer": "Codex (AI assistant)",
+  "assistant_review_date": "2026-10-19",
+  "pending_human_reviews": 0,
+  "hard_case_reason_origin": "assistant",
+  "finalized_csv_sha256": "a60e1a1fa9b9d8504ab692d360012d7fa25d195f5668db5a26a017e6b0994345"
 }
