@@ -1,0 +1,109 @@
+Annotation provenance: {"human_review_basis": "user_confirmation_after_AI_assistance", "confirmation_file": "evidence/human-review-confirmation.json", "reviewer": "Win Aung", "unaided_cold_pass_recorded": false, "course_submission_complete": false, "limitation": "Initial 20 were AI-assisted; training does not satisfy the unaided cold-pass requirement. Hard-case explanations originated with the assistant."}
+device: cpu  (CPU)
+torch:  2.6.0+cpu
+
+⚠️  WRITE THIS DOWN. Your results depend on it.
+
+Two people running this notebook on the same data with the same seed can
+get different numbers, because different hardware does the arithmetic in
+a slightly different order. That is not a bug and it is not one of you
+being wrong — it is a real property of the thing you are building, and
+unit 6 asks you to report it alongside your three seeds.
+Working in: /workspace/scratch/efe9061ab15d/takemeter-training
+Results will be labelled: Win Aung <>
+  README.md
+  RUNNING.md
+  agreement.py
+  annotation_review.html
+  baseline.py
+  collection
+  completed_review.html
+  criteria.md
+  data
+  docs
+  evidence
+  label_definitions.txt
+  labels.csv
+  labels_template.csv
+  models
+  requirements.txt
+  results.json
+  reviews
+  takemeter.ipynb
+  takemeter_out
+  test.py
+  test_split.csv
+  tools
+3 labels: analysis, unsupported, question
+seed 42, 3 epochs, lr 2e-05, batch 16
+Loaded labels.csv: 200 rows
+Columns: text, label, note
+
+Data looks fine.
+
+label
+unsupported    81
+analysis       72
+question       47
+train 139  ·  val 31  ·  test 30
+
+             train  val  test
+label                        
+analysis        50   11    11
+unsupported     56   13    12
+question        33    7     7
+
+[note] 'question' has only 7 examples in the test split.
+
+A metric computed on that few examples moves a lot between seeds.
+Write that down now — next unit it's a diagnosis, not a surprise.
+Predeclared second run: epochs=4; all other settings stay fixed.
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/139 [00:00<?, ? examples/s]Map: 100%|██████████| 139/139 [00:00<00:00, 4342.16 examples/s]
+Map:   0%|          | 0/31 [00:00<?, ? examples/s]Map: 100%|██████████| 31/31 [00:00<00:00, 3493.38 examples/s]
+  0%|          | 0/36 [00:00<?, ?it/s]  3%|▎         | 1/36 [00:05<03:03,  5.25s/it]  6%|▌         | 2/36 [00:09<02:31,  4.45s/it]  8%|▊         | 3/36 [00:14<02:42,  4.94s/it] 11%|█         | 4/36 [00:19<02:41,  5.04s/it] 14%|█▍        | 5/36 [00:23<02:23,  4.62s/it] 17%|█▋        | 6/36 [00:27<02:14,  4.49s/it] 19%|█▉        | 7/36 [00:31<02:04,  4.29s/it] 22%|██▏       | 8/36 [00:35<01:57,  4.19s/it] 25%|██▌       | 9/36 [00:38<01:41,  3.78s/it]
+  0%|          | 0/2 [00:00<?, ?it/s][A
+100%|██████████| 2/2 [00:01<00:00,  1.46it/s][A                                              
+                                             [A{'eval_loss': 1.037553310394287, 'eval_accuracy': 0.5161290322580645, 'eval_f1_macro': 0.3863837312113174, 'eval_runtime': 2.7576, 'eval_samples_per_second': 11.242, 'eval_steps_per_second': 0.725, 'epoch': 1.0}
+ 25%|██▌       | 9/36 [00:41<01:41,  3.78s/it]
+100%|██████████| 2/2 [00:01<00:00,  1.46it/s][A
+                                             [A 28%|██▊       | 10/36 [00:45<02:04,  4.79s/it]                                               {'loss': 1.0838, 'grad_norm': 1.4431846141815186, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.11}
+ 28%|██▊       | 10/36 [00:45<02:04,  4.79s/it] 31%|███       | 11/36 [00:50<01:59,  4.78s/it] 33%|███▎      | 12/36 [00:53<01:45,  4.38s/it] 36%|███▌      | 13/36 [00:57<01:34,  4.10s/it] 39%|███▉      | 14/36 [01:00<01:25,  3.87s/it] 42%|████▏     | 15/36 [01:04<01:18,  3.75s/it] 44%|████▍     | 16/36 [01:07<01:14,  3.74s/it] 47%|████▋     | 17/36 [01:11<01:10,  3.70s/it] 50%|█████     | 18/36 [01:13<00:59,  3.30s/it]
+  0%|          | 0/2 [00:00<?, ?it/s][A
+100%|██████████| 2/2 [00:01<00:00,  1.75it/s][A                                               
+                                             [A{'eval_loss': 0.9729507565498352, 'eval_accuracy': 0.6129032258064516, 'eval_f1_macro': 0.4692028985507246, 'eval_runtime': 2.2686, 'eval_samples_per_second': 13.665, 'eval_steps_per_second': 0.882, 'epoch': 2.0}
+ 50%|█████     | 18/36 [01:16<00:59,  3.30s/it]
+100%|██████████| 2/2 [00:01<00:00,  1.75it/s][A
+                                             [A 53%|█████▎    | 19/36 [01:20<01:12,  4.26s/it] 56%|█████▌    | 20/36 [01:24<01:06,  4.19s/it]                                               {'loss': 0.9997, 'grad_norm': 1.9545886516571045, 'learning_rate': 9.444444444444445e-06, 'epoch': 2.22}
+ 56%|█████▌    | 20/36 [01:24<01:06,  4.19s/it] 58%|█████▊    | 21/36 [01:28<01:01,  4.09s/it] 61%|██████    | 22/36 [01:32<00:56,  4.06s/it] 64%|██████▍   | 23/36 [01:35<00:50,  3.91s/it] 67%|██████▋   | 24/36 [01:39<00:46,  3.87s/it] 69%|██████▉   | 25/36 [01:43<00:41,  3.80s/it] 72%|███████▏  | 26/36 [01:46<00:37,  3.76s/it] 75%|███████▌  | 27/36 [01:50<00:32,  3.56s/it]
+  0%|          | 0/2 [00:00<?, ?it/s][A
+100%|██████████| 2/2 [00:01<00:00,  1.40it/s][A                                               
+                                             [A{'eval_loss': 0.9098814129829407, 'eval_accuracy': 0.5483870967741935, 'eval_f1_macro': 0.41358024691358025, 'eval_runtime': 2.9662, 'eval_samples_per_second': 10.451, 'eval_steps_per_second': 0.674, 'epoch': 3.0}
+ 75%|███████▌  | 27/36 [01:52<00:32,  3.56s/it]
+100%|██████████| 2/2 [00:01<00:00,  1.40it/s][A
+                                             [A 78%|███████▊  | 28/36 [01:57<00:37,  4.70s/it] 81%|████████  | 29/36 [02:01<00:32,  4.64s/it] 83%|████████▎ | 30/36 [02:05<00:26,  4.47s/it]                                               {'loss': 0.9404, 'grad_norm': 3.3106510639190674, 'learning_rate': 3.88888888888889e-06, 'epoch': 3.33}
+ 83%|████████▎ | 30/36 [02:05<00:26,  4.47s/it] 86%|████████▌ | 31/36 [02:10<00:22,  4.45s/it] 89%|████████▉ | 32/36 [02:13<00:16,  4.19s/it] 92%|█████████▏| 33/36 [02:17<00:11,  3.99s/it] 94%|█████████▍| 34/36 [02:20<00:07,  3.82s/it] 97%|█████████▋| 35/36 [02:24<00:03,  3.72s/it]100%|██████████| 36/36 [02:26<00:00,  3.39s/it]
+  0%|          | 0/2 [00:00<?, ?it/s][A
+100%|██████████| 2/2 [00:00<00:00,  2.07it/s][A                                               
+                                             [A{'eval_loss': 0.8854231834411621, 'eval_accuracy': 0.6774193548387096, 'eval_f1_macro': 0.6536130536130537, 'eval_runtime': 2.1244, 'eval_samples_per_second': 14.593, 'eval_steps_per_second': 0.941, 'epoch': 4.0}
+100%|██████████| 36/36 [02:29<00:00,  3.39s/it]
+100%|██████████| 2/2 [00:00<00:00,  2.07it/s][A
+                                             [A                                               {'train_runtime': 149.1221, 'train_samples_per_second': 3.728, 'train_steps_per_second': 0.241, 'train_loss': 0.9869759347703722, 'epoch': 4.0}
+100%|██████████| 36/36 [02:29<00:00,  3.39s/it]100%|██████████| 36/36 [02:29<00:00,  4.14s/it]
+
+Trained.
+Map:   0%|          | 0/30 [00:00<?, ? examples/s]Map: 100%|██████████| 30/30 [00:00<00:00, 3743.58 examples/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00,  2.27it/s]100%|██████████| 2/2 [00:00<00:00,  2.26it/s]
+accuracy  0.733
+macro F1  0.671
+
+  analysis         F1 0.769   (n=11)
+  unsupported      F1 0.800   (n=12)
+  question         F1 0.444   (n=7)
+
+confidence   most-sure third 0.800   ·   least-sure third 0.600
+
+Wrote results_second_run.json; verified the existing test_split.csv. Commit them both — they're the
+evidence the run happened, and next unit reads test_split.csv.
+Saved the actual comparison and inserted it into the README Training Run section.

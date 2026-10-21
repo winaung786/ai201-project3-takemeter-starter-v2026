@@ -1,0 +1,74 @@
+{
+  "seed": 42,
+  "n_test": 30,
+  "accuracy": 0.7333333333333333,
+  "f1_macro": 0.6712250712250712,
+  "per_label": {
+    "analysis": {
+      "precision": 0.6666666666666666,
+      "recall": 0.9090909090909091,
+      "f1": 0.7692307692307693,
+      "support": 11
+    },
+    "unsupported": {
+      "precision": 0.7692307692307693,
+      "recall": 0.8333333333333334,
+      "f1": 0.8,
+      "support": 12
+    },
+    "question": {
+      "precision": 1.0,
+      "recall": 0.2857142857142857,
+      "f1": 0.4444444444444444,
+      "support": 7
+    }
+  },
+  "confusion": {
+    "analysis": {
+      "analysis": 10,
+      "unsupported": 1,
+      "question": 0
+    },
+    "unsupported": {
+      "analysis": 2,
+      "unsupported": 10,
+      "question": 0
+    },
+    "question": {
+      "analysis": 3,
+      "unsupported": 2,
+      "question": 2
+    }
+  },
+  "confidence": {
+    "mean_when_right": 0.4566803276538849,
+    "mean_when_wrong": 0.42832469940185547,
+    "accuracy_most_confident_third": 0.8,
+    "accuracy_least_confident_third": 0.6,
+    "n_per_third": 10,
+    "fraction_below_0_50": 0.7333333333333333
+  },
+  "annotation_provenance": {
+    "human_review_basis": "user_confirmation_after_AI_assistance",
+    "confirmation_file": "evidence/human-review-confirmation.json",
+    "reviewer": "Win Aung",
+    "unaided_cold_pass_recorded": false,
+    "course_submission_complete": false,
+    "limitation": "Initial 20 were AI-assisted; training does not satisfy the unaided cold-pass requirement. Hard-case explanations originated with the assistant."
+  },
+  "device": "cpu",
+  "device_name": "CPU",
+  "torch_version": "2.6.0+cpu",
+  "max_length": 128,
+  "base_model": "distilbert-base-uncased",
+  "epochs": 4,
+  "learning_rate": 2e-05,
+  "batch_size": 16,
+  "labels": [
+    "analysis",
+    "unsupported",
+    "question"
+  ],
+  "data_sha256": "a60e1a1fa9b9d8504ab692d360012d7fa25d195f5668db5a26a017e6b0994345",
+  "criteria_sha256": "256d7d354dff1847ee27277a9a5cdc77ae88c43e17962febefd27dc30d2a8d6e"
+}

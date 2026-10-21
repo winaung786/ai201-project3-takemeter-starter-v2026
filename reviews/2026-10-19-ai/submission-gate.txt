@@ -1,0 +1,8 @@
+Original student workflow validator; expected exit status 1 (human work pending).
+
+Actual labeled counts: {"unsupported": 113, "question": 14, "analysis": 53}
+[FIX ME] 20 rows have no label. Collection is not annotation.
+[FIX ME] Need 20 actually labeled cold rows; found 0.
+[FIX ME] 180 AI-pre-labeled rows lack a human-review marker.
+[FIX ME] 200 rows still have a pending workflow marker.
+[FIX ME] Record at least three actual hard-case decisions.

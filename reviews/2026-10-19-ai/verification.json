@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "review_type": "AI only; human sign-off pending",
+  "row_coverage": "200/200, consecutive and unique",
+  "initial_ai_judgments": 20,
+  "original_suggestions_reviewed": 180,
+  "confirmed": 177,
+  "corrected": 3,
+  "hard_cases_with_chosen_alternative_and_rule": 3,
+  "exact_source_texts_preserved": true,
+  "source_ids_unique": true,
+  "normalized_texts_unique": true,
+  "source_files_unchanged": {
+    "labels.csv": "5ebceac556afafdc88accf59f28cab7f5bae7c15bcc2ae265bb68a117c2c7eb3",
+    "collection/ai-suggestions.json": "66361fb9eebebe0377d3e4058c2f2ef8e1f8c3b5e1f2b00501a73040d3b5edf2",
+    "collection/sources.json": "25c23f76ad30fd7448d7479aa68fac0ffa83071ea570468bfc7836f85e764fef",
+    "label_definitions.txt": "0563c810860ffbf73da18b399c3f726fb2e598c88259ca47b17da49694532589",
+    "docs/taxonomy-draft.md": "31833aed4d5ebace17e0404e1aec988eff06aecdf3d14268c1f7ba941ccb4f06",
+    "criteria.md": "3f3496f7de3c05e562e15e08e5d3b60ff13f66d4bbcbda46a5f6bfa3366667d3",
+    "annotation_review.html": "55356e9ed2f373174e9991cc33e04a38089130cbd6c5913d1283ae6df75e7806"
+  },
+  "frozen_first20_hash_matches_pre_suggestion_save": true,
+  "human_reviewed_markers_added": 0,
+  "human_cold_markers_added": 0,
+  "human_pending_rows": 200,
+  "ai_checkpoint_importable_as_human": false,
+  "training_or_evaluation_run": false,
+  "ai_draft_counts": {
+    "analysis": 59,
+    "unsupported": 125,
+    "question": 16
+  },
+  "assignment_70_percent_cap": true,
+  "criterion_3_balance": false,
+  "original_submission_validator": "expected blocked, exit 1; required human work remains pending",
+  "files_sha256": {
+    ".gitattributes": "0fef9527f3da25115cc538b17db9609529dadb699f322095724aadd51e1bee18",
+    "dataset-review.md": "2e5c3867bd1540046b153af93a7ecd75a3282b5e970dcca91b495a91d98d50dd",
+    "independent20.ai.json": "687e935fa7f155f685f6e108764d52be2b6a27676b07138f2122f3078593edb4",
+    "labels.csv": "25c6bdd2ac55047e4f317c7ee2922de43a4cc604546dbcbdeddc0f5f91f113bc",
+    "review-checkpoint.ai.json": "cbb8f90ee40685fa834daac30f03f355c37ea81ff713c52431ac523511e7b6ba",
+    "submission-gate.txt": "8a72e9d334cfe64144b1bca30039e91a9b467384fc1bc62a215f550c69784b5a"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "row_count": 200,
+  "blank_labels": 0,
+  "pending_markers": 0,
+  "assistant_reviewed": 200,
+  "human_reviewed_markers": 0,
+  "text_and_source_ids_preserved": true,
+  "distinct_comments": 200,
+  "hard_cases_with_alternative_and_rule": 3,
+  "class_balance_15_to_45_percent": "passed",
+  "counts": {
+    "analysis": 72,
+    "unsupported": 81,
+    "question": 47
+  },
+  "csv_sha256": "af26d251842181f6ea886f080557550670ed5d76cb9d654bca1ac45553846ebe"
+}

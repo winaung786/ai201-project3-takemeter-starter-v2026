@@ -2602,6 +2602,359 @@
       "text": "Possibly, but I doubt it! I'd expect a response by OpenAI via GPT-4V improvements soon though.",
       "text_html": "Possibly, but I doubt it! I&#x27;d expect a response by OpenAI via GPT-4V improvements soon though.",
       "sha256": "1b2bfed683031774116aad5b307b7421b147fe75c2efc229453582f7867fb305"
+    },
+    {
+      "id": 44164556,
+      "story_id": 44163063,
+      "story_title": "My AI skeptic friends are all nuts",
+      "source_url": "https://news.ycombinator.com/item?id=44164556",
+      "created_at": "2025-06-02T23:38:35.000Z",
+      "text": "Was thinking the same about the censoring, but going off-script? Have you seen DeepL or similar tools invent things?",
+      "text_html": "Was thinking the same about the censoring, but going off-script? Have you seen DeepL or similar tools invent things?",
+      "sha256": "930f296bb8dabcfd34581474e62e745cee8d3197bc418d3068603e9999942d4a"
+    },
+    {
+      "id": 47029171,
+      "story_id": 46990729,
+      "story_title": "An AI agent published a hit piece on me",
+      "source_url": "https://news.ycombinator.com/item?id=47029171",
+      "created_at": "2026-02-16T00:03:03.000Z",
+      "text": "I'm not sure which way you are implying here, what is shamefully equated?",
+      "text_html": "I&#x27;m not sure which way you are implying here, what is shamefully equated?",
+      "sha256": "e3c1d7668d731ccf02af4aa25534380220dc5d1d3f61ac7bc81a56c917aff656"
+    },
+    {
+      "id": 38545271,
+      "story_id": 38544729,
+      "story_title": "Gemini AI",
+      "source_url": "https://news.ycombinator.com/item?id=38545271",
+      "created_at": "2023-12-06T15:40:03.000Z",
+      "text": "\"Google, for better or worse, has more of a brand reputation to maintain\"\n\nYou think this is why Google is so far behind?",
+      "text_html": "&quot;Google, for better or worse, has more of a brand reputation to maintain&quot;<p>You think this is why Google is so far behind?",
+      "sha256": "1e465fd2737f95c16f9b191117401814226c0bdf39aa5e465175cd77ae73c6cf"
+    },
+    {
+      "id": 44164136,
+      "story_id": 44163063,
+      "story_title": "My AI skeptic friends are all nuts",
+      "source_url": "https://news.ycombinator.com/item?id=44164136",
+      "created_at": "2025-06-02T22:52:57.000Z",
+      "text": "What are you using? whisper?",
+      "text_html": "What are you using? whisper?",
+      "sha256": "3a1e218475e218fb99f6c33ff75d495be0e3e5c3b9725f5f018b872e883e5879"
+    },
+    {
+      "id": 38544939,
+      "story_id": 38544729,
+      "story_title": "Gemini AI",
+      "source_url": "https://news.ycombinator.com/item?id=38544939",
+      "created_at": "2023-12-06T15:18:08.000Z",
+      "text": "They've reported surpassing GPT4 on several benchmarks. Does anyone know of these are hand picked examples or is this the new SOTA?",
+      "text_html": "They&#x27;ve reported surpassing GPT4 on several benchmarks. Does anyone know of these are hand picked examples or is this the new SOTA?",
+      "sha256": "5fed2fc6845a0c35cd66179cebc2814180284a10f281efda184819c4c174eaed"
+    },
+    {
+      "id": 41047484,
+      "story_id": 41046773,
+      "story_title": "Open source AI is the path forward",
+      "source_url": "https://news.ycombinator.com/item?id=41047484",
+      "created_at": "2024-07-23T16:00:36.000Z",
+      "text": "> A GPU cluster might not be the correct investment, but a strategic investment in increasing, for example, the availability of training data, or interoperability of tools, or ease of use for building, training, and distributing models would probably pay big dividends\n\nWould you mind expanding on these options? Universal training data sounds intriguing.",
+      "text_html": "&gt; <i>A GPU cluster might not be the correct investment, but a strategic investment in increasing, for example, the availability of training data, or interoperability of tools, or ease of use for building, training, and distributing models would probably pay big dividends</i><p>Would you mind expanding on these options? Universal training data sounds intriguing.",
+      "sha256": "87ab2e3011f285962218de4769f520a4cbc8ced3d71565e665bcfdbbd204cfbc"
+    },
+    {
+      "id": 38544951,
+      "story_id": 38544729,
+      "story_title": "Gemini AI",
+      "source_url": "https://news.ycombinator.com/item?id=38544951",
+      "created_at": "2023-12-06T15:19:10.000Z",
+      "text": "It's a shame that Gemini Ultra is not out yet, it seems like a solid improvement on GPT-4. I wonder how it'll compare against GPT-5?",
+      "text_html": "It&#x27;s a shame that Gemini Ultra is not out yet, it seems like a solid improvement on GPT-4. I wonder how it&#x27;ll compare against GPT-5?",
+      "sha256": "78cdcbc4732414099069068f757186f449fad9eb003d69fa93894c021e7202c5"
+    },
+    {
+      "id": 44163781,
+      "story_id": 44163063,
+      "story_title": "My AI skeptic friends are all nuts",
+      "source_url": "https://news.ycombinator.com/item?id=44163781",
+      "created_at": "2025-06-02T22:20:32.000Z",
+      "text": "Reference?\n\n(Not saying I don't believe you - it would be fascinating if true).",
+      "text_html": "Reference?<p>(Not saying I don&#x27;t believe you - it would be fascinating if true).",
+      "sha256": "ce2c84061de66849adc96b555a56032a3316f66ebe3646d30b12578a84932c19"
+    },
+    {
+      "id": 46990980,
+      "story_id": 46990729,
+      "story_title": "An AI agent published a hit piece on me",
+      "source_url": "https://news.ycombinator.com/item?id=46990980",
+      "created_at": "2026-02-12T16:41:00.000Z",
+      "text": "You may indeed have a licensing issue... but how is that going to be enforced? Given the shear amount of AI generated code coming down the pipes, how?",
+      "text_html": "You may indeed have a licensing issue... but how is that going to be enforced? Given the shear amount of AI generated code coming down the pipes, how?",
+      "sha256": "2767013d51962e17739045092a340a2f649530209b6d782cf903541c4abd226f"
+    },
+    {
+      "id": 44165134,
+      "story_id": 44163063,
+      "story_title": "My AI skeptic friends are all nuts",
+      "source_url": "https://news.ycombinator.com/item?id=44165134",
+      "created_at": "2025-06-03T01:02:21.000Z",
+      "text": "Have they solved the problem of Whisper making up plausible sounding junk (e.g. such that reading it you would have no idea it was completely hallucinated) when there is any silence or pause in the audio?",
+      "text_html": "Have they solved the problem of Whisper making up plausible sounding junk (e.g. such that reading it you would have no idea it was completely hallucinated) when there is any silence or pause in the audio?",
+      "sha256": "126f224d4c99196f5545e66d165513c47c0462cc4bd1227da703d20e66bf164d"
+    },
+    {
+      "id": 38544997,
+      "story_id": 38544729,
+      "story_title": "Gemini AI",
+      "source_url": "https://news.ycombinator.com/item?id=38544997",
+      "created_at": "2023-12-06T15:22:10.000Z",
+      "text": "The improvement over ChatGPT are counted in (very) few percents. Does it mean they have entered a diminishing returns phase or is it that each percent is much harder to get compared to the previous ones ?",
+      "text_html": "The improvement over ChatGPT are counted in (very) few percents. Does it mean they have entered a diminishing returns phase or is it that each percent is much harder to get compared to the previous ones ?",
+      "sha256": "7a5c13af32fa80a3f6985d3789debda9ba12f7408d9a37617c0055fd58cd093e"
+    },
+    {
+      "id": 48156787,
+      "story_id": 48153379,
+      "story_title": "I believe there are entire companies right now under AI psychosis",
+      "source_url": "https://news.ycombinator.com/item?id=48156787",
+      "created_at": "2026-05-16T04:18:10.000Z",
+      "text": "do you mean this aesthetically or quantitatively? Are they actually outcompeting / making more money ? Or do you mean they are now looking more desirable because their competitors are racing to the bottom (though likely making money on the way down)",
+      "text_html": "do you mean this aesthetically or quantitatively? Are they actually outcompeting &#x2F; making more money ? Or do you mean they are now looking more desirable because their competitors are racing to the bottom (though likely making money on the way down)",
+      "sha256": "8bc4350e1b1aff386e8c12ec10dda24cfc1ee83e5d308c3d9cd2ba963b5c7f3f"
+    },
+    {
+      "id": 48292573,
+      "story_id": 48292224,
+      "story_title": "I'm Tired of Talking to AI",
+      "source_url": "https://news.ycombinator.com/item?id=48292573",
+      "created_at": "2026-05-27T11:27:31.000Z",
+      "text": "Does AI talk about us?",
+      "text_html": "Does AI talk about us?",
+      "sha256": "2616d46d9b89d33707fcd3ba6927d326a506c0870c96d42e1161e12fd2a74e08"
+    },
+    {
+      "id": 41051456,
+      "story_id": 41046773,
+      "story_title": "Open source AI is the path forward",
+      "source_url": "https://news.ycombinator.com/item?id=41051456",
+      "created_at": "2024-07-23T22:04:26.000Z",
+      "text": "Do you have some information to share to support your bias against leasing especially with a depreciating asset?",
+      "text_html": "Do you have some information to share to support your bias against leasing especially with a depreciating asset?",
+      "sha256": "6eeabeea12fd5bc4954a2a4e175ff95cac545afbb82a27893346588d407ba6ad"
+    },
+    {
+      "id": 41047342,
+      "story_id": 41046773,
+      "story_title": "Open source AI is the path forward",
+      "source_url": "https://news.ycombinator.com/item?id=41047342",
+      "created_at": "2024-07-23T15:52:06.000Z",
+      "text": "Don't these public clusters exist today, and have been around for decades at this point, with varying architectures? In the sense that you submit a proposal, it gets approved, and then you get access for your research?",
+      "text_html": "Don&#x27;t these public clusters exist today, and have been around for decades at this point, with varying architectures? In the sense that you submit a proposal, it gets approved, and then you get access for your research?",
+      "sha256": "6e5c4b42ca40ffe7b70019ceba343225767cf2d37d2e19aeaf8fb2d8e64e0d1e"
+    },
+    {
+      "id": 41049356,
+      "story_id": 41046773,
+      "story_title": "Open source AI is the path forward",
+      "source_url": "https://news.ycombinator.com/item?id=41049356",
+      "created_at": "2024-07-23T18:40:19.000Z",
+      "text": "Where do you get access to those as a member of the general public?",
+      "text_html": "Where do you get access to those as a member of the general public?",
+      "sha256": "46b9e9ee1172c2edc39d2b6098ec535bca657a3ea02356bdda84062d66a2d9f8"
+    },
+    {
+      "id": 38545192,
+      "story_id": 38544729,
+      "story_title": "Gemini AI",
+      "source_url": "https://news.ycombinator.com/item?id=38545192",
+      "created_at": "2023-12-06T15:34:44.000Z",
+      "text": "I wonder how that weird HellaSwag lag is possible. Is there something really special about that benchmark?",
+      "text_html": "I wonder how that weird HellaSwag lag is possible. Is there something really special about that benchmark?",
+      "sha256": "9f219d65fab4eef64f3ff82e8e1cf6c2bc251eb12dcccf4664c017b9c73ba2d8"
+    },
+    {
+      "id": 48089733,
+      "story_id": 48085821,
+      "story_title": "Local AI needs to be the norm",
+      "source_url": "https://news.ycombinator.com/item?id=48089733",
+      "created_at": "2026-05-11T00:38:29.000Z",
+      "text": "Baidu have a lot of services I've never heard of, that are highly successful in China. The lack of interest in expanding into Western audiences doesn't seem to matter there - what's different about inference?",
+      "text_html": "Baidu have a lot of services I&#x27;ve never heard of, that are highly successful in China. The lack of interest in expanding into Western audiences doesn&#x27;t seem to matter there - what&#x27;s different about inference?",
+      "sha256": "eb5c526295896126c138f554d34858e8ea073788b1ac2b083d668fbd25629d34"
+    },
+    {
+      "id": 48292724,
+      "story_id": 48292224,
+      "story_title": "I'm Tired of Talking to AI",
+      "source_url": "https://news.ycombinator.com/item?id=48292724",
+      "created_at": "2026-05-27T11:41:28.000Z",
+      "text": "How do you find the language barrier problem? Do you speak English to everyone you meet?",
+      "text_html": "How do you find the language barrier problem? Do you speak English to everyone you meet?",
+      "sha256": "8d59252c7e32a8b686a95887eb5b75a1dd8e8e6af3c8d8c2fb680286b26cdc66"
+    },
+    {
+      "id": 41047483,
+      "story_id": 41046773,
+      "story_title": "Open source AI is the path forward",
+      "source_url": "https://news.ycombinator.com/item?id=41047483",
+      "created_at": "2024-07-23T16:00:34.000Z",
+      "text": "What about distributed training on volunteer hardware? Is that feasible?",
+      "text_html": "What about distributed training on volunteer hardware? Is that feasible?",
+      "sha256": "5e1f72f5f03dcee8de7c5506100da597fbdbfa91eaccb963b920e989bb6fa608"
+    },
+    {
+      "id": 46994407,
+      "story_id": 46990729,
+      "story_title": "An AI agent published a hit piece on me",
+      "source_url": "https://news.ycombinator.com/item?id=46994407",
+      "created_at": "2026-02-12T20:09:36.000Z",
+      "text": "Which profile is fake? Someone posted what appears to be the legit homepage of the person who is accused of running the bot so that person appears to be real.\n\nThe link you provided is also a bit cryptic, what does \"I think crabby-rathbun is dead.\" mean in this context?",
+      "text_html": "Which profile is fake? Someone posted what appears to be the legit homepage of the person who is accused of running the bot so that person appears to be real.<p>The link you provided is also a bit cryptic, what does &quot;I think crabby-rathbun is dead.&quot; mean in this context?",
+      "sha256": "191957e6a1c028f6d72315b8e36c254a721977627a946a4597bc10891637e24f"
+    },
+    {
+      "id": 48295942,
+      "story_id": 48292224,
+      "story_title": "I'm Tired of Talking to AI",
+      "source_url": "https://news.ycombinator.com/item?id=48295942",
+      "created_at": "2026-05-27T15:40:30.000Z",
+      "text": "> even if many of them know English, they'll just refuse to speak English\n\nHow they keep their English speaking \"in shape\" then?",
+      "text_html": "&gt; even if many of them know English, they&#x27;ll just refuse to speak English<p>How they keep their English speaking &quot;in shape&quot; then?",
+      "sha256": "0948251ab3492430e702bfa9d3fdcbebb26e234ff2c0539ad1a032bd4d835454"
+    },
+    {
+      "id": 41055544,
+      "story_id": 41046773,
+      "story_title": "Open source AI is the path forward",
+      "source_url": "https://news.ycombinator.com/item?id=41055544",
+      "created_at": "2024-07-24T10:37:56.000Z",
+      "text": "Couldn’t VRAM be subsidised with SSDs on a lower end machine? It would make it slower but maybe useful at last.",
+      "text_html": "Couldn’t VRAM be subsidised with SSDs on a lower end machine? It would make it slower but maybe useful at last.",
+      "sha256": "eb9f526d4d7eb9bb418ad0d9ea85961b582e2645986c05d47b41d2515823088e"
+    },
+    {
+      "id": 44166195,
+      "story_id": 44163063,
+      "story_title": "My AI skeptic friends are all nuts",
+      "source_url": "https://news.ycombinator.com/item?id=44166195",
+      "created_at": "2025-06-03T04:14:30.000Z",
+      "text": "Did saying to Claude \"do not use floating point math in this code\" not work?",
+      "text_html": "Did saying to Claude &quot;do not use floating point math in this code&quot; not work?",
+      "sha256": "a60a0250de8aff61850644a84763235a23c575f5d1e179a5997031e810959e2d"
+    },
+    {
+      "id": 46993859,
+      "story_id": 46990729,
+      "story_title": "An AI agent published a hit piece on me",
+      "source_url": "https://news.ycombinator.com/item?id=46993859",
+      "created_at": "2026-02-12T19:34:01.000Z",
+      "text": "Can you elaborate a bit on what \"working correctly\" would look like? I have made use of agents, so me saying \"they worked correctly for me\" would be evidence of them doing so, but I'd have to know what \"correctly\" means.\n\nMaybe this comes down to what it would mean for an agent to do something. For example, if I were to prompt an agent then it wouldn't meet your criteria?",
+      "text_html": "Can you elaborate a bit on what &quot;working correctly&quot; would look like? I have made use of agents, so me saying &quot;they worked correctly for me&quot; would be evidence of them doing so, but I&#x27;d have to know what &quot;correctly&quot; means.<p>Maybe this comes down to what it would mean for an agent to do something. For example, if I were to prompt an agent then it wouldn&#x27;t meet your criteria?",
+      "sha256": "f2542c1cc7b2ba7b28be425a793b55e09e13bbbe17abed5592553e2a4bd35def"
+    },
+    {
+      "id": 38546433,
+      "story_id": 38544729,
+      "story_title": "Gemini AI",
+      "source_url": "https://news.ycombinator.com/item?id=38546433",
+      "created_at": "2023-12-06T16:58:09.000Z",
+      "text": "Unless they make it open source, what benefits would it have compared to the tiny OpenAi models?",
+      "text_html": "Unless they make it open source, what benefits would it have compared to the tiny OpenAi models?",
+      "sha256": "d9737dc5a06fdc79cfb2d75f0d0f1a43b721acbd8fbe9763a14f73d2f4a676b9"
+    },
+    {
+      "id": 38545230,
+      "story_id": 38544729,
+      "story_title": "Gemini AI",
+      "source_url": "https://news.ycombinator.com/item?id=38545230",
+      "created_at": "2023-12-06T15:37:13.000Z",
+      "text": "Anthropic's Claude is still not available in Canada either. Anyone have insight into why its difficult to bring these AI models to Canada when on the surface its political and legal landscape isn't all that different from the US?",
+      "text_html": "Anthropic&#x27;s Claude is still not available in Canada either. Anyone have insight into why its difficult to bring these AI models to Canada when on the surface its political and legal landscape isn&#x27;t all that different from the US?",
+      "sha256": "09c13b8ae5ddce1217b0ca92ac9ce49e917d7019e7f2084935ce568916bf1b67"
+    },
+    {
+      "id": 41047851,
+      "story_id": 41046773,
+      "story_title": "Open source AI is the path forward",
+      "source_url": "https://news.ycombinator.com/item?id=41047851",
+      "created_at": "2024-07-23T16:25:08.000Z",
+      "text": "It seems like rocm is already fully ready for transformer inference, so you are just referring to training?",
+      "text_html": "It seems like rocm is already fully ready for transformer inference, so you are just referring to training?",
+      "sha256": "e9263be560c742499b507fb84f89447a39c782fa8da108fcf38d6de80d85f886"
+    },
+    {
+      "id": 47340432,
+      "story_id": 47340079,
+      "story_title": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "source_url": "https://news.ycombinator.com/item?id=47340432",
+      "created_at": "2026-03-11T19:54:58.000Z",
+      "text": "Would prompts really be interesting or thought-provoking, though?\n\nI don't expect AI HN responders to out themselves by sharing, but I would be curious to learn if people are prompting anything more involved than just \"respond to this on HN: <link>\", or running agents that do the same.",
+      "text_html": "Would prompts really be interesting or thought-provoking, though?<p>I don&#x27;t expect AI HN responders to out themselves by sharing, but I would be curious to learn if people are prompting anything more involved than just &quot;respond to this on HN: &lt;link&gt;&quot;, or running agents that do the same.",
+      "sha256": "30ca7eacb8f16d89640fff64014bbab8173c94981b9b4c79ae83aabf32d61cb1"
+    },
+    {
+      "id": 48300605,
+      "story_id": 48292224,
+      "story_title": "I'm Tired of Talking to AI",
+      "source_url": "https://news.ycombinator.com/item?id=48300605",
+      "created_at": "2026-05-27T21:00:19.000Z",
+      "text": "In what context did you witness all these cases?\n\nIt's one thing to know these cases exist because they all have been reported in the news or having made a note of it through separate and unrelated  word of mouth interactions, but one person having direct experience of all these cases is unusual for a civilian (ie non-medical or healthcare professional).",
+      "text_html": "In what context did you witness all these cases?<p>It&#x27;s one thing to know these cases exist because they all have been reported in the news or having made a note of it through separate and unrelated  word of mouth interactions, but one person having direct experience of all these cases is unusual for a civilian (ie non-medical or healthcare professional).",
+      "sha256": "722574748f76e2d8bf263d146f2bcacb29b6856fd9648cecdcba5275c2b182b5"
+    },
+    {
+      "id": 48089768,
+      "story_id": 48085821,
+      "story_title": "Local AI needs to be the norm",
+      "source_url": "https://news.ycombinator.com/item?id=48089768",
+      "created_at": "2026-05-11T00:44:24.000Z",
+      "text": "What if the harness and loops get sufficiently better though? CC is using haiku for code-base gripping and such, you don't see a local commodity model being \"good enough\" for the 80%  case when matched with better  harnesses and tool calls?\n\nhonest question, i'm very interested in this, but too casual as of now to know any better.",
+      "text_html": "What if the harness and loops get sufficiently better though? CC is using haiku for code-base gripping and such, you don&#x27;t see a local commodity model being &quot;good enough&quot; for the 80%  case when matched with better  harnesses and tool calls?<p>honest question, i&#x27;m very interested in this, but too casual as of now to know any better.",
+      "sha256": "eb5f88c2d8c7eabc3a218e49b44cb77daa4488381ff4eefb5b201f29e30e5aab"
+    }
+  ],
+  "additional_collections": [
+    {
+      "collected_at_utc": "2026-10-19T22:04:09.583219+00:00",
+      "posts_added": 31,
+      "method": "Same eight source threads; whole 5–90-word comments containing a question mark and an interrogative word; round-robin traversal; excludes all 260 archived IDs and normalized texts. This is a screen, not a label.",
+      "screened_prefix_count": 180,
+      "screened_pool_count": 1555,
+      "selected_candidate_indices": [
+        2,
+        3,
+        4,
+        10,
+        12,
+        17,
+        28,
+        34,
+        35,
+        50,
+        52,
+        53,
+        54,
+        57,
+        73,
+        81,
+        84,
+        87,
+        94,
+        97,
+        99,
+        102,
+        105,
+        114,
+        115,
+        116,
+        124,
+        129,
+        144,
+        150,
+        151
+      ],
+      "labeling": "All chosen comments were read in full and AI-labeled question with individual reasons; human review pending."
     }
   ]
 }

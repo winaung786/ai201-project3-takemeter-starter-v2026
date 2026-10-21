@@ -1,57 +1,36 @@
-# Unit 5 rubric audit
+# Unit 5 evidence audit
 
-This rubric has **20 required points and 3 optional points**. This document is a
-check of actual evidence, not an awarded grade or a promise of full credit.
+This is an evidence inventory, not an awarded grade or promise of full credit.
 
-| Category | Points | Evidence required | Current status |
-|---|---:|---|---|
-| Required evidence and good-faith build | 3 | Root criteria.md with five real criteria; one labeled CSV with text/label/note and at least 150 rows; five populated README sections and at least four new commits | Root files exist and README sections are populated. Five criteria are committed and the commit-count requirement is met. Human annotation, hard-case decisions and training remain pending. |
-| Criteria name a target | 5 | Each of five criteria names a numerical target | 5/5 numeric targets supplied by the student and committed at cc8ae32 before training. |
-| Criteria testable by another reader | 4 | Each defines data/population, a calculation and an outcome; aggregation/empty-subset handling when relevant | All five state measurements. Remaining clarity issues: criterion 4 leaves sample selection unspecified; criterion 5 needs the maximum-softmax and empty-correct-subset conventions stated before testing. Targets are preserved. |
-| Criteria carry a reason | 3 | All five have a reason; at least three reasons specifically reference HN, the chosen labels or actual distribution | 5/5 reasons supplied. Several reference HN examples; final reasons should align with analysis/unsupported/question and the actual reviewed distribution. |
-| README taxonomy | 2 | Each label has one sentence and two real examples, plus a hardest-boundary rule | Now included directly in README. Draft still requires student review. |
-| README dataset | 2 | Source, actual labeling workflow, real counts per label, three hard cases with decisions | Source and process status are documented. 260 collected; 200 working rows; 180 AI suggestions pending human review; 20 cold rows blank; 0 student hard-case decisions. |
-| README training | 1 | Starting model, actual settings, any change and reason | Default plan documented; no completed run yet. |
+| Evidence | Status |
+|---|---|
+| Five numeric criteria and reasons | Student-supplied; committed before model scores at cc8ae32; preserved unchanged |
+| Single unsplit labels.csv | 200 complete comments; no duplicates; exact IDs/text/labels bound to the human-review confirmation |
+| Final class distribution | analysis 72 (36%); unsupported 81 (40.5%); question 47 (23.5%); meets criterion 3 and the required 70% cap |
+| Human review | User-confirmed for all 200 labels at fe558f8; original AI assistance remains disclosed |
+| Unaided first 20 | Not established; initial labels were AI-assisted; no cold marker invented |
+| Hard cases | Three alternative-label decisions and rules are documented; explanations originated with the assistant and labels were subsequently accepted by the user |
+| README | All five required sections, definitions and two source examples per label, boundary rule, counts, workflow and training settings |
+| Commit history | More than four genuine new commits beyond the official starter |
+| Training | See the actual results files and Training Run section; training is distinct from full course-evidence completion |
+| Second-human agreement | Not performed; general review confirmation is not a second-reviewer comparison |
 
-## Floor versus target
+The strict course validator remains unchanged. A separate explicit training mode
+can accept the exact hash-bound human-confirmed dataset while disclosing the missing
+unaided cold pass. It does not claim that this course requirement is satisfied.
 
-200 labeled posts is the target. A set of 150–199 can use the course's stop rule
-only with an honest README explanation of why the student stopped. The validator
-must not silently treat that floor as a failed 200-row requirement, nor count
-unlabeled rows as labeled examples. The current file has 200 rows: 180 unreviewed AI suggestions and 20 blank cold rows. These are not 200 completed human-reviewed examples.
+## Stretch feature
 
-## Timing and integrity
+The second run was declared before implementation and before scores: 3 versus 4
+epochs, with the same data, stratified split, seed 42 and remaining settings. Both runs completed and their actual
+metrics and differences are saved in results_epoch_comparison.json and the README.
+No fourth label or extra 50-example stretch is claimed. The 31 newly collected
+questions were part of a documented sample revision, not an extra-50 claim.
 
-- Student authors all five criteria and their numbers, before seeing model results.
-- First 20 rows must be labeled cold, without AI help. Pending rows do not count.
-- AI pre-labeling of remaining rows is allowed only with individual student review
-  and a truthful note. 180 AI proposals now exist; none has a human-review claim.
-- No final label may exceed 70%. Use one unsplit CSV; the notebook splits it.
-- Keep the test split sealed during preparation. Do not choose another setting
-  based on its results. Use validation data when iterating.
-- Preserve real milestone history. Four real commits alone do not turn unfinished
-  criteria, unreviewed labels or pending training into a finished submission.
-- Commit actual results.json and test_split.csv after the training run.
-- Use the same GitHub fork for Units 5 and 6: https://github.com/winaung786/ai201-project3-takemeter-starter-v2026. The fork is published; no course-portal submission is claimed.
+## Acceptance targets
 
-## Optional points
-
-All-or-nothing: declare an item in README before implementing it; implement it;
-then explain its actual effect in README. None is currently earned.
-
-1. Fourth label: needs a real gap in the community, one-sentence definition, two
-   examples and an explanation of what the first three missed. Not declared.
-2. Second run: declared before implementation. Default 3 epochs versus 4 epochs,
-   with every other setting and the data/split unchanged. Keep both metrics files
-   and report exact differences. Criteria committed; pending reviewed labels and training.
-3. Extra 50: identify the thinnest label from the original labeled file, freeze
-   that evidence, declare the collection plan, then collect and review at least
-   50 new unique posts for that label. The 260 originally collected posts cannot be
-   retroactively described as this stretch feature. Not declared.
-
-## What the student needs to return
-
-The criteria are already committed. Return the 20 independent cold labels, then
-review all 180 AI suggestions. Record three actual difficult decisions with both
-candidate labels and your reasons. Export and commit the final CSV; training
-remains blocked until those real choices exist.
+Overall accuracy, per-label F1 and confidence targets must hold individually across
+the three Unit 6 seeds. One-seed Unit 5 results do not establish a three-seed pass.
+The balance criterion can be checked now. Inter-annotator agreement still needs a
+second human and the specified independent sample. Do not lower targets after
+seeing scores or rewrite the student's explanations.

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-19",
+  "os": "Windows",
+  "python": "3.12.14",
+  "executable": "C:\\Users\\786wi\\Documents\\Codex\\2026-10-19\\20-comments-independently-then-reviewing-the-4\\work\\takemeter\\.venv\\Scripts\\python.exe",
+  "packages": {
+    "pandas": "2.3.3",
+    "transformers": "4.57.6",
+    "datasets": "3.6.0",
+    "accelerate": "1.15.0",
+    "torch": "2.14.1",
+    "scikit-learn": "1.9.1"
+  },
+  "environment_check": {
+    "passed": 9,
+    "failed": 0,
+    "warnings": 1,
+    "warning": "Unit 6 baseline model not downloaded"
+  },
+  "training_run": false,
+  "human_annotations_saved": 0
+}

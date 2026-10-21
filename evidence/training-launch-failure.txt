@@ -1,0 +1,50 @@
+Annotation provenance: {"human_review_basis": "user_confirmation_after_AI_assistance", "confirmation_file": "evidence/human-review-confirmation.json", "reviewer": "Win Aung", "unaided_cold_pass_recorded": false, "course_submission_complete": false, "limitation": "Initial 20 were AI-assisted; training does not satisfy the unaided cold-pass requirement. Hard-case explanations originated with the assistant."}
+device: cpu  (CPU)
+torch:  2.6.0+cpu
+
+⚠️  WRITE THIS DOWN. Your results depend on it.
+
+Two people running this notebook on the same data with the same seed can
+get different numbers, because different hardware does the arithmetic in
+a slightly different order. That is not a bug and it is not one of you
+being wrong — it is a real property of the thing you are building, and
+unit 6 asks you to report it alongside your three seeds.
+Working in: /workspace/scratch/efe9061ab15d/takemeter-training
+Results will be labelled: Win Aung <>
+  README.md
+  RUNNING.md
+  agreement.py
+  annotation_review.html
+  baseline.py
+  collection
+  completed_review.html
+  criteria.md
+  data
+  docs
+  evidence
+  label_definitions.txt
+  labels.csv
+  labels_template.csv
+  requirements.txt
+  reviews
+  takemeter.ipynb
+  test.py
+  tools
+3 labels: analysis, unsupported, question
+seed 42, 3 epochs, lr 2e-05, batch 16
+Loaded labels.csv: 200 rows
+Columns: text, label, note
+
+Data looks fine.
+
+label
+unsupported    81
+analysis       72
+question       47
+Traceback (most recent call last):
+  File "/workspace/scratch/efe9061ab15d/takemeter-training/tools/run_epoch_comparison.py", line 143, in <module>
+    main()
+  File "/workspace/scratch/efe9061ab15d/takemeter-training/tools/run_epoch_comparison.py", line 122, in main
+    exec(compile(source, f"takemeter.ipynb:cell-{index}", "exec"), namespace)
+  File "takemeter.ipynb:cell-12", line 2, in <module>
+ModuleNotFoundError: No module named 'tools'

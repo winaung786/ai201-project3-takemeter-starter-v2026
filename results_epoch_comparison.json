@@ -1,0 +1,48 @@
+{
+  "changed_hyperparameter": "epochs",
+  "first_epochs": 3,
+  "second_epochs": 4,
+  "fixed_settings": {
+    "base_model": "distilbert-base-uncased",
+    "learning_rate": 2e-05,
+    "batch_size": 16,
+    "max_length": 128,
+    "seed": 42,
+    "labels": [
+      "analysis",
+      "unsupported",
+      "question"
+    ]
+  },
+  "data_sha256": "a60e1a1fa9b9d8504ab692d360012d7fa25d195f5668db5a26a017e6b0994345",
+  "criteria_sha256": "256d7d354dff1847ee27277a9a5cdc77ae88c43e17962febefd27dc30d2a8d6e",
+  "first_metrics_file": "results.json",
+  "second_metrics_file": "results_second_run.json",
+  "measures": {
+    "Overall accuracy": {
+      "first": 0.6666666666666666,
+      "second": 0.7333333333333333,
+      "second_minus_first": 0.06666666666666665
+    },
+    "Macro F1": {
+      "first": 0.5033238366571701,
+      "second": 0.6712250712250712,
+      "second_minus_first": 0.16790123456790118
+    },
+    "F1 \u2014 analysis": {
+      "first": 0.7692307692307693,
+      "second": 0.7692307692307693,
+      "second_minus_first": 0.0
+    },
+    "F1 \u2014 unsupported": {
+      "first": 0.7407407407407407,
+      "second": 0.8,
+      "second_minus_first": 0.059259259259259345
+    },
+    "F1 \u2014 question": {
+      "first": 0.0,
+      "second": 0.4444444444444444,
+      "second_minus_first": 0.4444444444444444
+    }
+  }
+}

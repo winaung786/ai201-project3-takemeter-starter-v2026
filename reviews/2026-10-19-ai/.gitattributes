@@ -1,0 +1,2 @@
+# Preserve literal comment newlines and the byte-level hashes in verification.json.
+* -text
