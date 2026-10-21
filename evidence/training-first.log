@@ -1,0 +1,96 @@
+Annotation provenance: {"human_review_basis": "user_confirmation_after_AI_assistance", "confirmation_file": "evidence/human-review-confirmation.json", "reviewer": "Win Aung", "unaided_cold_pass_recorded": false, "course_submission_complete": false, "limitation": "Initial 20 were AI-assisted; training does not satisfy the unaided cold-pass requirement. Hard-case explanations originated with the assistant."}
+device: cpu  (CPU)
+torch:  2.6.0+cpu
+
+⚠️  WRITE THIS DOWN. Your results depend on it.
+
+Two people running this notebook on the same data with the same seed can
+get different numbers, because different hardware does the arithmetic in
+a slightly different order. That is not a bug and it is not one of you
+being wrong — it is a real property of the thing you are building, and
+unit 6 asks you to report it alongside your three seeds.
+Working in: /workspace/scratch/efe9061ab15d/takemeter-training
+Results will be labelled: Win Aung <>
+  README.md
+  RUNNING.md
+  agreement.py
+  annotation_review.html
+  baseline.py
+  collection
+  completed_review.html
+  criteria.md
+  data
+  docs
+  evidence
+  label_definitions.txt
+  labels.csv
+  labels_template.csv
+  requirements.txt
+  reviews
+  takemeter.ipynb
+  test.py
+  tools
+3 labels: analysis, unsupported, question
+seed 42, 3 epochs, lr 2e-05, batch 16
+Loaded labels.csv: 200 rows
+Columns: text, label, note
+
+Data looks fine.
+
+label
+unsupported    81
+analysis       72
+question       47
+train 139  ·  val 31  ·  test 30
+
+             train  val  test
+label                        
+analysis        50   11    11
+unsupported     56   13    12
+question        33    7     7
+
+[note] 'question' has only 7 examples in the test split.
+
+A metric computed on that few examples moves a lot between seeds.
+Write that down now — next unit it's a diagnosis, not a surprise.
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/139 [00:00<?, ? examples/s]Map: 100%|██████████| 139/139 [00:00<00:00, 4951.62 examples/s]
+Map:   0%|          | 0/31 [00:00<?, ? examples/s]Map: 100%|██████████| 31/31 [00:00<00:00, 3361.17 examples/s]
+  0%|          | 0/27 [00:00<?, ?it/s]  4%|▎         | 1/27 [00:06<02:55,  6.77s/it]  7%|▋         | 2/27 [00:13<02:42,  6.49s/it] 11%|█         | 3/27 [00:16<02:06,  5.26s/it] 15%|█▍        | 4/27 [00:20<01:45,  4.59s/it] 19%|█▊        | 5/27 [00:24<01:34,  4.31s/it] 22%|██▏       | 6/27 [00:27<01:24,  4.01s/it] 26%|██▌       | 7/27 [00:31<01:16,  3.84s/it] 30%|██▉       | 8/27 [00:34<01:12,  3.82s/it] 33%|███▎      | 9/27 [00:37<01:01,  3.40s/it]
+  0%|          | 0/2 [00:00<?, ?it/s][A
+100%|██████████| 2/2 [00:00<00:00,  2.02it/s][A                                              
+                                             [A{'eval_loss': 1.0404595136642456, 'eval_accuracy': 0.5161290322580645, 'eval_f1_macro': 0.3863837312113174, 'eval_runtime': 2.0725, 'eval_samples_per_second': 14.958, 'eval_steps_per_second': 0.965, 'epoch': 1.0}
+ 33%|███▎      | 9/27 [00:39<01:01,  3.40s/it]
+100%|██████████| 2/2 [00:00<00:00,  2.02it/s][A
+                                             [A 37%|███▋      | 10/27 [00:43<01:10,  4.12s/it]                                               {'loss': 1.0846, 'grad_norm': 1.4328111410140991, 'learning_rate': 1.3333333333333333e-05, 'epoch': 1.11}
+ 37%|███▋      | 10/27 [00:43<01:10,  4.12s/it] 41%|████      | 11/27 [00:46<01:03,  3.98s/it] 44%|████▍     | 12/27 [00:50<00:57,  3.84s/it] 48%|████▊     | 13/27 [00:53<00:52,  3.74s/it] 52%|█████▏    | 14/27 [00:57<00:48,  3.71s/it] 56%|█████▌    | 15/27 [01:00<00:43,  3.61s/it] 59%|█████▉    | 16/27 [01:04<00:40,  3.66s/it] 63%|██████▎   | 17/27 [01:07<00:35,  3.57s/it] 67%|██████▋   | 18/27 [01:10<00:29,  3.24s/it]
+  0%|          | 0/2 [00:00<?, ?it/s][A
+100%|██████████| 2/2 [00:00<00:00,  2.09it/s][A                                               
+                                             [A{'eval_loss': 0.9916051626205444, 'eval_accuracy': 0.6129032258064516, 'eval_f1_macro': 0.4692028985507246, 'eval_runtime': 2.1052, 'eval_samples_per_second': 14.726, 'eval_steps_per_second': 0.95, 'epoch': 2.0}
+ 67%|██████▋   | 18/27 [01:12<00:29,  3.24s/it]
+100%|██████████| 2/2 [00:00<00:00,  2.09it/s][A
+                                             [A 70%|███████   | 19/27 [01:15<00:31,  3.93s/it] 74%|███████▍  | 20/27 [01:19<00:26,  3.74s/it]                                               {'loss': 1.0093, 'grad_norm': 1.888914704322815, 'learning_rate': 5.925925925925926e-06, 'epoch': 2.22}
+ 74%|███████▍  | 20/27 [01:19<00:26,  3.74s/it] 78%|███████▊  | 21/27 [01:23<00:23,  3.90s/it] 81%|████████▏ | 22/27 [01:27<00:20,  4.02s/it] 85%|████████▌ | 23/27 [01:32<00:16,  4.13s/it] 89%|████████▉ | 24/27 [01:36<00:12,  4.03s/it] 93%|█████████▎| 25/27 [01:39<00:07,  3.84s/it] 96%|█████████▋| 26/27 [01:42<00:03,  3.68s/it]100%|██████████| 27/27 [01:45<00:00,  3.28s/it]
+  0%|          | 0/2 [00:00<?, ?it/s][A
+100%|██████████| 2/2 [00:01<00:00,  1.75it/s][A                                               
+                                             [A{'eval_loss': 0.9659778475761414, 'eval_accuracy': 0.5483870967741935, 'eval_f1_macro': 0.4177777777777778, 'eval_runtime': 2.3235, 'eval_samples_per_second': 13.342, 'eval_steps_per_second': 0.861, 'epoch': 3.0}
+100%|██████████| 27/27 [01:47<00:00,  3.28s/it]
+100%|██████████| 2/2 [00:01<00:00,  1.75it/s][A
+                                             [A                                               {'train_runtime': 107.4335, 'train_samples_per_second': 3.881, 'train_steps_per_second': 0.251, 'train_loss': 1.0302180890683774, 'epoch': 3.0}
+100%|██████████| 27/27 [01:47<00:00,  3.28s/it]100%|██████████| 27/27 [01:47<00:00,  3.98s/it]
+
+Trained.
+Map:   0%|          | 0/30 [00:00<?, ? examples/s]Map: 100%|██████████| 30/30 [00:00<00:00, 3978.03 examples/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:01<00:00,  1.98it/s]100%|██████████| 2/2 [00:01<00:00,  1.97it/s]
+accuracy  0.667
+macro F1  0.503
+
+  analysis         F1 0.769   (n=11)
+  unsupported      F1 0.741   (n=12)
+  question         F1 0.000   (n=7)
+
+confidence   most-sure third 0.700   ·   least-sure third 0.400
+
+Wrote results.json and test_split.csv. Commit them both — they're the
+evidence the run happened, and next unit reads test_split.csv.

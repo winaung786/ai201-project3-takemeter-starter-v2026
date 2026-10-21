@@ -1,0 +1,7 @@
+PASS: labels.csv and criteria.md unchanged from the human-review commit.
+PASS: both runs have 30 test examples; supports and confusion totals agree.
+PASS: reported accuracies match confusion-matrix diagonals.
+PASS: only epochs changed (3 versus 4); fixed data, criteria, seed, settings and device.
+PASS: comparison deltas equal the saved second-minus-first values.
+PASS: second run verified its split against the original saved test_split.csv.
+PASS: missing unaided cold pass is disclosed in both result files.

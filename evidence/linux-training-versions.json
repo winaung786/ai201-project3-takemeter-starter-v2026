@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "device": "cpu",
+  "execution_environment": "assistant Linux runtime; not the earlier Windows device",
+  "thread_limit": 2,
+  "packages": {
+    "torch": "2.6.0+cpu",
+    "transformers": "4.57.6",
+    "datasets": "3.6.0",
+    "accelerate": "1.15.0",
+    "scikit-learn": "1.9.1",
+    "pandas": "2.3.3",
+    "numpy": "2.5.4",
+    "tokenizers": "0.22.2",
+    "huggingface-hub": "0.36.2"
+  }
+}

@@ -10,9 +10,11 @@ import hashlib
 import json
 import os
 import re
+import sys
 from pathlib import Path
 
-from validate_submission import ROOT, validate
+from validate_submission import ROOT
+from training_preflight import preflight
 
 
 def digest(path):
@@ -68,18 +70,26 @@ def training_summary(namespace, stage):
     if thin:
         lines += ["", "Labels with fewer than 8 test examples: " + ", ".join(thin) + ". Their metrics may move sharply between seeds."]
     lines += ["", "**Saved evidence:** results.json and test_split.csv" + (", results_second_run.json and results_epoch_comparison.json." if stage == "second" else "."),
-              "Criteria and labels passed the committed-file check before training. Results record the data and criterion hashes. The CSV was not manually pre-split."]
+              "Criteria and labels passed the committed-file check before training. Results record the data and criterion hashes. The CSV was not manually pre-split.", "",
+              "**Annotation limitation:** Labels were human-confirmed after AI assistance. No unaided first-20 cold pass is recorded, and hard-case explanations originated with the assistant. Training does not establish that the full course submission is complete.",
+              "**Execution environment:** This run used the assistant Linux CPU runtime, distinct from the earlier Windows setup evidence."]
     return "\n".join(lines) + "\n"
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run", choices=("first", "second"), required=True)
+    parser.add_argument("--allow-assisted-initial20", action="store_true",
+                        help="Train on hash-bound human-confirmed labels while disclosing the missing unaided cold pass; does not waive other checks.")
     args = parser.parse_args()
-    errors, _ = validate()
+    errors, _, provenance = preflight(allow_assisted_initial20=args.allow_assisted_initial20)
     if errors:
         raise SystemExit("Student work must be completed before training:\n" + "\n".join(errors))
     os.chdir(ROOT)
+    # Executing this file directly puts tools/, rather than the repo, on sys.path.
+    # Notebook cells import tools.* from the repository root.
+    if str(ROOT) not in sys.path:
+        sys.path.insert(0, str(ROOT))
     notebook = json.loads((ROOT / "takemeter.ipynb").read_text())
     config = settings(notebook)
     declared = {"base_model": "distilbert-base-uncased", "epochs": 3, "learning_rate": 2e-5, "batch_size": 16, "max_length": 128, "seed": 42}
@@ -97,7 +107,8 @@ def main():
         for key, value in expected.items():
             if first.get(key) != value:
                 raise SystemExit(f"First-run {key} differs or lacks recorded metadata; do not compare unmatched runs.")
-    namespace = {"__name__": "__main__"}
+    print("Annotation provenance:", json.dumps(provenance))
+    namespace = {"__name__": "__main__", "ALLOW_ASSISTED_INITIAL20": args.allow_assisted_initial20, "ANNOTATION_PROVENANCE": provenance}
     # Sections 1–5 only. Unit 6's three-seed cells are deliberately excluded.
     for index in (2, 4, 6, 8, 10, 12, 14, 16):
         source = "".join(notebook["cells"][index]["source"])

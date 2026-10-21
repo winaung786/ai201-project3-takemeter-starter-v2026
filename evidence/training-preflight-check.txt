@@ -1,0 +1,9 @@
+Training preparation checks; no synthetic annotation was written into labels.csv.
+PASS: 200 CSV rows exactly match the committed human-confirmation IDs, labels and text hashes.
+PASS: original labels.csv and criteria.md match their committed snapshots.
+PASS: explicit assisted-training mode accepts the confirmed dataset and records the missing unaided cold pass.
+PASS: default strict submission check still rejects the missing cold pass.
+PASS: modifying a label invalidates the confirmation hash.
+PASS: pending review markers remain fatal even when the file hash is refreshed.
+PASS: Python compilation and git diff whitespace checks.
+The explicit assisted mode is a training-integrity distinction, not a completed course-rubric claim.

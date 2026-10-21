@@ -2,7 +2,7 @@
 
 **Repository:** https://github.com/winaung786/ai201-project3-takemeter-starter-v2026
 
-**Annotation status: complete; human review confirmed.** All 200 comments have a label,
+**Build status: human review confirmed; both training runs completed.** All 200 comments have a label,
 an assistant review reason, and a source ID in the root `labels.csv`. On 2026-10-20,
 Win Aung confirmed having reviewed the dataset and asked for finalization. All 200
 labels are now marked `human_reviewed`, with the earlier AI assistance preserved.
@@ -22,8 +22,8 @@ confirmation is recorded in [the human-review record](evidence/human-review-conf
 which binds the reviewed comment IDs and labels to this dataset. The review date itself
 was not supplied; 2026-10-20 is the date the confirmation was recorded. This records
 human review after AI assistance, without claiming an unaided cold pass or a second
-human agreement result. The five student criteria are unchanged. No training or
-evaluation has run.
+human agreement result. The five student criteria are unchanged. Both predeclared training runs have
+completed on the confirmed labels; see The Training Run below.
 
 **Earlier balance revision (2026-10-19):** Before annotation completion, the 180 AI suggestions contained 65
 `analysis`, 70 `unsupported`, and 45 `question` comments. At that stage, the original 20 cold
@@ -61,15 +61,15 @@ AI checkpoints.
 TakeMeter will classify whole comments from Hacker News AI discussions.
 The proposed labels distinguish supported analysis, unsupported statements or
 reactions, and direct requests for information. The student selected this community;
-the taxonomy is an AI-assisted draft awaiting review. It classifies the support
+the taxonomy was drafted with AI assistance and is used for the reviewed labels. It classifies the support
 present in a comment rather than judging whether an opinion is good or a claim true.
 
 ## Label Taxonomy
 
-The following taxonomy is an AI-assisted draft awaiting the student's review.
-Read the 40-post reading pack before adopting or changing it.
+The following AI-assisted taxonomy defines the labels used for the human-confirmed
+dataset and both training runs. The reading pack records the source examples.
 
-## analysis
+### analysis
 
 **Definition:** A statement supports its main claim with a specific, checkable detail, a concrete first-hand observation, or a cited source.
 
@@ -209,30 +209,69 @@ unchanged comments and leaving replacements blank in that human workflow.
 
 ## The Training Run
 
-**Status:** No training, practice training, or evaluation has run. results.json and
-test_split.csv do not yet exist. No test split has been created or examined.
+**Status:** Both predeclared training runs completed.
 
-**Planned base model:** distilbert-base-uncased.
-**Defaults:** 3 epochs, learning rate 2e-5, batch size 16, maximum 128 tokens, seed 42.
-**Planned split:** The starter notebook creates stratified 70/15/15 partitions from
-one unsplit labels.csv. Actual split sizes and per-label counts are not available yet.
+**Starting model:** distilbert-base-uncased
+**Settings used:** seed 42, learning rate 2e-05, batch size 16, maximum 128 tokens.
+**Epochs:** 3 in the first run, 4 in the second.
+**Device:** cpu (CPU), PyTorch 2.6.0+cpu.
 
-**Verified local Windows environment:** Python 3.12.14, CPU, all six required packages
-installed in `.venv`; `test.py` reported 9 passed and 0 failed. The Unit 6 baseline
-model has not been downloaded and produces the expected cache warning. See
-`evidence/windows-environment-ready.json` for exact versions. Earlier Linux checks
-remain historical evidence. Environment readiness is not a completed training run.
+**Hyperparameter change and reason:** Only epochs changed, from 3 to 4, to test whether an extra pass helps this small corpus or overfits it. This was declared in README before implementation.
 
-**Changes from the starter:** A pre-training guard stops unfinished annotation and
-criteria from producing results. Notebook instructions that incorrectly referred to
-a hosted connection or automatic pushes were corrected. The name is Win Aung and
-email remains blank because it was not provided. The proposed label map is configured
-in section 2. Section 5 saves the actual model and tokenizer under models/takemeter
-in addition to the starter's metrics and test split. First-run hyperparameters and splitting
-logic are unchanged. Results also record settings and file hashes so the declared
-second run can reject mismatched data or criteria. The comparison runner is
-`python tools/run_epoch_comparison.py --run first`, followed by `--run second`;
-both are gated on completed, committed student work. No comparison has run yet. Models and caches remain excluded from Git.
+**Split sizes:** train 139, validation 31, test 30.
+
+| Label | Train | Validation | Test |
+|---|---:|---:|---:|
+| analysis | 50 | 11 | 11 |
+| unsupported | 56 | 13 | 12 |
+| question | 33 | 7 | 7 |
+
+Labels with fewer than 8 test examples: question. Their metrics may move sharply between seeds.
+
+**Saved evidence:** results.json and test_split.csv, results_second_run.json and results_epoch_comparison.json.
+Criteria and labels passed the committed-file check before training. Results record the data and criterion hashes. The CSV was not manually pre-split.
+
+**Annotation limitation:** Labels were human-confirmed after AI assistance. No unaided first-20 cold pass is recorded, and hard-case explanations originated with the assistant. Training does not establish that the full course submission is complete.
+**Execution environment:** This run used the assistant Linux CPU runtime, distinct from the earlier Windows setup evidence.
+
+### Declared epoch comparison — actual results
+
+Only epochs changed, from 3 to 4. Both runs used the same labeled CSV,
+criteria, stratified split, seed and remaining hyperparameters. No further
+setting was selected using these test results.
+
+| Measure | 3 epochs | 4 epochs | Second minus first |
+|---|---:|---:|---:|
+| Overall accuracy | 0.666667 | 0.733333 | +0.066667 |
+| Macro F1 | 0.503324 | 0.671225 | +0.167901 |
+| F1 — analysis | 0.769231 | 0.769231 | +0.000000 |
+| F1 — unsupported | 0.740741 | 0.800000 | +0.059259 |
+| F1 — question | 0.000000 | 0.444444 | +0.444444 |
+
+These differences measure one predeclared comparison on one split. They
+do not establish a reliable improvement across seeds. Unit 6 evaluates that.
+
+### Reading the first-seed results
+
+The original 3-epoch run remains the first-run reference; the 4-epoch run is the
+predeclared comparison, not a new test-tuned default. First-run accuracy is
+66.7% and macro F1 is 0.503324; the comparison is 73.3%
+and 0.671225. Question F1 moved from 0.000000 to
+0.444444, based on only seven test examples.
+
+The 75% accuracy target is missed on this seed in both runs. The 0.65 minimum
+per-label F1 is also missed for question. Mean confidence when correct is
+0.421990 and 0.456680; the fractions below 0.50
+confidence are 100.0% and 73.3%. These miss
+the stated confidence conditions. Criteria were not lowered. Criterion 3's
+label-balance target is met. A second-human agreement result is not available,
+and the three-seed Unit 6 evaluation has not run. No three-seed pass is claimed.
+
+**Trained model:** The first model and tokenizer were saved and reloaded fully
+offline; their predictions reproduce results.json exactly. Large model weights
+are excluded from Git, as specified by .gitignore. A separate trained-model
+download is supplied with the assistant's completion message. Both models remain
+reproducible from the committed data and the recorded software versions.
 
 ## How I Used AI
 

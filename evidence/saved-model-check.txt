@@ -1,0 +1,2 @@
+PASS: saved first-run model and tokenizer load fully offline.
+PASS: predictions on all 30 held-out posts reproduce saved accuracy and macro F1 exactly.
