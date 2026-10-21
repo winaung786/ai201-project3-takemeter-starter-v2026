@@ -1,0 +1,15 @@
+{
+  "same_30_posts": true,
+  "no_fallback": true,
+  "used_exact_definitions": true,
+  "input_hashes": {
+    "test_split.csv": "edd7174996b5612674fe360e110712b09c5c5f66320c6634039eea84de96efa1",
+    "results.json": "62a4eab1e829351fde394bb6a0fd5a09a456f2063e70c639b7cbdf318d62ede6",
+    "labels.csv": "a60e1a1fa9b9d8504ab692d360012d7fa25d195f5668db5a26a017e6b0994345",
+    "criteria.md": "256d7d354dff1847ee27277a9a5cdc77ae88c43e17962febefd27dc30d2a8d6e",
+    "label_definitions.txt": "39ec0cb8cb2ad750d3236b7a4c10cb153d23ed5f4af3af55aed284548968631e"
+  },
+  "baseline_model": "facebook/bart-large-mnli",
+  "baseline_accuracy": 0.4666666666666667,
+  "trained_accuracy": 0.6666666666666666
+}

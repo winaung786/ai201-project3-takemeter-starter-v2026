@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.4666666666666667,
+    "f1_macro": 0.460968660968661,
+    "per_label": {
+      "analysis": {
+        "precision": 0.4666666666666667,
+        "recall": 0.6363636363636364,
+        "f1": 0.5384615384615385,
+        "support": 11
+      },
+      "question": {
+        "precision": 1.0,
+        "recall": 0.2857142857142857,
+        "f1": 0.4444444444444445,
+        "support": 7
+      },
+      "unsupported": {
+        "precision": 0.38461538461538464,
+        "recall": 0.4166666666666667,
+        "f1": 0.4,
+        "support": 12
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "That's not quite true. State of the art both in speech recognition and translation is still a dedicated model only for this task alone. Although the gap is getting smaller and smaller, and it also heavily depends on who invests how much training budget.\n\nFor example, for automatic speech recognition (ASR), see: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard\n\nThe current best ASR model has 600M params (tiny compared to LLMs, and way faster than any LLM: 3386.02 RTFx vs 62.12 RTFx, much cheaper) and was trained on 120,000h of speech. In comparison, the next best speech LLM (quite close in WER, but slightly worse) has 5.6B params and was trained on 5T tokens, 2.3M speech hours. It has been always like this: With a fraction of the cost, you will get a pure ASR model which still beats every speech LLM.\n\nThe same is true for translation models, at least when you have enough training data, so for popular translation pairs.\n\nHowever, LLMs are obviously more powerful in what they can do despite just speech recognition or translation.",
+      "gold": "analysis",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "It's a shame that Gemini Ultra is not out yet, it seems like a solid improvement on GPT-4. I wonder how it'll compare against GPT-5?",
+      "gold": "question",
+      "predicted": "analysis"
+    },
+    {
+      "text": "THANK YOU.\n\nI was a 3-4x programmer before. Now I\u2019m a 9-15x programmer when wrangling LLMs.\n\nThis is a sea change and it\u2019s already into \u201cincredible\u201d territory and shows no signs of slowing down.\n\n> Think of anything you wanted to build but didn\u2019t. You tried to home in on some first steps. If you\u2019d been in the limerent phase of a new programming language, you\u2019d have started writing. But you weren\u2019t, so you put it off, for a day, a year, or your whole career.\n\nI have been banging out little projects that I have wanted to exist for years but always had on the back burner.  Write a detailed readme and ask the agent to interrogate you about the missing parts of the spec then update the README.  Then have it make a TODO and start implementing.  Give it another code base for style guide.\n\nI\u2019ve made more good and useful and working code in the last month than I have in the last two years.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I think actual thinking is now more valuable than ever.",
+      "gold": "unsupported",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Certainly! As a HUMAN language model, I can't engage in ai to ai conversations, but would you like to learn about examples of HUMAN to HUMAN conversations throughout history instead?",
+      "gold": "unsupported",
+      "predicted": "analysis"
+    },
+    {
+      "text": "> won\u2019t concede until you can just ask Codex or Opus \u201cfind and fix all the bugs in this\n\nBut this is just holding the Slop Companies to the standard they declared themselves! Just recently, the CEO of OpenAI babbled some nonsense on twitter about how he hands over tasks to Codex who according to him, finishes them flawlessly while he is playing with his kid outside.\n\n> but soon we will be.\n\nAh yes, in the 3-6 months, right? This time next year Rodney, we'll be millionaires!",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I also wonder if this is so visible because a lot of people don't really care what they do and will happily use any bullshit machine to simulate work.",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "It's important to address skeptics by reminding them that this behavior was actually predicted by earlier frameworks. It's well within the bounds of theory. If you start mining that theory for information, you may reach a conclusion like what you've posted, but it's more important for people to see the extent to which these theories have been predictive of what we've actually seen.\n\nThe result is actually that much of what was predicted had come to pass.",
+      "gold": "unsupported",
+      "predicted": "analysis"
+    },
+    {
+      "text": "That\u2019s nothing, I was a 4X programmer and now I\u2019m a 500x programmer!\n\nI don\u2019t just run one agent, I run all of them!\n\nMy time to close tickets is measured in minutes!\n\nI don\u2019t even review code, I have a different agent review it for me!",
+      "gold": "unsupported",
+      "predicted": "analysis"
+    },
+    {
+      "text": "And the legal person on whose behalf the agent was acting is responsible to you.  (It's even in the word, \"agent\".)",
+      "gold": "unsupported",
+      "predicted": "analysis"
+    },
+    {
+      "text": "One of my hobbyist workflows involved transcribing ETF prospecti into yaml for an optimizer to optimize over.\n\nUsed to take me maybe 10-20 minutes per sheet.\n\nThen I got codex to whip up a script that sends each sheet to a fairly low parameter locally running LLM and I have the yaml in a couple seconds.\n\nMy dream is to bootstrap myself to local productivity with providers\u2026 I know I\u2019ll never get there because hedonic treadmill etc, but I do feel there\u2019s lots more juice to squeeze. I just need to invest more time into AI engineering\u2026",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Many DVDs of old movies and TV shows may contain the closed captions, but they are not visible through HDMI. You have to connect your DVD player to your TV via the composite video analogue outputs.\n\nThis video explains all about it: https://youtu.be/OSCOQ6vnLwU",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "And to make sure that agent doesn\u2019t make mistakes I have a different agent review that agents work!",
+      "gold": "unsupported",
+      "predicted": "analysis"
+    },
+    {
+      "text": "<https://twiiit.com/mitchellh/status/2055380239711457578> \u2013 will redirect to a currently-working Nitter instance.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Also it isn't source code, it is a binary. You need at least the data curation code and preferably the data itself for it to be actually source code in the practical sense that anyone can remake the build.\n\nLlama could change the license on later versions to kill your business and you have no options as you don't know how they trained it or have the budget to.\n\nIt's not much more free than binary software.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I can\u2019t tell if you\u2019re being sarcastic or not, but if you are, the real world is not far behind.  I can imagine a world where a mixture of AI agents (some doing hypercritical code review) can return you tested and idiomatic PRs faster than you can describe the new architecture in issues.\n\nI think a lot of people are unfamiliar with the (expensive) SOTA.",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "I'm not sure which way you are implying here, what is shamefully equated?",
+      "gold": "question",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "I can't believe people are still using this tired line in 2026.",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "I can't speak for Google, and must emphasise that these are personal opinions. However I'd say that this entire marketing push is mostly for the super-engaged early adopters, not targeted at the general public. Looking at the YouTube videos, the more they seem to be targeted towards a general audience the less they mention these specifics. So, I suspect that the Ultra/Pro/Nano branding will mostly be used on the advanced Bard product that they speak about in the launch blog post, and on the APIs available to developers.",
+      "gold": "analysis",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "What are you using? whisper?",
+      "gold": "question",
+      "predicted": "question"
+    },
+    {
+      "text": "The tweet is criticizing over-reliance on the \"agents will fix it anyway\".\n\nThe fact that we can fix things faster now doesn't mean that we should throw away caution and prevention. The specific point of his tweet is that we're seeing a lot of people starting to skip proper release engineering.\n\nAgents are quick to fix bugs, yes, but it doesn't mean that users will tolerate software that gets completely broken after each new feature is introduced and takes a certain number of days to heal each time.",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "Since the \"state of the art\" seems to change every week, what's a good way to try out the current \"state of the art\", without spending $600? I'd love to give it a shot and be proven wrong, but I'm not going to spend 1/2 a mortgage payment on a trial.\n\nEDIT: Looks like the \"Cursor\" thing has a free trial. Might start there.",
+      "gold": "question",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "That's like wondering if enough people discovering local media streaming will disrupt commercial streaming services. It's not going to happen. Most people are not ambitious and will let themselves be controlled by the services of least resistance.\n\nAnd you can't take comfort in knowing that you, personally, will remain in control of your own computing. The majority will let the range and direction of their thoughts and output be determined by the will of the tech giant whose AI they adopt. And that will shape society.",
+      "gold": "unsupported",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "Would prompts really be interesting or thought-provoking, though?\n\nI don't expect AI HN responders to out themselves by sharing, but I would be curious to learn if people are prompting anything more involved than just \"respond to this on HN: <link>\", or running agents that do the same.",
+      "gold": "question",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "Have they solved the problem of Whisper making up plausible sounding junk (e.g. such that reading it you would have no idea it was completely hallucinated) when there is any silence or pause in the audio?",
+      "gold": "question",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "1) Again, I suspect you're missing the point of the article.  The iPhone's on-device LLM is (apparently) ~3 Bn parameters - and runs well/fast enough to be used in the manner described.  Of course, the iPhone has its GPU to leverage.\n\n2) It's probably not the time/place to trouble-shoot your \"consumer grade server\" LLM experience, but if you're running on CPU (you don't mention a GPU) then yeah, your inference speed will be slow.\n\n3) Counterpoint: my consumer-grade Macbook Pro (M1 Max, 64GB) runs Qwen3.6-35B-A3B fast enough to be very usable for regular interactive coding support.  (And it would fly with smaller models performing simpler tasks.)",
+      "gold": "analysis",
+      "predicted": "unsupported"
+    },
+    {
+      "text": "I was rewatching Rich Hickey's \"Simple Made Easy\" talk (as one does) and there was a great line about full test coverage.\n\n\"What's true about all bugs in production? (pause for dramatic effect) They all passed the tests!\" (well, he said typechecker but I think the point stands)",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Well the laws against murders also often have punishments/repercussions associated with them. HN guidelines? Not so much",
+      "gold": "unsupported",
+      "predicted": "analysis"
+    },
+    {
+      "text": "The improvement over ChatGPT are counted in (very) few percents. Does it mean they have entered a diminishing returns phase or is it that each percent is much harder to get compared to the previous ones ?",
+      "gold": "question",
+      "predicted": "question"
+    },
+    {
+      "text": "Bard isn't a model, it's a product. Saying comparisons against \"Bard\" without specifying a particular point in time are like analyses of \"ChatGPT\" without specifying a model. There have been a number of releases adding more features, tool use, making it smarter, and crucially adding more languages. ChatGPT is not fine-tuned in different languages \u2013 it manages them but lacks cultural context. That's one place Bard is quite far ahead from what I've seen.",
+      "gold": "analysis",
+      "predicted": "unsupported"
+    }
+  ]
+}
