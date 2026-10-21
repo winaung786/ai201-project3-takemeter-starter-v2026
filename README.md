@@ -2,7 +2,7 @@
 
 **Repository:** https://github.com/winaung786/ai201-project3-takemeter-starter-v2026
 
-**Unit 6:** Baseline and three before trials are complete; the after experiment is running; independent student staff labels, the TF reference, and student adjudications remain required.
+**Unit 6:** Baseline, all six training trials, and the measured improvement are complete; independent student staff labels, the TF reference, and student adjudications remain required.
 
 **Build status: human review confirmed; both training runs completed.** All 200 comments have a label,
 an assistant review reason, and a source ID in the root `labels.csv`. On 2026-10-20,
@@ -277,7 +277,7 @@ reproducible from the committed data and the recorded software versions.
 
 ## How I Used AI
 
-**Unit 6 AI assistance:** Codex read the provided assignment and PowerPoint, ran the local baseline and three before trials and launched the after experiment, recorded predictions and split isolation, and drafted the typed tables and diagnoses. The original student criteria and confirmed project labels were kept unchanged. The 30 staff labels are a blank student form; no AI-generated staff key, claimed human answers, agreement rate, or student adjudications were supplied. The Unit 6 interpretation is AI-assisted and should be reviewed by the student.
+**Unit 6 AI assistance:** Codex read the provided assignment and PowerPoint, ran the local baseline and six notebook-based training trials, recorded predictions and split isolation, and drafted the typed tables and diagnoses. The original student criteria and confirmed project labels were kept unchanged. The 30 staff labels are a blank student form; no AI-generated staff key, claimed human answers, agreement rate, or student adjudications were supplied. The Unit 6 interpretation is AI-assisted and should be reviewed by the student.
 
 The disclosures below preserve the status when each earlier stage was performed.
 References to pending human review describe those earlier stages. The current
@@ -341,7 +341,7 @@ Rubric audit: see [docs/rubric-audit.md](docs/rubric-audit.md).
 <!-- UNIT6-REPORT -->
 ## Unit 6 status
 
-**The baseline and before trials are complete.** The declared after experiment is in progress. **The assignment is not complete:** the student's independent 30 staff labels, authentic TF reference file, and student adjudications are still missing. A blank form is not labeling evidence. No agreement rate or fabricated staff answers are reported.
+**The baseline and before trials are complete.** All three after trials and the one-change comparison are also complete. **The assignment is not complete:** the student's independent 30 staff labels, authentic TF reference file, and student adjudications are still missing. A blank form is not labeling evidence. No agreement rate or fabricated staff answers are reported.
 
 The original `criteria.md`, `labels.csv`, taxonomy, Unit 5 `results.json`, and `test_split.csv` are preserved. The [pre-run protocol](docs/unit6/plan.md) records the baseline prediction and measurement conventions. No Unit 6 stretch feature is claimed.
 
@@ -431,7 +431,67 @@ After the real comparison, include every disagreement's complete post, both labe
 
 **One change: epochs 3 → 4.** The [improvement declaration](docs/unit6/improvement-plan.json) is recorded after the before diagnosis and before starting after. The question weakness and low confidence, together with declining validation loss, justify a limited optimization test. The earlier Unit 5 3-versus-4 comparison was already known; this Unit 6 experiment tests its repeatability across three seeds and is not a previously unseen hypothesis. More epochs may overfit and are not a substitute for label-agreement evidence. No rows, taxonomy, learning rate, batch size, token limit, split, seeds, or criteria changed. This is the sole Unit 6 improvement; no second fix was tried.
 
-The after experiment is not yet complete; no after scores are reported.
+### Run Log — After
+
+| Criterion | Original target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
+|---|---|---|---|---|---|
+| 1. Overall accuracy | ≥0.75 in every seed | 0.733333 | 0.633333 | 0.600000 | MISSED |
+| 2. Every label F1 | ≥0.65 for all labels in every seed | analysis: 0.769231; unsupported: 0.800000; question: 0.444444 | analysis: 0.818182; unsupported: 0.645161; question: 0.000000 | analysis: 0.782609; unsupported: 0.600000; question: 0.000000 | MISSED |
+| 3. Dataset balance | Every label 15%–45% of all 200 comments | analysis 36%; unsupported 40.5%; question 23.5% | analysis 36%; unsupported 40.5%; question 23.5% | analysis 36%; unsupported 40.5%; question 23.5% | MET |
+| 4. Human agreement | ≥80% on 30–50 comments | Not measured; human labels/key missing | Not measured; human labels/key missing | Not measured; human labels/key missing | MISSED |
+| 5. Prediction confidence | Correct mean ≥0.70; fraction of all test max-probs below 0.50 <15%; every seed | correct mean 0.456680; low 73.3% | correct mean 0.439193; low 96.7% | correct mean 0.456964; low 90.0% | MISSED |
+
+### Paired before/after comparison
+
+Each cell is before → after (after minus before). These paired comparisons use identical splits within each seed; overlapping posts across seeds mean these are not independent 90-post trials.
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 |
+|---|---|---|---|
+| Accuracy | 0.666667 → 0.733333 (+0.066667) | 0.633333 → 0.633333 (+0.000000) | 0.500000 → 0.600000 (+0.100000) |
+| Macro F1 | 0.503324 → 0.671225 (+0.167901) | 0.487781 → 0.487781 (+0.000000) | 0.381818 → 0.460870 (+0.079051) |
+| F1 analysis | 0.769231 → 0.769231 (+0.000000) | 0.818182 → 0.818182 (+0.000000) | 0.600000 → 0.782609 (+0.182609) |
+| F1 unsupported | 0.740741 → 0.800000 (+0.059259) | 0.645161 → 0.645161 (+0.000000) | 0.545455 → 0.600000 (+0.054545) |
+| F1 question | 0.000000 → 0.444444 (+0.444444) | 0.000000 → 0.000000 (+0.000000) | 0.000000 → 0.000000 (+0.000000) |
+| Correct-prediction mean confidence | 0.421990 → 0.456680 (+0.034690) | 0.407459 → 0.439193 (+0.031734) | 0.412820 → 0.456964 (+0.044144) |
+| Fraction confidence <0.50 | 1.000000 → 0.733333 (-0.266667) | 1.000000 → 0.966667 (-0.033333) | 1.000000 → 0.900000 (-0.100000) |
+
+Accuracy improved in **2/3** seeds, stayed unchanged in **1/3**, and regressed in **0/3**; the paired table shows the size and label-specific direction of every change. The change did not improve accuracy in every seed, so its benefit is partial rather than a reliable fix for all splits.
+
+After accuracy spread: **0.133333**. It remains above the 10-point instability flag. Final criterion verdicts must still hold in every seed; improvements do not automatically become passes.
+
+### Confusion matrix — seed 42
+
+| True / predicted | analysis | unsupported | question |
+|---|---:|---:|---:|
+| **analysis** | 10 | 1 | 0 |
+| **unsupported** | 2 | 10 | 0 |
+| **question** | 3 | 2 | 2 |
+
+Largest off-diagonal cell (first in label order if tied): 3 true `question` posts were called `analysis`; the reverse direction has 0 errors.
+
+### Confusion matrix — seed 7
+
+| True / predicted | analysis | unsupported | question |
+|---|---:|---:|---:|
+| **analysis** | 9 | 2 | 0 |
+| **unsupported** | 2 | 10 | 0 |
+| **question** | 0 | 7 | 0 |
+
+Largest off-diagonal cell (first in label order if tied): 7 true `question` posts were called `unsupported`; the reverse direction has 0 errors.
+
+### Confusion matrix — seed 2024
+
+| True / predicted | analysis | unsupported | question |
+|---|---:|---:|---:|
+| **analysis** | 9 | 2 | 0 |
+| **unsupported** | 3 | 9 | 0 |
+| **question** | 0 | 7 | 0 |
+
+Largest off-diagonal cell (first in label order if tied): 7 true `question` posts were called `unsupported`; the reverse direction has 0 errors.
+
+Final verdicts: accuracy **MISSED**; every-label F1 **MISSED**; balance **MET**; human agreement **MISSED — not demonstrated**; confidence **MISSED**.
+
+The extra epoch recovered seed 42: 2/7 true questions; seed 7: 0/7 true questions; seed 2024: 0/7 true questions. Seed 2024's accuracy gain comes from analysis/unsupported classification rather than learning question. Training length therefore explains part of the measured weakness, but this one change did not solve the request boundary across seeds. The after log still misses accuracy, every-label F1, and both-part confidence targets; the absent independent agreement evidence prevents deciding whether remaining boundary errors originate in annotation consistency, task difficulty, or inadequate training data.
 
 ## What's Still Broken
 

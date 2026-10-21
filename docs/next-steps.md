@@ -27,8 +27,7 @@ were written by the assistant; separate student explanations are not recorded.
 3. Run `python tools/validate_submission.py` to inspect outstanding course evidence. Its independent
    cold-label check is unchanged and is not satisfied by a general review confirmation.
 4. The five acceptance criteria were committed before scores and remain unchanged.
-   Follow RUNNING.md to reproduce the environment. Unit 6 three-seed evaluation
-   and the independent second-human agreement measurement remain future work.
+   Follow RUNNING.md to reproduce the environment. The Unit 6 baseline and all six before/after trials are complete and documented in README. The independent staff comparison and student adjudications remain required; see [the staff instructions](unit6/staff-review-instructions.md).
 5. Both training runs are now complete. Keep results.json, test_split.csv,
    results_second_run.json and results_epoch_comparison.json. See the README for
    actual metrics; the original review-only update preceded these results.
@@ -40,5 +39,4 @@ not prevent measuring this human-confirmed classifier. The explicit
 `--allow-assisted-initial20` runner option verifies the existing confirmation's
 CSV hash and every row's ID, text hash and label. It does not waive other data
 checks or mark any row cold. See training-provenance.md. The strict submission
-validator remains unchanged. Training results will not establish second-human
-agreement or three-seed acceptance.
+validator remains unchanged. Training results do not establish second-human agreement. The actual Unit 6 three-seed verdicts are now in README; no all-criteria pass is claimed.

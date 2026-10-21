@@ -1,0 +1,20 @@
+{
+  "baseline_same_original_30": true,
+  "six_real_trials_checked": true,
+  "all_prediction_metrics_recomputed": true,
+  "all_within_seed_splits_disjoint": true,
+  "before_after_splits_identical": true,
+  "only_training_setting_changed": "epochs: 3 -> 4",
+  "original_seed_metrics_reproduced": true,
+  "dataset_unchanged": true,
+  "criteria_unchanged": true,
+  "data_sha256": "a60e1a1fa9b9d8504ab692d360012d7fa25d195f5668db5a26a017e6b0994345",
+  "criteria_sha256": "256d7d354dff1847ee27277a9a5cdc77ae88c43e17962febefd27dc30d2a8d6e",
+  "staff_comparison_complete": false,
+  "assignment_complete": false,
+  "remaining": [
+    "student independently labels all 30 staff posts",
+    "TF supplies authentic staff_labels.csv after blind labels frozen",
+    "student adjudicates every actual disagreement"
+  ]
+}
