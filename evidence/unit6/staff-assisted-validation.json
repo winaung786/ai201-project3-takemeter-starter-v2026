@@ -1,0 +1,21 @@
+{
+  "checked_rows": 30,
+  "source_texts_exact_utf8": true,
+  "post_order_preserved": true,
+  "valid_labels": true,
+  "blank_labels": 0,
+  "reasons": 30,
+  "counts": {
+    "analysis": 11,
+    "hot_take": 9,
+    "reaction": 10
+  },
+  "python_sources_parse": true,
+  "tf_reference_created": false,
+  "agreement_results_created": false,
+  "source_label_csv_sha256": "348bbadf6defff2bd5fc6ad45bfc5ada164b150234369d0e9400910af5553ab1",
+  "report_builder_matches_readme": true,
+  "report_builder_repeatable": true,
+  "independent_route_rejects_assistant_labels": true,
+  "original_result_inputs_unchanged": true
+}
