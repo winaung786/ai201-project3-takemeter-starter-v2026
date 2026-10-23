@@ -277,7 +277,7 @@ reproducible from the committed data and the recorded software versions.
 
 ## How I Used AI
 
-**Unit 6 AI assistance:** Codex read the provided assignment and PowerPoint, ran the local baseline and six notebook-based training trials, recorded predictions and split isolation, and drafted the typed tables and diagnoses. The original student criteria and confirmed project labels were kept unchanged. The 30 staff labels are a blank student form; no AI-generated staff key, claimed human answers, agreement rate, or student adjudications were supplied. The Unit 6 interpretation is AI-assisted and should be reviewed by the student.
+**Unit 6 AI assistance:** Codex read the provided assignment and PowerPoint, ran the local baseline and six notebook-based training trials, recorded predictions and split isolation, and drafted the typed tables and diagnoses. The original student criteria and confirmed project labels were kept unchanged. At the student's later request, Codex also prepared all 30 AI label suggestions with individual reasons in `reviews/unit6-ai/`; the provenance explicitly records that they are not independent human annotations. The student form `my_staff_labels.csv` remains blank. No TF key was opened for that review, and no human agreement rate or student adjudications are claimed. The Unit 6 interpretation is AI-assisted and should be reviewed by the student.
 
 The disclosures below preserve the status when each earlier stage was performed.
 References to pending human review describe those earlier stages. The current
@@ -426,6 +426,8 @@ Largest off-diagonal cell (first in label order if tied): 7 true `question` post
 **Not measured; blocked on genuine human inputs.** [my_staff_labels.csv](my_staff_labels.csv) contains all 30 original staff posts with blank labels. The [staff taxonomy](data/staff_taxonomy.md) requires `analysis`, `hot_take`, and `reaction`, not `unsupported` or `question`. The student must label these independently and commit them before obtaining/opening `data/staff_labels.csv` from the TF. The [instructions](docs/unit6/staff-review-instructions.md) and `python tools/complete_staff_agreement.py` enforce that sequence. No `agreement_results.json` is claimed as an executed comparison while those files are missing.
 
 After the real comparison, include every disagreement's complete post, both labels, the student's call and a rule-based reason, then assign (a) rule applied loosely, (b) rule underspecified, or (c) defensible ambiguity. AI may make the strongest case for both readings; it must not substitute its final call for the student's. There are currently **zero measured disagreements**, which is not a claim of perfect agreement.
+
+**Completed AI-assisted review:** At the student's later request, Codex labeled all 30 posts in a separate [AI draft CSV](reviews/unit6-ai/ai_staff_labels.csv), with [a reason for every label and alternative readings](reviews/unit6-ai/staff-label-review.md). The counts are 11 analysis, 9 hot_take, and 10 reaction. The [provenance record](reviews/unit6-ai/annotation-provenance.json) identifies these as AI suggestions made without opening a TF key. This draft supplies assistance; it does not fulfill the independent student-labeling requirement or establish human agreement. `my_staff_labels.csv` remains the student's blank independent form.
 
 ## The Improvement
 

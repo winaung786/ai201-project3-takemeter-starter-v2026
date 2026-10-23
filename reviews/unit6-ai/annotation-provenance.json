@@ -1,0 +1,232 @@
+{
+  "annotation_source": "Codex AI assistant",
+  "independent_human_annotation": false,
+  "staff_key_accessed_for_this_review": false,
+  "human_reviewed": false,
+  "generated_at_utc": "2026-10-23T03:27:46.457986+00:00",
+  "source_posts": "data/staff_posts.csv",
+  "source_posts_sha256": "543caeee0c3ddcd920f9330caff502606bf651f66c50e6d1f49a159a76f82035",
+  "taxonomy": "data/staff_taxonomy.md",
+  "taxonomy_sha256": "49ffb40b207f4d36b4bb1a7165340cd98dc357f0d96ba969f29800eda5d44603",
+  "output": "reviews/unit6-ai/ai_staff_labels.csv",
+  "output_sha256": "348bbadf6defff2bd5fc6ad45bfc5ada164b150234369d0e9400910af5553ab1",
+  "n": 30,
+  "counts": {
+    "analysis": 11,
+    "hot_take": 9,
+    "reaction": 10
+  },
+  "course_independent_annotation_requirement_satisfied": false,
+  "records": [
+    {
+      "id": "sp_001",
+      "label": "analysis",
+      "reason": "The winning-time and 100th-place changes support the distinction between front performance and field depth.",
+      "alternative_reading": null,
+      "text_sha256": "1292aece1364b08405747747ab5ab7169d80f7153ba61e73805e478948e64e6d"
+    },
+    {
+      "id": "sp_002",
+      "label": "analysis",
+      "reason": "Eleven weeks of tracked sleep and interval times support the scheduling conclusion. The writer acknowledges the sample limitation.",
+      "alternative_reading": null,
+      "text_sha256": "34b98db065e4d0492aa1c82d0ebd119b2c08103006e67e9be756c2b549a564f9"
+    },
+    {
+      "id": "sp_003",
+      "label": "analysis",
+      "reason": "The dated top-6 to top-10 scoring change and two B-team results are evidence for the claim that turnout, rather than depth, explains the outcomes.",
+      "alternative_reading": null,
+      "text_sha256": "b31c428b76d9b7a9550b26aae2dd644d792c3637e751f5aac0cc40d14cdcdc2f"
+    },
+    {
+      "id": "sp_004",
+      "label": "analysis",
+      "reason": "The comparison of two first-half pace groups supplies the premise for disputing the hill explanation. The inference can be debated without removing its evidence-based form.",
+      "alternative_reading": null,
+      "text_sha256": "a076233fea3f21dd8ce1127818032d429a8fff17f355ae805a719d2481f19d15"
+    },
+    {
+      "id": "sp_005",
+      "label": "analysis",
+      "reason": "Two measured 2% improvements, with unchanged shoes and increased mileage in the second period, support rejecting a shoes-only explanation.",
+      "alternative_reading": null,
+      "text_sha256": "c35b5439aed2d602bd2c1b5bfa93303adde57a2d68c1945ef503a8fa8a8d9ebe"
+    },
+    {
+      "id": "sp_006",
+      "label": "analysis",
+      "reason": "Entry-list percentages of 41% and 26% support the explanation involving first-time entrants.",
+      "alternative_reading": null,
+      "text_sha256": "3cf24de64b74fbe9cdb74beacc72ae15187a2ea4cf1017a266c5e9d6b1644df0"
+    },
+    {
+      "id": "sp_007",
+      "label": "analysis",
+      "reason": "The same loop, matched heart-rate effort, two temperatures, and a 90-second difference support the conclusion about heat cost.",
+      "alternative_reading": "reaction: This is first-hand experience, but rule 3 gives priority to the measured comparison doing argumentative work.",
+      "text_sha256": "e35edce41031fed25642340adb6aa72907245f09986590184464754e2822d646"
+    },
+    {
+      "id": "sp_008",
+      "label": "analysis",
+      "reason": "The recurring 18%-23% non-start rate across results since 2012 supports the base-rate explanation.",
+      "alternative_reading": null,
+      "text_sha256": "a311c61b0aeb0305700bad290504656d93897061a777f3490b9c5f0e2629b10d"
+    },
+    {
+      "id": "sp_009",
+      "label": "analysis",
+      "reason": "The 2021 remeasurement and 60-metre discrepancy support the warning that before/after personal bests are not directly comparable.",
+      "alternative_reading": null,
+      "text_sha256": "7cbdb9b7838ee436a3b68c7a412b4a9562724d1cc48dba58ae70e9489ffd94b9"
+    },
+    {
+      "id": "sp_010",
+      "label": "analysis",
+      "reason": "The three runners' same-session comparison within ten seconds supports the limited claim that any shoe effect was smaller than that observed variation.",
+      "alternative_reading": null,
+      "text_sha256": "a2305666a77b290a5e4544ad0b1bdfe67e3ccfe901a6af100a3f2e7d59808ccd"
+    },
+    {
+      "id": "sp_011",
+      "label": "hot_take",
+      "reason": "The monthly-racing cutoff supports a general judgment only by assertion. No observations or source establish that racing frequently prevents training.",
+      "alternative_reading": null,
+      "text_sha256": "54ff685b6a0726bb37ba8e3d3bcfb45d9e957ac7445b33611a4ce70ac8371b96"
+    },
+    {
+      "id": "sp_012",
+      "label": "hot_take",
+      "reason": "The astrology comparison dismisses heart-rate zones without offering evidence.",
+      "alternative_reading": null,
+      "text_sha256": "9214de611722c69617e2302624ccecaefc5eff00a05fa6f4d2d2c8411a9a0896"
+    },
+    {
+      "id": "sp_013",
+      "label": "hot_take",
+      "reason": "The post makes a general claim that the Tuesday session excludes some runners, without examples or supporting facts.",
+      "alternative_reading": null,
+      "text_sha256": "ef4879b2e15c6ee40d94b847acc76bb2123e49e55158d8c45be0f20ac1c4f447"
+    },
+    {
+      "id": "sp_014",
+      "label": "analysis",
+      "reason": "Under rule 1, the measured time change and its timing relative to the shoe rules are explicitly used as a causal premise, signaled by 'so'. The conclusion overstates what the evidence establishes, but the definition does not require a correct inference.",
+      "alternative_reading": "hot_take: 'the whole story' and 'the sport has a problem' can be read as the main unsupported conclusions, with the statistic decorating them. This is the hardest draft boundary; a final human call must decide whether the number actually carries the main argument.",
+      "text_sha256": "62a905d5e49ff4a627cb51155e898974744625c45f83f0916cba25203a8e8215"
+    },
+    {
+      "id": "sp_015",
+      "label": "hot_take",
+      "reason": "The claim that all marathon plans are the same has no named comparison or examples.",
+      "alternative_reading": null,
+      "text_sha256": "195b22542608d1ee53c8a66d8581fcc729d9f64ade7aed2764c906273b5e454f"
+    },
+    {
+      "id": "sp_016",
+      "label": "hot_take",
+      "reason": "Ninety minutes is an asserted cutoff, not a measured observation supporting the fueling diagnosis.",
+      "alternative_reading": "analysis: The number looks factual, but rule 1 requires a fact to support the argument; an unexplained threshold alone does not do so.",
+      "text_sha256": "5bacbfb385bb73f52e68c4ea5f680a1f41cdb3c12d55be2f18c0d3c7ccecf09d"
+    },
+    {
+      "id": "sp_017",
+      "label": "hot_take",
+      "reason": "The date identifies the alleged peak but supplies no evidence that later racing is just marketing.",
+      "alternative_reading": null,
+      "text_sha256": "5580450ae27c0ef53c58c8c422ed53963b605f03c49ad8147956ce77c0888092"
+    },
+    {
+      "id": "sp_018",
+      "label": "hot_take",
+      "reason": "The eight-minute-mile cutoff and claimed better alternative are unsupported recommendations. A numeric cutoff is not itself evidence.",
+      "alternative_reading": null,
+      "text_sha256": "4fc80a1b7111601dd5087a9c300f1cc9168bd0191d66d2ee1b9ccee46b903b2d"
+    },
+    {
+      "id": "sp_019",
+      "label": "hot_take",
+      "reason": "The post generalizes about everyone's feelings toward long runs without observations or support.",
+      "alternative_reading": null,
+      "text_sha256": "de69eb63dbb48f442a73f0717870de73090443e4432b73cb856c81f9f9b49727"
+    },
+    {
+      "id": "sp_020",
+      "label": "hot_take",
+      "reason": "'Every injury thread' and 'the same three replies' are sweeping assertions without cited threads or an actual comparison.",
+      "alternative_reading": null,
+      "text_sha256": "8d832910f098bb378ff8205618e78e2e5f6de89e39f133e8e03950d052700776"
+    },
+    {
+      "id": "sp_021",
+      "label": "reaction",
+      "reason": "The main content is the writer's immediate joy after a personal best. The four-minute change supplies the occasion, not an argued conclusion.",
+      "alternative_reading": "analysis: The time improvement is checkable, but rule 1 asks whether it carries an argument. Here the post expresses happiness.",
+      "text_sha256": "3623e7874a3e2089365809faca12e7fce76debae4a00e85ed3f96f7fcc19280e"
+    },
+    {
+      "id": "sp_022",
+      "label": "reaction",
+      "reason": "The writer describes being stranded after a cancellation. Departure time and travel duration provide context for the immediate frustration.",
+      "alternative_reading": null,
+      "text_sha256": "33fb105fbc43c68063f7265ed305ab308ed6d1557c6e60e8341bae5400e72651"
+    },
+    {
+      "id": "sp_023",
+      "label": "reaction",
+      "reason": "The writer expresses relief about a first run back. The eight weeks and two miles describe the occasion rather than support an argument.",
+      "alternative_reading": null,
+      "text_sha256": "f9a41917290d1b36bdf549a97a664cf53bed39da42613a699beb40c51ecc841b"
+    },
+    {
+      "id": "sp_024",
+      "label": "reaction",
+      "reason": "Standing up while watching the finish expresses an immediate physical and emotional response. The 400 metres is scene-setting.",
+      "alternative_reading": null,
+      "text_sha256": "ab2cd5375aa407acbdb43cbc9829e1485702db6dad7e0ce70f0da88ad208555e"
+    },
+    {
+      "id": "sp_025",
+      "label": "reaction",
+      "reason": "The post reports a recent personal blow-up and disappointment without making a general claim about pacing tools.",
+      "alternative_reading": null,
+      "text_sha256": "9e7698e6ddfbe85860cf9dfae5d4cf21531b6788b0f720b84c30c6020c5424af"
+    },
+    {
+      "id": "sp_026",
+      "label": "reaction",
+      "reason": "The orange-slice incident and crying are a personal emotional response. Mile 22 locates the event.",
+      "alternative_reading": null,
+      "text_sha256": "30ea3e30ac4350a96d49ca5ec91cbab3c87fca17b2ff00e19238e21a836990e1"
+    },
+    {
+      "id": "sp_027",
+      "label": "reaction",
+      "reason": "The wind angle describes the experience, and the main conclusion is how the return leg felt. There is no measured performance comparison or argued general claim.",
+      "alternative_reading": "analysis: The 20-degree lean could support a wind-resistance explanation, but this reading supplies an argument the post does not explicitly make. Under rules 1 and 3, a number alone is insufficient.",
+      "text_sha256": "32b8aace49b1e89c516ef2fd588b120e004d1e6f78f1cf6c90647e73fa75101e"
+    },
+    {
+      "id": "sp_028",
+      "label": "reaction",
+      "reason": "The writer shares a recent DNF and distress. Counting three DNFs gives context without an argument about their cause.",
+      "alternative_reading": null,
+      "text_sha256": "30b2e74b1db2cfea2b25f084886888b3706f4b1051b3d8e0fdabc56e1a634982"
+    },
+    {
+      "id": "sp_029",
+      "label": "reaction",
+      "reason": "'Just realised' reports a fresh personal discovery about accidentally purchased shoes. No explicit conclusion about shoe fit or performance is argued.",
+      "alternative_reading": "analysis: A reader could infer a claim about fit from the personal-best history, but that general argument is unstated. The immediate personal discovery is explicit.",
+      "text_sha256": "03bb34b2481e9388186f7258397b5947198081c40e7210162a82659b9edf3373"
+    },
+    {
+      "id": "sp_030",
+      "label": "reaction",
+      "reason": "The charged card and immediate regret describe the writer's own recent decision and feelings.",
+      "alternative_reading": null,
+      "text_sha256": "b04d09dfacc06a74908accfad7bedec7e86522f7629c4e6f472e446e821b6d9c"
+    }
+  ]
+}
