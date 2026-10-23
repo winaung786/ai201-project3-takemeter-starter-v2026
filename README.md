@@ -2,7 +2,7 @@
 
 **Repository:** https://github.com/winaung786/ai201-project3-takemeter-starter-v2026
 
-**Unit 6:** Baseline, all six training trials, and the measured improvement are complete; independent student staff labels, the TF reference, and student adjudications remain required.
+**Unit 6:** Baseline, all six training trials, and the measured improvement are complete; all 30 AI-assisted staff labels and reasons are now saved. The TF reference, independent student labeling evidence, and student adjudications remain required.
 
 **Build status: human review confirmed; both training runs completed.** All 200 comments have a label,
 an assistant review reason, and a source ID in the root `labels.csv`. On 2026-10-20,
@@ -277,7 +277,7 @@ reproducible from the committed data and the recorded software versions.
 
 ## How I Used AI
 
-**Unit 6 AI assistance:** Codex read the provided assignment and PowerPoint, ran the local baseline and six notebook-based training trials, recorded predictions and split isolation, and drafted the typed tables and diagnoses. The original student criteria and confirmed project labels were kept unchanged. The 30 staff labels are a blank student form; no AI-generated staff key, claimed human answers, agreement rate, or student adjudications were supplied. The Unit 6 interpretation is AI-assisted and should be reviewed by the student.
+**Unit 6 AI assistance:** Codex read the provided assignment and PowerPoint, ran the local baseline and six notebook-based training trials, recorded predictions and split isolation, and drafted the typed tables and diagnoses. The original student criteria and confirmed project labels were kept unchanged. On 2026-10-22, at the user's request, Codex prepared all 30 staff labels and individual rule-based reasons before accessing a TF key. These are AI-assisted annotations; no independent student answers, authentic staff key, agreement rate, or student adjudications are claimed. The Unit 6 interpretation is AI-assisted and should be reviewed by the student.
 
 The disclosures below preserve the status when each earlier stage was performed.
 References to pending human review describe those earlier stages. The current
@@ -341,7 +341,7 @@ Rubric audit: see [docs/rubric-audit.md](docs/rubric-audit.md).
 <!-- UNIT6-REPORT -->
 ## Unit 6 status
 
-**The baseline and before trials are complete.** All three after trials and the one-change comparison are also complete. **The assignment is not complete:** the student's independent 30 staff labels, authentic TF reference file, and student adjudications are still missing. A blank form is not labeling evidence. No agreement rate or fabricated staff answers are reported.
+**The baseline and before trials are complete.** All three after trials and the one-change comparison are also complete. **Thirty AI-assisted staff labels and individual rule-based reasons are now saved.** See [the decisions](docs/unit6/staff-label-decisions.md) and [the authorship record](evidence/unit6/staff-labels-provenance.json). **The assignment remains incomplete:** an authentic TF reference file, independent student labeling evidence, and student adjudications are still unavailable. No agreement rate or staff answers are invented.
 
 The original `criteria.md`, `labels.csv`, taxonomy, Unit 5 `results.json`, and `test_split.csv` are preserved. The [pre-run protocol](docs/unit6/plan.md) records the baseline prediction and measurement conventions. No Unit 6 stretch feature is claimed.
 
@@ -423,7 +423,7 @@ Largest off-diagonal cell (first in label order if tied): 7 true `question` post
 
 ## Agreement Report
 
-**Not measured; blocked on genuine human inputs.** [my_staff_labels.csv](my_staff_labels.csv) contains all 30 original staff posts with blank labels. The [staff taxonomy](data/staff_taxonomy.md) requires `analysis`, `hot_take`, and `reaction`, not `unsupported` or `question`. The student must label these independently and commit them before obtaining/opening `data/staff_labels.csv` from the TF. The [instructions](docs/unit6/staff-review-instructions.md) and `python tools/complete_staff_agreement.py` enforce that sequence. No `agreement_results.json` is claimed as an executed comparison while those files are missing.
+**Not measured; authentic TF key unavailable.** [my_staff_labels.csv](my_staff_labels.csv) now contains all 30 original posts with AI-assisted labels: 11 `analysis`, 9 `hot_take`, and 10 `reaction`. At the user's request, Codex prepared each label and a specific rule-based reason before accessing any staff answer key. [The decision record](docs/unit6/staff-label-decisions.md) includes alternative readings for close cases; [the provenance record](evidence/unit6/staff-labels-provenance.json) binds every post and label to hashes. These annotations do not demonstrate independent student labeling or human-to-human agreement. The [staff taxonomy](data/staff_taxonomy.md) is unchanged. The authentic `data/staff_labels.csv` and student adjudications remain required; no `agreement_results.json` is claimed. `tools/complete_staff_agreement.py` rejects the recorded AI authorship rather than counting it as independent student evidence. If the TF file becomes available, `agreement.py` can produce a disclosed AI-to-staff diagnostic.
 
 After the real comparison, include every disagreement's complete post, both labels, the student's call and a rule-based reason, then assign (a) rule applied loosely, (b) rule underspecified, or (c) defensible ambiguity. AI may make the strongest case for both readings; it must not substitute its final call for the student's. There are currently **zero measured disagreements**, which is not a claim of perfect agreement.
 
