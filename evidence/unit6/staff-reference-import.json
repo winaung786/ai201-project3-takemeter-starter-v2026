@@ -1,0 +1,18 @@
+{
+  "imported_at_utc": "2026-10-24T02:18:16.061566+00:00",
+  "source_url": "https://drive.google.com/file/d/1Cp8PeB-MkDaNifSPNixNfo7xVfi6R3GF/view",
+  "drive_file_id": "1Cp8PeB-MkDaNifSPNixNfo7xVfi6R3GF",
+  "drive_title": "(SEND AFTER THEY ARE DONE) data/staff_labels.csv",
+  "source_mime_type": "text/csv",
+  "download_size_bytes": 2784,
+  "raw_sha256": "e3ff58e0c42d21c519ae91de7dd2f42fc07010a571679660bf280b95eaa4f1cb",
+  "requested_save_path": "data/staff_posts.csv",
+  "canonical_reference_path": "data/staff_labels.csv",
+  "original_post_texts_preserved_at": "data/staff_post_texts.csv",
+  "original_post_texts_sha256": "543caeee0c3ddcd920f9330caff502606bf651f66c50e6d1f49a159a76f82035",
+  "label_choices_frozen_before_reference_at_commit": "7cc80560b80ae83656841ac2b50bd771c4654e66",
+  "label_authorship": "AI-assisted; not independent human labels",
+  "label_file_sha256": "348bbadf6defff2bd5fc6ad45bfc5ada164b150234369d0e9400910af5553ab1",
+  "all_30_reference_ids_matched": true,
+  "training_dataset_or_criteria_changed": false
+}

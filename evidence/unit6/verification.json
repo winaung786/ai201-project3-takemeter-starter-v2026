@@ -10,11 +10,13 @@
   "criteria_unchanged": true,
   "data_sha256": "a60e1a1fa9b9d8504ab692d360012d7fa25d195f5668db5a26a017e6b0994345",
   "criteria_sha256": "256d7d354dff1847ee27277a9a5cdc77ae88c43e17962febefd27dc30d2a8d6e",
-  "staff_comparison_complete": false,
+  "staff_reference_available": true,
+  "ai_to_staff_comparison_complete": true,
+  "independent_human_staff_comparison_complete": false,
   "assignment_complete": false,
+  "ai_assisted_adjudication_complete": true,
   "remaining": [
-    "student independently labels all 30 staff posts",
-    "TF supplies authentic staff_labels.csv after blind labels frozen",
-    "student adjudicates every actual disagreement"
+    "independent human annotation evidence",
+    "independently authored student adjudication not demonstrated"
   ]
 }

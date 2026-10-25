@@ -1,0 +1,24 @@
+Compared 30 posts.
+
+  agreed      29
+  disagreed   1
+  agreement   97%
+
+Here they are. Your README has a block to fill in for each one —
+the post, both labels, your call and why, and which pile it goes in.
+
+| Post | Staff said | I said | My call, and why |
+|---|---|---|---|
+| Times are down about 3% since the shoe rules changed, so obviously th… | `hot_take` | `analysis` |  |
+
+"Staff is right" every time is not adjudication. Some of these posts
+were picked because they are genuinely ambiguous.
+
+Wrote agreement_results.json. Commit it.
+
+Then sort each disagreement into one of three piles:
+  (a) the rule covered it and you applied it loosely — a consistency problem
+  (b) the rule genuinely doesn't say — a gap in the definitions
+  (c) the rule is ambiguous here and your reading is defensible — argue it
+
+(b) and (c) are the interesting ones, and (c) is a legitimate win.

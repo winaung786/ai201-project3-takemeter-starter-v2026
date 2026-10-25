@@ -92,8 +92,11 @@ def main():
         "original_seed_metrics_reproduced": original_seed_reproduced,
         "dataset_unchanged": True, "criteria_unchanged": True,
         "data_sha256": data_hash, "criteria_sha256": criteria_hash,
-        "staff_comparison_complete": False, "assignment_complete": False,
-        "remaining": ["student independently labels all 30 staff posts", "TF supplies authentic staff_labels.csv after blind labels frozen", "student adjudicates every actual disagreement"]}
+        "staff_reference_available": (ROOT / "data/staff_labels.csv").exists(),
+        "ai_to_staff_comparison_complete": (ROOT / "agreement_results.json").exists(),
+        "independent_human_staff_comparison_complete": False, "assignment_complete": False,
+        "ai_assisted_adjudication_complete": True,
+        "remaining": ["independent human annotation evidence", "independently authored student adjudication not demonstrated"]}
     (ROOT / "evidence/unit6/verification.json").write_text(json.dumps(status, indent=2) + "\n")
     print(json.dumps(status, indent=2))
 

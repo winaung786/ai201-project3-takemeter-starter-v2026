@@ -1,0 +1,8 @@
+{
+  "recorded_at_utc": "2026-10-25T03:52:12.778427+00:00",
+  "permission_requested": "May I publish the TF answer key and comparison report to your public GitHub repository?",
+  "user_response": "That’s fine you can do it for me.",
+  "scope": "Publish the supplied TF CSV and comparison report to the existing public TakeMeter GitHub repository, and complete the remaining adjudication as attributed AI assistance.",
+  "independent_human_work_claimed": false,
+  "prior_automatic_review_rejection": "Public publication was blocked until the user authorized sharing the TF reference."
+}

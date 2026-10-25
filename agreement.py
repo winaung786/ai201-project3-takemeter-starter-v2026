@@ -12,7 +12,7 @@ about whether your own 200 labels were consistent.
 
     python agreement.py --help
     python agreement.py
-    python agreement.py --staff-posts data/staff_posts.csv \
+    python agreement.py --staff-posts data/staff_post_texts.csv \
                         --staff-labels data/staff_labels.csv --mine my_labels.csv
     python agreement.py --staff data/staff_combined.csv --mine my_labels.csv
 
@@ -23,7 +23,7 @@ does not touch it — it hands you the disagreements and an empty column.
 This is the only instrument you have that can tell a labelling problem from a
 model problem, which is exactly what Milestone 4 asks you to use it for.
 
-The staff set comes as two files. `data/staff_posts.csv` and
+The staff set comes as two files. `data/staff_post_texts.csv` and
 `data/staff_taxonomy.md` ship in the starter; `data/staff_labels.csv` is the
 one your TF sends you, once yours are done. Posts and labels join on `id`. Your
 own file needs a `text` column and a `label` column. If you happen to have the
@@ -78,7 +78,7 @@ def load(path, pd):
     if not Path(path).exists():
         print(f"No file at {path}.", file=sys.stderr)
         if "staff" in str(path):
-            print("That's the staff set. `data/staff_posts.csv` ships in the starter;", file=sys.stderr)
+            print("That's the staff set. `data/staff_post_texts.csv` ships in the starter;", file=sys.stderr)
             print("`data/staff_labels.csv` is the one your TF sends you once your own", file=sys.stderr)
             print("labels are done. Ask in the help channel if you haven't been sent it.", file=sys.stderr)
         else:
@@ -104,7 +104,7 @@ def load_pair(posts_path, labels_path, pd):
         if not Path(path).exists():
             print(f"No file at {path}.", file=sys.stderr)
             print(f"That's the staff {what}. The posts ship in the starter under", file=sys.stderr)
-            print("data/staff_posts.csv; the labels are what your TF sends you once", file=sys.stderr)
+            print("data/staff_post_texts.csv; the labels are what your TF sends you once", file=sys.stderr)
             print("your own are done. Ask in the help channel if you're missing either.", file=sys.stderr)
             sys.exit(1)
 
@@ -181,7 +181,7 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
-    parser.add_argument("--staff-posts", default="data/staff_posts.csv",
+    parser.add_argument("--staff-posts", default="data/staff_post_texts.csv",
                         help="the staff posts your TF gives you")
     parser.add_argument("--staff-labels", default="data/staff_labels.csv",
                         help="the staff labels, joined to the posts on `id`")

@@ -1,0 +1,35 @@
+{
+  "compared": 30,
+  "agreed": 29,
+  "agreement_rate": 0.9666666666666667,
+  "disagreements": [
+    {
+      "text": "Times are down about 3% since the shoe rules changed, so obviously the shoes are the whole story and the sport has a problem.",
+      "staff": "hot_take",
+      "mine": "analysis"
+    }
+  ],
+  "staff_posts_not_in_mine": 0,
+  "comparison_provenance": {
+    "annotation_author": "Codex AI assistant",
+    "reference_source": "TF-supplied Google Drive file",
+    "frozen_label_commit": "7cc80560b80ae83656841ac2b50bd771c4654e66",
+    "label_file_sha256": "348bbadf6defff2bd5fc6ad45bfc5ada164b150234369d0e9400910af5553ab1",
+    "independent_human_agreement": false,
+    "criterion_4_demonstrated": false,
+    "student_adjudications_completed": false,
+    "ai_assisted_adjudications_completed": true,
+    "adjudication_author": "Codex, delegated by the user"
+  },
+  "assisted_adjudications": [
+    {
+      "text": "Times are down about 3% since the shoe rules changed, so obviously the shoes are the whole story and the sport has a problem.",
+      "original_label": "analysis",
+      "staff_label": "hot_take",
+      "adjudicated_label": "analysis",
+      "category": "c",
+      "author": "Codex AI assistant",
+      "reason": "The 3% change and its timing explicitly function as a causal premise under Rule 1. The inference overreaches, but inference validity is not required by the taxonomy. Staff can defensibly treat the statistic as decoration on the broader unsupported conclusion."
+    }
+  ]
+}

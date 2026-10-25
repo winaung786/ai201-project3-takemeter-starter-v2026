@@ -2,7 +2,7 @@
 
 **Repository:** https://github.com/winaung786/ai201-project3-takemeter-starter-v2026
 
-**Unit 6:** Baseline, all six training trials, and the measured improvement are complete; independent student staff labels, the TF reference, and student adjudications remain required.
+**Unit 6:** Baseline, all six training trials, and the measured improvement are complete; the authentic TF reference and AI-to-staff comparison are saved, and the delegated AI-assisted adjudication is complete. Independent human annotation evidence and independently written student adjudication are not demonstrated.
 
 **Build status: human review confirmed; both training runs completed.** All 200 comments have a label,
 an assistant review reason, and a source ID in the root `labels.csv`. On 2026-10-20,
@@ -277,7 +277,7 @@ reproducible from the committed data and the recorded software versions.
 
 ## How I Used AI
 
-**Unit 6 AI assistance:** Codex read the provided assignment and PowerPoint, ran the local baseline and six notebook-based training trials, recorded predictions and split isolation, and drafted the typed tables and diagnoses. The original student criteria and confirmed project labels were kept unchanged. At the student's later request, Codex also prepared all 30 AI label suggestions with individual reasons in `reviews/unit6-ai/`; the provenance explicitly records that they are not independent human annotations. The student form `my_staff_labels.csv` remains blank. No TF key was opened for that review, and no human agreement rate or student adjudications are claimed. The Unit 6 interpretation is AI-assisted and should be reviewed by the student.
+**Unit 6 AI assistance:** Codex read the provided assignment and PowerPoint, ran the local baseline and six notebook-based training trials, recorded predictions and split isolation, and drafted the typed tables and diagnoses. The original student criteria and confirmed project labels were kept unchanged. At the student's later request, Codex also prepared all 30 AI label suggestions with individual reasons in `reviews/unit6-ai/`; the provenance explicitly records that they are not independent human annotations. The same 30 choices are now also saved in `my_staff_labels.csv`, with separate authorship evidence. No TF key was opened for the original annotation. The later TF download enabled a 29/30 AI-to-staff comparison; independent human agreement is not claimed. The user subsequently delegated the one remaining adjudication, which Codex completed and attributed as AI-assisted. The Unit 6 interpretation is AI-assisted and should be reviewed by the student.
 
 The disclosures below preserve the status when each earlier stage was performed.
 References to pending human review describe those earlier stages. The current
@@ -341,7 +341,7 @@ Rubric audit: see [docs/rubric-audit.md](docs/rubric-audit.md).
 <!-- UNIT6-REPORT -->
 ## Unit 6 status
 
-**The baseline and before trials are complete.** All three after trials and the one-change comparison are also complete. **The assignment is not complete:** the student's independent 30 staff labels, authentic TF reference file, and student adjudications are still missing. A blank form is not labeling evidence. No agreement rate or fabricated staff answers are reported.
+**The baseline and before trials are complete.** All three after trials and the one-change comparison are also complete. **The assignment is not complete:** the independent human annotation requirement and independently authored student adjudication remain unverified. The user delegated the remaining adjudication to Codex, which has completed an attributed assisted decision. The authentic TF reference has now been imported, and the existing 30 AI-assisted labels have been compared against it.
 
 The original `criteria.md`, `labels.csv`, taxonomy, Unit 5 `results.json`, and `test_split.csv` are preserved. The [pre-run protocol](docs/unit6/plan.md) records the baseline prediction and measurement conventions. No Unit 6 stretch feature is claimed.
 
@@ -368,7 +368,7 @@ Three real retrainings using the notebook section 6 loop: seeds **42, 7, 2024**.
 | 1. Overall accuracy | ≥0.75 in every seed | 0.666667 | 0.633333 | 0.500000 | MISSED |
 | 2. Every label F1 | ≥0.65 for all labels in every seed | analysis: 0.769231; unsupported: 0.740741; question: 0.000000 | analysis: 0.818182; unsupported: 0.645161; question: 0.000000 | analysis: 0.600000; unsupported: 0.545455; question: 0.000000 | MISSED |
 | 3. Dataset balance | Every label 15%–45% of all 200 comments | analysis 36%; unsupported 40.5%; question 23.5% | analysis 36%; unsupported 40.5%; question 23.5% | analysis 36%; unsupported 40.5%; question 23.5% | MET |
-| 4. Human agreement | ≥80% on 30–50 comments | Not measured; human labels/key missing | Not measured; human labels/key missing | Not measured; human labels/key missing | MISSED |
+| 4. Human agreement | ≥80% on 30–50 comments | Independent human labels missing | Independent human labels missing | Independent human labels missing | MISSED |
 | 5. Prediction confidence | Correct mean ≥0.70; fraction of all test max-probs below 0.50 <15%; every seed | correct mean 0.421990; low 100.0% | correct mean 0.407459; low 100.0% | correct mean 0.412820; low 100.0% | MISSED |
 
 Criterion 3 is one dataset measurement repeated for clarity; criterion 4 is one human exercise, not three model-seed trials. `MISSED` on criterion 4 means the required evidence has not been demonstrated, **not** 0% measured agreement. The 30 staff posts use the staff running-forum taxonomy, which cannot directly validate every Hacker News annotation. No original target has been changed.
@@ -417,17 +417,41 @@ Largest off-diagonal cell (first in label order if tied): 7 true `question` post
 
 3. **Balance — MET.** Counts remain analysis 72/200, unsupported 81/200, question 47/200: all fall within the original 15%–45% band. The smallest class still provides only 33 training examples per split. Passing the balance target does not ensure enough examples or representative prevalence; the Unit 5 purposive sampling remains disclosed.
 
-4. **Human agreement — MISSED, not demonstrated.** No independent student staff annotations or TF key are available. This is missing evidence rather than a measured model or annotator failure. A prior confirmation of all 200 AI-assisted project labels is one human review, not agreement between two humans. The staff exercise must be completed before diagnosing inconsistent rule application. Its different taxonomy also limits how far its result transfers to the Hacker News dataset.
+4. **Human agreement — MISSED, not demonstrated.** The authentic TF key is available and the AI-assisted labels match 29/30. Independent human annotations remain unavailable, so this rate does not measure agreement between two humans. A prior confirmation of all 200 AI-assisted project labels is one human review, not agreement between two humans. The staff exercise must be completed before diagnosing inconsistent rule application. Its different taxonomy also limits how far its result transfers to the Hacker News dataset.
 
 5. **Confidence — MISSED.** Read both conditions in each run-log cell. Winning probabilities remain too low, consistent with weak class separation after three epochs; they do not show that hedging caused the problem. Softmax confidence is uncalibrated, and raising it alone would not prove correctness. The saved probabilities permit direct recomputation of the correct-only mean and all-test low-confidence fraction.
 
 ## Agreement Report
 
-**Not measured; blocked on genuine human inputs.** [my_staff_labels.csv](my_staff_labels.csv) contains all 30 original staff posts with blank labels. The [staff taxonomy](data/staff_taxonomy.md) requires `analysis`, `hot_take`, and `reaction`, not `unsupported` or `question`. The student must label these independently and commit them before obtaining/opening `data/staff_labels.csv` from the TF. The [instructions](docs/unit6/staff-review-instructions.md) and `python tools/complete_staff_agreement.py` enforce that sequence. No `agreement_results.json` is claimed as an executed comparison while those files are missing.
+**Measured AI-to-staff agreement: 29/30 = 0.966667 (96.7%).** The pre-key labels in `my_staff_labels.csv` were prepared by Codex. This is a diagnostic comparison, not two independent human annotators. Criterion 4 remains **MISSED — independent human evidence not demonstrated**, despite the numerical rate exceeding 80%.
 
-After the real comparison, include every disagreement's complete post, both labels, the student's call and a rule-based reason, then assign (a) rule applied loosely, (b) rule underspecified, or (c) defensible ambiguity. AI may make the strongest case for both readings; it must not substitute its final call for the student's. There are currently **zero measured disagreements**, which is not a claim of perfect agreement.
+The authentic reference was supplied through [the TF Drive file](https://drive.google.com/file/d/1Cp8PeB-MkDaNifSPNixNfo7xVfi6R3GF/view). It was downloaded after the 30 label choices had been committed at `7cc80560b80ae83656841ac2b50bd771c4654e66`; those choices have not changed after seeing the key. [Import provenance](evidence/unit6/staff-reference-import.json) records the file hashes and filename mapping.
 
-**Completed AI-assisted review:** At the student's later request, Codex labeled all 30 posts in a separate [AI draft CSV](reviews/unit6-ai/ai_staff_labels.csv), with [a reason for every label and alternative readings](reviews/unit6-ai/staff-label-review.md). The counts are 11 analysis, 9 hot_take, and 10 reaction. The [provenance record](reviews/unit6-ai/annotation-provenance.json) identifies these as AI suggestions made without opening a TF key. This draft supplies assistance; it does not fulfill the independent student-labeling requirement or establish human agreement. `my_staff_labels.csv` remains the student's blank independent form.
+**File mapping:** At the user's explicit request, the downloaded answer CSV is saved as [data/staff_posts.csv](data/staff_posts.csv). It contains `id,label,borderline,why`, not post text. The identical answer bytes are also saved as [data/staff_labels.csv](data/staff_labels.csv). The original `id,text` file is preserved byte-for-byte as [data/staff_post_texts.csv](data/staff_post_texts.csv). `python agreement.py` now defaults to that text file and the canonical labels file.
+
+| Compared | Matched | Disagreed | Missing posts | Annotation authorship |
+|---:|---:|---:|---:|---|
+| 30 | 29 | 1 | 0 | Codex AI versus staff reference |
+
+### Every actual disagreement
+
+#### sp_014
+
+> Times are down about 3% since the shoe rules changed, so obviously the shoes are the whole story and the sport has a problem.
+
+**Saved pre-key label:** `analysis`. **Staff label:** `hot_take`.
+
+**Staff's supplied rationale:** HARD, and the canonical rule-1 case. The 3% is decoration on a conclusion already reached — 'so obviously' does the work, not the number.
+
+**AI-assisted case for `analysis`:** The post uses the 3% change after the shoe-rule change as a premise and explicitly connects it with 'so' to a causal conclusion. Rule 1's analysis example also reasons from a change in times and a change in shoe rules. The causal inference is too strong, but a weak inference can still use a fact as its premise.
+
+**AI-assisted case for `hot_take`:** 'Obviously', 'the whole story', and the judgment that the sport has a problem express a sweeping conclusion that the single statistic cannot establish. Under Rule 1's decoration clause, the statistic can be read as a flourish attached to that conclusion. This follows the staff interpretation of its own canonical boundary case.
+
+**AI-assisted adjudication, prepared at the user's request:** Retain `analysis` as a defensible reading. The measured time change and its timing relative to the rule change explicitly supply the premise for the conclusion. Rule 1 asks whether a fact carries the argument; it does not require that the resulting causal inference be valid. The wording 'so obviously' overstates the evidence but does not by itself show that the writer reached the conclusion before considering the statistic. Staff's reading remains plausible because the claim about the whole sport extends beyond the fact supplied.
+
+**Disagreement category: (c) — two defensible readings.** This call preserves the pre-key label rather than changing it to match staff. It is the assistant's argued adjudication, delegated by the user, and is not represented as an independently written student judgment.
+
+The one dispute concerns `analysis` versus `hot_take` in the staff running-forum taxonomy. It does not establish that the separate Hacker News `question` boundary caused the trained model's errors. The assisted adjudication is complete; independent human annotation and independently authored student adjudication are not demonstrated. The original training results and criteria are unchanged.
 
 ## The Improvement
 
@@ -440,7 +464,7 @@ After the real comparison, include every disagreement's complete post, both labe
 | 1. Overall accuracy | ≥0.75 in every seed | 0.733333 | 0.633333 | 0.600000 | MISSED |
 | 2. Every label F1 | ≥0.65 for all labels in every seed | analysis: 0.769231; unsupported: 0.800000; question: 0.444444 | analysis: 0.818182; unsupported: 0.645161; question: 0.000000 | analysis: 0.782609; unsupported: 0.600000; question: 0.000000 | MISSED |
 | 3. Dataset balance | Every label 15%–45% of all 200 comments | analysis 36%; unsupported 40.5%; question 23.5% | analysis 36%; unsupported 40.5%; question 23.5% | analysis 36%; unsupported 40.5%; question 23.5% | MET |
-| 4. Human agreement | ≥80% on 30–50 comments | Not measured; human labels/key missing | Not measured; human labels/key missing | Not measured; human labels/key missing | MISSED |
+| 4. Human agreement | ≥80% on 30–50 comments | Independent human labels missing | Independent human labels missing | Independent human labels missing | MISSED |
 | 5. Prediction confidence | Correct mean ≥0.70; fraction of all test max-probs below 0.50 <15%; every seed | correct mean 0.456680; low 73.3% | correct mean 0.439193; low 96.7% | correct mean 0.456964; low 90.0% | MISSED |
 
 ### Paired before/after comparison
@@ -499,7 +523,7 @@ The extra epoch recovered seed 42: 2/7 true questions; seed 7: 0/7 true question
 
 For any remaining accuracy or per-label F1 miss, the next step would be a separate development-set audit of request-versus-statement examples, followed by targeted new questions if warranted; no extra fix is made here because this unit allows one measured improvement. Seven question test examples per seed remain too few for precise per-label estimates, and comment-level splits within eight threads do not establish transfer to unseen threads or the whole of Hacker News.
 
-Criterion 4 remains untested until the student provides the blind labels and TF reference, then personally adjudicates disagreements. Confidence misses require a later calibration/abstention study on validation data rather than forcing probabilities upward to pass a threshold; no additional test-driven tuning was performed.
+Criterion 4 remains unproven because the saved labels are AI-assisted. The authentic TF reference is now available; the one disagreement now has an attributed AI-assisted adjudication retaining analysis under category (c). Independently written student adjudication is not demonstrated. Confidence misses require a later calibration/abstention study on validation data rather than forcing probabilities upward to pass a threshold; no additional test-driven tuning was performed.
 
 The intended taxonomy distinguishes evidence supporting a main claim, unsupported statements, and genuine information requests. The before matrix shows that the learned classifier instead favors the two statement categories and misses genuine questions, so it has only partially learned that intended distinction.
 

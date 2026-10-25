@@ -187,13 +187,15 @@ unit 5 — and then compare.
 python agreement.py
 ```
 
+Filename note for this repository: the downloaded TF answers are also saved as `data/staff_posts.csv`, as requested by the user. The original post text is preserved as `data/staff_post_texts.csv`; the comparison defaults below use that text file and `data/staff_labels.csv`.
+
 Four files. The posts and the rules ship with the starter; only the answers
 come from your TF, and only after yours are done. Posts and labels join on `id`:
 
 | File | Where it comes from |
 |---|---|
 | `data/staff_taxonomy.md` | **Ships in the starter.** The three definitions and the decision rules staff used. Read it first — you label under *these*, not your own |
-| `data/staff_posts.csv` | **Ships in the starter.** The 30 posts, no labels |
+| `data/staff_post_texts.csv` | **Ships in the starter.** The 30 posts, no labels |
 | `data/staff_labels.csv` | **Your TF gives you this**, once your own labels are done |
 | `my_staff_labels.csv` | You make it: the same posts, labelled by you, with `text` and `label` columns |
 
@@ -275,7 +277,7 @@ README has a block to fill in for each one.
 | `label_definitions.txt` | Your definitions, for the baseline |
 | `data/practice_labels.csv` | The 60-post practice set used in class |
 | `data/staff_taxonomy.md` | The staff set's definitions and decision rules. Ships here |
-| `data/staff_posts.csv` | The staff set's 30 posts. Ships here |
+| `data/staff_post_texts.csv` | The staff set's 30 posts. Ships here |
 | `data/staff_labels.csv` | The staff set's labels. **Your TF gives you this** |
 | `README.md` | Your submission |
 | `results.json` | Written and committed by the notebook |

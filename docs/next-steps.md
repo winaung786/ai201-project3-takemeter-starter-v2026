@@ -27,7 +27,7 @@ were written by the assistant; separate student explanations are not recorded.
 3. Run `python tools/validate_submission.py` to inspect outstanding course evidence. Its independent
    cold-label check is unchanged and is not satisfied by a general review confirmation.
 4. The five acceptance criteria were committed before scores and remain unchanged.
-   Follow RUNNING.md to reproduce the environment. The Unit 6 baseline and all six before/after trials are complete and documented in README. The independent staff comparison and student adjudications remain required; see [the staff instructions](unit6/staff-review-instructions.md).
+   Follow RUNNING.md to reproduce the environment. The Unit 6 baseline and all six before/after trials are complete and documented in README. The authentic TF reference now yields 29/30 AI-to-staff matches. The delegated assisted sp_014 adjudication is complete. Independent human evidence and independently authored student adjudication remain unverified; see [the staff instructions](unit6/staff-review-instructions.md).
 5. Both training runs are now complete. Keep results.json, test_split.csv,
    results_second_run.json and results_epoch_comparison.json. See the README for
    actual metrics; the original review-only update preceded these results.

@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    with (ROOT / "data/staff_posts.csv").open(newline="") as f:
+    with (ROOT / "data/staff_post_texts.csv").open(newline="") as f:
         posts = list(csv.DictReader(f))
     with (ROOT / "my_staff_labels.csv").open(newline="") as f:
         mine = list(csv.DictReader(f))
@@ -19,6 +19,11 @@ def main():
     invalid = [i for i, r in enumerate(mine, 1) if r["label"] not in {"analysis", "hot_take", "reaction"}]
     if invalid:
         raise SystemExit(f"Student labels still missing or invalid at rows {invalid}. Fill these independently before opening the key.")
+    provenance_path = ROOT / "evidence/unit6/staff-labels-provenance.json"
+    if provenance_path.exists():
+        provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
+        if provenance.get("independent_student_labels") is False:
+            raise SystemExit("These labels are recorded as AI-assisted. They cannot be counted as independent student agreement. With the authentic TF key, agreement.py can produce an AI-to-staff diagnostic; retain the authorship disclosure.")
     committed = subprocess.run(["git", "show", "HEAD:my_staff_labels.csv"], cwd=ROOT, capture_output=True)
     if committed.returncode or committed.stdout != (ROOT / "my_staff_labels.csv").read_bytes():
         raise SystemExit("Commit the completed blind labels before using the staff key.")

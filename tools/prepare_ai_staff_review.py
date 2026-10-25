@@ -51,7 +51,7 @@ def main():
     protected = ["my_staff_labels.csv", "labels.csv", "criteria.md", "results.json",
                  "results_three_seeds_before.json", "results_three_seeds_after.json", "baseline_results.json"]
     before = {p: sha(ROOT / p) for p in protected}
-    with (ROOT / "data/staff_posts.csv").open(newline="") as f:
+    with (ROOT / "data/staff_post_texts.csv").open(newline="") as f:
         posts = list(csv.DictReader(f))
     assert len(posts) == len(DECISIONS) == 30
     assert [p["id"] for p in posts] == [r[0] for r in DECISIONS]
@@ -74,7 +74,7 @@ def main():
     provenance = {"annotation_source": "Codex AI assistant", "independent_human_annotation": False,
         "staff_key_accessed_for_this_review": False, "human_reviewed": False,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
-        "source_posts": "data/staff_posts.csv", "source_posts_sha256": sha(ROOT / "data/staff_posts.csv"),
+        "source_posts": "data/staff_post_texts.csv", "source_posts_sha256": sha(ROOT / "data/staff_post_texts.csv"),
         "taxonomy": "data/staff_taxonomy.md", "taxonomy_sha256": sha(ROOT / "data/staff_taxonomy.md"),
         "output": str(dest.relative_to(ROOT)), "output_sha256": sha(dest), "n": 30,
         "counts": counts, "course_independent_annotation_requirement_satisfied": False,

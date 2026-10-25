@@ -30,3 +30,5 @@ The result files already exist as evidence. The seed runner refuses to overwrite
 The standard environment check returned 9 passes, 0 failures and one misleading cache warning. Its baseline check hardcodes the home cache and ignores `HF_HOME`; the real baseline ran from the repo-local cache. No model/checker behavior was changed to hide that warning.
 
 For the remaining human exercise, follow `staff-review-instructions.md`; only run `python tools/complete_staff_agreement.py` after saving the student's 30 independent labels and obtaining the authentic TF reference. No model API key is needed.
+
+The authentic TF file is now imported. Reproduce its diagnostic comparison with `python agreement.py`, `python tools/staff_reference_report.py`, and `python tools/build_unit6_report.py`. The original post texts are `data/staff_post_texts.csv`. The downloaded answers are `data/staff_labels.csv` and the requested alias `data/staff_posts.csv`. The 29/30 rate compares AI-assisted labels with staff; the independent-human wrapper still rejects AI authorship.
